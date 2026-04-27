@@ -496,45 +496,7 @@ function setupProjectNavigation(language) {
     });
 }
 function setupNavbarScroll() {
-    const navbar = document.getElementById('navbar');
-    if (!navbar) {
-        return;
-    }
-
-    let collapseTimer = null;
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-            navbar.classList.remove('nav-expanded');
-        }
-    });
-
-    // Expand on mouseenter
-    navbar.addEventListener('mouseenter', () => {
-        if (navbar.classList.contains('scrolled')) {
-            clearTimeout(collapseTimer);
-            navbar.classList.add('nav-expanded');
-        }
-    });
-
-    // Collapse on mouseleave with a small delay to prevent flicker
-    navbar.addEventListener('mouseleave', () => {
-        if (navbar.classList.contains('scrolled')) {
-            collapseTimer = setTimeout(() => {
-                navbar.classList.remove('nav-expanded');
-            }, 300);
-        }
-    });
-
-    // Also toggle on click for touch devices
-    navbar.addEventListener('click', (e) => {
-        if (navbar.classList.contains('scrolled') && !e.target.closest('a, button')) {
-            navbar.classList.toggle('nav-expanded');
-        }
-    });
+    // Scroll animation and classes removed as per user request
 }
 
 function setupRevealAnimations() {
