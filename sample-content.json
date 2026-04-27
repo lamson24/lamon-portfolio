@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "GREENFORM STUDIO | Landscape Portfolio",
+    "description": "Contemporary landscape architecture portfolio."
+  },
+  "brand": {
+    "name": "GREENFORM"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Designing",
+    "highlight": "Ecologies.",
+    "subtitle": "Landscape systems that restore, adapt, and inspire.",
+    "cta": "Explore Projects"
+  },
+  "about": {
+    "title": "Design",
+    "highlight": "Approach",
+    "paragraphs": [
+      "We design resilient outdoor spaces for cities and communities.",
+      "Our work blends ecology, climate adaptation, and contemporary form."
+    ],
+    "stats": [
+      {
+        "number": "8+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "50+",
+        "label": "Projects Completed"
+      }
+    ],
+    "educationTitle": "Gi\u00e1o d\u1ee5c & Ch\u1ee9ng ch\u1ec9",
+    "education": [
+      {
+        "degree": "C\u1eed nh\u00e2n Ki\u1ebfn tr\u00fac C\u1ea3nh quan",
+        "detail": "Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc Ki\u1ebfn tr\u00fac H\u00e0 N\u1ed9i (2018)"
+      }
+    ],
+    "skillsTitle": "Core Expertise",
+    "skills": [
+      "Sustainable Design",
+      "Urban Ecology",
+      "Site Planning"
+    ]
+  },
+  "projectsSection": {
+    "title": "Selected",
+    "highlight": "Projects"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Riverfront Commons",
+      "subtitle": "Public Realm Renewal",
+      "alt": "Riverfront park",
+      "image": "assets/project_1.png",
+      "gallery": [
+        "assets/project_1.png",
+        "assets/project_1_1.png",
+        "assets/project_1_2.png",
+        "assets/project_4.png"
+      ],
+      "description": "A multi-phase riverfront landscape revitalization with flood-adaptive planting."
+    },
+    {
+      "id": "2",
+      "title": "Courtyard Habitat",
+      "subtitle": "Residential Landscape",
+      "alt": "Private courtyard garden",
+      "image": "assets/project_2.png",
+      "gallery": [
+        "assets/project_2.png",
+        "assets/project_2_1.png",
+        "assets/project_2_2.png",
+        "assets/project_3.png"
+      ],
+      "description": "A biodiversity-focused courtyard integrating shade, water, and native species."
+    },
+    {
+      "id": "3",
+      "title": "Canopy Terrace",
+      "subtitle": "Commercial Green Roof",
+      "alt": "Green roof terrace",
+      "image": "assets/project_3.png",
+      "gallery": [
+        "assets/project_3.png",
+        "assets/project_3_1.png",
+        "assets/project_3_2.png",
+        "assets/project_1.png"
+      ],
+      "description": "An elevated roof garden improving thermal performance and user comfort."
+    }
+  ],
+  "contact": {
+    "title": "Let's build something",
+    "highlight": "meaningful.",
+    "subtitle": "Open for commissions and collaborations.",
+    "email": "studio@greenform.com",
+    "cta": "Email Us"
+  },
+  "footer": {
+    "copyright": "&copy; 2026 GREENFORM Studio. All rights reserved.",
+    "socials": [
+      {
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      }
+    ]
+  }
+}

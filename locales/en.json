@@ -1,0 +1,186 @@
+{
+  "seo": {
+    "title": "LAMON-DIY | Landscape Architect Portfolio",
+    "description": "Portfolio of a dynamic, modern landscape architect specializing in sustainable and premium designs."
+  },
+  "brand": {
+    "name": "LáMON<span class=\"logo-suffix\">-DIY</span>"
+  },
+  "nav": {
+    "about": "Philosophy",
+    "projects": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Shaping",
+    "highlight": "Nature.",
+    "subtitle": "Landscape Architecture & Object Design Studio",
+    "cta": "View Selected Projects",
+    "showreel": "Watch Showreel",
+    "showreelId": "r_It_XcYOWM",
+    "credibilityLine": "Landscape Design  •  Garden Architecture  •  Furniture & Lighting"
+  },
+  "about": {
+    "title": "Design",
+    "highlight": "Philosophy",
+    "paragraphs": [
+      "We work across every scale of the landscape — from the quiet intimacy of a balcony garden to the ambitious sweep of a public park. Each project begins with the same question: how should this space make you feel?",
+      "Our practice extends beyond the ground plane. We design furniture, lighting, and objects born from the same principles that shape our landscapes — natural materials, thoughtful proportions, and the conviction that beautiful things should age gracefully."
+    ],
+    "image": "assets/project_5.png",
+    "imageAlt": "Landscape Design Philosophy"
+  },
+  "impact": [
+    { "number": 10, "suffix": "+", "label": "Years Experience" },
+    { "number": 40, "suffix": "+", "label": "Constructed Projects" },
+    { "number": 50, "suffix": "k+", "label": "sqm Green Space Created" }
+  ],
+  "services": {
+    "title": "Services",
+    "items": [
+      { "title": "Landscape Architecture", "desc": "Masterplanning and site design for large-scale public spaces, parks, and resort grounds." },
+      { "title": "Garden & Balcony Design", "desc": "Bespoke residential gardens and compact balcony retreats tailored to your daily life." },
+      { "title": "Playground & Recreation", "desc": "Creative outdoor play and recreation environments that serve communities of all ages." },
+      { "title": "Resort & Hospitality", "desc": "Immersive resort landscapes that define the identity and atmosphere of a destination." },
+      { "title": "Furniture & Lighting Design", "desc": "Custom-designed objects — cabinets, tables, chairs, and lighting — born from landscape thinking." }
+    ]
+  },
+  "process": {
+    "title": "Design",
+    "highlight": "Process",
+    "items": [
+      {
+        "step": "01",
+        "name": "Discovery",
+        "desc": "Site analysis, understanding client vision, and defining the project scope."
+      },
+      {
+        "step": "02",
+        "name": "Concept",
+        "desc": "Developing spatial layouts, material palettes, and initial planting strategies."
+      },
+      {
+        "step": "03",
+        "name": "Masterplanning",
+        "desc": "Detailed architectural integration, grading, and technical documentation."
+      },
+      {
+        "step": "04",
+        "name": "Realization",
+        "desc": "Site supervision and bringing the natural landscape to life."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Client",
+    "highlight": "Perspectives",
+    "items": [
+      {
+        "quote": "LáMON transformed our bare rooftop into a lush, thriving ecosystem. Their attention to detail and botanical knowledge is unparalleled.",
+        "author": "Elena V.",
+        "role": "Private Residence Owner"
+      },
+      {
+        "quote": "The landscape design for our boutique hotel became the centerpiece of our guest experience. Simply breathtaking work.",
+        "author": "Marcus T.",
+        "role": "Hospitality Director"
+      }
+    ]
+  },
+  "projectsSection": {
+    "title": "Selected",
+    "highlight": "Work"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Lumina Urban Park",
+      "subtitle": "Public Space Integration",
+      "alt": "Urban Public Park",
+      "image": "assets/project_1.png",
+      "gallery": ["assets/project_1.png", "assets/project_1_1.png", "assets/project_1_2.png", "assets/project_4.png"],
+      "description": "A transformative urban public park designed to foster community engagement and biodiversity with native planting and smart water strategies."
+    },
+    {
+      "id": "2",
+      "title": "The Obsidian Retreat",
+      "subtitle": "Private Residential Oasis",
+      "alt": "Residential Backyard",
+      "image": "assets/project_2.png",
+      "gallery": ["assets/project_2.png", "assets/project_2_1.png", "assets/project_2_2.png", "assets/project_3.png"],
+      "description": "An intimate residential sanctuary centered on a modern deck, integrated fire feature, and layered planting for day and night comfort."
+    },
+    {
+      "id": "3",
+      "title": "Skyline Serenity",
+      "subtitle": "Commercial Green Roof Ecosystem",
+      "alt": "Green Roof",
+      "image": "assets/project_3.png",
+      "gallery": ["assets/project_3.png", "assets/project_3_1.png", "assets/project_3_2.png", "assets/project_1.png"],
+      "description": "A high-performance green roof with drought-tolerant species and a minimal circulation path that improves thermal comfort and biodiversity."
+    },
+    {
+      "id": "4",
+      "title": "Zenith Botanical Walk",
+      "subtitle": "Exotic Flora Immersion",
+      "alt": "Botanical Garden Pathway",
+      "image": "assets/project_4.png",
+      "gallery": ["assets/project_4.png", "assets/project_2_2.png", "assets/project_3_1.png", "assets/project_1_2.png"],
+      "description": "A curated botanical pathway immersed in layered tropical species, designed for a serene and cinematic visitor journey."
+    },
+    {
+      "id": "5",
+      "title": "Aqua Horizon Resort",
+      "subtitle": "Luxury Coastal Integration",
+      "alt": "Coastal Resort",
+      "image": "assets/project_5.png",
+      "gallery": ["assets/project_5.png", "assets/project_1_1.png", "assets/project_2_1.png", "assets/project_3_2.png"],
+      "description": "A coastal resort landscape where pool, terrace, and planting are composed to align with horizon views and reduce erosion impacts."
+    },
+    {
+      "id": "6",
+      "title": "The Monolith Courtyard",
+      "subtitle": "Modern Corporate Campus",
+      "alt": "Corporate Courtyard",
+      "image": "assets/project_6.png",
+      "gallery": ["assets/project_6.png", "assets/project_1_1.png", "assets/project_2_2.png", "assets/project_5.png"],
+      "description": "A geometric corporate courtyard featuring water elements, sculptural seating, and structured planting that supports focus and recovery."
+    },
+    {
+      "id": "7",
+      "title": "Nghia Hiep Hung Yen Residential Quarter",
+      "subtitle": "High-End Residential Landscape Masterplan",
+      "category": "Residential Community Development",
+      "location": "Nghia Hiep, Hung Yen, Vietnam",
+      "alt": "Classical fountain plaza in Nghia Hiep Hung Yen residential area",
+      "image": "assets/project_7.png",
+      "gallery": ["assets/project_7.png", "assets/project_7_1.png", "assets/project_7_2.png", "assets/project_7_3.png", "assets/project_7_4.png", "assets/project_7_5.png", "assets/project_7_6.png"],
+      "description": "A premium residential landscape concept for Nghia Hiep, Hung Yen, centered on a classical fountain plaza, axial walkways, and layered planting. The design combines ceremonial architecture, warm night lighting, and human-scale seating to create an elegant neighborhood destination for gathering, strolling, and relaxation."
+    }
+  ],
+  "contact": {
+    "title": "Start a",
+    "highlight": "Project",
+    "subtitle": "We collaborate with private clients, architects, and developers to create meaningful landscapes.",
+    "email": "Lamsonarchp@gmail.com",
+    "phone": "0333 942 892",
+    "location": "275 Nguyễn Trãi - Thanh Xuân - Hà Nội - Việt Nam",
+    "cta": "Get in Touch",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "address": "Location / Address",
+      "submit": "Send Message",
+      "success": "Thank you! We will get in touch soon."
+    }
+  },
+  "footer": {
+    "copyright": "&copy; 2026 Landscape Architect. All rights reserved.",
+    "socials": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "LinkedIn", "href": "#" },
+      { "label": "Behance", "href": "#" }
+    ]
+  }
+}

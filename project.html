@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | LAMON-DIY</title>
+    <meta name="description" content="Project detail page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="project-page">
+    <canvas id="ai-canvas"></canvas>
+    <nav class="navbar scrolled" id="project-navbar">
+        <a href="index.html#projects" class="logo project-back-icon" id="project-back">&lt;</a>
+        <div class="nav-right">
+            <div class="lang-switch" id="lang-switch">
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="vi">VI</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-main container">
+        <section class="project-hero">
+            <p class="project-kicker" id="project-category"></p>
+            <h1 class="project-title-detail" id="project-title"></h1>
+            <p class="project-subtitle-detail" id="project-subtitle"></p>
+            <p class="project-location" id="project-location"></p>
+        </section>
+
+        <section class="project-gallery-grid" id="project-gallery-grid"></section>
+
+        <section class="project-description-card">
+            <h2 id="project-about-heading">Project Overview</h2>
+            <p id="project-description"></p>
+        </section>
+    </main>
+
+    <!-- Lightbox Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">&lt;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">&gt;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="project.js"></script>
+</body>
+
+</html>

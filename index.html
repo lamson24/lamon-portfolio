@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMON-DIY | Landscape Architect Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a dynamic, modern landscape architect specializing in sustainable and premium designs.">
+    <!-- Open Graph / SEO Tags -->
+    <meta property="og:title" content="LAMON-DIY | Landscape Architect Portfolio">
+    <meta property="og:description" content="Portfolio of a dynamic, modern landscape architect specializing in sustainable and premium designs.">
+    <meta property="og:image" content="assets/project_5.png">
+    <meta property="og:url" content="https://lamondiy-portfolio.com/">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="ai-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo" id="site-logo">LáMON<span class="logo-suffix">-DIY</span></a>
+        <ul class="nav-links">
+            <li><a id="nav-about" href="#about">Philosophy</a></li>
+            <li><a id="nav-projects" href="#projects">Work</a></li>
+            <li><a id="nav-contact" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-switch" id="lang-switch">
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="vi">VI</button>
+            </div>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home" data-page="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title" id="hero-title">Shaping<br><span class="highlight-serif">Nature.</span></h1>
+            <p class="hero-subtitle" id="hero-subtitle">Architectural landscapes that breathe, inspire, and endure.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary" id="hero-cta">View the Portfolio</a>
+                <button class="btn-secondary" id="hero-showreel" style="display: none;"><span class="play-icon">▶</span> <span id="hero-showreel-text">Watch Showreel</span></button>
+            </div>
+            <p class="hero-credibility" id="hero-credibility"></p>
+        </div>
+    </header>
+
+    <section class="about" id="about" data-page="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2 id="about-title">Design <span class="highlight-serif">Philosophy</span></h2>
+                    <div id="about-paragraphs"></div>
+                </div>
+                <div class="about-image-wrapper reveal" style="transition-delay: 0.2s;">
+                    <img id="about-image" src="" alt="" class="about-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact" id="impact" data-page="about">
+        <div class="container">
+            <div class="impact-grid" id="impact-grid"></div>
+        </div>
+    </section>
+
+    <section class="services" id="services" data-page="about">
+        <div class="container">
+            <h2 class="section-title reveal" id="services-title">Services</h2>
+            <div class="services-list" id="services-list"></div>
+        </div>
+    </section>
+
+    <section class="process" id="process" data-page="about">
+        <div class="container">
+            <h2 class="section-title reveal" id="process-title">Design <span class="highlight-serif">Process</span></h2>
+            <div class="process-list" id="process-list"></div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" data-page="about">
+        <div class="container">
+            <h2 class="section-title reveal" id="testimonials-title">Client <span class="highlight-serif">Perspectives</span></h2>
+            <div class="testimonial-grid" id="testimonials-grid"></div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects" data-page="projects">
+        <div class="container">
+            <h2 class="section-title reveal" id="projects-title">Featured <span class="highlight-serif">Work</span></h2>
+            <div class="project-filters reveal" id="project-filters"></div>
+            <div class="project-gallery" id="project-gallery"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-page="contact">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h2 id="contact-title">Let's create something <span class="highlight-serif">extraordinary.</span></h2>
+                <p id="contact-subtitle">Available for new commissions and collaborative projects.</p>
+                
+                <div class="contact-info" id="contact-info">
+                    <a href="#" id="contact-email" class="contact-link" aria-label="Email address"></a>
+                    <a href="#" id="contact-phone" class="contact-link" aria-label="Phone number"></a>
+                    <p id="contact-location"></p>
+                </div>
+
+                <button type="button" class="btn-primary" id="contact-toggle-btn">Start a Conversation</button>
+
+                <form id="contact-form" class="contact-form hidden" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Inquiry from Landscape Portfolio">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-group">
+                        <input type="text" name="name" id="form-name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="form-email" required placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" id="form-phone" required placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="address" id="form-address" required placeholder="Location / Address">
+                    </div>
+                    <button type="submit" class="btn-primary" id="form-submit">Send Message</button>
+                    <p id="form-success-msg" class="success-msg hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p id="footer-copyright">&copy; 2026 Landscape Architect. All specific natural rights reserved.</p>
+            <div class="socials" id="social-links"></div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Project Image">
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <h3 id="modal-subtitle" class="highlight-serif"></h3>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

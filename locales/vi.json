@@ -1,0 +1,186 @@
+{
+  "seo": {
+    "title": "LAMON-DIY | Hồ sơ Năng lực Kiến trúc Cảnh quan",
+    "description": "Hồ sơ năng lực của kiến trúc sư cảnh quan theo đuổi giải pháp hiện đại, bền vững và tinh tế."
+  },
+  "brand": {
+    "name": "LáMON<span class=\"logo-suffix\">-DIY</span>"
+  },
+  "nav": {
+    "about": "Triết lý",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "title": "Kiến tạo",
+    "highlight": "Thiên nhiên.",
+    "subtitle": "Kiến Trúc Cảnh Quan & Thiết Kế Nội Thất",
+    "cta": "Xem Dự Án Tiêu Biểu",
+    "showreel": "Xem Thước Phim",
+    "showreelId": "r_It_XcYOWM",
+    "credibilityLine": "Thiết Kế Cảnh Quan  •  Kiến Trúc Sân Vườn  •  Nội Thất & Chiếu Sáng"
+  },
+  "about": {
+    "title": "Triết lý",
+    "highlight": "Thiết kế",
+    "paragraphs": [
+      "Chúng tôi làm việc trên mọi quy mô cảnh quan — từ cảnh quan ban công nhỏ bé cho đến những công viên đô thị rộng lớn. Mỗi dự án đều bắt đầu bằng một câu hỏi: không gian này nên đem lại cảm giác gì?",
+      "Thực hành của chúng tôi không dừng lại ở mặt đất. Chúng tôi còn thiết kế nội thất, chiếu sáng và các đồ vật được sinh ra từ cùng một triết lý — vật liệu tự nhiên, tỷ lệ tinh tế, và niềm tin rằng những gì đẹp sẽ trường tồn theo thời gian."
+    ],
+    "image": "assets/project_5.png",
+    "imageAlt": "Triết lý thiết kế cảnh quan"
+  },
+  "impact": [
+    { "number": 10, "suffix": "+", "label": "Năm kinh nghiệm" },
+    { "number": 40, "suffix": "+", "label": "Dự án hoàn thiện" },
+    { "number": 50, "suffix": "k+", "label": "m² Mảng xanh kiến tạo" }
+  ],
+  "services": {
+    "title": "Dịch vụ",
+    "items": [
+      { "title": "Kiến Trúc Cảnh Quan", "desc": "Quy hoạch tổng thể và thiết kế khuôn viên cho các công trình công cộng, công viên, khu nghỉ dưỡng quy mô lớn." },
+      { "title": "Thiết Kế Sân Vườn & Ban Công", "desc": "Sân vườn riêng tư và khu ban công nhỏ gọn được thiết kế phù hợp với phong cách sống hàng ngày của bạn." },
+      { "title": "Sân Chơi & Khu Vui Chơi", "desc": "Môi trường vui chơi ngoài trời sáng tạo, phục vụ cộng đồng từ trẻ em đến người lớn." },
+      { "title": "Cảnh Quan Nghỉ Dưỡng", "desc": "Cảnh quan khu nghỉ dưỡng định nghĩa bản sắc và không khí của một điểm đến." },
+      { "title": "Thiết Kế Nội Thất & Chiếu Sáng", "desc": "Tủ, bàn, ghế và đèn thiết kế riêng — những đồ vật được sinh ra từ tư duy cảnh quan." }
+    ]
+  },
+  "process": {
+    "title": "Quy trình",
+    "highlight": "Thiết kế",
+    "items": [
+      {
+        "step": "01",
+        "name": "Khảo sát",
+        "desc": "Phân tích hiện trạng, thấu hiểu tầm nhìn của khách hàng và xác định phạm vi."
+      },
+      {
+        "step": "02",
+        "name": "Ý tưởng",
+        "desc": "Phát triển bố cục không gian, bảng vật liệu và chiến lược thực vật sơ bộ."
+      },
+      {
+        "step": "03",
+        "name": "Triển khai",
+        "desc": "Tích hợp kiến trúc chi tiết, quy hoạch san nền và hồ sơ kỹ thuật thi công."
+      },
+      {
+        "step": "04",
+        "name": "Thực thi",
+        "desc": "Giám sát tác giả tại công trường và hiện thực hoá bức tranh cảnh quan."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Góc nhìn",
+    "highlight": "Khách hàng",
+    "items": [
+      {
+        "quote": "LáMON đã biến sân thượng trống trải của chúng tôi thành một hệ sinh thái xanh mát. Sự tỉ mỉ trong thiết kế thực vật của họ thật sự ấn tượng.",
+        "author": "Elena V.",
+        "role": "Chủ sở hữu Biệt thự"
+      },
+      {
+        "quote": "Thiết kế cảnh quan cho khu nghỉ dưỡng của chúng tôi đã trở thành điểm nhấn chính níu chân du khách. Một không gian ngoạn mục.",
+        "author": "Marcus T.",
+        "role": "Giám đốc Vận hành"
+      }
+    ]
+  },
+  "projectsSection": {
+    "title": "Dự án",
+    "highlight": "Chọn lọc"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Lumina Urban Park",
+      "subtitle": "Tích hợp không gian công cộng",
+      "alt": "Công viên đô thị",
+      "image": "assets/project_1.png",
+      "gallery": ["assets/project_1.png", "assets/project_1_1.png", "assets/project_1_2.png", "assets/project_4.png"],
+      "description": "Công viên đô thị mới tạo kết nối cộng đồng và tăng đa dạng sinh học thông qua cây bản địa và giải pháp quản lý nước thông minh."
+    },
+    {
+      "id": "2",
+      "title": "The Obsidian Retreat",
+      "subtitle": "Sân vườn nhà ở cao cấp",
+      "alt": "Sân vườn nhà ở",
+      "image": "assets/project_2.png",
+      "gallery": ["assets/project_2.png", "assets/project_2_1.png", "assets/project_2_2.png", "assets/project_3.png"],
+      "description": "Không gian nghỉ dưỡng riêng tư với sàn gỗ hiện đại, khu lửa ngoài trời và lớp cây cảnh tạo cảm giác thư giãn."
+    },
+    {
+      "id": "3",
+      "title": "Skyline Serenity",
+      "subtitle": "Hệ sinh thái mái xanh thương mại",
+      "alt": "Mái xanh",
+      "image": "assets/project_3.png",
+      "gallery": ["assets/project_3.png", "assets/project_3_1.png", "assets/project_3_2.png", "assets/project_1.png"],
+      "description": "Mô hình mái xanh tối ưu vi khí hậu, giảm hiệu ứng đảo nhiệt và tăng trải nghiệm cho người sử dụng."
+    },
+    {
+      "id": "4",
+      "title": "Zenith Botanical Walk",
+      "subtitle": "Lối dạo thực vật đa tầng",
+      "alt": "Lối dạo vườn thực vật",
+      "image": "assets/project_4.png",
+      "gallery": ["assets/project_4.png", "assets/project_2_2.png", "assets/project_3_1.png", "assets/project_1_2.png"],
+      "description": "Tuyến đường đi bộ với bộ sưu tập thực vật nhiệt đới, tạo hành trình tham quan êm dịu và ấn tượng."
+    },
+    {
+      "id": "5",
+      "title": "Aqua Horizon Resort",
+      "subtitle": "Cảnh quan nghỉ dưỡng ven biển",
+      "alt": "Resort ven biển",
+      "image": "assets/project_5.png",
+      "gallery": ["assets/project_5.png", "assets/project_1_1.png", "assets/project_2_1.png", "assets/project_3_2.png"],
+      "description": "Thiết kế cảnh quan nghỉ dưỡng kết nối tầm nhìn chân trời, kết hợp cây bản địa để giảm xói mòn bờ biển."
+    },
+    {
+      "id": "6",
+      "title": "The Monolith Courtyard",
+      "subtitle": "Sân trong campus doanh nghiệp",
+      "alt": "Sân trong công ty",
+      "image": "assets/project_6.png",
+      "gallery": ["assets/project_6.png", "assets/project_1_1.png", "assets/project_2_2.png", "assets/project_5.png"],
+      "description": "Sân trong hình học hiện đại với nước, ghế đá và cây xanh có cấu trúc, hỗ trợ tập trung và hồi phục năng lượng."
+    },
+    {
+      "id": "7",
+      "title": "Khu nhà ở Nghĩa Hiệp, Hưng Yên",
+      "subtitle": "Quy hoạch cảnh quan khu ở cao cấp",
+      "category": "Phát triển khu dân cư",
+      "location": "Nghĩa Hiệp, Hưng Yên, Việt Nam",
+      "alt": "Quảng trường đài phun nước phong cách cổ điển tại khu nhà ở Nghĩa Hiệp Hưng Yên",
+      "image": "assets/project_7.png",
+      "gallery": ["assets/project_7.png", "assets/project_7_1.png", "assets/project_7_2.png", "assets/project_7_3.png", "assets/project_7_4.png", "assets/project_7_5.png", "assets/project_7_6.png"],
+      "description": "Đề xuất thiết kế cảnh quan cho khu nhà ở Nghĩa Hiệp, Hưng Yên với trung tâm là quảng trường đài phun nước theo trục đối xứng. Dự án kết hợp ngôn ngữ kiến trúc cổ điển, hệ cây xanh nhiều lớp và chiếu sáng cảnh quan ban đêm, tạo nên không gian sinh hoạt cộng đồng sang trọng, an toàn và giàu bản sắc."
+    }
+  ],
+  "contact": {
+    "title": "Bắt đầu",
+    "highlight": "Dự án",
+    "subtitle": "Chúng tôi hợp tác với khách hàng cá nhân, kiến trúc sư, và nhà phát triển để tạo ra những cảnh quan ý nghĩa.",
+    "email": "Lamsonarchp@gmail.com",
+    "phone": "0333 942 892",
+    "location": "275 Nguyễn Trãi - Thanh Xuân - Hà Nội - Việt Nam",
+    "cta": "Liên hệ ngay",
+    "form": {
+      "name": "Họ và Tên",
+      "email": "Địa chỉ Email",
+      "phone": "Số điện thoại",
+      "address": "Địa chỉ liên hệ",
+      "submit": "Gửi Thông Tin",
+      "success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất."
+    }
+  },
+  "footer": {
+    "copyright": "&copy; 2026 Kiến trúc Cảnh quan. Bảo lưu mọi quyền.",
+    "socials": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "LinkedIn", "href": "#" },
+      { "label": "Behance", "href": "#" }
+    ]
+  }
+}
