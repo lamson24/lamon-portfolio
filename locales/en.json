@@ -171,6 +171,7 @@
       "email": "Email Address",
       "phone": "Phone Number",
       "address": "Location / Address",
+      "message": "Tell us about your project",
       "submit": "Send Message",
       "success": "Thank you! We will get in touch soon."
     }

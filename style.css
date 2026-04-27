@@ -921,7 +921,8 @@ body:not(.light-mode) .theme-toggle .moon-icon {
     margin-bottom: 1.5rem;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 1rem 1.5rem;
     background: rgba(18, 20, 19, 0.4);
@@ -933,11 +934,19 @@ body:not(.light-mode) .theme-toggle .moon-icon {
     transition: all var(--trans-fast);
 }
 
-.contact-form input::placeholder {
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
     color: var(--clr-text-muted);
 }
 
-.contact-form input:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: none;
     border-color: var(--clr-accent);
     background: rgba(18, 20, 19, 0.8);
@@ -1930,4 +1939,4 @@ nav .nav-active {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--clr-primary);
-}
+}

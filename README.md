@@ -20,4 +20,4 @@ Required files and folders:
 
 ## Notes
 
-The contact form uses Web3Forms. Replace `YOUR_ACCESS_KEY_HERE` in `index.html` with a real Web3Forms access key before expecting form submissions to work.
+The contact form uses FormSubmit and sends inquiries to `Lamsonarchp@gmail.com`. FormSubmit sends a confirmation email the first time the form is submitted; click that confirmation link once to activate delivery.

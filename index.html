@@ -124,9 +124,11 @@
 
                 <button type="button" class="btn-primary" id="contact-toggle-btn">Start a Conversation</button>
 
-                <form id="contact-form" class="contact-form hidden" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                    <input type="hidden" name="subject" value="New Inquiry from Landscape Portfolio">
+                <form id="contact-form" class="contact-form hidden" action="https://formsubmit.co/Lamsonarchp@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Inquiry from LAMON-DIY Portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_blacklist" value="casino,crypto,loan">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <div class="form-group">
@@ -140,6 +142,9 @@
                     </div>
                     <div class="form-group">
                         <input type="text" name="address" id="form-address" required placeholder="Location / Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="form-message" required rows="5" placeholder="Tell us about your project"></textarea>
                     </div>
                     <button type="submit" class="btn-primary" id="form-submit">Send Message</button>
                     <p id="form-success-msg" class="success-msg hidden"></p>

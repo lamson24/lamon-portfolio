@@ -124,6 +124,7 @@ window.PORTFOLIO_CONTENTS = {
                 email: 'Email Address',
                 phone: 'Phone Number',
                 address: 'Location / Address',
+                message: 'Tell us about your project',
                 submit: 'Send Message',
                 success: 'Thank you! We will get in touch soon.'
             }
@@ -261,6 +262,7 @@ window.PORTFOLIO_CONTENTS = {
                 email: 'Địa chỉ Email',
                 phone: 'Số điện thoại',
                 address: 'Địa chỉ liên hệ',
+                message: 'Mô tả ngắn về dự án của bạn',
                 submit: 'Gửi Thông Tin',
                 success: 'Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.'
             }

@@ -354,12 +354,14 @@ function initializeContent(content, language) {
             const formEmail = document.getElementById('form-email');
             const formPhone = document.getElementById('form-phone');
             const formAddress = document.getElementById('form-address');
+            const formMessage = document.getElementById('form-message');
             const formSubmit = document.getElementById('form-submit');
             
             if (formName) formName.placeholder = content.contact.form.name;
             if (formEmail) formEmail.placeholder = content.contact.form.email;
             if (formPhone) formPhone.placeholder = content.contact.form.phone;
             if (formAddress) formAddress.placeholder = content.contact.form.address;
+            if (formMessage) formMessage.placeholder = content.contact.form.message;
             if (formSubmit) formSubmit.textContent = content.contact.form.submit;
         }
         
@@ -726,15 +728,22 @@ function setupContactForm(successMsgText) {
 
             try {
                 const formData = new FormData(newFormContainer);
-                // Execute actual request using Web3Forms
-                const response = await fetch('https://api.web3forms.com/submit', {
+                const response = await fetch(newFormContainer.action, {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: {
+                        Accept: 'application/json'
+                    }
                 });
-                
-                const data = await response.json();
-                
-                if (data.success) {
+
+                let data = {};
+                try {
+                    data = await response.json();
+                } catch (parseError) {
+                    data = {};
+                }
+
+                if (response.ok || data.success) {
                     // Hide inputs/button
                     const formGroups = newFormContainer.querySelectorAll('.form-group');
                     formGroups.forEach(g => g.classList.add('hidden'));
@@ -750,8 +759,9 @@ function setupContactForm(successMsgText) {
                         newSuccessMsg.classList.remove('hidden');
                     }
                 } else {
-                    console.error('Form submission failed:', data.message);
-                    alert('Sending failed: ' + data.message + '. Please check the Web3Forms Access Key.');
+                    const message = data.message || 'Please try again later.';
+                    console.error('Form submission failed:', message);
+                    alert('Sending failed: ' + message);
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
                 }
