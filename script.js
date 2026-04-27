@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupMobileMenu();
     setupProjectNavigation(currentLanguage);
     setupLanguageSwitcher(availableLanguages, currentLanguage);
-    setupCmsEditor(baseContent, content, currentLanguage);
     setupThemeToggle();
 });
 
@@ -690,7 +689,7 @@ function setupContactForm(successMsgText) {
 
     if (!toggleBtn || !formContainer) return;
 
-    // Remove old listeners to avoid duplicates if called multiple times (e.g. from CMS editor)
+    // Remove old listeners to avoid duplicates if called multiple times.
     const newToggleBtn = toggleBtn.cloneNode(true);
     toggleBtn.parentNode.replaceChild(newToggleBtn, toggleBtn);
     
@@ -850,164 +849,6 @@ function setupModal(projectData) {
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && modal.classList.contains('show')) {
             closeModal();
-        }
-    });
-}
-
-
-
-function setupCmsEditor(baseContent, activeContent, language) {
-    const panel = document.createElement('aside');
-    panel.className = 'cms-panel';
-    panel.setAttribute('aria-hidden', 'true');
-
-    panel.innerHTML = `
-        <div class="cms-panel-header">
-            <h3>CMS Mini (${language.toUpperCase()})</h3>
-            <button type="button" class="cms-close" aria-label="Close editor">x</button>
-        </div>
-        <p class="cms-note">Edit JSON for current language, then click Apply.</p>
-        <textarea class="cms-json" spellcheck="false"></textarea>
-        <input type="file" class="cms-file-input" accept=".json,application/json">
-        <div class="cms-actions">
-            <button type="button" class="cms-btn cms-apply">Apply</button>
-            <button type="button" class="cms-btn cms-import">Import JSON</button>
-            <button type="button" class="cms-btn cms-download">Download JSON</button>
-            <button type="button" class="cms-btn cms-reset">Reset</button>
-        </div>
-        <p class="cms-status" aria-live="polite"></p>
-    `;
-
-    const toggleBtn = document.createElement('button');
-    toggleBtn.type = 'button';
-    toggleBtn.className = 'cms-toggle';
-    toggleBtn.textContent = `CMS ${language.toUpperCase()}`;
-
-    document.body.appendChild(panel);
-    document.body.appendChild(toggleBtn);
-
-    const textarea = panel.querySelector('.cms-json');
-    const fileInput = panel.querySelector('.cms-file-input');
-    const closeBtn = panel.querySelector('.cms-close');
-    const applyBtn = panel.querySelector('.cms-apply');
-    const importBtn = panel.querySelector('.cms-import');
-    const downloadBtn = panel.querySelector('.cms-download');
-    const resetBtn = panel.querySelector('.cms-reset');
-    const statusEl = panel.querySelector('.cms-status');
-
-    const setStatus = (message, isError) => {
-        statusEl.textContent = message;
-        statusEl.classList.toggle('error', Boolean(isError));
-    };
-
-    const openPanel = () => {
-        panel.classList.add('open');
-        panel.setAttribute('aria-hidden', 'false');
-    };
-
-    const closePanel = () => {
-        panel.classList.remove('open');
-        panel.setAttribute('aria-hidden', 'true');
-    };
-
-    toggleBtn.addEventListener('click', () => {
-        if (panel.classList.contains('open')) {
-            closePanel();
-        } else {
-            openPanel();
-            textarea.focus();
-        }
-    });
-
-    closeBtn.addEventListener('click', closePanel);
-
-    textarea.value = JSON.stringify(activeContent, null, 2);
-
-    applyBtn.addEventListener('click', () => {
-        try {
-            const parsed = JSON.parse(textarea.value);
-            localStorage.setItem(getOverrideKey(language), JSON.stringify(parsed));
-            localStorage.removeItem(STORAGE_KEYS.legacyOverride);
-            setStatus('Saved. Reloading preview...', false);
-            window.location.reload();
-        } catch (error) {
-            setStatus(`JSON error: ${error.message}`, true);
-        }
-    });
-
-    importBtn.addEventListener('click', () => {
-        if (fileInput) {
-            fileInput.click();
-        }
-    });
-
-    if (fileInput) {
-        fileInput.addEventListener('change', () => {
-            const [file] = fileInput.files || [];
-            if (!file) {
-                return;
-            }
-
-            const reader = new FileReader();
-            reader.onload = () => {
-                try {
-                    const fileText = String(reader.result || '');
-                    const parsed = JSON.parse(fileText);
-                    textarea.value = JSON.stringify(parsed, null, 2);
-                    setStatus(`Loaded ${file.name}. Click Apply to use it.`, false);
-                } catch (error) {
-                    setStatus(`JSON error: ${error.message}`, true);
-                }
-            };
-
-            reader.onerror = () => {
-                setStatus(`Failed to read ${file.name}.`, true);
-            };
-
-            reader.readAsText(file);
-            fileInput.value = '';
-        });
-    }
-
-    downloadBtn.addEventListener('click', () => {
-        try {
-            const parsed = JSON.parse(textarea.value);
-            const blob = new Blob([JSON.stringify(parsed, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = `portfolio-content-${language}.json`;
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-            URL.revokeObjectURL(url);
-            setStatus(`Downloaded portfolio-content-${language}.json`, false);
-        } catch (error) {
-            setStatus(`JSON error: ${error.message}`, true);
-        }
-    });
-
-    resetBtn.addEventListener('click', () => {
-        localStorage.removeItem(getOverrideKey(language));
-        localStorage.removeItem(STORAGE_KEYS.legacyOverride);
-        textarea.value = JSON.stringify(baseContent, null, 2);
-        setStatus('Reset to default. Reloading preview...', false);
-        window.location.reload();
-    });
-
-    document.addEventListener('keydown', (event) => {
-        if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'e') {
-            event.preventDefault();
-            if (panel.classList.contains('open')) {
-                closePanel();
-            } else {
-                openPanel();
-                textarea.focus();
-            }
-        }
-
-        if (event.key === 'Escape' && panel.classList.contains('open')) {
-            closePanel();
         }
     });
 }
