@@ -373,7 +373,11 @@ function initializeContent(content, language) {
         const socialsEl = document.getElementById('social-links');
         if (socialsEl && Array.isArray(content.footer.socials)) {
             socialsEl.innerHTML = content.footer.socials
-                .map((item) => `<a href="${escapeAttribute(item.href || '#')}">${escapeHtml(item.label || '')}</a>`)
+                .map((item) => {
+                    const href = item.href || '#';
+                    const externalAttrs = href !== '#' ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    return `<a href="${escapeAttribute(href)}"${externalAttrs}>${escapeHtml(item.label || '')}</a>`;
+                })
                 .join('');
         }
     }
@@ -396,12 +400,13 @@ function renderProjects(projects, language) {
         if (cat) categoriesSet.add(cat);
     });
     
-    const categories = ['All', ...Array.from(categoriesSet)];
+    const allLabel = language === 'vi' ? 'Tất cả' : 'All';
+    const categories = [allLabel, ...Array.from(categoriesSet)];
     const filtersContainer = document.getElementById('project-filters');
     
     if (filtersContainer && categories.length > 1) {
         filtersContainer.innerHTML = categories.map(cat => 
-            `<button class="filter-btn ${cat === 'All' ? 'active' : ''}" data-filter="${escapeAttribute(cat)}">${escapeHtml(cat)}</button>`
+            `<button class="filter-btn ${cat === allLabel ? 'active' : ''}" data-filter="${escapeAttribute(cat)}">${escapeHtml(cat)}</button>`
         ).join('');
 
         const btns = filtersContainer.querySelectorAll('.filter-btn');
@@ -415,7 +420,7 @@ function renderProjects(projects, language) {
                 
                 links.forEach(link => {
                     const cardCat = link.getAttribute('data-category');
-                    if (filterValue === 'All' || cardCat === filterValue) {
+                    if (filterValue === allLabel || cardCat === filterValue) {
                         link.classList.remove('hidden-by-filter');
                     } else {
                         link.classList.add('hidden-by-filter');
@@ -462,6 +467,7 @@ function renderSignatureProjects(projects, language) {
 
     const signatureIds = ['7', '5'];
     const sigProjects = projects.filter(p => signatureIds.includes(String(p.id)));
+    const ctaLabel = language === 'vi' ? 'Xem dự án' : 'View Project';
 
     signatureList.innerHTML = sigProjects
         .map((project, index) => {
@@ -476,7 +482,7 @@ function renderSignatureProjects(projects, language) {
                     <div class="signature-content">
                         <h2>${escapeHtml(project.title || '')}</h2>
                         <p>${escapeHtml(project.description || '')}</p>
-                        <a href="${href}" class="btn-primary">View Project</a>
+                        <a href="${href}" class="btn-primary">${escapeHtml(ctaLabel)}</a>
                     </div>
                 </div>
             `;
@@ -738,12 +744,35 @@ function setupContactForm(successMsgText) {
 
 function setupMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
-    if (!hamburger) {
+    const navLinks = document.querySelector('.nav-links');
+    if (!hamburger || !navLinks) {
         return;
     }
 
+    hamburger.setAttribute('type', 'button');
+    hamburger.setAttribute('aria-label', 'Toggle navigation menu');
+    hamburger.setAttribute('aria-expanded', 'false');
+
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('mobile-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+
     hamburger.addEventListener('click', () => {
-        alert('Mobile menu opens here in a full implementation.');
+        const isOpen = navLinks.classList.toggle('mobile-open');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
     });
 }
 

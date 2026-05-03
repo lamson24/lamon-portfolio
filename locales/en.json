@@ -179,9 +179,9 @@
   "footer": {
     "copyright": "&copy; 2026 Landscape Architect. All rights reserved.",
     "socials": [
-      { "label": "Instagram", "href": "#" },
-      { "label": "LinkedIn", "href": "#" },
-      { "label": "Behance", "href": "#" }
+      { "label": "Facebook", "href": "https://www.facebook.com/lailong.nhu" },
+      { "label": "Behance", "href": "https://www.behance.net/LAMSON" },
+      { "label": "Zalo", "href": "https://zalo.me/0333942892" }
     ]
   }
 }
