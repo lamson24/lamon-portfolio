@@ -144,6 +144,29 @@ function setupLanguageSwitcher(availableLanguages, currentLanguage) {
         return;
     }
 
+    const nextLanguage = availableLanguages.find((item) => item !== currentLanguage) || currentLanguage;
+    switcher.setAttribute('role', 'button');
+    switcher.setAttribute('tabindex', '0');
+    switcher.setAttribute('aria-label', `Switch to ${nextLanguage.toUpperCase()}`);
+    switcher.setAttribute('title', `Switch to ${nextLanguage.toUpperCase()}`);
+
+    function switchLanguage() {
+        if (nextLanguage === currentLanguage) {
+            return;
+        }
+
+        localStorage.setItem(STORAGE_KEYS.language, nextLanguage);
+        window.location.reload();
+    }
+
+    switcher.addEventListener('click', switchLanguage);
+    switcher.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            switchLanguage();
+        }
+    });
+
     const buttons = switcher.querySelectorAll('.lang-btn');
     buttons.forEach((button) => {
         const lang = button.getAttribute('data-lang');
@@ -151,14 +174,11 @@ function setupLanguageSwitcher(availableLanguages, currentLanguage) {
 
         button.disabled = !isAvailable;
         button.classList.toggle('active', lang === currentLanguage);
+        button.setAttribute('aria-hidden', lang === currentLanguage ? 'false' : 'true');
+        button.setAttribute('tabindex', '-1');
 
-        button.addEventListener('click', () => {
-            if (!isAvailable || lang === currentLanguage) {
-                return;
-            }
-
-            localStorage.setItem(STORAGE_KEYS.language, lang);
-            window.location.reload();
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
         });
     });
 }
@@ -266,6 +286,16 @@ function initializeContent(content, language) {
                         <span class="impact-suffix">${escapeHtml(item.suffix)}</span>
                     </div>
                     <div class="impact-label">${escapeHtml(item.label)}</div>
+                </div>
+            `).join('');
+        }
+
+        const heroMetrics = document.getElementById('hero-metrics');
+        if (heroMetrics) {
+            heroMetrics.innerHTML = content.impact.slice(0, 3).map((item) => `
+                <div class="hero-metric">
+                    <strong>${escapeHtml(item.number)}${escapeHtml(item.suffix || '')}</strong>
+                    <span>${escapeHtml(item.label || '')}</span>
                 </div>
             `).join('');
         }
