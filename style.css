@@ -314,16 +314,16 @@ a {
 }
 
 .project-page .navbar {
-    /* Compact pill anchored to top-left, same style as homepage navbar */
+    /* Identical layout to homepage navbar */
     top: 1rem;
-    left: 1rem;
-    transform: none;
-    width: auto;
-    max-width: none;
-    padding: 0.8rem 2rem;
-    display: inline-flex;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1400px;
+    padding: 1.2rem 3rem;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
     border-radius: 60px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(8px) saturate(120%);
