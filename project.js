@@ -175,12 +175,14 @@ function renderProjectPage(content, project, language) {
     document.documentElement.lang = language === 'vi' ? 'vi' : 'en';
 
     const fallbackTitle = language === 'vi' ? 'Chi tiet du an' : 'Project Detail';
-    const backLabel = '<';
-    const overviewLabel = language === 'vi' ? 'T\u1ed5ng quan d\u1ef1 \u00e1n' : 'Project Overview';
+    const backLabel = '←';
+    const overviewLabel = language === 'vi' ? 'Tổng quan dự án' : 'Project Overview';
 
     const backLink = document.getElementById('project-back');
-    backLink.textContent = backLabel;
-    backLink.setAttribute('href', `index.html#projects`);
+    if (backLink) {
+        backLink.textContent = backLabel;
+        backLink.setAttribute('href', `index.html#projects`);
+    }
 
     if (!project) {
         document.title = fallbackTitle;

@@ -350,38 +350,35 @@ body.light-mode .project-back-icon:hover {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    opacity: 0.35;
     transition: opacity 0.25s ease;
-}
-.project-lang-switch:hover {
-    opacity: 1;
 }
 .project-lang-switch .lang-btn {
     background: transparent;
     border: none;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.3);
     font-family: var(--font-sans);
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
-    transition: color 0.2s ease;
+    transition: color 0.25s ease;
 }
 .project-lang-switch .lang-btn.active {
     color: var(--clr-accent);
+    opacity: 1;
 }
 .project-lang-switch .lang-btn:hover {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
 }
 body.light-mode .project-lang-switch .lang-btn {
-    color: rgba(30, 30, 30, 0.85);
+    color: rgba(30, 30, 30, 0.3);
 }
 body.light-mode .project-lang-switch .lang-btn.active {
     color: var(--clr-accent);
 }
 body.light-mode .project-lang-switch .lang-btn:hover {
-    color: #000000;
+    color: rgba(10, 10, 10, 0.9);
 }
 .theme-toggle {
     background: transparent;
