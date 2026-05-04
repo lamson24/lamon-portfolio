@@ -347,37 +347,51 @@ body.light-mode .project-back-icon:hover {
     top: 1.5rem;
     right: 1.5rem;
     z-index: 1000;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
+    border: 1px solid rgba(163, 177, 138, 0.3);
+    border-radius: 999px;
+    padding: 0.2rem;
+    background: rgba(18, 20, 19, 0.35);
+    opacity: 0.4;
     transition: opacity 0.25s ease;
 }
-.project-lang-switch .lang-btn {
-    background: transparent;
-    border: none;
-    color: rgba(255, 255, 255, 0.3);
-    font-family: var(--font-sans);
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    padding: 0.2rem 0.4rem;
-    transition: color 0.25s ease;
-}
-.project-lang-switch .lang-btn.active {
-    color: var(--clr-accent);
+.project-lang-switch:hover {
     opacity: 1;
 }
-.project-lang-switch .lang-btn:hover {
-    color: rgba(255, 255, 255, 0.9);
+.project-lang-switch .lang-btn {
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.project-lang-switch .lang-btn.active {
+    background: var(--clr-accent);
+    color: var(--clr-bg-dark) !important;
+}
+.project-lang-switch .lang-btn:hover:not(.active) {
+    color: rgba(255, 255, 255, 0.95);
+}
+body.light-mode .project-lang-switch {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.15);
 }
 body.light-mode .project-lang-switch .lang-btn {
-    color: rgba(30, 30, 30, 0.3);
+    color: rgba(30, 30, 30, 0.6);
 }
 body.light-mode .project-lang-switch .lang-btn.active {
-    color: var(--clr-accent);
+    background: var(--clr-accent);
+    color: #ffffff !important;
 }
-body.light-mode .project-lang-switch .lang-btn:hover {
+body.light-mode .project-lang-switch .lang-btn:hover:not(.active) {
     color: rgba(10, 10, 10, 0.9);
 }
 .theme-toggle {
