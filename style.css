@@ -314,16 +314,16 @@ a {
 }
 
 .project-page .navbar {
-    /* Same as homepage navbar: centered, full-width pill */
+    /* Compact pill anchored to top-left, same style as homepage navbar */
     top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: 1400px;
-    padding: 1rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
+    left: 1rem;
+    transform: none;
+    width: auto;
+    max-width: none;
+    padding: 0.8rem 2rem;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     border-radius: 60px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(8px) saturate(120%);
@@ -347,29 +347,22 @@ body.light-mode .project-page .navbar {
         inset 0 10px 20px rgba(255, 255, 255, 0.6);
 }
 
-/* Language switcher always visible on project page */
-.project-page .navbar .nav-right {
-    opacity: 1;
-    pointer-events: auto;
-    overflow: visible;
-    position: relative;
-    transform: none;
-    visibility: visible;
-    height: auto;
-    max-width: 300px;
-}
-
 .project-back-icon {
-    font-family: var(--font-serif);
-    font-size: 2rem !important;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #FFFFFF;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     transition: transform 0.3s ease, opacity 0.2s ease;
+    white-space: nowrap;
 }
 .project-back-icon:hover {
-    transform: translateX(-5px);
+    transform: translateX(-4px);
     opacity: 0.75;
 }
 .theme-toggle {
