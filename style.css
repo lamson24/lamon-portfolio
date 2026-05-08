@@ -1,4 +1,4 @@
-/* =========================================
+﻿/* =========================================
    CSS Custom Properties & Design Tokens
    ========================================= */
 :root {
@@ -228,7 +228,7 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    /* Smooth liquid transition — all properties use same timing */
+    /* Smooth liquid transition â€” all properties use same timing */
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
                 width 0.8s cubic-bezier(0.4, 0, 0.2, 1),
                 max-width 0.8s cubic-bezier(0.4, 0, 0.2, 1),
@@ -1603,7 +1603,7 @@ body:not(.project-page) .navbar .lang-btn {
 }
 
 /* =========================================
-   Helious-Inspired Cover Composition
+   Navbar Cover Composition
    ========================================= */
 body:not(.project-page) .navbar,
 body:not(.project-page).light-mode .navbar {
@@ -1673,217 +1673,6 @@ body:not(.project-page) .theme-toggle {
     background: rgba(255, 255, 255, 0.08);
 }
 
-body:not(.project-page) .hero {
-    min-height: 680px;
-    background-position: center;
-}
-
-body:not(.project-page) .hero-overlay {
-    background:
-        linear-gradient(to right, rgba(4, 5, 4, 0.36) 0%, rgba(4, 5, 4, 0.04) 45%, rgba(4, 5, 4, 0.52) 100%),
-        linear-gradient(to bottom, rgba(4, 5, 4, 0.28) 0%, rgba(4, 5, 4, 0.08) 42%, rgba(4, 5, 4, 0.92) 100%);
-}
-
-body:not(.project-page) .hero-content {
-    top: auto;
-    left: clamp(1.3rem, 3vw, 3.4rem);
-    right: clamp(1.3rem, 3vw, 3.4rem);
-    bottom: clamp(1.4rem, 3vw, 3.2rem);
-    width: auto;
-    max-width: none;
-    transform: none;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
-    grid-template-areas:
-        "title copy"
-        "title actions";
-    align-items: end;
-    gap: 1.6rem 2.2rem;
-    text-align: left;
-}
-
-body:not(.project-page) .hero-title {
-    grid-area: title;
-    font-size: clamp(4.6rem, 14.5vw, 12.5rem);
-    line-height: 0.76;
-    font-weight: 500;
-    letter-spacing: -0.055em;
-    color: rgba(245, 243, 226, 0.96);
-    text-shadow: 0 18px 38px rgba(0, 0, 0, 0.48);
-}
-
-body:not(.project-page) .hero-title .highlight-serif {
-    display: inline;
-}
-
-body:not(.project-page) .hero-title br {
-    display: none;
-}
-
-body:not(.project-page) .hero-subtitle {
-    grid-area: copy;
-    display: block;
-    min-height: 0;
-    max-width: 390px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: rgba(245, 243, 226, 0.82);
-    font-size: clamp(0.78rem, 1.1vw, 0.96rem);
-    line-height: 1.28;
-    text-align: left;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-}
-
-body:not(.project-page) .hero-subtitle::before {
-    content: '*';
-    display: inline-block;
-    margin-right: 0.65rem;
-    color: #fff;
-    font-size: 2.1rem;
-    line-height: 0;
-    vertical-align: -0.35rem;
-}
-
-body:not(.project-page) .hero-actions {
-    grid-area: actions;
-    position: static;
-    transform: none;
-    justify-content: flex-start;
-    width: auto;
-}
-
-body:not(.project-page) .hero .btn-primary {
-    min-height: 42px;
-    padding: 0 0.55rem 0 1.25rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    background: rgba(245, 243, 226, 0.94);
-    color: #111 !important;
-    border: 0;
-    border-radius: 999px;
-    box-shadow: none;
-    font-size: 0.82rem;
-}
-
-body:not(.project-page) .hero .btn-primary::after {
-    content: '→';
-    display: inline-grid;
-    place-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #111;
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1;
-}
-
-body:not(.project-page) .hero .btn-primary::before {
-    display: none;
-}
-
-body:not(.project-page) .hero .btn-secondary,
-body:not(.project-page) .hero-credibility,
-body:not(.project-page) .hero-metrics {
-    display: none !important;
-}
-
-@media (max-width: 900px) {
-    body:not(.project-page) .navbar,
-    body:not(.project-page).light-mode .navbar {
-        top: 1.5rem;
-        width: calc(100% - 2.5rem);
-    }
-
-    body:not(.project-page) .navbar .logo {
-        max-width: 130px;
-        font-size: 0.82rem;
-    }
-
-    body:not(.project-page) .navbar .nav-links {
-        gap: clamp(0.7rem, 3vw, 1.5rem);
-        margin: 0 0.8rem;
-    }
-
-    body:not(.project-page) .hero-content {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "title"
-            "copy"
-            "actions";
-        align-content: end;
-        gap: 1rem;
-    }
-
-    body:not(.project-page) .hero-title {
-        font-size: clamp(4rem, 19vw, 8rem);
-        letter-spacing: -0.045em;
-    }
-
-    body:not(.project-page) .hero-subtitle {
-        max-width: 28rem;
-    }
-}
-
-@media (max-width: 768px) {
-    body:not(.project-page) .navbar,
-    body:not(.project-page).light-mode .navbar {
-        top: 1rem;
-        width: calc(100% - 2rem);
-        min-height: 44px;
-        border-radius: 18px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    body:not(.project-page) .navbar::before,
-    body:not(.project-page) .navbar::after {
-        display: none;
-    }
-
-    body:not(.project-page) .navbar .nav-links {
-        flex: 1 1 100%;
-        order: 4;
-        gap: 0;
-        margin: 0;
-        padding-top: 0.55rem;
-    }
-
-    body:not(.project-page) .navbar .nav-links a {
-        min-height: 36px;
-        justify-content: center;
-    }
-
-    body:not(.project-page) .navbar .nav-right {
-        position: static;
-        margin-left: auto;
-    }
-
-    body:not(.project-page) .navbar .logo {
-        max-width: 150px;
-        font-size: 0.86rem;
-    }
-
-    body:not(.project-page) .hero {
-        min-height: 640px;
-    }
-
-    body:not(.project-page) .hero-content {
-        left: 1rem;
-        right: 1rem;
-        bottom: 1.2rem;
-    }
-
-    body:not(.project-page) .hero-title {
-        font-size: clamp(3.2rem, 18vw, 5.6rem);
-        letter-spacing: -0.04em;
-        line-height: 0.82;
-    }
-}
 
 /* =========================================
    Modal Styling
