@@ -2531,7 +2531,7 @@ body:not(.project-page) .hero {
     border-radius: 0;
     border: none;
     background-size: cover;
-    background-position: center 45%;
+    background-position: center center;
     background-attachment: scroll;
     box-shadow: none;
     animation: fadeInPage 0.4s ease forwards;
