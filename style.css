@@ -482,7 +482,7 @@ body:not(.light-mode) .theme-toggle .moon-icon {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url('assets/hero_cover.jpg');
+    background-image: url('assets/hero_cover.jpg?v=3');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
