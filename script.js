@@ -646,7 +646,15 @@ function setupRouter() {
         const pageName = validPages.includes(hash) ? hash.substring(1) : 'home';
 
         document.querySelectorAll('[data-page]').forEach(el => {
-            if (el.getAttribute('data-page') === pageName) {
+            const elPage = el.getAttribute('data-page');
+            if (elPage === 'sub') {
+                // Footer: show on all pages except home
+                if (pageName === 'home') {
+                    el.classList.remove('page-active');
+                } else {
+                    el.classList.add('page-active');
+                }
+            } else if (elPage === pageName) {
                 el.classList.add('page-active');
             } else {
                 el.classList.remove('page-active');
