@@ -401,14 +401,17 @@ function initializeContent(content, language) {
         setHTML('footer-copyright', content.footer.copyright);
 
         const socialsEl = document.getElementById('social-links');
-        if (socialsEl && Array.isArray(content.footer.socials)) {
-            socialsEl.innerHTML = content.footer.socials
+        const heroSocialsEl = document.getElementById('hero-social-links');
+        if (Array.isArray(content.footer.socials)) {
+            const socialsHtml = content.footer.socials
                 .map((item) => {
                     const href = item.href || '#';
                     const externalAttrs = href !== '#' ? ' target="_blank" rel="noopener noreferrer"' : '';
                     return `<a href="${escapeAttribute(href)}"${externalAttrs}>${escapeHtml(item.label || '')}</a>`;
                 })
                 .join('');
+            if (socialsEl) socialsEl.innerHTML = socialsHtml;
+            if (heroSocialsEl) heroSocialsEl.innerHTML = socialsHtml;
         }
     }
 
