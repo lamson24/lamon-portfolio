@@ -477,7 +477,7 @@ body:not(.light-mode) .theme-toggle .moon-icon {
    Hero Section
    ========================================= */
 .hero {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2519,7 +2519,7 @@ body:not(.project-page) .theme-toggle svg {
 body:not(.project-page) .hero {
     width: 100%;
     max-width: none;
-    height: 100svh;
+    height: 100dvh;
     min-height: 620px;
     margin: 0;
     align-items: flex-start;
@@ -2689,7 +2689,7 @@ body:not(.project-page) .hero-credibility {
 
     body:not(.project-page) .hero {
         width: 100%;
-        height: 100svh;
+        height: 100dvh;
         min-height: 680px;
         border-radius: 0;
     }
