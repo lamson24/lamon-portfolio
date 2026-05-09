@@ -2642,30 +2642,29 @@ body:not(.project-page) .hero-credibility {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 .hero-metrics {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: end;
-    gap: 1.2rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
     color: #fff;
-    flex: 1;
 }
 
 .hero-socials {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.4rem;
     flex-shrink: 0;
+    padding-bottom: 0.25rem;
 }
 
 .hero-socials a {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.72);
     font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -2676,17 +2675,18 @@ body:not(.project-page) .hero-credibility {
 }
 
 .hero-metric {
-    max-width: 230px;
+    max-width: none;
+    text-align: left;
 }
 
 .hero-metric:nth-child(2) {
-    justify-self: center;
-    text-align: center;
+    justify-self: unset;
+    text-align: left;
 }
 
 .hero-metric:nth-child(3) {
-    justify-self: end;
-    text-align: right;
+    justify-self: unset;
+    text-align: left;
 }
 
 .hero-metric strong {
