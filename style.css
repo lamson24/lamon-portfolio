@@ -2600,6 +2600,9 @@ body:not(.project-page) .hero-actions {
 
 body:not(.project-page) .hero .btn-primary,
 body:not(.project-page) .hero .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-height: 48px;
     padding: 0 1.8rem;
     border-radius: 999px;
@@ -2614,18 +2617,15 @@ body:not(.project-page) .hero .btn-secondary {
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: none;
+    overflow: hidden; /* For the ::before effect */
 }
 
 body:not(.project-page) .hero .btn-primary:hover,
 body:not(.project-page) .hero .btn-secondary:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #000;
-    border-color: #fff;
-}
-
-body:not(.project-page) .hero .btn-primary::before,
-body:not(.project-page) .hero .btn-secondary::before {
-    display: none;
+    background: transparent; /* Let the ::before gold shine through */
+    color: var(--clr-bg-dark) !important;
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 20px rgba(200, 169, 106, 0.2);
 }
 
 body:not(.project-page) .hero-credibility {
