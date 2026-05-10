@@ -252,8 +252,55 @@ a {
         inset 0 -5px 15px rgba(255, 255, 255, 0.05);
 }
 
+/* =========================================
+   Navbar Glow / Light Streak Border Effect
+   ========================================= */
 
+/* Wrapper that syncs position/size with the nav */
+.navbar-glow {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1400px;
+    z-index: 999; /* just below navbar which is 1000 */
+    pointer-events: none; /* clicks pass through to nav */
+    border-radius: 60px;
+    /* match navbar height */
+    height: 56px;
+}
 
+/* The travelling light dot */
+.navbar-glow__streak {
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(200, 169, 106, 0.9), rgba(255, 240, 180, 1), rgba(200, 169, 106, 0.9), transparent);
+    border-radius: 999px;
+    filter: blur(2px);
+    /* offset-path traces the rounded rectangle perimeter */
+    offset-path: border-box;
+    offset-rotate: auto;
+    animation: navStreakLoop 4s linear infinite;
+    box-shadow: 0 0 8px 2px rgba(200, 169, 106, 0.6), 0 0 20px 4px rgba(200, 169, 106, 0.2);
+}
+
+@keyframes navStreakLoop {
+    0%   { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+}
+
+/* Hover: slightly brighter border on the navbar */
+.navbar:hover {
+    border-color: rgba(255, 255, 255, 0.28) !important;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(200, 169, 106, 0.18),
+        inset 0 10px 20px rgba(255, 255, 255, 0.18),
+        inset 0 -5px 15px rgba(255, 255, 255, 0.06) !important;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
 
 
 
@@ -296,17 +343,25 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(255, 240, 180, 1);
+    text-shadow: 0 0 12px rgba(200, 169, 106, 0.8), 0 0 30px rgba(200, 169, 106, 0.3);
 }
 
 .nav-links a::after {
     content: '';
     position: absolute;
     bottom: -5px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 1px;
-    background: var(--clr-accent);
-    transition: var(--trans-fast);
+    background: linear-gradient(90deg, transparent, rgba(200, 169, 106, 1), transparent);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 6px rgba(200, 169, 106, 0.6);
 }
 
 .nav-links a:hover::after {

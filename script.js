@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeContent(content, currentLanguage);
 
     setupNavbarScroll();
+    setupNavbarGlow();
     setupRevealAnimations();
     setupCounters();
     setupRouter();
@@ -536,6 +537,49 @@ function setupProjectNavigation(language) {
 }
 function setupNavbarScroll() {
     // Scroll animation and classes removed as per user request
+}
+
+function setupNavbarGlow() {
+    const navbar = document.querySelector('.navbar');
+    const glow = document.querySelector('.navbar-glow');
+    if (!navbar || !glow) return;
+
+    function syncGlow() {
+        const rect = navbar.getBoundingClientRect();
+        glow.style.top = `${rect.top}px`;
+        glow.style.left = `${rect.left}px`;
+        glow.style.width = `${rect.width}px`;
+        glow.style.height = `${rect.height}px`;
+        glow.style.transform = 'none'; // Overrides CSS transform
+        
+        const computed = window.getComputedStyle(navbar);
+        glow.style.borderRadius = computed.borderRadius;
+    }
+
+    // Call immediately
+    syncGlow();
+
+    // Observe size changes
+    if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => syncGlow());
+        ro.observe(navbar);
+    }
+
+    // Observe window resize and scroll
+    window.addEventListener('resize', syncGlow, { passive: true });
+    window.addEventListener('scroll', syncGlow, { passive: true });
+
+    // Sync continuously during CSS transitions (e.g. hash changes)
+    window.addEventListener('hashchange', () => {
+        let start = performance.now();
+        function animateSync(time) {
+            syncGlow();
+            if (time - start < 1000) {
+                requestAnimationFrame(animateSync);
+            }
+        }
+        requestAnimationFrame(animateSync);
+    });
 }
 
 function setupRevealAnimations() {
