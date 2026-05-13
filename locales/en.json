@@ -167,24 +167,66 @@
   "handmadeProjects": [
     {
       "id": "hm-1",
-      "title": "Bespoke Ceramic Vase",
-      "subtitle": "Wheel-thrown & Glazed",
-      "image": "assets/project_2_1.png",
-      "description": "An exploration of organic forms and natural textures, fired with a custom wood ash glaze."
+      "title": "Luminous Mind",
+      "subtitle": "Resin Sculpture & Purple LED",
+      "image": "assets/handmade_lamp_1.jpg",
+      "description": "A sculptural table lamp cast from resin — a glowing brain cradled in an outstretched hand. Lit with a deep purple LED, it dissolves the line between art object and functional light."
     },
     {
       "id": "hm-2",
-      "title": "Woven Luminaire",
-      "subtitle": "Bamboo & Rattan",
-      "image": "assets/project_5.png",
-      "description": "A handmade pendant light utilizing traditional weaving techniques to cast intricate shadows."
+      "title": "Contour Glow",
+      "subtitle": "3D-printed Wave Cylinder",
+      "image": "assets/handmade_lamp_2.jpg",
+      "description": "A compact cylinder lamp with undulating 3D-printed ridges that ripple like terrain contours. The translucent shell diffuses warm light into a soft, sculptural glow."
     },
     {
       "id": "hm-3",
-      "title": "Solid Walnut Stool",
-      "subtitle": "Joinery & Woodworking",
-      "image": "assets/project_6.png",
-      "description": "A minimalist stool crafted from reclaimed walnut, featuring exposed wedge tenon joinery."
+      "title": "Woven Glow I",
+      "subtitle": "Textile Weave & Wood Base",
+      "image": "assets/handmade_lamp_3.jpg",
+      "description": "A cylindrical lamp body wrapped in hand-woven textile, set on a solid wood base. The fine mesh weave scatters light evenly, creating a calm amber warmth for any workspace."
+    },
+    {
+      "id": "hm-4",
+      "title": "The Gentleman — Day",
+      "subtitle": "Paper-cut Silhouette Lamp",
+      "image": "assets/handmade_lamp_4.jpg",
+      "description": "A skull gentleman in a top hat, hand-drawn and hand-cut into a paper lampshade. Photographed in morning light, the silhouette shows the precision of every cut line against a warm amber ground."
+    },
+    {
+      "id": "hm-5",
+      "title": "Bloom Lantern",
+      "subtitle": "Hand-cut Daisy Paper Shade",
+      "image": "assets/handmade_lamp_5.jpg",
+      "description": "A floor lamp shade crafted from natural textured paper with a hand-cut daisy silhouette. At night, city bokeh frames the warm amber glow — a quiet dialogue between craft and the urban landscape."
+    },
+    {
+      "id": "hm-6",
+      "title": "The Gentleman — Night",
+      "subtitle": "Paper-cut Silhouette Lamp",
+      "image": "assets/handmade_lamp_6.jpg",
+      "description": "The same skull gentleman lamp photographed at night. Backlit against the city skyline, the hand-cut figure emerges in dramatic fiery amber — a character brought alive by light."
+    },
+    {
+      "id": "hm-7",
+      "title": "Woven Glow II",
+      "subtitle": "Textile Cylinder & Monster Scene",
+      "image": "assets/handmade_lamp_7.jpg",
+      "description": "The woven cylinder lamp captured in a playful scene alongside miniature monsters. A reminder that handmade objects carry personality — they become part of the stories in the spaces they inhabit."
+    },
+    {
+      "id": "hm-8",
+      "title": "Lotus Lantern",
+      "subtitle": "Hand-cut Lotus Paper Shade",
+      "image": "assets/handmade_lamp_8.jpg",
+      "description": "A close-up of a paper lampshade intricately hand-cut with full lotus blossoms in bloom. The warm backlight transforms each petal into a luminous painting against the dark night."
+    },
+    {
+      "id": "hm-9",
+      "title": "Ringed Glow",
+      "subtitle": "Layered Ring Cylinder Lamp",
+      "image": "assets/handmade_lamp_9.jpg",
+      "description": "A minimalist table lamp built from stacked horizontal rings, emitting a clean, even glow. Simple in form but rich in material texture — it finds its place in any quiet corner."
     }
   ],
   "profile": {

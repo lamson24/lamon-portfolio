@@ -167,24 +167,66 @@
   "handmadeProjects": [
     {
       "id": "hm-1",
-      "title": "Bình gốm thủ công",
-      "subtitle": "Vuốt tay & Tráng men tro",
-      "image": "assets/project_2_1.png",
-      "description": "Một thử nghiệm về hình khối tự do và chất liệu thô mộc, sử dụng kỹ thuật tráng men củi truyền thống."
+      "title": "Ánh Sáng Trí Tuệ",
+      "subtitle": "Điêu khắc nhựa & LED tím",
+      "image": "assets/handmade_lamp_1.jpg",
+      "description": "Đèn để bàn điêu khắc từ nhựa — hình não người đặt trên bàn tay đang nâng đỡ. Ánh LED tím phát ra từ bên trong biến tác phẩm thành vật thể nghệ thuật đầy mê hoặc trong đêm tối."
     },
     {
       "id": "hm-2",
-      "title": "Đèn mây tre đan",
-      "subtitle": "Vật liệu tự nhiên",
-      "image": "assets/project_5.png",
-      "description": "Chiếc đèn thả trần lấy cảm hứng từ nơm bắt cá, tạo hiệu ứng đổ bóng phức tạp và ấm cúng."
+      "title": "Ánh Địa Hình",
+      "subtitle": "Đèn trụ in 3D — đường đồng mức",
+      "image": "assets/handmade_lamp_2.jpg",
+      "description": "Đèn trụ nhỏ gọn với các gờ sóng in 3D gợi nhớ đường đồng mức địa hình. Lớp vỏ trong mờ khuếch tán ánh sáng ấm thành luồng sáng mềm mại, có hình khối."
     },
     {
       "id": "hm-3",
-      "title": "Ghế đôn gỗ óc chó",
-      "subtitle": "Mộc & Ghép mộng",
-      "image": "assets/project_6.png",
-      "description": "Chiếc ghế đôn tối giản làm từ gỗ óc chó nguyên khối tái chế, khoe kỹ thuật ghép mộng xuyên nêm tinh tế."
+      "title": "Ánh Đan I",
+      "subtitle": "Đèn vải dệt thủ công & đế gỗ",
+      "image": "assets/handmade_lamp_3.jpg",
+      "description": "Thân đèn hình trụ được bọc vải dệt thô thủ công, đặt trên đế gỗ chắc chắn. Lưới vải mịn tán ánh sáng đều, tạo ra sắc hổ phách ấm áp cho mọi góc làm việc."
+    },
+    {
+      "id": "hm-4",
+      "title": "Quý Ông Bí Ẩn — Ban Ngày",
+      "subtitle": "Đèn giấy chạm khắc hình bóng",
+      "image": "assets/handmade_lamp_4.jpg",
+      "description": "Hình bóng quý ông đầu lâu đội mũ chóp, vẽ tay và cắt thủ công trên chao đèn giấy. Chụp dưới ánh sáng ban mai, từng đường cắt tỉ mỉ hiện lên rõ nét trên nền giấy hổ phách ấm áp."
+    },
+    {
+      "id": "hm-5",
+      "title": "Đèn Hoa Cúc",
+      "subtitle": "Chao giấy chạm hoa cúc thủ công",
+      "image": "assets/handmade_lamp_5.jpg",
+      "description": "Chao đèn đứng làm từ giấy có kết cấu tự nhiên, với hình hoa cúc được cắt tỉ mỉ bằng tay. Ánh đêm thành phố phía sau tạo nên sự đối thoại thầm lặng giữa nghề thủ công và khung cảnh đô thị."
+    },
+    {
+      "id": "hm-6",
+      "title": "Quý Ông Bí Ẩn — Đêm",
+      "subtitle": "Đèn giấy chạm khắc hình bóng",
+      "image": "assets/handmade_lamp_6.jpg",
+      "description": "Cùng chiếc đèn Quý Ông chụp trong đêm. Đèn thành phố phía sau làm nền, nhân vật đầu lâu hiện ra rực rỡ trong sắc hổ phách — một hình bóng được ánh sáng thổi hồn."
+    },
+    {
+      "id": "hm-7",
+      "title": "Ánh Đan II",
+      "subtitle": "Đèn trụ vải dệt & cảnh quái vật",
+      "image": "assets/handmade_lamp_7.jpg",
+      "description": "Đèn trụ vải dệt trong khung cảnh vui tươi cùng mô hình quái vật. Nhắc nhở rằng đồ vật thủ công mang cá tính riêng — chúng trở thành một phần câu chuyện của không gian mà chúng trú ngụ."
+    },
+    {
+      "id": "hm-8",
+      "title": "Đèn Hoa Sen",
+      "subtitle": "Chao giấy chạm hoa sen thủ công",
+      "image": "assets/handmade_lamp_8.jpg",
+      "description": "Cận cảnh chao đèn giấy với những bông sen nở rộ được chạm khắc tỉ mỉ bằng tay. Ánh sáng ấm phía sau biến từng cánh hoa thành một bức tranh phát sáng lung linh trong đêm tối."
+    },
+    {
+      "id": "hm-9",
+      "title": "Ánh Vòng",
+      "subtitle": "Đèn trụ xếp vòng tầng tầng",
+      "image": "assets/handmade_lamp_9.jpg",
+      "description": "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh."
     }
   ],
   "profile": {
