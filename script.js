@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeContent(content, currentLanguage);
 
     setupNavbarScroll();
-    setupNavbarGlow();
+    setupNavbarLens();
     setupRevealAnimations();
     setupCounters();
     setupRouter();
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupProjectNavigation(currentLanguage);
     setupLanguageSwitcher(availableLanguages, currentLanguage);
     setupThemeToggle();
+    setupLogoHomeLink();
 });
 
 function getCurrentLanguage(availableLanguages) {
@@ -206,6 +207,21 @@ function setupThemeToggle() {
     });
 }
 
+function setupLogoHomeLink() {
+    const logo = document.getElementById('site-logo');
+    if (!logo) return;
+
+    logo.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (window.location.hash === '#home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
+        window.location.hash = 'home';
+    });
+}
+
 function setText(id, value) {
     const el = document.getElementById(id);
     if (el && typeof value === 'string') {
@@ -241,6 +257,7 @@ function initializeContent(content, language) {
     if (content.nav) {
         setText('nav-about', content.nav.about);
         setText('nav-projects', content.nav.projects);
+        setText('nav-handmade', content.nav.handmade);
         setText('nav-contact', content.nav.contact);
     }
 
@@ -357,6 +374,12 @@ function initializeContent(content, language) {
 
     renderProjects(content.projects, language);
     renderSignatureProjects(content.projects, language);
+    renderHandmadeProjects(content.handmadeProjects);
+
+    if (content.handmadeSection) {
+        setHTML('handmade-title', `${escapeHtml(content.handmadeSection.title || '')} <span class="highlight-serif">${escapeHtml(content.handmadeSection.highlight || '')}</span>`);
+        setText('handmade-subtitle', content.handmadeSection.subtitle);
+    }
 
     if (content.contact) {
         setHTML('contact-title', `${escapeHtml(content.contact.title || '')} <span class="highlight-serif">${escapeHtml(content.contact.highlight || '')}</span>`);
@@ -416,7 +439,36 @@ function initializeContent(content, language) {
         }
     }
 
+    setupProfileAvatar(content.profile);
     return;
+}
+
+function setupProfileAvatar(profile) {
+    const link = document.getElementById('profile-avatar-link');
+    const img = document.getElementById('profile-avatar-img');
+    if (!link || !img) return;
+
+    const language = document.documentElement.lang === 'vi' ? 'vi' : 'en';
+    link.href = `profile.html?lang=${encodeURIComponent(language)}`;
+
+    const savedProfile = loadSavedProfile();
+    const avatar = savedProfile.avatar || profile?.avatar || 'assets/hero_cover.jpg';
+    const name = savedProfile.name || profile?.name || 'Profile';
+
+    img.src = avatar;
+    img.alt = name;
+}
+
+function loadSavedProfile() {
+    try {
+        const raw = localStorage.getItem('portfolioProfileCv');
+        if (!raw) return {};
+        const parsed = JSON.parse(raw);
+        return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch (error) {
+        console.warn('Failed to parse saved profile:', error);
+        return {};
+    }
 }
 
 function renderProjects(projects, language) {
@@ -535,50 +587,44 @@ function setupProjectNavigation(language) {
         });
     });
 }
+
+function renderHandmadeProjects(projects) {
+    const gallery = document.getElementById('handmade-gallery');
+    if (!gallery || !Array.isArray(projects)) return;
+
+    gallery.innerHTML = projects.map((project, index) => `
+        <article class="handmade-card reveal" style="transition-delay: ${(index % 3) * 0.12}s;">
+            <div class="handmade-image-wrapper">
+                <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.title || '')}" loading="lazy">
+            </div>
+            <div class="handmade-info">
+                <h3>${escapeHtml(project.title || '')}</h3>
+                <span class="handmade-subtitle">${escapeHtml(project.subtitle || '')}</span>
+                <p>${escapeHtml(project.description || '')}</p>
+            </div>
+        </article>
+    `).join('');
+}
+
 function setupNavbarScroll() {
     // Scroll animation and classes removed as per user request
 }
 
-function setupNavbarGlow() {
+function setupNavbarLens() {
     const navbar = document.querySelector('.navbar');
-    const glow = document.querySelector('.navbar-glow');
-    if (!navbar || !glow) return;
+    if (!navbar || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        return;
+    }
 
-    function syncGlow() {
+    navbar.addEventListener('pointermove', (event) => {
         const rect = navbar.getBoundingClientRect();
-        glow.style.top = `${rect.top}px`;
-        glow.style.left = `${rect.left}px`;
-        glow.style.width = `${rect.width}px`;
-        glow.style.height = `${rect.height}px`;
-        glow.style.transform = 'none'; // Overrides CSS transform
-        
-        const computed = window.getComputedStyle(navbar);
-        glow.style.borderRadius = computed.borderRadius;
-    }
+        navbar.style.setProperty('--nav-mouse-x', `${event.clientX - rect.left}px`);
+        navbar.style.setProperty('--nav-mouse-y', `${event.clientY - rect.top}px`);
+        navbar.classList.add('is-lensing');
+    });
 
-    // Call immediately
-    syncGlow();
-
-    // Observe size changes
-    if (window.ResizeObserver) {
-        const ro = new ResizeObserver(() => syncGlow());
-        ro.observe(navbar);
-    }
-
-    // Observe window resize and scroll
-    window.addEventListener('resize', syncGlow, { passive: true });
-    window.addEventListener('scroll', syncGlow, { passive: true });
-
-    // Sync continuously during CSS transitions (e.g. hash changes)
-    window.addEventListener('hashchange', () => {
-        let start = performance.now();
-        function animateSync(time) {
-            syncGlow();
-            if (time - start < 1000) {
-                requestAnimationFrame(animateSync);
-            }
-        }
-        requestAnimationFrame(animateSync);
+    navbar.addEventListener('pointerleave', () => {
+        navbar.classList.remove('is-lensing');
     });
 }
 
@@ -608,7 +654,7 @@ function setupRevealAnimations() {
     window.refreshRevealAnimations = refreshRevealObserver;
 
     // Add scroll-fade class to all major sections
-    const sections = document.querySelectorAll('.about, .services, .signature-projects, .projects, .contact, .hero-content');
+    const sections = document.querySelectorAll('.about, .services, .signature-projects, .projects, .handmade, .contact, .hero-content');
     sections.forEach((section) => section.classList.add('scroll-fade'));
 
     // Continuous scroll handler for fade-out as sections leave the top
@@ -689,7 +735,7 @@ function setupRouter() {
         let hash = window.location.hash;
         if (!hash || hash === '#') hash = '#home';
 
-        const validPages = ['#home', '#about', '#projects', '#contact'];
+        const validPages = ['#home', '#about', '#projects', '#handmade', '#contact'];
         const pageName = validPages.includes(hash) ? hash.substring(1) : 'home';
 
         document.querySelectorAll('[data-page]').forEach(el => {

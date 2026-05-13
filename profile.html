@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile CV | LAMON-DIY</title>
+    <meta name="description" content="Profile CV for LAMON-DIY">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="profile-page">
+    <canvas id="ai-canvas"></canvas>
+
+    <a href="index.html#home" class="project-back-icon profile-back" aria-label="Back to home">&#8592;</a>
+
+    <main class="profile-poster" id="profile-cover">
+        <div class="profile-poster-shade"></div>
+
+        <header class="profile-poster-title">
+            <h1 id="profile-name"></h1>
+            <p id="profile-role"></p>
+        </header>
+
+        <section class="profile-left-stack" aria-label="Profile highlights">
+            <article class="profile-panel profile-summary">
+                <h2>Creative DNA</h2>
+                <div class="profile-stats">
+                    <strong>10+</strong><span>Years.</span>
+                    <strong>40+</strong><span>Projects.</span>
+                    <strong>One</strong><span>design mind.</span>
+                </div>
+                <p id="profile-summary"></p>
+            </article>
+
+            <article class="profile-panel profile-contact-card">
+                <h2>Contact</h2>
+                <div class="profile-contact-list">
+                    <a href="#" id="profile-email"></a>
+                    <a href="#" id="profile-phone"></a>
+                    <span id="profile-location"></span>
+                </div>
+            </article>
+
+            <article class="profile-panel">
+                <h2>Mega Skills</h2>
+                <div class="profile-skill-list" id="profile-skills"></div>
+            </article>
+
+            <article class="profile-panel profile-education-card">
+                <h2>Education</h2>
+                <div class="profile-timeline compact" id="profile-education"></div>
+            </article>
+        </section>
+
+        <section class="profile-right-stack" aria-label="Profile CV">
+            <article class="profile-panel profile-journey-card">
+                <h2>Creative Journey</h2>
+                <div class="profile-timeline" id="profile-experience"></div>
+            </article>
+        </section>
+
+        <button type="button" class="btn-primary profile-edit-btn" id="profile-edit-btn">Edit CV</button>
+    </main>
+
+    <div class="profile-editor hidden" id="profile-editor" aria-hidden="true">
+        <div class="profile-editor-panel">
+            <div class="profile-editor-head">
+                <h2>Edit CV</h2>
+                <button type="button" class="profile-editor-close" id="profile-cancel-btn" aria-label="Close editor">&times;</button>
+            </div>
+
+            <form id="profile-form" class="profile-form">
+                <label>Name<input type="text" id="edit-name"></label>
+                <label>Role<input type="text" id="edit-role"></label>
+                <label>Location<input type="text" id="edit-location"></label>
+                <label>Email<input type="email" id="edit-email"></label>
+                <label>Phone<input type="text" id="edit-phone"></label>
+                <label>Summary<textarea id="edit-summary" rows="4"></textarea></label>
+                <label>Skills<textarea id="edit-skills" rows="3" placeholder="Separate skills with commas"></textarea></label>
+                <label>Experience<textarea id="edit-experience" rows="6" placeholder="Period | Title | Place | Description"></textarea></label>
+                <label>Education<textarea id="edit-education" rows="5" placeholder="Period | Title | Place | Description"></textarea></label>
+                <label>Avatar image<input type="file" id="edit-avatar-file" accept="image/*"></label>
+                <label>Cover image<input type="file" id="edit-cover-file" accept="image/*"></label>
+
+                <div class="profile-form-actions">
+                    <button type="button" class="btn-secondary" id="profile-reset-btn">Reset</button>
+                    <button type="submit" class="btn-primary">Save CV</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

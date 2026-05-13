@@ -9,6 +9,7 @@
   "nav": {
     "about": "Philosophy",
     "projects": "Work",
+    "handmade": "Handmade",
     "contact": "Contact"
   },
   "hero": {
@@ -158,6 +159,61 @@
       "description": "A premium residential landscape concept for Nghia Hiep, Hung Yen, centered on a classical fountain plaza, axial walkways, and layered planting. The design combines ceremonial architecture, warm night lighting, and human-scale seating to create an elegant neighborhood destination for gathering, strolling, and relaxation."
     }
   ],
+  "handmadeSection": {
+    "title": "Crafted",
+    "highlight": "by Hand",
+    "subtitle": "Personal objects and artistic explorations"
+  },
+  "handmadeProjects": [
+    {
+      "id": "hm-1",
+      "title": "Bespoke Ceramic Vase",
+      "subtitle": "Wheel-thrown & Glazed",
+      "image": "assets/project_2_1.png",
+      "description": "An exploration of organic forms and natural textures, fired with a custom wood ash glaze."
+    },
+    {
+      "id": "hm-2",
+      "title": "Woven Luminaire",
+      "subtitle": "Bamboo & Rattan",
+      "image": "assets/project_5.png",
+      "description": "A handmade pendant light utilizing traditional weaving techniques to cast intricate shadows."
+    },
+    {
+      "id": "hm-3",
+      "title": "Solid Walnut Stool",
+      "subtitle": "Joinery & Woodworking",
+      "image": "assets/project_6.png",
+      "description": "A minimalist stool crafted from reclaimed walnut, featuring exposed wedge tenon joinery."
+    }
+  ],
+  "profile": {
+    "name": "Lam Son",
+    "role": "Landscape Architect & Object Designer",
+    "location": "Hanoi, Vietnam",
+    "email": "Lamsonarchp@gmail.com",
+    "phone": "0333 942 892",
+    "avatar": "assets/hero_cover.jpg",
+    "cover": "assets/hero_bg.png",
+    "summary": "I design landscapes, gardens, furniture, and handcrafted objects shaped by natural materials, clear proportions, and practical construction thinking.",
+    "skills": ["Landscape Architecture", "Garden Design", "Furniture Design", "Lighting Design", "Concept Development", "Site Supervision"],
+    "experience": [
+      {
+        "period": "2016 - Present",
+        "title": "Landscape Architect / Founder",
+        "place": "LAMON-DIY",
+        "description": "Lead landscape, garden, furniture, and lighting projects from concept direction through execution support."
+      }
+    ],
+    "education": [
+      {
+        "period": "2011 – 2016",
+        "title": "Bachelor of Architecture",
+        "place": "Hanoi Architectural University (HAU)",
+        "description": "Specialized in landscape architecture and spatial design, with a focus on outdoor environments, natural material systems, and human-scale design."
+      }
+    ]
+  },
   "contact": {
     "title": "Start a",
     "highlight": "Project",

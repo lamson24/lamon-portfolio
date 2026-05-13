@@ -9,6 +9,7 @@
   "nav": {
     "about": "Triết lý",
     "projects": "Dự án",
+    "handmade": "Thủ công",
     "contact": "Liên hệ"
   },
   "hero": {
@@ -158,6 +159,61 @@
       "description": "Đề xuất thiết kế cảnh quan cho khu nhà ở Nghĩa Hiệp, Hưng Yên với trung tâm là quảng trường đài phun nước theo trục đối xứng. Dự án kết hợp ngôn ngữ kiến trúc cổ điển, hệ cây xanh nhiều lớp và chiếu sáng cảnh quan ban đêm, tạo nên không gian sinh hoạt cộng đồng sang trọng, an toàn và giàu bản sắc."
     }
   ],
+  "handmadeSection": {
+    "title": "Chế tác",
+    "highlight": "Thủ công",
+    "subtitle": "Các dự án đồ vật cá nhân và khám phá nghệ thuật"
+  },
+  "handmadeProjects": [
+    {
+      "id": "hm-1",
+      "title": "Bình gốm thủ công",
+      "subtitle": "Vuốt tay & Tráng men tro",
+      "image": "assets/project_2_1.png",
+      "description": "Một thử nghiệm về hình khối tự do và chất liệu thô mộc, sử dụng kỹ thuật tráng men củi truyền thống."
+    },
+    {
+      "id": "hm-2",
+      "title": "Đèn mây tre đan",
+      "subtitle": "Vật liệu tự nhiên",
+      "image": "assets/project_5.png",
+      "description": "Chiếc đèn thả trần lấy cảm hứng từ nơm bắt cá, tạo hiệu ứng đổ bóng phức tạp và ấm cúng."
+    },
+    {
+      "id": "hm-3",
+      "title": "Ghế đôn gỗ óc chó",
+      "subtitle": "Mộc & Ghép mộng",
+      "image": "assets/project_6.png",
+      "description": "Chiếc ghế đôn tối giản làm từ gỗ óc chó nguyên khối tái chế, khoe kỹ thuật ghép mộng xuyên nêm tinh tế."
+    }
+  ],
+  "profile": {
+    "name": "Lâm Sơn",
+    "role": "Kiến trúc sư cảnh quan & thiết kế đồ vật",
+    "location": "Hà Nội, Việt Nam",
+    "email": "Lamsonarchp@gmail.com",
+    "phone": "0333 942 892",
+    "avatar": "assets/hero_cover.jpg",
+    "cover": "assets/hero_bg.png",
+    "summary": "Tôi thiết kế cảnh quan, sân vườn, nội thất và các đồ vật thủ công dựa trên vật liệu tự nhiên, tỷ lệ rõ ràng và tư duy thi công thực tế.",
+    "skills": ["Thiết kế cảnh quan", "Thiết kế sân vườn", "Thiết kế nội thất", "Thiết kế chiếu sáng", "Phát triển ý tưởng", "Giám sát thi công"],
+    "experience": [
+      {
+        "period": "2016 - Hiện tại",
+        "title": "Kiến trúc sư cảnh quan / Sáng lập",
+        "place": "LAMON-DIY",
+        "description": "Phụ trách các dự án cảnh quan, sân vườn, nội thất và chiếu sáng từ định hướng ý tưởng đến hỗ trợ triển khai."
+      }
+    ],
+    "education": [
+      {
+        "period": "2011 – 2016",
+        "title": "Cử nhân Kiến trúc",
+        "place": "Trường Đại học Kiến trúc Hà Nội (HAU)",
+        "description": "Chuyên ngành kiến trúc cảnh quan và thiết kế không gian, tập trung vào môi trường ngoài trời, hệ vật liệu tự nhiên và thiết kế theo tỷ lệ con người."
+      }
+    ]
+  },
   "contact": {
     "title": "Bắt đầu",
     "highlight": "Dự án",
