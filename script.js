@@ -30,6 +30,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupLanguageSwitcher(availableLanguages, currentLanguage);
     setupThemeToggle();
     setupLogoHomeLink();
+
+    // New UX/UI upgrades
+    setupCustomCursor();
+    setupPageTransition();
+    setupGSAPParallax();
 });
 
 function getCurrentLanguage(availableLanguages) {
