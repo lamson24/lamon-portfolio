@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let baseContent = {};
     try {
-        const response = await fetch(`locales/${currentLanguage}.json`);
+        const response = await fetch(`locales/${currentLanguage}.json?v=3.0`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         baseContent = await response.json();
     } catch (e) {

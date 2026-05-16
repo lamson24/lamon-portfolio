@@ -25,7 +25,7 @@ function resolveLanguage() {
 
 async function loadBaseProfile(language) {
     try {
-        const response = await fetch(`locales/${language}.json?v=2.1`);
+        const response = await fetch(`locales/${language}.json?v=3.0`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const content = await response.json();
         return normalizeProfile(content.profile || {});
