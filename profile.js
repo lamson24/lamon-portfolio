@@ -101,14 +101,21 @@ function renderTimeline(id, items) {
     const target = document.getElementById(id);
     if (!target) return;
 
-    target.innerHTML = items.map((item) => `
-        <div class="profile-timeline-item">
-            <span>${escapeHtml(item.period || '')}</span>
-            <h3>${escapeHtml(item.title || '')}</h3>
-            <strong>${escapeHtml(item.place || '')}</strong>
-            <p>${escapeHtml(item.description || '')}</p>
-        </div>
-    `).join('');
+    target.innerHTML = items.map((item) => {
+        const hasStructuredTitle = Boolean(item.title);
+        const title = item.title || item.place || item.period || '';
+        const period = hasStructuredTitle ? item.period : '';
+        const place = hasStructuredTitle ? item.place : '';
+
+        return `
+            <div class="profile-timeline-item">
+                <span>${escapeHtml(period)}</span>
+                <h3>${escapeHtml(title)}</h3>
+                <strong>${escapeHtml(place)}</strong>
+                <p>${escapeHtml(item.description || '')}</p>
+            </div>
+        `;
+    }).join('');
 }
 
 function setupProfileEditor(profile, baseProfile, onSave) {
@@ -206,6 +213,10 @@ function parseTimeline(value) {
         .map((line) => line.trim())
         .filter(Boolean)
         .map((line) => {
+            if (!line.includes('|')) {
+                return { period: '', title: line, place: '', description: '' };
+            }
+
             const [period = '', title = '', place = '', description = ''] = line.split('|').map((part) => part.trim());
             return { period, title, place, description };
         });

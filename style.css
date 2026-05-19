@@ -1533,46 +1533,122 @@ body:not(.project-page) .navbar .lang-btn.active {
 }
 
 /* =========================================
+   PROJECT FILTERS (Animated)
+   ========================================= */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.filter-btn:hover {
+    opacity: 1;
+}
+
+.filter-btn.active {
+    opacity: 1;
+    color: var(--accent-gold);
+}
+
+.filter-btn.active::after {
+    width: 100%;
+}
+
+body.light-mode .filter-btn {
+    color: var(--text-dark);
+}
+
+body.light-mode .filter-btn.active {
+    color: var(--accent-gold);
+}
+
+/* =========================================
+   LAZY LOADING & BLUR-UP
+   ========================================= */
+.img-placeholder {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--surface-dark); /* Skeleton color */
+}
+
+body.light-mode .img-placeholder {
+    background-color: #e0e0e0;
+}
+
+/* Skeleton animation when loading */
+.img-placeholder.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    animation: skeleton-shimmer 1.5s infinite linear;
+    z-index: 1;
+}
+
+body.light-mode .img-placeholder.loading::before {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+@keyframes skeleton-shimmer {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(50%); }
+}
+
+/* Image states */
+.blur-up {
+    filter: blur(20px);
+    opacity: 0;
+    transition: filter 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* When image is fully loaded, JS removes .loading and adds .loaded to the image */
+img.loaded {
+    filter: blur(0);
+    opacity: 1;
+}
+
+/* =========================================
    CUSTOM CURSOR & PAGE TRANSITION
    ========================================= */
 
-/* Hide default cursor on desktop */
-@media (pointer: fine) {
-    body, a, button, input, textarea, .project-card, .handmade-card {
-        cursor: none !important;
-    }
-}
-
 .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-gold);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 99999;
-    transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
-    mix-blend-mode: difference;
-    opacity: 0;
+    display: none !important;
 }
 
 .custom-cursor-follower {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 99998;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
-    mix-blend-mode: difference;
-    opacity: 0;
+    display: none !important;
 }
 
 body.light-mode .custom-cursor {

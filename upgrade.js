@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupCustomCursor();
     setupPageTransition();
     setupGSAPParallax();
+    setupImageBlurUp();
 });
 
 function setupCustomCursor() {
@@ -194,6 +195,93 @@ function setupGSAPParallax() {
             observeCards();
         }
     });
+    const mainContainer = document.querySelector('main') || document.body;
+    observer.observe(mainContainer, { childList: true, subtree: true });
+}
+
+// =========================================
+// PROJECT FILTERING ANIMATION
+// =========================================
+window.animateProjectFilter = function(filterValue) {
+    const gallery = document.getElementById('project-gallery');
+    if (!gallery || typeof gsap === 'undefined') return;
+    const links = Array.from(gallery.querySelectorAll('.project-link'));
+
+    // Animate out
+    gsap.to(links, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 0.3,
+        ease: "power2.in",
+        onComplete: () => {
+            // Toggle display
+            links.forEach(link => {
+                const cardCat = link.getAttribute('data-filter-val');
+                if (filterValue === 'all' || cardCat === filterValue) {
+                    link.style.display = '';
+                    link.classList.remove('hidden-by-filter');
+                } else {
+                    link.style.display = 'none';
+                    link.classList.add('hidden-by-filter');
+                }
+            });
+
+            // Re-trigger ScrollTrigger if exists
+            if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+
+            // Animate in visible ones
+            const visibleLinks = links.filter(link => link.style.display !== 'none');
+            gsap.fromTo(visibleLinks,
+                { scale: 0.9, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 0.4, stagger: 0.05, ease: "power2.out", clearProps: "all" }
+            );
+        }
+    });
+};
+
+// =========================================
+// LAZY LOADING & BLUR-UP
+// =========================================
+function setupImageBlurUp() {
+    const attachBlurUp = () => {
+        const blurImages = document.querySelectorAll('.blur-up:not(.blur-bound)');
+        blurImages.forEach(img => {
+            img.classList.add('blur-bound');
+
+            const onLoaded = () => {
+                img.classList.add('loaded');
+                if (img.parentElement.classList.contains('img-placeholder')) {
+                    img.parentElement.classList.remove('loading');
+                }
+            };
+
+            // If already loaded (e.g. from cache)
+            if (img.complete) {
+                onLoaded();
+            } else {
+                img.addEventListener('load', onLoaded);
+            }
+        });
+    };
+
+    // Initial check
+    attachBlurUp();
+
+    // Observe for dynamic DOM changes (e.g. JSON fetched projects)
+    const observer = new MutationObserver((mutations) => {
+        let hasNewImages = false;
+        mutations.forEach(m => {
+            if (m.addedNodes.length) {
+                m.addedNodes.forEach(node => {
+                    if (node.nodeType === 1 && (node.classList.contains('blur-up') || node.querySelector('.blur-up'))) {
+                        hasNewImages = true;
+                    }
+                });
+            }
+        });
+        if (hasNewImages) attachBlurUp();
+    });
+
     const mainContainer = document.querySelector('main') || document.body;
     observer.observe(mainContainer, { childList: true, subtree: true });
 }

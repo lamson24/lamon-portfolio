@@ -485,19 +485,27 @@ function renderProjects(projects, language) {
     const validProjects = projects.filter((project) => project.id !== '7' && project.id !== '5');
 
     // Dynamic Filter Menu Logic
-    const categoriesSet = new Set();
-    validProjects.forEach(p => {
-        const cat = p.category || p.subtitle;
-        if (cat) categoriesSet.add(cat);
-    });
-    
-    const allLabel = language === 'vi' ? 'Tất cả' : 'All';
-    const categories = [allLabel, ...Array.from(categoriesSet)];
     const filtersContainer = document.getElementById('project-filters');
+    const allLabel = language === 'vi' ? 'Tất cả' : 'All';
     
-    if (filtersContainer && categories.length > 1) {
-        filtersContainer.innerHTML = categories.map(cat => 
-            `<button class="filter-btn ${cat === allLabel ? 'active' : ''}" data-filter="${escapeAttribute(cat)}">${escapeHtml(cat)}</button>`
+    // We try to use content.projectsSection.filters if available, otherwise fallback
+    let filters = { "all": allLabel };
+    if (content.projectsSection && content.projectsSection.filters) {
+        filters = content.projectsSection.filters;
+    } else {
+        const categoriesSet = new Set();
+        validProjects.forEach(p => {
+            const cat = p.filter || p.category || p.subtitle;
+            if (cat) categoriesSet.add(cat);
+        });
+        Array.from(categoriesSet).forEach(cat => { filters[cat] = cat; });
+    }
+
+    const filterKeys = Object.keys(filters);
+
+    if (filtersContainer && filterKeys.length > 1) {
+        filtersContainer.innerHTML = filterKeys.map(key =>
+            `<button class="filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}">${escapeHtml(filters[key])}</button>`
         ).join('');
 
         const btns = filtersContainer.querySelectorAll('.filter-btn');
@@ -507,16 +515,24 @@ function renderProjects(projects, language) {
                 btn.classList.add('active');
                 
                 const filterValue = btn.getAttribute('data-filter');
-                const links = gallery.querySelectorAll('.project-link');
                 
-                links.forEach(link => {
-                    const cardCat = link.getAttribute('data-category');
-                    if (filterValue === allLabel || cardCat === filterValue) {
-                        link.classList.remove('hidden-by-filter');
-                    } else {
-                        link.classList.add('hidden-by-filter');
-                    }
-                });
+                // Call GSAP animation logic if it exists in upgrade.js
+                if (typeof window.animateProjectFilter === 'function') {
+                    window.animateProjectFilter(filterValue);
+                } else {
+                    // Fallback filtering
+                    const links = gallery.querySelectorAll('.project-link');
+                    links.forEach(link => {
+                        const cardCat = link.getAttribute('data-filter-val');
+                        if (filterValue === 'all' || cardCat === filterValue) {
+                            link.classList.remove('hidden-by-filter');
+                            link.style.display = '';
+                        } else {
+                            link.classList.add('hidden-by-filter');
+                            link.style.display = 'none';
+                        }
+                    });
+                }
             });
         });
     }
@@ -535,8 +551,8 @@ function renderProjects(projects, language) {
             return `
                 <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}">
                     <div class="project-card reveal"${style} data-project-id="${id}">
-                        <div class="project-image-wrapper">
-                            <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || category)}" loading="lazy" class="project-img">
+                        <div class="project-image-wrapper img-placeholder loading">
+                            <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || category)}" loading="lazy" class="project-img blur-up">
                             <div class="project-overlay">
                                 <h3>${escapeHtml(project.title || '')}</h3>
                                 <p>${escapeHtml(category)}</p>
@@ -599,8 +615,8 @@ function renderHandmadeProjects(projects) {
 
     gallery.innerHTML = projects.map((project, index) => `
         <article class="handmade-card reveal" style="transition-delay: ${(index % 3) * 0.12}s;">
-            <div class="handmade-image-wrapper">
-                <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.title || '')}" loading="lazy">
+            <div class="handmade-image-wrapper img-placeholder loading">
+                <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.title || '')}" loading="lazy" class="blur-up">
             </div>
             <div class="handmade-info">
                 <h3>${escapeHtml(project.title || '')}</h3>
