@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.documentElement.lang = language === 'vi' ? 'vi' : 'en';
 
     const baseProfile = await loadBaseProfile(language);
-    let profile = { ...baseProfile, ...loadSavedProfile() };
+    let profile = mergeProfile(baseProfile, loadSavedProfile());
 
     renderProfile(profile);
     setupProfileEditor(profile, baseProfile, (nextProfile) => {
@@ -40,11 +40,30 @@ function loadSavedProfile() {
         const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
         if (!raw) return {};
         const parsed = JSON.parse(raw);
-        return parsed && typeof parsed === 'object' ? normalizeProfile(parsed) : {};
+        return parsed && typeof parsed === 'object' ? parsed : {};
     } catch (error) {
         console.warn('Failed to parse saved profile:', error);
         return {};
     }
+}
+
+function mergeProfile(baseProfile, savedProfile) {
+    const merged = { ...baseProfile };
+    const textFields = ['name', 'role', 'location', 'email', 'phone', 'avatar', 'cover', 'summary'];
+
+    textFields.forEach((field) => {
+        if (typeof savedProfile[field] === 'string' && savedProfile[field].trim()) {
+            merged[field] = savedProfile[field];
+        }
+    });
+
+    ['skills', 'experience', 'education'].forEach((field) => {
+        if (Array.isArray(savedProfile[field]) && savedProfile[field].length) {
+            merged[field] = savedProfile[field];
+        }
+    });
+
+    return normalizeProfile(merged);
 }
 
 function normalizeProfile(profile) {
