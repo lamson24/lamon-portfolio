@@ -377,7 +377,7 @@ function initializeContent(content, language) {
         setHTML('projects-title', `${escapeHtml(content.projectsSection.title || '')} <span class="highlight-serif">${escapeHtml(content.projectsSection.highlight || '')}</span>`);
     }
 
-    renderProjects(content.projects, language);
+    renderProjects(content.projects, language, content.projectsSection);
     renderSignatureProjects(content.projects, language);
     renderHandmadeProjects(content.handmadeProjects);
 
@@ -476,7 +476,7 @@ function loadSavedProfile() {
     }
 }
 
-function renderProjects(projects, language) {
+function renderProjects(projects, language, projectsSection = {}) {
     const gallery = document.getElementById('project-gallery');
     if (!gallery || !Array.isArray(projects)) {
         return;
@@ -490,8 +490,8 @@ function renderProjects(projects, language) {
     
     // We try to use content.projectsSection.filters if available, otherwise fallback
     let filters = { "all": allLabel };
-    if (content.projectsSection && content.projectsSection.filters) {
-        filters = content.projectsSection.filters;
+    if (projectsSection.filters) {
+        filters = projectsSection.filters;
     } else {
         const categoriesSet = new Set();
         validProjects.forEach(p => {
@@ -549,7 +549,7 @@ function renderProjects(projects, language) {
             const yearStr = location ? `${location}` : '';
 
             return `
-                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}">
+                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}" data-filter-val="${escapeAttribute(project.filter || category)}">
                     <div class="project-card reveal"${style} data-project-id="${id}">
                         <div class="project-image-wrapper img-placeholder loading">
                             <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || category)}" loading="lazy" class="project-img blur-up">
