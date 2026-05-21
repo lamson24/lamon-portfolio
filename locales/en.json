@@ -9,7 +9,7 @@
     "nav":  {
                 "about":  "Philosophy",
                 "projects":  "Work",
-                "handmade":  "Handmade",
+                "handmade":  "Object Design",
                 "contact":  "Contact"
             },
     "hero":  {
@@ -29,7 +29,8 @@
                                      "Our practice extends beyond the ground plane. We design furniture, lighting, and objects born from the same principles that shape our landscapes — natural materials, thoughtful proportions, and the conviction that beautiful things should age gracefully."
                                  ],
                   "image":  "assets/project_5.png",
-                  "imageAlt":  "Landscape Design Philosophy"
+                  "imageAlt":  "Landscape Design Philosophy",
+                  "profileCta":  "View CV"
               },
     "impact":  [
                    {
@@ -238,9 +239,9 @@
                      }
                  ],
     "handmadeSection":  {
-                            "title":  "Crafted",
-                            "highlight":  "by Hand",
-                            "subtitle":  "Personal objects and artistic explorations"
+                            "title":  "Object",
+                            "highlight":  "Design",
+                            "subtitle":  "Lighting, furniture, and handmade experiments"
                         },
     "handmadeProjects":  [
                              {

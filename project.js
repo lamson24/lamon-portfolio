@@ -245,7 +245,137 @@ function renderProjectPage(content, project, language) {
         })
         .join('');
 
+    renderCaseStudy(project, language, images);
+    renderBeforeAfter(project, language, images);
     setupLightbox(images);
+}
+
+function renderCaseStudy(project, language, images) {
+    const target = document.getElementById('project-case-study');
+    if (!target) return;
+
+    const labels = getProjectLabels(language);
+    const defaultItems = [
+        {
+            title: labels.context,
+            text: project.context || project.description || labels.contextText
+        },
+        {
+            title: labels.idea,
+            text: project.concept || buildConceptText(project, labels)
+        },
+        {
+            title: labels.material,
+            text: project.materials || labels.materialText
+        },
+        {
+            title: labels.role,
+            text: project.role || labels.roleText
+        }
+    ];
+
+    const items = Array.isArray(project.caseStudy) && project.caseStudy.length
+        ? project.caseStudy
+        : defaultItems;
+
+    const visual = project.caseStudyImage || images[1] || images[0] || project.image || '';
+
+    target.innerHTML = `
+        <div class="project-case-heading">
+            <p>${escapeAttribute(labels.caseStudy)}</p>
+            <h2>${escapeAttribute(labels.caseTitle)}</h2>
+        </div>
+        <div class="project-case-layout">
+            <div class="project-case-grid">
+                ${items.map((item) => `
+                    <article class="project-case-item">
+                        <h3>${escapeAttribute(item.title || '')}</h3>
+                        <p>${escapeAttribute(item.text || item.description || '')}</p>
+                    </article>
+                `).join('')}
+            </div>
+            ${visual ? `
+                <figure class="project-case-visual">
+                    <img src="${escapeAttribute(visual)}" alt="${escapeAttribute(project.title || 'Case study visual')}" loading="lazy">
+                </figure>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderBeforeAfter(project, language, images) {
+    const target = document.getElementById('project-before-after');
+    if (!target) return;
+
+    const labels = getProjectLabels(language);
+    const beforeAfter = project.beforeAfter || {};
+    const before = beforeAfter.before || images[1] || images[0] || '';
+    const after = beforeAfter.after || images[0] || images[1] || '';
+
+    if (!before || !after || before === after) {
+        target.innerHTML = '';
+        return;
+    }
+
+    target.innerHTML = `
+        <div class="project-case-heading">
+            <p>${escapeAttribute(labels.transformation)}</p>
+            <h2>${escapeAttribute(labels.beforeAfter)}</h2>
+        </div>
+        <div class="before-after-grid">
+            <figure>
+                <span>${escapeAttribute(labels.before)}</span>
+                <img src="${escapeAttribute(before)}" alt="${escapeAttribute(labels.before)}" loading="lazy">
+            </figure>
+            <figure>
+                <span>${escapeAttribute(labels.after)}</span>
+                <img src="${escapeAttribute(after)}" alt="${escapeAttribute(labels.after)}" loading="lazy">
+            </figure>
+        </div>
+    `;
+}
+
+function getProjectLabels(language) {
+    if (language === 'vi') {
+        return {
+            caseStudy: 'Case Study',
+            caseTitle: 'Cach du an duoc hinh thanh',
+            context: 'Boi canh',
+            idea: 'Y tuong thiet ke',
+            material: 'Vat lieu & cay xanh',
+            role: 'Vai tro',
+            contextText: 'Du an bat dau tu viec doc hien trang, nhu cau su dung va cam xuc ma khong gian can tao ra.',
+            materialText: 'Bang vat lieu, anh sang va lop cay xanh duoc chon de can bang tham my, bao tri va trai nghiem hang ngay.',
+            roleText: 'Phu trach dinh huong y tuong, bo cuc khong gian, ngon ngu vat lieu va ho tro trien khai.',
+            conceptPrefix: 'Y tuong tap trung vao',
+            transformation: 'Chuyen doi khong gian',
+            beforeAfter: 'Before / After',
+            before: 'Before',
+            after: 'After'
+        };
+    }
+
+    return {
+        caseStudy: 'Case Study',
+        caseTitle: 'How the project takes shape',
+        context: 'Context',
+        idea: 'Design idea',
+        material: 'Materials & planting',
+        role: 'Role',
+        contextText: 'The project starts by reading the site, the daily needs, and the feeling the space should create.',
+        materialText: 'Materials, lighting, and planting layers are selected to balance atmosphere, maintenance, and everyday use.',
+        roleText: 'Responsible for concept direction, spatial composition, material language, and design development support.',
+        conceptPrefix: 'The concept focuses on',
+        transformation: 'Spatial transformation',
+        beforeAfter: 'Before / After',
+        before: 'Before',
+        after: 'After'
+    };
+}
+
+function buildConceptText(project, labels) {
+    const topic = project.category || project.subtitle || project.title || 'a clear spatial experience';
+    return `${labels.conceptPrefix} ${topic.toLowerCase()}, using proportion, circulation, and atmosphere to make the project memorable and practical.`;
 }
 
 function setText(id, value) {

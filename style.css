@@ -723,6 +723,10 @@ body:not(.light-mode) .theme-toggle .moon-icon {
     align-items: center;
 }
 
+.about-profile-link {
+    margin-top: 1rem;
+}
+
 .about-text h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 2rem;
@@ -2762,6 +2766,116 @@ body:not(.project-page) .theme-toggle {
 .project-description-card h2 {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
+}
+
+.project-case-study,
+.project-before-after {
+    margin-top: 2rem;
+}
+
+.project-case-heading {
+    margin-bottom: 1.2rem;
+}
+
+.project-case-heading p {
+    margin-bottom: 0.35rem;
+    color: var(--clr-accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.project-case-heading h2 {
+    margin: 0;
+    color: var(--clr-text-main);
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+}
+
+.project-case-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.project-case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-case-item,
+.project-case-visual,
+.before-after-grid figure {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.project-case-item {
+    padding: 1.45rem;
+}
+
+.project-case-item h3 {
+    margin-bottom: 0.75rem;
+    color: var(--clr-accent);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-case-item p {
+    margin-bottom: 0;
+    line-height: 1.75;
+}
+
+.project-case-visual img,
+.before-after-grid img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.before-after-grid figure {
+    position: relative;
+    aspect-ratio: 4 / 3;
+}
+
+.before-after-grid span {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.44);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+@media (max-width: 900px) {
+    .project-case-layout,
+    .project-case-grid,
+    .before-after-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================

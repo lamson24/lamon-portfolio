@@ -284,6 +284,12 @@ function initializeContent(content, language) {
 
     if (content.about) {
         setHTML('about-title', `${escapeHtml(content.about.title || '')} <span class="highlight-serif">${escapeHtml(content.about.highlight || '')}</span>`);
+        setText('about-profile-link', content.about.profileCta || (language === 'vi' ? 'Xem CV' : 'View CV'));
+
+        const profileLink = document.getElementById('about-profile-link');
+        if (profileLink) {
+            profileLink.href = `profile.html?lang=${encodeURIComponent(language)}`;
+        }
 
         const paragraphsEl = document.getElementById('about-paragraphs');
         if (paragraphsEl && Array.isArray(content.about.paragraphs)) {
