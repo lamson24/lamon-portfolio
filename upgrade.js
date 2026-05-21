@@ -1,8 +1,8 @@
-// =========================================
+﻿// =========================================
 // NEW UX/UI UPGRADES: CURSOR, TRANSITIONS, PARALLAX
 // =========================================
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('portfolioLoaded', () => {
     setupCustomCursor();
     setupPageTransition();
     
@@ -456,3 +456,4 @@ function setupDynamicTheme() {
     const observer = new MutationObserver(bindTheme);
     observer.observe(document.body, { childList: true, subtree: true });
 }
+

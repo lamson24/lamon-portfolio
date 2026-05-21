@@ -387,6 +387,9 @@ function initializeContent(content, language) {
     renderSignatureProjects(content.projects, language);
     renderHandmadeProjects(content.handmadeProjects);
 
+    // Trigger event for upgrade.js to start UX scripts AFTER rendering is complete
+    window.dispatchEvent(new Event('portfolioLoaded'));
+
     if (content.handmadeSection) {
         setHTML('handmade-title', `${escapeHtml(content.handmadeSection.title || '')} <span class="highlight-serif">${escapeHtml(content.handmadeSection.highlight || '')}</span>`);
         setText('handmade-subtitle', content.handmadeSection.subtitle);
@@ -1052,4 +1055,5 @@ function closeVideoModal() {
         }, 400); // clear src to stop playing after fade out
     }
 }
+
 
