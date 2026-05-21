@@ -1,4 +1,4 @@
-const STORAGE_KEYS = {
+﻿const STORAGE_KEYS = {
     language: 'portfolioLanguage',
     overridePrefix: 'portfolioContentOverride_',
     legacyOverride: 'portfolioContentOverride'
@@ -492,7 +492,7 @@ function renderProjects(projects, language, projectsSection = {}) {
 
     // Dynamic Filter Menu Logic
     const filtersContainer = document.getElementById('project-filters');
-    const allLabel = language === 'vi' ? 'Tất cả' : 'All';
+    const allLabel = language === 'vi' ? 'Táº¥t cáº£' : 'All';
     
     // We try to use content.projectsSection.filters if available, otherwise fallback
     let filters = { "all": allLabel };
@@ -555,7 +555,7 @@ function renderProjects(projects, language, projectsSection = {}) {
             const yearStr = location ? `${location}` : '';
 
             return `
-                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}" data-filter-val="${escapeAttribute(project.filter || category)}">
+                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}" data-filter-val="${escapeAttribute(project.filter || category)}" data-theme="${escapeAttribute(project.themeColor || '')}">
                     <div class="project-card reveal"${style} data-project-id="${id}">
                         <div class="project-image-wrapper img-placeholder loading">
                             <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || category)}" loading="lazy" class="project-img blur-up">
@@ -580,7 +580,7 @@ function renderSignatureProjects(projects, language) {
 
     const signatureIds = ['7', '5'];
     const sigProjects = projects.filter(p => signatureIds.includes(String(p.id)));
-    const ctaLabel = language === 'vi' ? 'Xem dự án' : 'View Project';
+    const ctaLabel = language === 'vi' ? 'Xem dá»± Ã¡n' : 'View Project';
 
     signatureList.innerHTML = sigProjects
         .map((project, index) => {
@@ -713,11 +713,11 @@ function setupRevealAnimations() {
                 el.style.opacity = opacity;
                 el.style.transform = `translateY(${translateY}px)`;
             } else if (elBottom <= 0) {
-                // Fully scrolled past — hide
+                // Fully scrolled past â€” hide
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(-30px)';
             } else {
-                // In view or below — fully visible
+                // In view or below â€” fully visible
                 el.style.opacity = '';
                 el.style.transform = '';
             }
@@ -1052,3 +1052,4 @@ function closeVideoModal() {
         }, 400); // clear src to stop playing after fade out
     }
 }
+

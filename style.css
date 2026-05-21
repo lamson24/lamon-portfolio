@@ -1537,6 +1537,37 @@ body:not(.project-page) .navbar .lang-btn.active {
 }
 
 /* =========================================
+   MAGICAL UX: SPLIT TEXT & LIQUID & THEME
+   ========================================= */
+
+/* Dynamic Ambient Theme */
+body {
+    --dynamic-bg: transparent;
+    transition: background-color 0.8s ease;
+}
+
+body.theme-active {
+    background-color: var(--dynamic-bg) !important;
+}
+
+/* Split-Type Text Reveal Setup */
+.line {
+    overflow: hidden; /* For masking text reveal */
+}
+
+/* Liquid Distortion Hover */
+.liquid-hover {
+    transition: filter 0.5s ease-out;
+}
+
+/* Magnetic Buttons base styles (for smooth return) */
+.magnetic {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+/* =========================================
    PROJECT FILTERS (Animated)
    ========================================= */
 .filter-container {

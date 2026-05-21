@@ -1,128 +1,128 @@
-{
+﻿{
     "seo":  {
-                "title":  "LAMON-DIY | Há»“ sÆ¡ NÄƒng lá»±c Kiáº¿n trÃºc Cáº£nh quan",
-                "description":  "Há»“ sÆ¡ nÄƒng lá»±c cá»§a kiáº¿n trÃºc sÆ° cáº£nh quan theo Ä‘uá»•i giáº£i phÃ¡p hiá»‡n Ä‘áº¡i, bá»n vá»¯ng vÃ  tinh táº¿."
+                "title":  "LAMON-DIY | HÃ¡Â»â€œ sÃ†Â¡ NÃ„Æ’ng lÃ¡Â»Â±c KiÃ¡ÂºÂ¿n trÃƒÂºc CÃ¡ÂºÂ£nh quan",
+                "description":  "HÃ¡Â»â€œ sÃ†Â¡ nÃ„Æ’ng lÃ¡Â»Â±c cÃ¡Â»Â§a kiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan theo Ã„â€˜uÃ¡Â»â€¢i giÃ¡ÂºÂ£i phÃƒÂ¡p hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i, bÃ¡Â»Ân vÃ¡Â»Â¯ng vÃƒÂ  tinh tÃ¡ÂºÂ¿."
             },
     "brand":  {
-                  "name":  "LÃ¡MON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
+                  "name":  "LÃƒÂ¡MON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
               },
     "nav":  {
-                "about":  "Triáº¿t lÃ½",
-                "projects":  "Dá»± Ã¡n",
+                "about":  "TriÃ¡ÂºÂ¿t lÃƒÂ½",
+                "projects":  "DÃ¡Â»Â± ÃƒÂ¡n",
                 "handmade":  "Object Design",
-                "contact":  "LiÃªn há»‡"
+                "contact":  "LiÃƒÂªn hÃ¡Â»â€¡"
             },
     "hero":  {
-                 "title":  "Kiáº¿n táº¡o",
-                 "highlight":  "ThiÃªn nhiÃªn.",
-                 "subtitle":  "Kiáº¿n TrÃºc Cáº£nh Quan \u0026 Thiáº¿t Káº¿ Ná»™i Tháº¥t",
-                 "cta":  "Xem Dá»± Ãn TiÃªu Biá»ƒu",
-                 "showreel":  "Xem ThÆ°á»›c Phim",
+                 "title":  "KiÃ¡ÂºÂ¿n tÃ¡ÂºÂ¡o",
+                 "highlight":  "ThiÃƒÂªn nhiÃƒÂªn.",
+                 "subtitle":  "KiÃ¡ÂºÂ¿n TrÃƒÂºc CÃ¡ÂºÂ£nh Quan \u0026 ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t",
+                 "cta":  "Xem DÃ¡Â»Â± ÃƒÂn TiÃƒÂªu BiÃ¡Â»Æ’u",
+                 "showreel":  "Xem ThÃ†Â°Ã¡Â»â€ºc Phim",
                  "showreelId":  "-6RfCxs7DdM",
-                 "credibilityLine":  "Thiáº¿t Káº¿ Cáº£nh Quan  â€¢  Kiáº¿n TrÃºc SÃ¢n VÆ°á»n  â€¢  Ná»™i Tháº¥t \u0026 Chiáº¿u SÃ¡ng"
+                 "credibilityLine":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ CÃ¡ÂºÂ£nh Quan  Ã¢â‚¬Â¢  KiÃ¡ÂºÂ¿n TrÃƒÂºc SÃƒÂ¢n VÃ†Â°Ã¡Â»Ân  Ã¢â‚¬Â¢  NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t \u0026 ChiÃ¡ÂºÂ¿u SÃƒÂ¡ng"
              },
     "about":  {
-                  "title":  "Triáº¿t lÃ½",
-                  "highlight":  "Thiáº¿t káº¿",
+                  "title":  "TriÃ¡ÂºÂ¿t lÃƒÂ½",
+                  "highlight":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿",
                   "paragraphs":  [
-                                     "ChÃºng tÃ´i lÃ m viá»‡c trÃªn má»i quy mÃ´ cáº£nh quan â€” tá»« cáº£nh quan ban cÃ´ng nhá» bÃ© cho Ä‘áº¿n nhá»¯ng cÃ´ng viÃªn Ä‘Ã´ thá»‹ rá»™ng lá»›n. Má»—i dá»± Ã¡n Ä‘á»u báº¯t Ä‘áº§u báº±ng má»™t cÃ¢u há»i: khÃ´ng gian nÃ y nÃªn Ä‘em láº¡i cáº£m giÃ¡c gÃ¬?",
-                                     "Thá»±c hÃ nh cá»§a chÃºng tÃ´i khÃ´ng dá»«ng láº¡i á»Ÿ máº·t Ä‘áº¥t. ChÃºng tÃ´i cÃ²n thiáº¿t káº¿ ná»™i tháº¥t, chiáº¿u sÃ¡ng vÃ  cÃ¡c Ä‘á»“ váº­t Ä‘Æ°á»£c sinh ra tá»« cÃ¹ng má»™t triáº¿t lÃ½ â€” váº­t liá»‡u tá»± nhiÃªn, tá»· lá»‡ tinh táº¿, vÃ  niá»m tin ráº±ng nhá»¯ng gÃ¬ Ä‘áº¹p sáº½ trÆ°á»ng tá»“n theo thá»i gian."
+                                     "ChÃƒÂºng tÃƒÂ´i lÃƒÂ m viÃ¡Â»â€¡c trÃƒÂªn mÃ¡Â»Âi quy mÃƒÂ´ cÃ¡ÂºÂ£nh quan Ã¢â‚¬â€ tÃ¡Â»Â« cÃ¡ÂºÂ£nh quan ban cÃƒÂ´ng nhÃ¡Â»Â bÃƒÂ© cho Ã„â€˜Ã¡ÂºÂ¿n nhÃ¡Â»Â¯ng cÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹ rÃ¡Â»â„¢ng lÃ¡Â»â€ºn. MÃ¡Â»â€”i dÃ¡Â»Â± ÃƒÂ¡n Ã„â€˜Ã¡Â»Âu bÃ¡ÂºÂ¯t Ã„â€˜Ã¡ÂºÂ§u bÃ¡ÂºÂ±ng mÃ¡Â»â„¢t cÃƒÂ¢u hÃ¡Â»Âi: khÃƒÂ´ng gian nÃƒÂ y nÃƒÂªn Ã„â€˜em lÃ¡ÂºÂ¡i cÃ¡ÂºÂ£m giÃƒÂ¡c gÃƒÂ¬?",
+                                     "ThÃ¡Â»Â±c hÃƒÂ nh cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i khÃƒÂ´ng dÃ¡Â»Â«ng lÃ¡ÂºÂ¡i Ã¡Â»Å¸ mÃ¡ÂºÂ·t Ã„â€˜Ã¡ÂºÂ¥t. ChÃƒÂºng tÃƒÂ´i cÃƒÂ²n thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t, chiÃ¡ÂºÂ¿u sÃƒÂ¡ng vÃƒÂ  cÃƒÂ¡c Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t Ã„â€˜Ã†Â°Ã¡Â»Â£c sinh ra tÃ¡Â»Â« cÃƒÂ¹ng mÃ¡Â»â„¢t triÃ¡ÂºÂ¿t lÃƒÂ½ Ã¢â‚¬â€ vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn, tÃ¡Â»Â· lÃ¡Â»â€¡ tinh tÃ¡ÂºÂ¿, vÃƒÂ  niÃ¡Â»Âm tin rÃ¡ÂºÂ±ng nhÃ¡Â»Â¯ng gÃƒÂ¬ Ã„â€˜Ã¡ÂºÂ¹p sÃ¡ÂºÂ½ trÃ†Â°Ã¡Â»Âng tÃ¡Â»â€œn theo thÃ¡Â»Âi gian."
                                  ],
                   "image":  "assets/project_5.png",
-                  "imageAlt":  "Triáº¿t lÃ½ thiáº¿t káº¿ cáº£nh quan",
+                  "imageAlt":  "TriÃ¡ÂºÂ¿t lÃƒÂ½ thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan",
                   "profileCta":  "Xem CV"
               },
     "impact":  [
                    {
                        "number":  10,
                        "suffix":  "+",
-                       "label":  "NÄƒm kinh nghiá»‡m"
+                       "label":  "NÃ„Æ’m kinh nghiÃ¡Â»â€¡m"
                    },
                    {
                        "number":  40,
                        "suffix":  "+",
-                       "label":  "Dá»± Ã¡n hoÃ n thiá»‡n"
+                       "label":  "DÃ¡Â»Â± ÃƒÂ¡n hoÃƒÂ n thiÃ¡Â»â€¡n"
                    },
                    {
                        "number":  50,
                        "suffix":  "k+",
-                       "label":  "mÂ² Máº£ng xanh kiáº¿n táº¡o"
+                       "label":  "mÃ‚Â² MÃ¡ÂºÂ£ng xanh kiÃ¡ÂºÂ¿n tÃ¡ÂºÂ¡o"
                    }
                ],
     "services":  {
-                     "title":  "Dá»‹ch vá»¥",
+                     "title":  "DÃ¡Â»â€¹ch vÃ¡Â»Â¥",
                      "items":  [
                                    {
-                                       "title":  "Kiáº¿n TrÃºc Cáº£nh Quan",
-                                       "desc":  "Quy hoáº¡ch tá»•ng thá»ƒ vÃ  thiáº¿t káº¿ khuÃ´n viÃªn cho cÃ¡c cÃ´ng trÃ¬nh cÃ´ng cá»™ng, cÃ´ng viÃªn, khu nghá»‰ dÆ°á»¡ng quy mÃ´ lá»›n."
+                                       "title":  "KiÃ¡ÂºÂ¿n TrÃƒÂºc CÃ¡ÂºÂ£nh Quan",
+                                       "desc":  "Quy hoÃ¡ÂºÂ¡ch tÃ¡Â»â€¢ng thÃ¡Â»Æ’ vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ khuÃƒÂ´n viÃƒÂªn cho cÃƒÂ¡c cÃƒÂ´ng trÃƒÂ¬nh cÃƒÂ´ng cÃ¡Â»â„¢ng, cÃƒÂ´ng viÃƒÂªn, khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng quy mÃƒÂ´ lÃ¡Â»â€ºn."
                                    },
                                    {
-                                       "title":  "Thiáº¿t Káº¿ SÃ¢n VÆ°á»n \u0026 Ban CÃ´ng",
-                                       "desc":  "SÃ¢n vÆ°á»n riÃªng tÆ° vÃ  khu ban cÃ´ng nhá» gá»n Ä‘Æ°á»£c thiáº¿t káº¿ phÃ¹ há»£p vá»›i phong cÃ¡ch sá»‘ng hÃ ng ngÃ y cá»§a báº¡n."
+                                       "title":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ SÃƒÂ¢n VÃ†Â°Ã¡Â»Ân \u0026 Ban CÃƒÂ´ng",
+                                       "desc":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân riÃƒÂªng tÃ†Â° vÃƒÂ  khu ban cÃƒÂ´ng nhÃ¡Â»Â gÃ¡Â»Ân Ã„â€˜Ã†Â°Ã¡Â»Â£c thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ phÃƒÂ¹ hÃ¡Â»Â£p vÃ¡Â»â€ºi phong cÃƒÂ¡ch sÃ¡Â»â€˜ng hÃƒÂ ng ngÃƒÂ y cÃ¡Â»Â§a bÃ¡ÂºÂ¡n."
                                    },
                                    {
-                                       "title":  "SÃ¢n ChÆ¡i \u0026 Khu Vui ChÆ¡i",
-                                       "desc":  "MÃ´i trÆ°á»ng vui chÆ¡i ngoÃ i trá»i sÃ¡ng táº¡o, phá»¥c vá»¥ cá»™ng Ä‘á»“ng tá»« tráº» em Ä‘áº¿n ngÆ°á»i lá»›n."
+                                       "title":  "SÃƒÂ¢n ChÃ†Â¡i \u0026 Khu Vui ChÃ†Â¡i",
+                                       "desc":  "MÃƒÂ´i trÃ†Â°Ã¡Â»Âng vui chÃ†Â¡i ngoÃƒÂ i trÃ¡Â»Âi sÃƒÂ¡ng tÃ¡ÂºÂ¡o, phÃ¡Â»Â¥c vÃ¡Â»Â¥ cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng tÃ¡Â»Â« trÃ¡ÂºÂ» em Ã„â€˜Ã¡ÂºÂ¿n ngÃ†Â°Ã¡Â»Âi lÃ¡Â»â€ºn."
                                    },
                                    {
-                                       "title":  "Cáº£nh Quan Nghá»‰ DÆ°á»¡ng",
-                                       "desc":  "Cáº£nh quan khu nghá»‰ dÆ°á»¡ng Ä‘á»‹nh nghÄ©a báº£n sáº¯c vÃ  khÃ´ng khÃ­ cá»§a má»™t Ä‘iá»ƒm Ä‘áº¿n."
+                                       "title":  "CÃ¡ÂºÂ£nh Quan NghÃ¡Â»â€° DÃ†Â°Ã¡Â»Â¡ng",
+                                       "desc":  "CÃ¡ÂºÂ£nh quan khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng Ã„â€˜Ã¡Â»â€¹nh nghÃ„Â©a bÃ¡ÂºÂ£n sÃ¡ÂºÂ¯c vÃƒÂ  khÃƒÂ´ng khÃƒÂ­ cÃ¡Â»Â§a mÃ¡Â»â„¢t Ã„â€˜iÃ¡Â»Æ’m Ã„â€˜Ã¡ÂºÂ¿n."
                                    },
                                    {
-                                       "title":  "Thiáº¿t Káº¿ Ná»™i Tháº¥t \u0026 Chiáº¿u SÃ¡ng",
-                                       "desc":  "Tá»§, bÃ n, gháº¿ vÃ  Ä‘Ã¨n thiáº¿t káº¿ riÃªng â€” nhá»¯ng Ä‘á»“ váº­t Ä‘Æ°á»£c sinh ra tá»« tÆ° duy cáº£nh quan."
+                                       "title":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t \u0026 ChiÃ¡ÂºÂ¿u SÃƒÂ¡ng",
+                                       "desc":  "TÃ¡Â»Â§, bÃƒÂ n, ghÃ¡ÂºÂ¿ vÃƒÂ  Ã„â€˜ÃƒÂ¨n thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ riÃƒÂªng Ã¢â‚¬â€ nhÃ¡Â»Â¯ng Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t Ã„â€˜Ã†Â°Ã¡Â»Â£c sinh ra tÃ¡Â»Â« tÃ†Â° duy cÃ¡ÂºÂ£nh quan."
                                    }
                                ]
                  },
     "process":  {
-                    "title":  "Quy trÃ¬nh",
-                    "highlight":  "Thiáº¿t káº¿",
+                    "title":  "Quy trÃƒÂ¬nh",
+                    "highlight":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿",
                     "items":  [
                                   {
                                       "step":  "01",
-                                      "name":  "Kháº£o sÃ¡t",
-                                      "desc":  "PhÃ¢n tÃ­ch hiá»‡n tráº¡ng, tháº¥u hiá»ƒu táº§m nhÃ¬n cá»§a khÃ¡ch hÃ ng vÃ  xÃ¡c Ä‘á»‹nh pháº¡m vi."
+                                      "name":  "KhÃ¡ÂºÂ£o sÃƒÂ¡t",
+                                      "desc":  "PhÃƒÂ¢n tÃƒÂ­ch hiÃ¡Â»â€¡n trÃ¡ÂºÂ¡ng, thÃ¡ÂºÂ¥u hiÃ¡Â»Æ’u tÃ¡ÂºÂ§m nhÃƒÂ¬n cÃ¡Â»Â§a khÃƒÂ¡ch hÃƒÂ ng vÃƒÂ  xÃƒÂ¡c Ã„â€˜Ã¡Â»â€¹nh phÃ¡ÂºÂ¡m vi."
                                   },
                                   {
                                       "step":  "02",
-                                      "name":  "Ã tÆ°á»Ÿng",
-                                      "desc":  "PhÃ¡t triá»ƒn bá»‘ cá»¥c khÃ´ng gian, báº£ng váº­t liá»‡u vÃ  chiáº¿n lÆ°á»£c thá»±c váº­t sÆ¡ bá»™."
+                                      "name":  "ÃƒÂ tÃ†Â°Ã¡Â»Å¸ng",
+                                      "desc":  "PhÃƒÂ¡t triÃ¡Â»Æ’n bÃ¡Â»â€˜ cÃ¡Â»Â¥c khÃƒÂ´ng gian, bÃ¡ÂºÂ£ng vÃ¡ÂºÂ­t liÃ¡Â»â€¡u vÃƒÂ  chiÃ¡ÂºÂ¿n lÃ†Â°Ã¡Â»Â£c thÃ¡Â»Â±c vÃ¡ÂºÂ­t sÃ†Â¡ bÃ¡Â»â„¢."
                                   },
                                   {
                                       "step":  "03",
-                                      "name":  "Triá»ƒn khai",
-                                      "desc":  "TÃ­ch há»£p kiáº¿n trÃºc chi tiáº¿t, quy hoáº¡ch san ná»n vÃ  há»“ sÆ¡ ká»¹ thuáº­t thi cÃ´ng."
+                                      "name":  "TriÃ¡Â»Æ’n khai",
+                                      "desc":  "TÃƒÂ­ch hÃ¡Â»Â£p kiÃ¡ÂºÂ¿n trÃƒÂºc chi tiÃ¡ÂºÂ¿t, quy hoÃ¡ÂºÂ¡ch san nÃ¡Â»Ân vÃƒÂ  hÃ¡Â»â€œ sÃ†Â¡ kÃ¡Â»Â¹ thuÃ¡ÂºÂ­t thi cÃƒÂ´ng."
                                   },
                                   {
                                       "step":  "04",
-                                      "name":  "Thá»±c thi",
-                                      "desc":  "GiÃ¡m sÃ¡t tÃ¡c giáº£ táº¡i cÃ´ng trÆ°á»ng vÃ  hiá»‡n thá»±c hoÃ¡ bá»©c tranh cáº£nh quan."
+                                      "name":  "ThÃ¡Â»Â±c thi",
+                                      "desc":  "GiÃƒÂ¡m sÃƒÂ¡t tÃƒÂ¡c giÃ¡ÂºÂ£ tÃ¡ÂºÂ¡i cÃƒÂ´ng trÃ†Â°Ã¡Â»Âng vÃƒÂ  hiÃ¡Â»â€¡n thÃ¡Â»Â±c hoÃƒÂ¡ bÃ¡Â»Â©c tranh cÃ¡ÂºÂ£nh quan."
                                   }
                               ]
                 },
     "testimonials":  {
-                         "title":  "GÃ³c nhÃ¬n",
-                         "highlight":  "KhÃ¡ch hÃ ng",
+                         "title":  "GÃƒÂ³c nhÃƒÂ¬n",
+                         "highlight":  "KhÃƒÂ¡ch hÃƒÂ ng",
                          "items":  [
                                        {
-                                           "quote":  "LÃ¡MON Ä‘Ã£ biáº¿n sÃ¢n thÆ°á»£ng trá»‘ng tráº£i cá»§a chÃºng tÃ´i thÃ nh má»™t há»‡ sinh thÃ¡i xanh mÃ¡t. Sá»± tá»‰ má»‰ trong thiáº¿t káº¿ thá»±c váº­t cá»§a há» tháº­t sá»± áº¥n tÆ°á»£ng.",
+                                           "quote":  "LÃƒÂ¡MON Ã„â€˜ÃƒÂ£ biÃ¡ÂºÂ¿n sÃƒÂ¢n thÃ†Â°Ã¡Â»Â£ng trÃ¡Â»â€˜ng trÃ¡ÂºÂ£i cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i thÃƒÂ nh mÃ¡Â»â„¢t hÃ¡Â»â€¡ sinh thÃƒÂ¡i xanh mÃƒÂ¡t. SÃ¡Â»Â± tÃ¡Â»â€° mÃ¡Â»â€° trong thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ thÃ¡Â»Â±c vÃ¡ÂºÂ­t cÃ¡Â»Â§a hÃ¡Â»Â thÃ¡ÂºÂ­t sÃ¡Â»Â± Ã¡ÂºÂ¥n tÃ†Â°Ã¡Â»Â£ng.",
                                            "author":  "Elena V.",
-                                           "role":  "Chá»§ sá»Ÿ há»¯u Biá»‡t thá»±"
+                                           "role":  "ChÃ¡Â»Â§ sÃ¡Â»Å¸ hÃ¡Â»Â¯u BiÃ¡Â»â€¡t thÃ¡Â»Â±"
                                        },
                                        {
-                                           "quote":  "Thiáº¿t káº¿ cáº£nh quan cho khu nghá»‰ dÆ°á»¡ng cá»§a chÃºng tÃ´i Ä‘Ã£ trá»Ÿ thÃ nh Ä‘iá»ƒm nháº¥n chÃ­nh nÃ­u chÃ¢n du khÃ¡ch. Má»™t khÃ´ng gian ngoáº¡n má»¥c.",
+                                           "quote":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan cho khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i Ã„â€˜ÃƒÂ£ trÃ¡Â»Å¸ thÃƒÂ nh Ã„â€˜iÃ¡Â»Æ’m nhÃ¡ÂºÂ¥n chÃƒÂ­nh nÃƒÂ­u chÃƒÂ¢n du khÃƒÂ¡ch. MÃ¡Â»â„¢t khÃƒÂ´ng gian ngoÃ¡ÂºÂ¡n mÃ¡Â»Â¥c.",
                                            "author":  "Marcus T.",
-                                           "role":  "GiÃ¡m Ä‘á»‘c Váº­n hÃ nh"
+                                           "role":  "GiÃƒÂ¡m Ã„â€˜Ã¡Â»â€˜c VÃ¡ÂºÂ­n hÃƒÂ nh"
                                        }
                                    ]
                      },
     "projectsSection":  {
-                            "title":  "Dá»± Ã¡n",
-                            "highlight":  "Chá»n lá»c",
+                            "title":  "DÃ¡Â»Â± ÃƒÂ¡n",
+                            "highlight":  "ChÃ¡Â»Ân lÃ¡Â»Âc",
                             "filters":  {
                                             "all":  "T?t c?",
-                                            "residential":  "Nhà ?",
-                                            "public":  "Công c?ng",
+                                            "residential":  "NhÃ  ?",
+                                            "public":  "CÃ´ng c?ng",
                                             "commercial":  "Thuong m?i"
                                         }
                         },
@@ -130,8 +130,8 @@
                      {
                          "id":  "1",
                          "title":  "Lumina Urban Park",
-                         "subtitle":  "TÃ­ch há»£p khÃ´ng gian cÃ´ng cá»™ng",
-                         "alt":  "CÃ´ng viÃªn Ä‘Ã´ thá»‹",
+                         "subtitle":  "TÃƒÂ­ch hÃ¡Â»Â£p khÃƒÂ´ng gian cÃƒÂ´ng cÃ¡Â»â„¢ng",
+                         "alt":  "CÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹",
                          "image":  "assets/project_1.png",
                          "gallery":  [
                                          "assets/project_1.png",
@@ -139,14 +139,15 @@
                                          "assets/project_1_2.png",
                                          "assets/project_4.png"
                                      ],
-                         "description":  "CÃ´ng viÃªn Ä‘Ã´ thá»‹ má»›i táº¡o káº¿t ná»‘i cá»™ng Ä‘á»“ng vÃ  tÄƒng Ä‘a dáº¡ng sinh há»c thÃ´ng qua cÃ¢y báº£n Ä‘á»‹a vÃ  giáº£i phÃ¡p quáº£n lÃ½ nÆ°á»›c thÃ´ng minh.",
-                         "filter":  "public"
+                         "description":  "CÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹ mÃ¡Â»â€ºi tÃ¡ÂºÂ¡o kÃ¡ÂºÂ¿t nÃ¡Â»â€˜i cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng vÃƒÂ  tÃ„Æ’ng Ã„â€˜a dÃ¡ÂºÂ¡ng sinh hÃ¡Â»Âc thÃƒÂ´ng qua cÃƒÂ¢y bÃ¡ÂºÂ£n Ã„â€˜Ã¡Â»â€¹a vÃƒÂ  giÃ¡ÂºÂ£i phÃƒÂ¡p quÃ¡ÂºÂ£n lÃƒÂ½ nÃ†Â°Ã¡Â»â€ºc thÃƒÂ´ng minh.",
+                         "filter":  "public",
+                         "themeColor":  "#11261d"
                      },
                      {
                          "id":  "2",
                          "title":  "The Obsidian Retreat",
-                         "subtitle":  "SÃ¢n vÆ°á»n nhÃ  á»Ÿ cao cáº¥p",
-                         "alt":  "SÃ¢n vÆ°á»n nhÃ  á»Ÿ",
+                         "subtitle":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân nhÃƒÂ  Ã¡Â»Å¸ cao cÃ¡ÂºÂ¥p",
+                         "alt":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân nhÃƒÂ  Ã¡Â»Å¸",
                          "image":  "assets/project_2.png",
                          "gallery":  [
                                          "assets/project_2.png",
@@ -154,14 +155,15 @@
                                          "assets/project_2_2.png",
                                          "assets/project_3.png"
                                      ],
-                         "description":  "KhÃ´ng gian nghá»‰ dÆ°á»¡ng riÃªng tÆ° vá»›i sÃ n gá»— hiá»‡n Ä‘áº¡i, khu lá»­a ngoÃ i trá»i vÃ  lá»›p cÃ¢y cáº£nh táº¡o cáº£m giÃ¡c thÆ° giÃ£n.",
-                         "filter":  "residential"
+                         "description":  "KhÃƒÂ´ng gian nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng riÃƒÂªng tÃ†Â° vÃ¡Â»â€ºi sÃƒÂ n gÃ¡Â»â€” hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i, khu lÃ¡Â»Â­a ngoÃƒÂ i trÃ¡Â»Âi vÃƒÂ  lÃ¡Â»â€ºp cÃƒÂ¢y cÃ¡ÂºÂ£nh tÃ¡ÂºÂ¡o cÃ¡ÂºÂ£m giÃƒÂ¡c thÃ†Â° giÃƒÂ£n.",
+                         "filter":  "residential",
+                         "themeColor":  "#2a2218"
                      },
                      {
                          "id":  "3",
                          "title":  "Skyline Serenity",
-                         "subtitle":  "Há»‡ sinh thÃ¡i mÃ¡i xanh thÆ°Æ¡ng máº¡i",
-                         "alt":  "MÃ¡i xanh",
+                         "subtitle":  "HÃ¡Â»â€¡ sinh thÃƒÂ¡i mÃƒÂ¡i xanh thÃ†Â°Ã†Â¡ng mÃ¡ÂºÂ¡i",
+                         "alt":  "MÃƒÂ¡i xanh",
                          "image":  "assets/project_3.png",
                          "gallery":  [
                                          "assets/project_3.png",
@@ -169,14 +171,15 @@
                                          "assets/project_3_2.png",
                                          "assets/project_1.png"
                                      ],
-                         "description":  "MÃ´ hÃ¬nh mÃ¡i xanh tá»‘i Æ°u vi khÃ­ háº­u, giáº£m hiá»‡u á»©ng Ä‘áº£o nhiá»‡t vÃ  tÄƒng tráº£i nghiá»‡m cho ngÆ°á»i sá»­ dá»¥ng.",
-                         "filter":  "commercial"
+                         "description":  "MÃƒÂ´ hÃƒÂ¬nh mÃƒÂ¡i xanh tÃ¡Â»â€˜i Ã†Â°u vi khÃƒÂ­ hÃ¡ÂºÂ­u, giÃ¡ÂºÂ£m hiÃ¡Â»â€¡u Ã¡Â»Â©ng Ã„â€˜Ã¡ÂºÂ£o nhiÃ¡Â»â€¡t vÃƒÂ  tÃ„Æ’ng trÃ¡ÂºÂ£i nghiÃ¡Â»â€¡m cho ngÃ†Â°Ã¡Â»Âi sÃ¡Â»Â­ dÃ¡Â»Â¥ng.",
+                         "filter":  "commercial",
+                         "themeColor":  "#151b22"
                      },
                      {
                          "id":  "4",
                          "title":  "Zenith Botanical Walk",
-                         "subtitle":  "Lá»‘i dáº¡o thá»±c váº­t Ä‘a táº§ng",
-                         "alt":  "Lá»‘i dáº¡o vÆ°á»n thá»±c váº­t",
+                         "subtitle":  "LÃ¡Â»â€˜i dÃ¡ÂºÂ¡o thÃ¡Â»Â±c vÃ¡ÂºÂ­t Ã„â€˜a tÃ¡ÂºÂ§ng",
+                         "alt":  "LÃ¡Â»â€˜i dÃ¡ÂºÂ¡o vÃ†Â°Ã¡Â»Ân thÃ¡Â»Â±c vÃ¡ÂºÂ­t",
                          "image":  "assets/project_4.png",
                          "gallery":  [
                                          "assets/project_4.png",
@@ -184,14 +187,15 @@
                                          "assets/project_3_1.png",
                                          "assets/project_1_2.png"
                                      ],
-                         "description":  "Tuyáº¿n Ä‘Æ°á»ng Ä‘i bá»™ vá»›i bá»™ sÆ°u táº­p thá»±c váº­t nhiá»‡t Ä‘á»›i, táº¡o hÃ nh trÃ¬nh tham quan Ãªm dá»‹u vÃ  áº¥n tÆ°á»£ng.",
-                         "filter":  "public"
+                         "description":  "TuyÃ¡ÂºÂ¿n Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜i bÃ¡Â»â„¢ vÃ¡Â»â€ºi bÃ¡Â»â„¢ sÃ†Â°u tÃ¡ÂºÂ­p thÃ¡Â»Â±c vÃ¡ÂºÂ­t nhiÃ¡Â»â€¡t Ã„â€˜Ã¡Â»â€ºi, tÃ¡ÂºÂ¡o hÃƒÂ nh trÃƒÂ¬nh tham quan ÃƒÂªm dÃ¡Â»â€¹u vÃƒÂ  Ã¡ÂºÂ¥n tÃ†Â°Ã¡Â»Â£ng.",
+                         "filter":  "public",
+                         "themeColor":  "#11261d"
                      },
                      {
                          "id":  "5",
                          "title":  "Aqua Horizon Resort",
-                         "subtitle":  "Cáº£nh quan nghá»‰ dÆ°á»¡ng ven biá»ƒn",
-                         "alt":  "Resort ven biá»ƒn",
+                         "subtitle":  "CÃ¡ÂºÂ£nh quan nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng ven biÃ¡Â»Æ’n",
+                         "alt":  "Resort ven biÃ¡Â»Æ’n",
                          "image":  "assets/project_5.png",
                          "gallery":  [
                                          "assets/project_5.png",
@@ -199,14 +203,15 @@
                                          "assets/project_2_1.png",
                                          "assets/project_3_2.png"
                                      ],
-                         "description":  "Thiáº¿t káº¿ cáº£nh quan nghá»‰ dÆ°á»¡ng káº¿t ná»‘i táº§m nhÃ¬n chÃ¢n trá»i, káº¿t há»£p cÃ¢y báº£n Ä‘á»‹a Ä‘á»ƒ giáº£m xÃ³i mÃ²n bá» biá»ƒn.",
-                         "filter":  "commercial"
+                         "description":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng kÃ¡ÂºÂ¿t nÃ¡Â»â€˜i tÃ¡ÂºÂ§m nhÃƒÂ¬n chÃƒÂ¢n trÃ¡Â»Âi, kÃ¡ÂºÂ¿t hÃ¡Â»Â£p cÃƒÂ¢y bÃ¡ÂºÂ£n Ã„â€˜Ã¡Â»â€¹a Ã„â€˜Ã¡Â»Æ’ giÃ¡ÂºÂ£m xÃƒÂ³i mÃƒÂ²n bÃ¡Â»Â biÃ¡Â»Æ’n.",
+                         "filter":  "commercial",
+                         "themeColor":  "#102534"
                      },
                      {
                          "id":  "6",
                          "title":  "The Monolith Courtyard",
-                         "subtitle":  "SÃ¢n trong campus doanh nghiá»‡p",
-                         "alt":  "SÃ¢n trong cÃ´ng ty",
+                         "subtitle":  "SÃƒÂ¢n trong campus doanh nghiÃ¡Â»â€¡p",
+                         "alt":  "SÃƒÂ¢n trong cÃƒÂ´ng ty",
                          "image":  "assets/project_6.png",
                          "gallery":  [
                                          "assets/project_6.png",
@@ -214,16 +219,17 @@
                                          "assets/project_2_2.png",
                                          "assets/project_5.png"
                                      ],
-                         "description":  "SÃ¢n trong hÃ¬nh há»c hiá»‡n Ä‘áº¡i vá»›i nÆ°á»›c, gháº¿ Ä‘Ã¡ vÃ  cÃ¢y xanh cÃ³ cáº¥u trÃºc, há»— trá»£ táº­p trung vÃ  há»“i phá»¥c nÄƒng lÆ°á»£ng.",
-                         "filter":  "commercial"
+                         "description":  "SÃƒÂ¢n trong hÃƒÂ¬nh hÃ¡Â»Âc hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i vÃ¡Â»â€ºi nÃ†Â°Ã¡Â»â€ºc, ghÃ¡ÂºÂ¿ Ã„â€˜ÃƒÂ¡ vÃƒÂ  cÃƒÂ¢y xanh cÃƒÂ³ cÃ¡ÂºÂ¥u trÃƒÂºc, hÃ¡Â»â€” trÃ¡Â»Â£ tÃ¡ÂºÂ­p trung vÃƒÂ  hÃ¡Â»â€œi phÃ¡Â»Â¥c nÃ„Æ’ng lÃ†Â°Ã¡Â»Â£ng.",
+                         "filter":  "commercial",
+                         "themeColor":  "#151b22"
                      },
                      {
                          "id":  "7",
-                         "title":  "Khu nhÃ  á»Ÿ NghÄ©a Hiá»‡p, HÆ°ng YÃªn",
-                         "subtitle":  "Quy hoáº¡ch cáº£nh quan khu á»Ÿ cao cáº¥p",
-                         "category":  "PhÃ¡t triá»ƒn khu dÃ¢n cÆ°",
-                         "location":  "NghÄ©a Hiá»‡p, HÆ°ng YÃªn, Viá»‡t Nam",
-                         "alt":  "Quáº£ng trÆ°á»ng Ä‘Ã i phun nÆ°á»›c phong cÃ¡ch cá»• Ä‘iá»ƒn táº¡i khu nhÃ  á»Ÿ NghÄ©a Hiá»‡p HÆ°ng YÃªn",
+                         "title":  "Khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn",
+                         "subtitle":  "Quy hoÃ¡ÂºÂ¡ch cÃ¡ÂºÂ£nh quan khu Ã¡Â»Å¸ cao cÃ¡ÂºÂ¥p",
+                         "category":  "PhÃƒÂ¡t triÃ¡Â»Æ’n khu dÃƒÂ¢n cÃ†Â°",
+                         "location":  "NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn, ViÃ¡Â»â€¡t Nam",
+                         "alt":  "QuÃ¡ÂºÂ£ng trÃ†Â°Ã¡Â»Âng Ã„â€˜ÃƒÂ i phun nÃ†Â°Ã¡Â»â€ºc phong cÃƒÂ¡ch cÃ¡Â»â€¢ Ã„â€˜iÃ¡Â»Æ’n tÃ¡ÂºÂ¡i khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p HÃ†Â°ng YÃƒÂªn",
                          "image":  "assets/project_7.png",
                          "gallery":  [
                                          "assets/project_7.png",
@@ -234,134 +240,135 @@
                                          "assets/project_7_5.png",
                                          "assets/project_7_6.png"
                                      ],
-                         "description":  "Äá» xuáº¥t thiáº¿t káº¿ cáº£nh quan cho khu nhÃ  á»Ÿ NghÄ©a Hiá»‡p, HÆ°ng YÃªn vá»›i trung tÃ¢m lÃ  quáº£ng trÆ°á»ng Ä‘Ã i phun nÆ°á»›c theo trá»¥c Ä‘á»‘i xá»©ng. Dá»± Ã¡n káº¿t há»£p ngÃ´n ngá»¯ kiáº¿n trÃºc cá»• Ä‘iá»ƒn, há»‡ cÃ¢y xanh nhiá»u lá»›p vÃ  chiáº¿u sÃ¡ng cáº£nh quan ban Ä‘Ãªm, táº¡o nÃªn khÃ´ng gian sinh hoáº¡t cá»™ng Ä‘á»“ng sang trá»ng, an toÃ n vÃ  giÃ u báº£n sáº¯c.",
-                         "filter":  "residential"
+                         "description":  "Ã„ÂÃ¡Â»Â xuÃ¡ÂºÂ¥t thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan cho khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn vÃ¡Â»â€ºi trung tÃƒÂ¢m lÃƒÂ  quÃ¡ÂºÂ£ng trÃ†Â°Ã¡Â»Âng Ã„â€˜ÃƒÂ i phun nÃ†Â°Ã¡Â»â€ºc theo trÃ¡Â»Â¥c Ã„â€˜Ã¡Â»â€˜i xÃ¡Â»Â©ng. DÃ¡Â»Â± ÃƒÂ¡n kÃ¡ÂºÂ¿t hÃ¡Â»Â£p ngÃƒÂ´n ngÃ¡Â»Â¯ kiÃ¡ÂºÂ¿n trÃƒÂºc cÃ¡Â»â€¢ Ã„â€˜iÃ¡Â»Æ’n, hÃ¡Â»â€¡ cÃƒÂ¢y xanh nhiÃ¡Â»Âu lÃ¡Â»â€ºp vÃƒÂ  chiÃ¡ÂºÂ¿u sÃƒÂ¡ng cÃ¡ÂºÂ£nh quan ban Ã„â€˜ÃƒÂªm, tÃ¡ÂºÂ¡o nÃƒÂªn khÃƒÂ´ng gian sinh hoÃ¡ÂºÂ¡t cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng sang trÃ¡Â»Âng, an toÃƒÂ n vÃƒÂ  giÃƒÂ u bÃ¡ÂºÂ£n sÃ¡ÂºÂ¯c.",
+                         "filter":  "residential",
+                         "themeColor":  "#2a2218"
                      }
                  ],
     "handmadeSection":  {
                             "title":  "Object",
                             "highlight":  "Design",
-                            "subtitle":  "Đèn, đồ vật và các thử nghiệm thủ công"
+                            "subtitle":  "ÄÃ¨n, Ä‘á»“ váº­t vÃ  cÃ¡c thá»­ nghiá»‡m thá»§ cÃ´ng"
                         },
     "handmadeProjects":  [
                              {
                                  "id":  "hm-1",
-                                 "title":  "Ãnh SÃ¡ng TrÃ­ Tuá»‡",
-                                 "subtitle":  "ÄiÃªu kháº¯c nhá»±a \u0026 LED tÃ­m",
+                                 "title":  "ÃƒÂnh SÃƒÂ¡ng TrÃƒÂ­ TuÃ¡Â»â€¡",
+                                 "subtitle":  "Ã„ÂiÃƒÂªu khÃ¡ÂºÂ¯c nhÃ¡Â»Â±a \u0026 LED tÃƒÂ­m",
                                  "image":  "assets/handmade_lamp_1.jpg",
-                                 "description":  "ÄÃ¨n Ä‘á»ƒ bÃ n Ä‘iÃªu kháº¯c tá»« nhá»±a â€” hÃ¬nh nÃ£o ngÆ°á»i Ä‘áº·t trÃªn bÃ n tay Ä‘ang nÃ¢ng Ä‘á»¡. Ãnh LED tÃ­m phÃ¡t ra tá»« bÃªn trong biáº¿n tÃ¡c pháº©m thÃ nh váº­t thá»ƒ nghá»‡ thuáº­t Ä‘áº§y mÃª hoáº·c trong Ä‘Ãªm tá»‘i."
+                                 "description":  "Ã„ÂÃƒÂ¨n Ã„â€˜Ã¡Â»Æ’ bÃƒÂ n Ã„â€˜iÃƒÂªu khÃ¡ÂºÂ¯c tÃ¡Â»Â« nhÃ¡Â»Â±a Ã¢â‚¬â€ hÃƒÂ¬nh nÃƒÂ£o ngÃ†Â°Ã¡Â»Âi Ã„â€˜Ã¡ÂºÂ·t trÃƒÂªn bÃƒÂ n tay Ã„â€˜ang nÃƒÂ¢ng Ã„â€˜Ã¡Â»Â¡. ÃƒÂnh LED tÃƒÂ­m phÃƒÂ¡t ra tÃ¡Â»Â« bÃƒÂªn trong biÃ¡ÂºÂ¿n tÃƒÂ¡c phÃ¡ÂºÂ©m thÃƒÂ nh vÃ¡ÂºÂ­t thÃ¡Â»Æ’ nghÃ¡Â»â€¡ thuÃ¡ÂºÂ­t Ã„â€˜Ã¡ÂºÂ§y mÃƒÂª hoÃ¡ÂºÂ·c trong Ã„â€˜ÃƒÂªm tÃ¡Â»â€˜i."
                              },
                              {
                                  "id":  "hm-2",
-                                 "title":  "Ãnh Äá»‹a HÃ¬nh",
-                                 "subtitle":  "ÄÃ¨n trá»¥ in 3D â€” Ä‘Æ°á»ng Ä‘á»“ng má»©c",
+                                 "title":  "ÃƒÂnh Ã„ÂÃ¡Â»â€¹a HÃƒÂ¬nh",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ in 3D Ã¢â‚¬â€ Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜Ã¡Â»â€œng mÃ¡Â»Â©c",
                                  "image":  "assets/handmade_lamp_2.jpg",
-                                 "description":  "ÄÃ¨n trá»¥ nhá» gá»n vá»›i cÃ¡c gá» sÃ³ng in 3D gá»£i nhá»› Ä‘Æ°á»ng Ä‘á»“ng má»©c Ä‘á»‹a hÃ¬nh. Lá»›p vá» trong má» khuáº¿ch tÃ¡n Ã¡nh sÃ¡ng áº¥m thÃ nh luá»“ng sÃ¡ng má»m máº¡i, cÃ³ hÃ¬nh khá»‘i."
+                                 "description":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ nhÃ¡Â»Â gÃ¡Â»Ân vÃ¡Â»â€ºi cÃƒÂ¡c gÃ¡Â»Â sÃƒÂ³ng in 3D gÃ¡Â»Â£i nhÃ¡Â»â€º Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜Ã¡Â»â€œng mÃ¡Â»Â©c Ã„â€˜Ã¡Â»â€¹a hÃƒÂ¬nh. LÃ¡Â»â€ºp vÃ¡Â»Â trong mÃ¡Â»Â khuÃ¡ÂºÂ¿ch tÃƒÂ¡n ÃƒÂ¡nh sÃƒÂ¡ng Ã¡ÂºÂ¥m thÃƒÂ nh luÃ¡Â»â€œng sÃƒÂ¡ng mÃ¡Â»Âm mÃ¡ÂºÂ¡i, cÃƒÂ³ hÃƒÂ¬nh khÃ¡Â»â€˜i."
                              },
                              {
                                  "id":  "hm-3",
-                                 "title":  "Ãnh Äan I",
-                                 "subtitle":  "ÄÃ¨n váº£i dá»‡t thá»§ cÃ´ng \u0026 Ä‘áº¿ gá»—",
+                                 "title":  "ÃƒÂnh Ã„Âan I",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n vÃ¡ÂºÂ£i dÃ¡Â»â€¡t thÃ¡Â»Â§ cÃƒÂ´ng \u0026 Ã„â€˜Ã¡ÂºÂ¿ gÃ¡Â»â€”",
                                  "image":  "assets/handmade_lamp_3.jpg",
-                                 "description":  "ThÃ¢n Ä‘Ã¨n hÃ¬nh trá»¥ Ä‘Æ°á»£c bá»c váº£i dá»‡t thÃ´ thá»§ cÃ´ng, Ä‘áº·t trÃªn Ä‘áº¿ gá»— cháº¯c cháº¯n. LÆ°á»›i váº£i má»‹n tÃ¡n Ã¡nh sÃ¡ng Ä‘á»u, táº¡o ra sáº¯c há»• phÃ¡ch áº¥m Ã¡p cho má»i gÃ³c lÃ m viá»‡c."
+                                 "description":  "ThÃƒÂ¢n Ã„â€˜ÃƒÂ¨n hÃƒÂ¬nh trÃ¡Â»Â¥ Ã„â€˜Ã†Â°Ã¡Â»Â£c bÃ¡Â»Âc vÃ¡ÂºÂ£i dÃ¡Â»â€¡t thÃƒÂ´ thÃ¡Â»Â§ cÃƒÂ´ng, Ã„â€˜Ã¡ÂºÂ·t trÃƒÂªn Ã„â€˜Ã¡ÂºÂ¿ gÃ¡Â»â€” chÃ¡ÂºÂ¯c chÃ¡ÂºÂ¯n. LÃ†Â°Ã¡Â»â€ºi vÃ¡ÂºÂ£i mÃ¡Â»â€¹n tÃƒÂ¡n ÃƒÂ¡nh sÃƒÂ¡ng Ã„â€˜Ã¡Â»Âu, tÃ¡ÂºÂ¡o ra sÃ¡ÂºÂ¯c hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¡ÂºÂ¥m ÃƒÂ¡p cho mÃ¡Â»Âi gÃƒÂ³c lÃƒÂ m viÃ¡Â»â€¡c."
                              },
                              {
                                  "id":  "hm-4",
-                                 "title":  "QuÃ½ Ã”ng BÃ­ áº¨n â€” Ban NgÃ y",
-                                 "subtitle":  "ÄÃ¨n giáº¥y cháº¡m kháº¯c hÃ¬nh bÃ³ng",
+                                 "title":  "QuÃƒÂ½ Ãƒâ€ng BÃƒÂ­ Ã¡ÂºÂ¨n Ã¢â‚¬â€ Ban NgÃƒÂ y",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c hÃƒÂ¬nh bÃƒÂ³ng",
                                  "image":  "assets/handmade_lamp_4.jpg",
-                                 "description":  "HÃ¬nh bÃ³ng quÃ½ Ã´ng Ä‘áº§u lÃ¢u Ä‘á»™i mÅ© chÃ³p, váº½ tay vÃ  cáº¯t thá»§ cÃ´ng trÃªn chao Ä‘Ã¨n giáº¥y. Chá»¥p dÆ°á»›i Ã¡nh sÃ¡ng ban mai, tá»«ng Ä‘Æ°á»ng cáº¯t tá»‰ má»‰ hiá»‡n lÃªn rÃµ nÃ©t trÃªn ná»n giáº¥y há»• phÃ¡ch áº¥m Ã¡p."
+                                 "description":  "HÃƒÂ¬nh bÃƒÂ³ng quÃƒÂ½ ÃƒÂ´ng Ã„â€˜Ã¡ÂºÂ§u lÃƒÂ¢u Ã„â€˜Ã¡Â»â„¢i mÃ…Â© chÃƒÂ³p, vÃ¡ÂºÂ½ tay vÃƒÂ  cÃ¡ÂºÂ¯t thÃ¡Â»Â§ cÃƒÂ´ng trÃƒÂªn chao Ã„â€˜ÃƒÂ¨n giÃ¡ÂºÂ¥y. ChÃ¡Â»Â¥p dÃ†Â°Ã¡Â»â€ºi ÃƒÂ¡nh sÃƒÂ¡ng ban mai, tÃ¡Â»Â«ng Ã„â€˜Ã†Â°Ã¡Â»Âng cÃ¡ÂºÂ¯t tÃ¡Â»â€° mÃ¡Â»â€° hiÃ¡Â»â€¡n lÃƒÂªn rÃƒÂµ nÃƒÂ©t trÃƒÂªn nÃ¡Â»Ân giÃ¡ÂºÂ¥y hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¡ÂºÂ¥m ÃƒÂ¡p."
                              },
                              {
                                  "id":  "hm-5",
-                                 "title":  "ÄÃ¨n Hoa CÃºc",
-                                 "subtitle":  "Chao giáº¥y cháº¡m hoa cÃºc thá»§ cÃ´ng",
+                                 "title":  "Ã„ÂÃƒÂ¨n Hoa CÃƒÂºc",
+                                 "subtitle":  "Chao giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m hoa cÃƒÂºc thÃ¡Â»Â§ cÃƒÂ´ng",
                                  "image":  "assets/handmade_lamp_5.jpg",
-                                 "description":  "Chao Ä‘Ã¨n Ä‘á»©ng lÃ m tá»« giáº¥y cÃ³ káº¿t cáº¥u tá»± nhiÃªn, vá»›i hÃ¬nh hoa cÃºc Ä‘Æ°á»£c cáº¯t tá»‰ má»‰ báº±ng tay. Ãnh Ä‘Ãªm thÃ nh phá»‘ phÃ­a sau táº¡o nÃªn sá»± Ä‘á»‘i thoáº¡i tháº§m láº·ng giá»¯a nghá» thá»§ cÃ´ng vÃ  khung cáº£nh Ä‘Ã´ thá»‹."
+                                 "description":  "Chao Ã„â€˜ÃƒÂ¨n Ã„â€˜Ã¡Â»Â©ng lÃƒÂ m tÃ¡Â»Â« giÃ¡ÂºÂ¥y cÃƒÂ³ kÃ¡ÂºÂ¿t cÃ¡ÂºÂ¥u tÃ¡Â»Â± nhiÃƒÂªn, vÃ¡Â»â€ºi hÃƒÂ¬nh hoa cÃƒÂºc Ã„â€˜Ã†Â°Ã¡Â»Â£c cÃ¡ÂºÂ¯t tÃ¡Â»â€° mÃ¡Â»â€° bÃ¡ÂºÂ±ng tay. ÃƒÂnh Ã„â€˜ÃƒÂªm thÃƒÂ nh phÃ¡Â»â€˜ phÃƒÂ­a sau tÃ¡ÂºÂ¡o nÃƒÂªn sÃ¡Â»Â± Ã„â€˜Ã¡Â»â€˜i thoÃ¡ÂºÂ¡i thÃ¡ÂºÂ§m lÃ¡ÂºÂ·ng giÃ¡Â»Â¯a nghÃ¡Â»Â thÃ¡Â»Â§ cÃƒÂ´ng vÃƒÂ  khung cÃ¡ÂºÂ£nh Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹."
                              },
                              {
                                  "id":  "hm-6",
-                                 "title":  "QuÃ½ Ã”ng BÃ­ áº¨n â€” ÄÃªm",
-                                 "subtitle":  "ÄÃ¨n giáº¥y cháº¡m kháº¯c hÃ¬nh bÃ³ng",
+                                 "title":  "QuÃƒÂ½ Ãƒâ€ng BÃƒÂ­ Ã¡ÂºÂ¨n Ã¢â‚¬â€ Ã„ÂÃƒÂªm",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c hÃƒÂ¬nh bÃƒÂ³ng",
                                  "image":  "assets/handmade_lamp_6.jpg",
-                                 "description":  "CÃ¹ng chiáº¿c Ä‘Ã¨n QuÃ½ Ã”ng chá»¥p trong Ä‘Ãªm. ÄÃ¨n thÃ nh phá»‘ phÃ­a sau lÃ m ná»n, nhÃ¢n váº­t Ä‘áº§u lÃ¢u hiá»‡n ra rá»±c rá»¡ trong sáº¯c há»• phÃ¡ch â€” má»™t hÃ¬nh bÃ³ng Ä‘Æ°á»£c Ã¡nh sÃ¡ng thá»•i há»“n."
+                                 "description":  "CÃƒÂ¹ng chiÃ¡ÂºÂ¿c Ã„â€˜ÃƒÂ¨n QuÃƒÂ½ Ãƒâ€ng chÃ¡Â»Â¥p trong Ã„â€˜ÃƒÂªm. Ã„ÂÃƒÂ¨n thÃƒÂ nh phÃ¡Â»â€˜ phÃƒÂ­a sau lÃƒÂ m nÃ¡Â»Ân, nhÃƒÂ¢n vÃ¡ÂºÂ­t Ã„â€˜Ã¡ÂºÂ§u lÃƒÂ¢u hiÃ¡Â»â€¡n ra rÃ¡Â»Â±c rÃ¡Â»Â¡ trong sÃ¡ÂºÂ¯c hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¢â‚¬â€ mÃ¡Â»â„¢t hÃƒÂ¬nh bÃƒÂ³ng Ã„â€˜Ã†Â°Ã¡Â»Â£c ÃƒÂ¡nh sÃƒÂ¡ng thÃ¡Â»â€¢i hÃ¡Â»â€œn."
                              },
                              {
                                  "id":  "hm-7",
-                                 "title":  "Ãnh Äan II",
-                                 "subtitle":  "ÄÃ¨n trá»¥ váº£i dá»‡t \u0026 cáº£nh quÃ¡i váº­t",
+                                 "title":  "ÃƒÂnh Ã„Âan II",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ vÃ¡ÂºÂ£i dÃ¡Â»â€¡t \u0026 cÃ¡ÂºÂ£nh quÃƒÂ¡i vÃ¡ÂºÂ­t",
                                  "image":  "assets/handmade_lamp_7.jpg",
-                                 "description":  "ÄÃ¨n trá»¥ váº£i dá»‡t trong khung cáº£nh vui tÆ°Æ¡i cÃ¹ng mÃ´ hÃ¬nh quÃ¡i váº­t. Nháº¯c nhá»Ÿ ráº±ng Ä‘á»“ váº­t thá»§ cÃ´ng mang cÃ¡ tÃ­nh riÃªng â€” chÃºng trá»Ÿ thÃ nh má»™t pháº§n cÃ¢u chuyá»‡n cá»§a khÃ´ng gian mÃ  chÃºng trÃº ngá»¥."
+                                 "description":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ vÃ¡ÂºÂ£i dÃ¡Â»â€¡t trong khung cÃ¡ÂºÂ£nh vui tÃ†Â°Ã†Â¡i cÃƒÂ¹ng mÃƒÂ´ hÃƒÂ¬nh quÃƒÂ¡i vÃ¡ÂºÂ­t. NhÃ¡ÂºÂ¯c nhÃ¡Â»Å¸ rÃ¡ÂºÂ±ng Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t thÃ¡Â»Â§ cÃƒÂ´ng mang cÃƒÂ¡ tÃƒÂ­nh riÃƒÂªng Ã¢â‚¬â€ chÃƒÂºng trÃ¡Â»Å¸ thÃƒÂ nh mÃ¡Â»â„¢t phÃ¡ÂºÂ§n cÃƒÂ¢u chuyÃ¡Â»â€¡n cÃ¡Â»Â§a khÃƒÂ´ng gian mÃƒÂ  chÃƒÂºng trÃƒÂº ngÃ¡Â»Â¥."
                              },
                              {
                                  "id":  "hm-8",
-                                 "title":  "ÄÃ¨n Hoa Sen",
-                                 "subtitle":  "Chao giáº¥y cháº¡m hoa sen thá»§ cÃ´ng",
+                                 "title":  "Ã„ÂÃƒÂ¨n Hoa Sen",
+                                 "subtitle":  "Chao giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m hoa sen thÃ¡Â»Â§ cÃƒÂ´ng",
                                  "image":  "assets/handmade_lamp_8.jpg",
-                                 "description":  "Cáº­n cáº£nh chao Ä‘Ã¨n giáº¥y vá»›i nhá»¯ng bÃ´ng sen ná»Ÿ rá»™ Ä‘Æ°á»£c cháº¡m kháº¯c tá»‰ má»‰ báº±ng tay. Ãnh sÃ¡ng áº¥m phÃ­a sau biáº¿n tá»«ng cÃ¡nh hoa thÃ nh má»™t bá»©c tranh phÃ¡t sÃ¡ng lung linh trong Ä‘Ãªm tá»‘i."
+                                 "description":  "CÃ¡ÂºÂ­n cÃ¡ÂºÂ£nh chao Ã„â€˜ÃƒÂ¨n giÃ¡ÂºÂ¥y vÃ¡Â»â€ºi nhÃ¡Â»Â¯ng bÃƒÂ´ng sen nÃ¡Â»Å¸ rÃ¡Â»â„¢ Ã„â€˜Ã†Â°Ã¡Â»Â£c chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c tÃ¡Â»â€° mÃ¡Â»â€° bÃ¡ÂºÂ±ng tay. ÃƒÂnh sÃƒÂ¡ng Ã¡ÂºÂ¥m phÃƒÂ­a sau biÃ¡ÂºÂ¿n tÃ¡Â»Â«ng cÃƒÂ¡nh hoa thÃƒÂ nh mÃ¡Â»â„¢t bÃ¡Â»Â©c tranh phÃƒÂ¡t sÃƒÂ¡ng lung linh trong Ã„â€˜ÃƒÂªm tÃ¡Â»â€˜i."
                              },
                              {
                                  "id":  "hm-9",
-                                 "title":  "Ãnh VÃ²ng",
-                                 "subtitle":  "ÄÃ¨n trá»¥ xáº¿p vÃ²ng táº§ng táº§ng",
+                                 "title":  "ÃƒÂnh VÃƒÂ²ng",
+                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ xÃ¡ÂºÂ¿p vÃƒÂ²ng tÃ¡ÂºÂ§ng tÃ¡ÂºÂ§ng",
                                  "image":  "assets/handmade_lamp_9.jpg",
-                                 "description":  "ÄÃ¨n Ä‘á»ƒ bÃ n tá»‘i giáº£n Ä‘Æ°á»£c xÃ¢y tá»« nhá»¯ng vÃ²ng ngang xáº¿p chá»“ng lÃªn nhau, phÃ¡t ra Ã¡nh sÃ¡ng Ä‘á»u vÃ  trong sÃ¡ng. ÄÆ¡n giáº£n vá» hÃ¬nh dáº¡ng nhÆ°ng phong phÃº vá» cháº¥t liá»‡u â€” thÃ­ch há»£p cho má»i gÃ³c yÃªn tÄ©nh."
+                                 "description":  "Ã„ÂÃƒÂ¨n Ã„â€˜Ã¡Â»Æ’ bÃƒÂ n tÃ¡Â»â€˜i giÃ¡ÂºÂ£n Ã„â€˜Ã†Â°Ã¡Â»Â£c xÃƒÂ¢y tÃ¡Â»Â« nhÃ¡Â»Â¯ng vÃƒÂ²ng ngang xÃ¡ÂºÂ¿p chÃ¡Â»â€œng lÃƒÂªn nhau, phÃƒÂ¡t ra ÃƒÂ¡nh sÃƒÂ¡ng Ã„â€˜Ã¡Â»Âu vÃƒÂ  trong sÃƒÂ¡ng. Ã„ÂÃ†Â¡n giÃ¡ÂºÂ£n vÃ¡Â»Â hÃƒÂ¬nh dÃ¡ÂºÂ¡ng nhÃ†Â°ng phong phÃƒÂº vÃ¡Â»Â chÃ¡ÂºÂ¥t liÃ¡Â»â€¡u Ã¢â‚¬â€ thÃƒÂ­ch hÃ¡Â»Â£p cho mÃ¡Â»Âi gÃƒÂ³c yÃƒÂªn tÃ„Â©nh."
                              }
                          ],
     "profile":  {
-                    "name":  "LÃ¢m SÆ¡n",
-                    "role":  "Kiáº¿n trÃºc sÆ° cáº£nh quan \u0026 thiáº¿t káº¿ Ä‘á»“ váº­t",
-                    "location":  "HÃ  Ná»™i, Viá»‡t Nam",
+                    "name":  "LÃƒÂ¢m SÃ†Â¡n",
+                    "role":  "KiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan \u0026 thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t",
+                    "location":  "HÃƒÂ  NÃ¡Â»â„¢i, ViÃ¡Â»â€¡t Nam",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
                     "avatar":  "assets/hero_cover.jpg",
                     "cover":  "assets/hero_bg.png",
-                    "summary":  "TÃ´i thiáº¿t káº¿ cáº£nh quan, sÃ¢n vÆ°á»n, ná»™i tháº¥t vÃ  cÃ¡c Ä‘á»“ váº­t thá»§ cÃ´ng dá»±a trÃªn váº­t liá»‡u tá»± nhiÃªn, tá»· lá»‡ rÃµ rÃ ng vÃ  tÆ° duy thi cÃ´ng thá»±c táº¿.",
+                    "summary":  "TÃƒÂ´i thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan, sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân, nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t vÃƒÂ  cÃƒÂ¡c Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t thÃ¡Â»Â§ cÃƒÂ´ng dÃ¡Â»Â±a trÃƒÂªn vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn, tÃ¡Â»Â· lÃ¡Â»â€¡ rÃƒÂµ rÃƒÂ ng vÃƒÂ  tÃ†Â° duy thi cÃƒÂ´ng thÃ¡Â»Â±c tÃ¡ÂºÂ¿.",
                     "skills":  [
-                                   "Thiáº¿t káº¿ cáº£nh quan",
-                                   "Thiáº¿t káº¿ sÃ¢n vÆ°á»n",
-                                   "Thiáº¿t káº¿ ná»™i tháº¥t",
-                                   "Thiáº¿t káº¿ chiáº¿u sÃ¡ng",
-                                   "PhÃ¡t triá»ƒn Ã½ tÆ°á»Ÿng",
-                                   "GiÃ¡m sÃ¡t thi cÃ´ng"
+                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan",
+                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân",
+                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t",
+                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ chiÃ¡ÂºÂ¿u sÃƒÂ¡ng",
+                                   "PhÃƒÂ¡t triÃ¡Â»Æ’n ÃƒÂ½ tÃ†Â°Ã¡Â»Å¸ng",
+                                   "GiÃƒÂ¡m sÃƒÂ¡t thi cÃƒÂ´ng"
                                ],
                     "experience":  [
                                        {
-                                           "period":  "2016 - Hiá»‡n táº¡i",
-                                           "title":  "Kiáº¿n trÃºc sÆ° cáº£nh quan / SÃ¡ng láº­p",
+                                           "period":  "2016 - HiÃ¡Â»â€¡n tÃ¡ÂºÂ¡i",
+                                           "title":  "KiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan / SÃƒÂ¡ng lÃ¡ÂºÂ­p",
                                            "place":  "LAMON-DIY",
-                                           "description":  "Phá»¥ trÃ¡ch cÃ¡c dá»± Ã¡n cáº£nh quan, sÃ¢n vÆ°á»n, ná»™i tháº¥t vÃ  chiáº¿u sÃ¡ng tá»« Ä‘á»‹nh hÆ°á»›ng Ã½ tÆ°á»Ÿng Ä‘áº¿n há»— trá»£ triá»ƒn khai."
+                                           "description":  "PhÃ¡Â»Â¥ trÃƒÂ¡ch cÃƒÂ¡c dÃ¡Â»Â± ÃƒÂ¡n cÃ¡ÂºÂ£nh quan, sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân, nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t vÃƒÂ  chiÃ¡ÂºÂ¿u sÃƒÂ¡ng tÃ¡Â»Â« Ã„â€˜Ã¡Â»â€¹nh hÃ†Â°Ã¡Â»â€ºng ÃƒÂ½ tÃ†Â°Ã¡Â»Å¸ng Ã„â€˜Ã¡ÂºÂ¿n hÃ¡Â»â€” trÃ¡Â»Â£ triÃ¡Â»Æ’n khai."
                                        }
                                    ],
                     "education":  [
                                       {
-                                          "period":  "2011 â€“ 2016",
-                                          "title":  "Cá»­ nhÃ¢n Kiáº¿n trÃºc",
-                                          "place":  "TrÆ°á»ng Äáº¡i há»c Kiáº¿n trÃºc HÃ  Ná»™i (HAU)",
-                                          "description":  "ChuyÃªn ngÃ nh kiáº¿n trÃºc cáº£nh quan vÃ  thiáº¿t káº¿ khÃ´ng gian, táº­p trung vÃ o mÃ´i trÆ°á»ng ngoÃ i trá»i, há»‡ váº­t liá»‡u tá»± nhiÃªn vÃ  thiáº¿t káº¿ theo tá»· lá»‡ con ngÆ°á»i."
+                                          "period":  "2011 Ã¢â‚¬â€œ 2016",
+                                          "title":  "CÃ¡Â»Â­ nhÃƒÂ¢n KiÃ¡ÂºÂ¿n trÃƒÂºc",
+                                          "place":  "TrÃ†Â°Ã¡Â»Âng Ã„ÂÃ¡ÂºÂ¡i hÃ¡Â»Âc KiÃ¡ÂºÂ¿n trÃƒÂºc HÃƒÂ  NÃ¡Â»â„¢i (HAU)",
+                                          "description":  "ChuyÃƒÂªn ngÃƒÂ nh kiÃ¡ÂºÂ¿n trÃƒÂºc cÃ¡ÂºÂ£nh quan vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ khÃƒÂ´ng gian, tÃ¡ÂºÂ­p trung vÃƒÂ o mÃƒÂ´i trÃ†Â°Ã¡Â»Âng ngoÃƒÂ i trÃ¡Â»Âi, hÃ¡Â»â€¡ vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ theo tÃ¡Â»Â· lÃ¡Â»â€¡ con ngÃ†Â°Ã¡Â»Âi."
                                       }
                                   ]
                 },
     "contact":  {
-                    "title":  "Báº¯t Ä‘áº§u",
-                    "highlight":  "Dá»± Ã¡n",
-                    "subtitle":  "ChÃºng tÃ´i há»£p tÃ¡c vá»›i khÃ¡ch hÃ ng cÃ¡ nhÃ¢n, kiáº¿n trÃºc sÆ°, vÃ  nhÃ  phÃ¡t triá»ƒn Ä‘á»ƒ táº¡o ra nhá»¯ng cáº£nh quan Ã½ nghÄ©a.",
+                    "title":  "BÃ¡ÂºÂ¯t Ã„â€˜Ã¡ÂºÂ§u",
+                    "highlight":  "DÃ¡Â»Â± ÃƒÂ¡n",
+                    "subtitle":  "ChÃƒÂºng tÃƒÂ´i hÃ¡Â»Â£p tÃƒÂ¡c vÃ¡Â»â€ºi khÃƒÂ¡ch hÃƒÂ ng cÃƒÂ¡ nhÃƒÂ¢n, kiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â°, vÃƒÂ  nhÃƒÂ  phÃƒÂ¡t triÃ¡Â»Æ’n Ã„â€˜Ã¡Â»Æ’ tÃ¡ÂºÂ¡o ra nhÃ¡Â»Â¯ng cÃ¡ÂºÂ£nh quan ÃƒÂ½ nghÃ„Â©a.",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
-                    "location":  "275 Nguyá»…n TrÃ£i - Thanh XuÃ¢n - HÃ  Ná»™i - Viá»‡t Nam",
-                    "cta":  "LiÃªn há»‡ ngay",
+                    "location":  "275 NguyÃ¡Â»â€¦n TrÃƒÂ£i - Thanh XuÃƒÂ¢n - HÃƒÂ  NÃ¡Â»â„¢i - ViÃ¡Â»â€¡t Nam",
+                    "cta":  "LiÃƒÂªn hÃ¡Â»â€¡ ngay",
                     "form":  {
-                                 "name":  "Há» vÃ  TÃªn",
-                                 "email":  "Äá»‹a chá»‰ Email",
-                                 "phone":  "Sá»‘ Ä‘iá»‡n thoáº¡i",
-                                 "address":  "Äá»‹a chá»‰ liÃªn há»‡",
-                                 "message":  "MÃ´ táº£ ngáº¯n vá» dá»± Ã¡n cá»§a báº¡n",
-                                 "submit":  "Gá»­i ThÃ´ng Tin",
-                                 "success":  "Cáº£m Æ¡n báº¡n! ChÃºng tÃ´i sáº½ liÃªn há»‡ trong thá»i gian sá»›m nháº¥t."
+                                 "name":  "HÃ¡Â»Â vÃƒÂ  TÃƒÂªn",
+                                 "email":  "Ã„ÂÃ¡Â»â€¹a chÃ¡Â»â€° Email",
+                                 "phone":  "SÃ¡Â»â€˜ Ã„â€˜iÃ¡Â»â€¡n thoÃ¡ÂºÂ¡i",
+                                 "address":  "Ã„ÂÃ¡Â»â€¹a chÃ¡Â»â€° liÃƒÂªn hÃ¡Â»â€¡",
+                                 "message":  "MÃƒÂ´ tÃ¡ÂºÂ£ ngÃ¡ÂºÂ¯n vÃ¡Â»Â dÃ¡Â»Â± ÃƒÂ¡n cÃ¡Â»Â§a bÃ¡ÂºÂ¡n",
+                                 "submit":  "GÃ¡Â»Â­i ThÃƒÂ´ng Tin",
+                                 "success":  "CÃ¡ÂºÂ£m Ã†Â¡n bÃ¡ÂºÂ¡n! ChÃƒÂºng tÃƒÂ´i sÃ¡ÂºÂ½ liÃƒÂªn hÃ¡Â»â€¡ trong thÃ¡Â»Âi gian sÃ¡Â»â€ºm nhÃ¡ÂºÂ¥t."
                              }
                 },
     "footer":  {
-                   "copyright":  "\u0026copy; 2026 Kiáº¿n trÃºc Cáº£nh quan. Báº£o lÆ°u má»i quyá»n.",
+                   "copyright":  "\u0026copy; 2026 KiÃ¡ÂºÂ¿n trÃƒÂºc CÃ¡ÂºÂ£nh quan. BÃ¡ÂºÂ£o lÃ†Â°u mÃ¡Â»Âi quyÃ¡Â»Ân.",
                    "socials":  [
                                    {
                                        "label":  "Facebook",

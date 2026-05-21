@@ -1,10 +1,10 @@
-{
+﻿{
     "seo":  {
                 "title":  "LAMON-DIY | Landscape Architect Portfolio",
                 "description":  "Portfolio of a dynamic, modern landscape architect specializing in sustainable and premium designs."
             },
     "brand":  {
-                  "name":  "LáMON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
+                  "name":  "LÃ¡MON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
               },
     "nav":  {
                 "about":  "Philosophy",
@@ -19,14 +19,14 @@
                  "cta":  "View Selected Projects",
                  "showreel":  "Watch Showreel",
                  "showreelId":  "-6RfCxs7DdM",
-                 "credibilityLine":  "Landscape Design  •  Garden Architecture  •  Furniture \u0026 Lighting"
+                 "credibilityLine":  "Landscape Design  â€¢  Garden Architecture  â€¢  Furniture \u0026 Lighting"
              },
     "about":  {
                   "title":  "Design",
                   "highlight":  "Philosophy",
                   "paragraphs":  [
-                                     "We work across every scale of the landscape — from the quiet intimacy of a balcony garden to the ambitious sweep of a public park. Each project begins with the same question: how should this space make you feel?",
-                                     "Our practice extends beyond the ground plane. We design furniture, lighting, and objects born from the same principles that shape our landscapes — natural materials, thoughtful proportions, and the conviction that beautiful things should age gracefully."
+                                     "We work across every scale of the landscape â€” from the quiet intimacy of a balcony garden to the ambitious sweep of a public park. Each project begins with the same question: how should this space make you feel?",
+                                     "Our practice extends beyond the ground plane. We design furniture, lighting, and objects born from the same principles that shape our landscapes â€” natural materials, thoughtful proportions, and the conviction that beautiful things should age gracefully."
                                  ],
                   "image":  "assets/project_5.png",
                   "imageAlt":  "Landscape Design Philosophy",
@@ -70,7 +70,7 @@
                                    },
                                    {
                                        "title":  "Furniture \u0026 Lighting Design",
-                                       "desc":  "Custom-designed objects — cabinets, tables, chairs, and lighting — born from landscape thinking."
+                                       "desc":  "Custom-designed objects â€” cabinets, tables, chairs, and lighting â€” born from landscape thinking."
                                    }
                                ]
                  },
@@ -105,7 +105,7 @@
                          "highlight":  "Perspectives",
                          "items":  [
                                        {
-                                           "quote":  "LáMON transformed our bare rooftop into a lush, thriving ecosystem. Their attention to detail and botanical knowledge is unparalleled.",
+                                           "quote":  "LÃ¡MON transformed our bare rooftop into a lush, thriving ecosystem. Their attention to detail and botanical knowledge is unparalleled.",
                                            "author":  "Elena V.",
                                            "role":  "Private Residence Owner"
                                        },
@@ -140,7 +140,8 @@
                                          "assets/project_4.png"
                                      ],
                          "description":  "A transformative urban public park designed to foster community engagement and biodiversity with native planting and smart water strategies.",
-                         "filter":  "public"
+                         "filter":  "public",
+                         "themeColor":  "#11261d"
                      },
                      {
                          "id":  "2",
@@ -155,7 +156,8 @@
                                          "assets/project_3.png"
                                      ],
                          "description":  "An intimate residential sanctuary centered on a modern deck, integrated fire feature, and layered planting for day and night comfort.",
-                         "filter":  "residential"
+                         "filter":  "residential",
+                         "themeColor":  "#2a2218"
                      },
                      {
                          "id":  "3",
@@ -170,7 +172,8 @@
                                          "assets/project_1.png"
                                      ],
                          "description":  "A high-performance green roof with drought-tolerant species and a minimal circulation path that improves thermal comfort and biodiversity.",
-                         "filter":  "commercial"
+                         "filter":  "commercial",
+                         "themeColor":  "#151b22"
                      },
                      {
                          "id":  "4",
@@ -185,7 +188,8 @@
                                          "assets/project_1_2.png"
                                      ],
                          "description":  "A curated botanical pathway immersed in layered tropical species, designed for a serene and cinematic visitor journey.",
-                         "filter":  "public"
+                         "filter":  "public",
+                         "themeColor":  "#11261d"
                      },
                      {
                          "id":  "5",
@@ -200,7 +204,8 @@
                                          "assets/project_3_2.png"
                                      ],
                          "description":  "A coastal resort landscape where pool, terrace, and planting are composed to align with horizon views and reduce erosion impacts.",
-                         "filter":  "commercial"
+                         "filter":  "commercial",
+                         "themeColor":  "#102534"
                      },
                      {
                          "id":  "6",
@@ -215,7 +220,8 @@
                                          "assets/project_5.png"
                                      ],
                          "description":  "A geometric corporate courtyard featuring water elements, sculptural seating, and structured planting that supports focus and recovery.",
-                         "filter":  "commercial"
+                         "filter":  "commercial",
+                         "themeColor":  "#151b22"
                      },
                      {
                          "id":  "7",
@@ -235,7 +241,8 @@
                                          "assets/project_7_6.png"
                                      ],
                          "description":  "A premium residential landscape concept for Nghia Hiep, Hung Yen, centered on a classical fountain plaza, axial walkways, and layered planting. The design combines ceremonial architecture, warm night lighting, and human-scale seating to create an elegant neighborhood destination for gathering, strolling, and relaxation.",
-                         "filter":  "residential"
+                         "filter":  "residential",
+                         "themeColor":  "#2a2218"
                      }
                  ],
     "handmadeSection":  {
@@ -249,7 +256,7 @@
                                  "title":  "Luminous Mind",
                                  "subtitle":  "Resin Sculpture \u0026 Purple LED",
                                  "image":  "assets/handmade_lamp_1.jpg",
-                                 "description":  "A sculptural table lamp cast from resin — a glowing brain cradled in an outstretched hand. Lit with a deep purple LED, it dissolves the line between art object and functional light."
+                                 "description":  "A sculptural table lamp cast from resin â€” a glowing brain cradled in an outstretched hand. Lit with a deep purple LED, it dissolves the line between art object and functional light."
                              },
                              {
                                  "id":  "hm-2",
@@ -267,7 +274,7 @@
                              },
                              {
                                  "id":  "hm-4",
-                                 "title":  "The Gentleman — Day",
+                                 "title":  "The Gentleman â€” Day",
                                  "subtitle":  "Paper-cut Silhouette Lamp",
                                  "image":  "assets/handmade_lamp_4.jpg",
                                  "description":  "A skull gentleman in a top hat, hand-drawn and hand-cut into a paper lampshade. Photographed in morning light, the silhouette shows the precision of every cut line against a warm amber ground."
@@ -277,21 +284,21 @@
                                  "title":  "Bloom Lantern",
                                  "subtitle":  "Hand-cut Daisy Paper Shade",
                                  "image":  "assets/handmade_lamp_5.jpg",
-                                 "description":  "A floor lamp shade crafted from natural textured paper with a hand-cut daisy silhouette. At night, city bokeh frames the warm amber glow — a quiet dialogue between craft and the urban landscape."
+                                 "description":  "A floor lamp shade crafted from natural textured paper with a hand-cut daisy silhouette. At night, city bokeh frames the warm amber glow â€” a quiet dialogue between craft and the urban landscape."
                              },
                              {
                                  "id":  "hm-6",
-                                 "title":  "The Gentleman — Night",
+                                 "title":  "The Gentleman â€” Night",
                                  "subtitle":  "Paper-cut Silhouette Lamp",
                                  "image":  "assets/handmade_lamp_6.jpg",
-                                 "description":  "The same skull gentleman lamp photographed at night. Backlit against the city skyline, the hand-cut figure emerges in dramatic fiery amber — a character brought alive by light."
+                                 "description":  "The same skull gentleman lamp photographed at night. Backlit against the city skyline, the hand-cut figure emerges in dramatic fiery amber â€” a character brought alive by light."
                              },
                              {
                                  "id":  "hm-7",
                                  "title":  "Woven Glow II",
                                  "subtitle":  "Textile Cylinder \u0026 Monster Scene",
                                  "image":  "assets/handmade_lamp_7.jpg",
-                                 "description":  "The woven cylinder lamp captured in a playful scene alongside miniature monsters. A reminder that handmade objects carry personality — they become part of the stories in the spaces they inhabit."
+                                 "description":  "The woven cylinder lamp captured in a playful scene alongside miniature monsters. A reminder that handmade objects carry personality â€” they become part of the stories in the spaces they inhabit."
                              },
                              {
                                  "id":  "hm-8",
@@ -305,7 +312,7 @@
                                  "title":  "Ringed Glow",
                                  "subtitle":  "Layered Ring Cylinder Lamp",
                                  "image":  "assets/handmade_lamp_9.jpg",
-                                 "description":  "A minimalist table lamp built from stacked horizontal rings, emitting a clean, even glow. Simple in form but rich in material texture — it finds its place in any quiet corner."
+                                 "description":  "A minimalist table lamp built from stacked horizontal rings, emitting a clean, even glow. Simple in form but rich in material texture â€” it finds its place in any quiet corner."
                              }
                          ],
     "profile":  {
@@ -335,7 +342,7 @@
                                    ],
                     "education":  [
                                       {
-                                          "period":  "2011 – 2016",
+                                          "period":  "2011 â€“ 2016",
                                           "title":  "Bachelor of Architecture",
                                           "place":  "Hanoi Architectural University (HAU)",
                                           "description":  "Specialized in landscape architecture and spatial design, with a focus on outdoor environments, natural material systems, and human-scale design."
@@ -348,7 +355,7 @@
                     "subtitle":  "We collaborate with private clients, architects, and developers to create meaningful landscapes.",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
-                    "location":  "275 Nguyễn Trãi - Thanh Xuân - Hà Nội - Việt Nam",
+                    "location":  "275 Nguyá»…n TrÃ£i - Thanh XuÃ¢n - HÃ  Ná»™i - Viá»‡t Nam",
                     "cta":  "Get in Touch",
                     "form":  {
                                  "name":  "Full Name",

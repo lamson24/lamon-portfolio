@@ -5,6 +5,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     setupCustomCursor();
     setupPageTransition();
+    
+    // MAGICAL UX SETUP
+    setupLenisScroll();
+    setupMagneticButtons();
+    setupTextReveal();
+    setupLiquidHover();
+    setupDynamicTheme();
+
     setupGSAPParallax();
     setupImageBlurUp();
 });
@@ -284,4 +292,167 @@ function setupImageBlurUp() {
 
     const mainContainer = document.querySelector('main') || document.body;
     observer.observe(mainContainer, { childList: true, subtree: true });
+}
+
+// =========================================
+// 1. LENIS SMOOTH SCROLL
+// =========================================
+function setupLenisScroll() {
+    if (typeof Lenis === 'undefined') return;
+
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical', 
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+    });
+
+    if (typeof ScrollTrigger !== 'undefined') {
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+    } else {
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    }
+}
+
+// =========================================
+// 2. MAGNETIC BUTTONS
+// =========================================
+function setupMagneticButtons() {
+    const bindMagnetic = () => {
+        const magneticElements = document.querySelectorAll('.btn-primary, .btn-secondary, .filter-btn');
+        
+        magneticElements.forEach(el => {
+            if (el.dataset.magneticBound) return;
+            el.dataset.magneticBound = "true";
+            
+            el.classList.add('magnetic');
+            
+            el.addEventListener('mousemove', function(e) {
+                const rect = el.getBoundingClientRect();
+                const h = rect.width / 2;
+                const v = rect.height / 2;
+                const x = e.clientX - rect.left - h;
+                const y = e.clientY - rect.top - v;
+                el.style.transform = "translate($(x * 0.3)px, $(y * 0.3)px)";
+            });
+            
+            el.addEventListener('mouseleave', function() {
+                el.style.transform = "translate(0px, 0px)";
+            });
+        });
+    };
+    bindMagnetic();
+    const observer = new MutationObserver(bindMagnetic);
+    observer.observe(document.body, { childList: true, subtree: true });
+}
+
+// =========================================
+// 3. SPLIT TEXT REVEAL
+// =========================================
+function setupTextReveal() {
+    if (typeof SplitType === 'undefined' || typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+    setTimeout(() => {
+        const revealElements = document.querySelectorAll('.hero-title, .section-title, .contact-card h2');
+        
+        revealElements.forEach(el => {
+            el.style.opacity = '1'; 
+            const split = new SplitType(el, { types: 'lines, words' });
+            
+            split.words.forEach(word => {
+                const wrapper = document.createElement('div');
+                wrapper.classList.add('line');
+                wrapper.style.display = 'inline-block';
+                word.parentNode.insertBefore(wrapper, word);
+                wrapper.appendChild(word);
+            });
+
+            gsap.from(split.words, {
+                y: "120%",
+                opacity: 0,
+                rotationZ: "5deg",
+                duration: 1,
+                stagger: 0.03,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 90%"
+                }
+            });
+        });
+    }, 100);
+}
+
+// =========================================
+// 4. LIQUID DISTORTION HOVER
+// =========================================
+function setupLiquidHover() {
+    if (typeof gsap === 'undefined') return;
+    const liquidFilter = document.querySelector('#liquid feDisplacementMap');
+    if (!liquidFilter) return;
+
+    const bindLiquid = () => {
+        const images = document.querySelectorAll('.project-img, .handmade-image-wrapper img');
+        images.forEach(img => {
+            if (img.dataset.liquidBound) return;
+            img.dataset.liquidBound = "true";
+            img.classList.add('liquid-hover');
+
+            img.addEventListener('mouseenter', () => {
+                img.style.filter = 'url(#liquid)';
+                gsap.to(liquidFilter, { attr: { scale: 30 }, duration: 0.6, ease: "power2.out" });
+            });
+            
+            img.addEventListener('mouseleave', () => {
+                gsap.to(liquidFilter, { attr: { scale: 0 }, duration: 0.6, ease: "power2.out", onComplete: () => {
+                    img.style.filter = 'none';
+                }});
+            });
+        });
+    };
+    bindLiquid();
+    const observer = new MutationObserver(bindLiquid);
+    observer.observe(document.body, { childList: true, subtree: true });
+}
+
+// =========================================
+// 5. DYNAMIC AMBIENT THEME
+// =========================================
+function setupDynamicTheme() {
+    const body = document.body;
+    const bindTheme = () => {
+        const links = document.querySelectorAll('.project-link');
+        links.forEach(link => {
+            if (link.dataset.themeBound) return;
+            link.dataset.themeBound = "true";
+            
+            const themeColor = link.getAttribute('data-theme');
+            if (!themeColor) return;
+            
+            link.addEventListener('mouseenter', () => {
+                body.style.setProperty('--dynamic-bg', themeColor);
+                body.classList.add('theme-active');
+            });
+            
+            link.addEventListener('mouseleave', () => {
+                body.classList.remove('theme-active');
+            });
+        });
+    };
+    bindTheme();
+    const observer = new MutationObserver(bindTheme);
+    observer.observe(document.body, { childList: true, subtree: true });
 }
