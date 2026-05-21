@@ -1,128 +1,127 @@
-﻿{
+{
     "seo":  {
-                "title":  "LAMON-DIY | HÃ¡Â»â€œ sÃ†Â¡ NÃ„Æ’ng lÃ¡Â»Â±c KiÃ¡ÂºÂ¿n trÃƒÂºc CÃ¡ÂºÂ£nh quan",
-                "description":  "HÃ¡Â»â€œ sÃ†Â¡ nÃ„Æ’ng lÃ¡Â»Â±c cÃ¡Â»Â§a kiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan theo Ã„â€˜uÃ¡Â»â€¢i giÃ¡ÂºÂ£i phÃƒÂ¡p hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i, bÃ¡Â»Ân vÃ¡Â»Â¯ng vÃƒÂ  tinh tÃ¡ÂºÂ¿."
+                "title":  "LAMON-DIY | Hồ sơ Năng lực Kiến trúc Cảnh quan",
+                "description":  "Hồ sơ năng lực của kiến trúc sư cảnh quan theo đuổi giải pháp hiện đại, bền vững và tinh tế."
             },
     "brand":  {
-                  "name":  "LÃƒÂ¡MON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
+                  "name":  "LáMON\u003cspan class=\"logo-suffix\"\u003e-DIY\u003c/span\u003e"
               },
     "nav":  {
-                "about":  "TriÃ¡ÂºÂ¿t lÃƒÂ½",
-                "projects":  "DÃ¡Â»Â± ÃƒÂ¡n",
-                "handmade":  "Object Design",
-                "contact":  "LiÃƒÂªn hÃ¡Â»â€¡"
+                "about":  "Triết lý",
+                "projects":  "Dự án",
+                "handmade":  "Thủ công",
+                "contact":  "Liên hệ"
             },
     "hero":  {
-                 "title":  "KiÃ¡ÂºÂ¿n tÃ¡ÂºÂ¡o",
-                 "highlight":  "ThiÃƒÂªn nhiÃƒÂªn.",
-                 "subtitle":  "KiÃ¡ÂºÂ¿n TrÃƒÂºc CÃ¡ÂºÂ£nh Quan \u0026 ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t",
-                 "cta":  "Xem DÃ¡Â»Â± ÃƒÂn TiÃƒÂªu BiÃ¡Â»Æ’u",
-                 "showreel":  "Xem ThÃ†Â°Ã¡Â»â€ºc Phim",
+                 "title":  "Kiến tạo",
+                 "highlight":  "Thiên nhiên.",
+                 "subtitle":  "Kiến Trúc Cảnh Quan \u0026 Thiết Kế Nội Thất",
+                 "cta":  "Xem Dự Án Tiêu Biểu",
+                 "showreel":  "Xem Thước Phim",
                  "showreelId":  "-6RfCxs7DdM",
-                 "credibilityLine":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ CÃ¡ÂºÂ£nh Quan  Ã¢â‚¬Â¢  KiÃ¡ÂºÂ¿n TrÃƒÂºc SÃƒÂ¢n VÃ†Â°Ã¡Â»Ân  Ã¢â‚¬Â¢  NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t \u0026 ChiÃ¡ÂºÂ¿u SÃƒÂ¡ng"
+                 "credibilityLine":  "Thiết Kế Cảnh Quan  •  Kiến Trúc Sân Vườn  •  Nội Thất \u0026 Chiếu Sáng"
              },
     "about":  {
-                  "title":  "TriÃ¡ÂºÂ¿t lÃƒÂ½",
-                  "highlight":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿",
+                  "title":  "Triết lý",
+                  "highlight":  "Thiết kế",
                   "paragraphs":  [
-                                     "ChÃƒÂºng tÃƒÂ´i lÃƒÂ m viÃ¡Â»â€¡c trÃƒÂªn mÃ¡Â»Âi quy mÃƒÂ´ cÃ¡ÂºÂ£nh quan Ã¢â‚¬â€ tÃ¡Â»Â« cÃ¡ÂºÂ£nh quan ban cÃƒÂ´ng nhÃ¡Â»Â bÃƒÂ© cho Ã„â€˜Ã¡ÂºÂ¿n nhÃ¡Â»Â¯ng cÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹ rÃ¡Â»â„¢ng lÃ¡Â»â€ºn. MÃ¡Â»â€”i dÃ¡Â»Â± ÃƒÂ¡n Ã„â€˜Ã¡Â»Âu bÃ¡ÂºÂ¯t Ã„â€˜Ã¡ÂºÂ§u bÃ¡ÂºÂ±ng mÃ¡Â»â„¢t cÃƒÂ¢u hÃ¡Â»Âi: khÃƒÂ´ng gian nÃƒÂ y nÃƒÂªn Ã„â€˜em lÃ¡ÂºÂ¡i cÃ¡ÂºÂ£m giÃƒÂ¡c gÃƒÂ¬?",
-                                     "ThÃ¡Â»Â±c hÃƒÂ nh cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i khÃƒÂ´ng dÃ¡Â»Â«ng lÃ¡ÂºÂ¡i Ã¡Â»Å¸ mÃ¡ÂºÂ·t Ã„â€˜Ã¡ÂºÂ¥t. ChÃƒÂºng tÃƒÂ´i cÃƒÂ²n thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t, chiÃ¡ÂºÂ¿u sÃƒÂ¡ng vÃƒÂ  cÃƒÂ¡c Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t Ã„â€˜Ã†Â°Ã¡Â»Â£c sinh ra tÃ¡Â»Â« cÃƒÂ¹ng mÃ¡Â»â„¢t triÃ¡ÂºÂ¿t lÃƒÂ½ Ã¢â‚¬â€ vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn, tÃ¡Â»Â· lÃ¡Â»â€¡ tinh tÃ¡ÂºÂ¿, vÃƒÂ  niÃ¡Â»Âm tin rÃ¡ÂºÂ±ng nhÃ¡Â»Â¯ng gÃƒÂ¬ Ã„â€˜Ã¡ÂºÂ¹p sÃ¡ÂºÂ½ trÃ†Â°Ã¡Â»Âng tÃ¡Â»â€œn theo thÃ¡Â»Âi gian."
+                                     "Chúng tôi làm việc trên mọi quy mô cảnh quan — từ cảnh quan ban công nhỏ bé cho đến những công viên đô thị rộng lớn. Mỗi dự án đều bắt đầu bằng một câu hỏi: không gian này nên đem lại cảm giác gì?",
+                                     "Thực hành của chúng tôi không dừng lại ở mặt đất. Chúng tôi còn thiết kế nội thất, chiếu sáng và các đồ vật được sinh ra từ cùng một triết lý — vật liệu tự nhiên, tỷ lệ tinh tế, và niềm tin rằng những gì đẹp sẽ trường tồn theo thời gian."
                                  ],
                   "image":  "assets/project_5.png",
-                  "imageAlt":  "TriÃ¡ÂºÂ¿t lÃƒÂ½ thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan",
-                  "profileCta":  "Xem CV"
+                  "imageAlt":  "Triết lý thiết kế cảnh quan"
               },
     "impact":  [
                    {
                        "number":  10,
                        "suffix":  "+",
-                       "label":  "NÃ„Æ’m kinh nghiÃ¡Â»â€¡m"
+                       "label":  "Năm kinh nghiệm"
                    },
                    {
                        "number":  40,
                        "suffix":  "+",
-                       "label":  "DÃ¡Â»Â± ÃƒÂ¡n hoÃƒÂ n thiÃ¡Â»â€¡n"
+                       "label":  "Dự án hoàn thiện"
                    },
                    {
                        "number":  50,
                        "suffix":  "k+",
-                       "label":  "mÃ‚Â² MÃ¡ÂºÂ£ng xanh kiÃ¡ÂºÂ¿n tÃ¡ÂºÂ¡o"
+                       "label":  "m² Mảng xanh kiến tạo"
                    }
                ],
     "services":  {
-                     "title":  "DÃ¡Â»â€¹ch vÃ¡Â»Â¥",
+                     "title":  "Dịch vụ",
                      "items":  [
                                    {
-                                       "title":  "KiÃ¡ÂºÂ¿n TrÃƒÂºc CÃ¡ÂºÂ£nh Quan",
-                                       "desc":  "Quy hoÃ¡ÂºÂ¡ch tÃ¡Â»â€¢ng thÃ¡Â»Æ’ vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ khuÃƒÂ´n viÃƒÂªn cho cÃƒÂ¡c cÃƒÂ´ng trÃƒÂ¬nh cÃƒÂ´ng cÃ¡Â»â„¢ng, cÃƒÂ´ng viÃƒÂªn, khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng quy mÃƒÂ´ lÃ¡Â»â€ºn."
+                                       "title":  "Kiến Trúc Cảnh Quan",
+                                       "desc":  "Quy hoạch tổng thể và thiết kế khuôn viên cho các công trình công cộng, công viên, khu nghỉ dưỡng quy mô lớn."
                                    },
                                    {
-                                       "title":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ SÃƒÂ¢n VÃ†Â°Ã¡Â»Ân \u0026 Ban CÃƒÂ´ng",
-                                       "desc":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân riÃƒÂªng tÃ†Â° vÃƒÂ  khu ban cÃƒÂ´ng nhÃ¡Â»Â gÃ¡Â»Ân Ã„â€˜Ã†Â°Ã¡Â»Â£c thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ phÃƒÂ¹ hÃ¡Â»Â£p vÃ¡Â»â€ºi phong cÃƒÂ¡ch sÃ¡Â»â€˜ng hÃƒÂ ng ngÃƒÂ y cÃ¡Â»Â§a bÃ¡ÂºÂ¡n."
+                                       "title":  "Thiết Kế Sân Vườn \u0026 Ban Công",
+                                       "desc":  "Sân vườn riêng tư và khu ban công nhỏ gọn được thiết kế phù hợp với phong cách sống hàng ngày của bạn."
                                    },
                                    {
-                                       "title":  "SÃƒÂ¢n ChÃ†Â¡i \u0026 Khu Vui ChÃ†Â¡i",
-                                       "desc":  "MÃƒÂ´i trÃ†Â°Ã¡Â»Âng vui chÃ†Â¡i ngoÃƒÂ i trÃ¡Â»Âi sÃƒÂ¡ng tÃ¡ÂºÂ¡o, phÃ¡Â»Â¥c vÃ¡Â»Â¥ cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng tÃ¡Â»Â« trÃ¡ÂºÂ» em Ã„â€˜Ã¡ÂºÂ¿n ngÃ†Â°Ã¡Â»Âi lÃ¡Â»â€ºn."
+                                       "title":  "Sân Chơi \u0026 Khu Vui Chơi",
+                                       "desc":  "Môi trường vui chơi ngoài trời sáng tạo, phục vụ cộng đồng từ trẻ em đến người lớn."
                                    },
                                    {
-                                       "title":  "CÃ¡ÂºÂ£nh Quan NghÃ¡Â»â€° DÃ†Â°Ã¡Â»Â¡ng",
-                                       "desc":  "CÃ¡ÂºÂ£nh quan khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng Ã„â€˜Ã¡Â»â€¹nh nghÃ„Â©a bÃ¡ÂºÂ£n sÃ¡ÂºÂ¯c vÃƒÂ  khÃƒÂ´ng khÃƒÂ­ cÃ¡Â»Â§a mÃ¡Â»â„¢t Ã„â€˜iÃ¡Â»Æ’m Ã„â€˜Ã¡ÂºÂ¿n."
+                                       "title":  "Cảnh Quan Nghỉ Dưỡng",
+                                       "desc":  "Cảnh quan khu nghỉ dưỡng định nghĩa bản sắc và không khí của một điểm đến."
                                    },
                                    {
-                                       "title":  "ThiÃ¡ÂºÂ¿t KÃ¡ÂºÂ¿ NÃ¡Â»â„¢i ThÃ¡ÂºÂ¥t \u0026 ChiÃ¡ÂºÂ¿u SÃƒÂ¡ng",
-                                       "desc":  "TÃ¡Â»Â§, bÃƒÂ n, ghÃ¡ÂºÂ¿ vÃƒÂ  Ã„â€˜ÃƒÂ¨n thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ riÃƒÂªng Ã¢â‚¬â€ nhÃ¡Â»Â¯ng Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t Ã„â€˜Ã†Â°Ã¡Â»Â£c sinh ra tÃ¡Â»Â« tÃ†Â° duy cÃ¡ÂºÂ£nh quan."
+                                       "title":  "Thiết Kế Nội Thất \u0026 Chiếu Sáng",
+                                       "desc":  "Tủ, bàn, ghế và đèn thiết kế riêng — những đồ vật được sinh ra từ tư duy cảnh quan."
                                    }
                                ]
                  },
     "process":  {
-                    "title":  "Quy trÃƒÂ¬nh",
-                    "highlight":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿",
+                    "title":  "Quy trình",
+                    "highlight":  "Thiết kế",
                     "items":  [
                                   {
                                       "step":  "01",
-                                      "name":  "KhÃ¡ÂºÂ£o sÃƒÂ¡t",
-                                      "desc":  "PhÃƒÂ¢n tÃƒÂ­ch hiÃ¡Â»â€¡n trÃ¡ÂºÂ¡ng, thÃ¡ÂºÂ¥u hiÃ¡Â»Æ’u tÃ¡ÂºÂ§m nhÃƒÂ¬n cÃ¡Â»Â§a khÃƒÂ¡ch hÃƒÂ ng vÃƒÂ  xÃƒÂ¡c Ã„â€˜Ã¡Â»â€¹nh phÃ¡ÂºÂ¡m vi."
+                                      "name":  "Khảo sát",
+                                      "desc":  "Phân tích hiện trạng, thấu hiểu tầm nhìn của khách hàng và xác định phạm vi."
                                   },
                                   {
                                       "step":  "02",
-                                      "name":  "ÃƒÂ tÃ†Â°Ã¡Â»Å¸ng",
-                                      "desc":  "PhÃƒÂ¡t triÃ¡Â»Æ’n bÃ¡Â»â€˜ cÃ¡Â»Â¥c khÃƒÂ´ng gian, bÃ¡ÂºÂ£ng vÃ¡ÂºÂ­t liÃ¡Â»â€¡u vÃƒÂ  chiÃ¡ÂºÂ¿n lÃ†Â°Ã¡Â»Â£c thÃ¡Â»Â±c vÃ¡ÂºÂ­t sÃ†Â¡ bÃ¡Â»â„¢."
+                                      "name":  "Ý tưởng",
+                                      "desc":  "Phát triển bố cục không gian, bảng vật liệu và chiến lược thực vật sơ bộ."
                                   },
                                   {
                                       "step":  "03",
-                                      "name":  "TriÃ¡Â»Æ’n khai",
-                                      "desc":  "TÃƒÂ­ch hÃ¡Â»Â£p kiÃ¡ÂºÂ¿n trÃƒÂºc chi tiÃ¡ÂºÂ¿t, quy hoÃ¡ÂºÂ¡ch san nÃ¡Â»Ân vÃƒÂ  hÃ¡Â»â€œ sÃ†Â¡ kÃ¡Â»Â¹ thuÃ¡ÂºÂ­t thi cÃƒÂ´ng."
+                                      "name":  "Triển khai",
+                                      "desc":  "Tích hợp kiến trúc chi tiết, quy hoạch san nền và hồ sơ kỹ thuật thi công."
                                   },
                                   {
                                       "step":  "04",
-                                      "name":  "ThÃ¡Â»Â±c thi",
-                                      "desc":  "GiÃƒÂ¡m sÃƒÂ¡t tÃƒÂ¡c giÃ¡ÂºÂ£ tÃ¡ÂºÂ¡i cÃƒÂ´ng trÃ†Â°Ã¡Â»Âng vÃƒÂ  hiÃ¡Â»â€¡n thÃ¡Â»Â±c hoÃƒÂ¡ bÃ¡Â»Â©c tranh cÃ¡ÂºÂ£nh quan."
+                                      "name":  "Thực thi",
+                                      "desc":  "Giám sát tác giả tại công trường và hiện thực hoá bức tranh cảnh quan."
                                   }
                               ]
                 },
     "testimonials":  {
-                         "title":  "GÃƒÂ³c nhÃƒÂ¬n",
-                         "highlight":  "KhÃƒÂ¡ch hÃƒÂ ng",
+                         "title":  "Góc nhìn",
+                         "highlight":  "Khách hàng",
                          "items":  [
                                        {
-                                           "quote":  "LÃƒÂ¡MON Ã„â€˜ÃƒÂ£ biÃ¡ÂºÂ¿n sÃƒÂ¢n thÃ†Â°Ã¡Â»Â£ng trÃ¡Â»â€˜ng trÃ¡ÂºÂ£i cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i thÃƒÂ nh mÃ¡Â»â„¢t hÃ¡Â»â€¡ sinh thÃƒÂ¡i xanh mÃƒÂ¡t. SÃ¡Â»Â± tÃ¡Â»â€° mÃ¡Â»â€° trong thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ thÃ¡Â»Â±c vÃ¡ÂºÂ­t cÃ¡Â»Â§a hÃ¡Â»Â thÃ¡ÂºÂ­t sÃ¡Â»Â± Ã¡ÂºÂ¥n tÃ†Â°Ã¡Â»Â£ng.",
+                                           "quote":  "LáMON đã biến sân thượng trống trải của chúng tôi thành một hệ sinh thái xanh mát. Sự tỉ mỉ trong thiết kế thực vật của họ thật sự ấn tượng.",
                                            "author":  "Elena V.",
-                                           "role":  "ChÃ¡Â»Â§ sÃ¡Â»Å¸ hÃ¡Â»Â¯u BiÃ¡Â»â€¡t thÃ¡Â»Â±"
+                                           "role":  "Chủ sở hữu Biệt thự"
                                        },
                                        {
-                                           "quote":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan cho khu nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng cÃ¡Â»Â§a chÃƒÂºng tÃƒÂ´i Ã„â€˜ÃƒÂ£ trÃ¡Â»Å¸ thÃƒÂ nh Ã„â€˜iÃ¡Â»Æ’m nhÃ¡ÂºÂ¥n chÃƒÂ­nh nÃƒÂ­u chÃƒÂ¢n du khÃƒÂ¡ch. MÃ¡Â»â„¢t khÃƒÂ´ng gian ngoÃ¡ÂºÂ¡n mÃ¡Â»Â¥c.",
+                                           "quote":  "Thiết kế cảnh quan cho khu nghỉ dưỡng của chúng tôi đã trở thành điểm nhấn chính níu chân du khách. Một không gian ngoạn mục.",
                                            "author":  "Marcus T.",
-                                           "role":  "GiÃƒÂ¡m Ã„â€˜Ã¡Â»â€˜c VÃ¡ÂºÂ­n hÃƒÂ nh"
+                                           "role":  "Giám đốc Vận hành"
                                        }
                                    ]
                      },
     "projectsSection":  {
-                            "title":  "DÃ¡Â»Â± ÃƒÂ¡n",
-                            "highlight":  "ChÃ¡Â»Ân lÃ¡Â»Âc",
+                            "title":  "Dự án",
+                            "highlight":  "Chọn lọc",
                             "filters":  {
                                             "all":  "T?t c?",
-                                            "residential":  "NhÃ  ?",
-                                            "public":  "CÃ´ng c?ng",
+                                            "residential":  "Nh� ?",
+                                            "public":  "C�ng c?ng",
                                             "commercial":  "Thuong m?i"
                                         }
                         },
@@ -130,8 +129,8 @@
                      {
                          "id":  "1",
                          "title":  "Lumina Urban Park",
-                         "subtitle":  "TÃƒÂ­ch hÃ¡Â»Â£p khÃƒÂ´ng gian cÃƒÂ´ng cÃ¡Â»â„¢ng",
-                         "alt":  "CÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹",
+                         "subtitle":  "Tích hợp không gian công cộng",
+                         "alt":  "Công viên đô thị",
                          "image":  "assets/project_1.png",
                          "gallery":  [
                                          "assets/project_1.png",
@@ -139,15 +138,14 @@
                                          "assets/project_1_2.png",
                                          "assets/project_4.png"
                                      ],
-                         "description":  "CÃƒÂ´ng viÃƒÂªn Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹ mÃ¡Â»â€ºi tÃ¡ÂºÂ¡o kÃ¡ÂºÂ¿t nÃ¡Â»â€˜i cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng vÃƒÂ  tÃ„Æ’ng Ã„â€˜a dÃ¡ÂºÂ¡ng sinh hÃ¡Â»Âc thÃƒÂ´ng qua cÃƒÂ¢y bÃ¡ÂºÂ£n Ã„â€˜Ã¡Â»â€¹a vÃƒÂ  giÃ¡ÂºÂ£i phÃƒÂ¡p quÃ¡ÂºÂ£n lÃƒÂ½ nÃ†Â°Ã¡Â»â€ºc thÃƒÂ´ng minh.",
-                         "filter":  "public",
-                         "themeColor":  "#11261d"
+                         "description":  "Công viên đô thị mới tạo kết nối cộng đồng và tăng đa dạng sinh học thông qua cây bản địa và giải pháp quản lý nước thông minh.",
+                         "filter":  "public"
                      },
                      {
                          "id":  "2",
                          "title":  "The Obsidian Retreat",
-                         "subtitle":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân nhÃƒÂ  Ã¡Â»Å¸ cao cÃ¡ÂºÂ¥p",
-                         "alt":  "SÃƒÂ¢n vÃ†Â°Ã¡Â»Ân nhÃƒÂ  Ã¡Â»Å¸",
+                         "subtitle":  "Sân vườn nhà ở cao cấp",
+                         "alt":  "Sân vườn nhà ở",
                          "image":  "assets/project_2.png",
                          "gallery":  [
                                          "assets/project_2.png",
@@ -155,15 +153,14 @@
                                          "assets/project_2_2.png",
                                          "assets/project_3.png"
                                      ],
-                         "description":  "KhÃƒÂ´ng gian nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng riÃƒÂªng tÃ†Â° vÃ¡Â»â€ºi sÃƒÂ n gÃ¡Â»â€” hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i, khu lÃ¡Â»Â­a ngoÃƒÂ i trÃ¡Â»Âi vÃƒÂ  lÃ¡Â»â€ºp cÃƒÂ¢y cÃ¡ÂºÂ£nh tÃ¡ÂºÂ¡o cÃ¡ÂºÂ£m giÃƒÂ¡c thÃ†Â° giÃƒÂ£n.",
-                         "filter":  "residential",
-                         "themeColor":  "#2a2218"
+                         "description":  "Không gian nghỉ dưỡng riêng tư với sàn gỗ hiện đại, khu lửa ngoài trời và lớp cây cảnh tạo cảm giác thư giãn.",
+                         "filter":  "residential"
                      },
                      {
                          "id":  "3",
                          "title":  "Skyline Serenity",
-                         "subtitle":  "HÃ¡Â»â€¡ sinh thÃƒÂ¡i mÃƒÂ¡i xanh thÃ†Â°Ã†Â¡ng mÃ¡ÂºÂ¡i",
-                         "alt":  "MÃƒÂ¡i xanh",
+                         "subtitle":  "Hệ sinh thái mái xanh thương mại",
+                         "alt":  "Mái xanh",
                          "image":  "assets/project_3.png",
                          "gallery":  [
                                          "assets/project_3.png",
@@ -171,15 +168,14 @@
                                          "assets/project_3_2.png",
                                          "assets/project_1.png"
                                      ],
-                         "description":  "MÃƒÂ´ hÃƒÂ¬nh mÃƒÂ¡i xanh tÃ¡Â»â€˜i Ã†Â°u vi khÃƒÂ­ hÃ¡ÂºÂ­u, giÃ¡ÂºÂ£m hiÃ¡Â»â€¡u Ã¡Â»Â©ng Ã„â€˜Ã¡ÂºÂ£o nhiÃ¡Â»â€¡t vÃƒÂ  tÃ„Æ’ng trÃ¡ÂºÂ£i nghiÃ¡Â»â€¡m cho ngÃ†Â°Ã¡Â»Âi sÃ¡Â»Â­ dÃ¡Â»Â¥ng.",
-                         "filter":  "commercial",
-                         "themeColor":  "#151b22"
+                         "description":  "Mô hình mái xanh tối ưu vi khí hậu, giảm hiệu ứng đảo nhiệt và tăng trải nghiệm cho người sử dụng.",
+                         "filter":  "commercial"
                      },
                      {
                          "id":  "4",
                          "title":  "Zenith Botanical Walk",
-                         "subtitle":  "LÃ¡Â»â€˜i dÃ¡ÂºÂ¡o thÃ¡Â»Â±c vÃ¡ÂºÂ­t Ã„â€˜a tÃ¡ÂºÂ§ng",
-                         "alt":  "LÃ¡Â»â€˜i dÃ¡ÂºÂ¡o vÃ†Â°Ã¡Â»Ân thÃ¡Â»Â±c vÃ¡ÂºÂ­t",
+                         "subtitle":  "Lối dạo thực vật đa tầng",
+                         "alt":  "Lối dạo vườn thực vật",
                          "image":  "assets/project_4.png",
                          "gallery":  [
                                          "assets/project_4.png",
@@ -187,15 +183,14 @@
                                          "assets/project_3_1.png",
                                          "assets/project_1_2.png"
                                      ],
-                         "description":  "TuyÃ¡ÂºÂ¿n Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜i bÃ¡Â»â„¢ vÃ¡Â»â€ºi bÃ¡Â»â„¢ sÃ†Â°u tÃ¡ÂºÂ­p thÃ¡Â»Â±c vÃ¡ÂºÂ­t nhiÃ¡Â»â€¡t Ã„â€˜Ã¡Â»â€ºi, tÃ¡ÂºÂ¡o hÃƒÂ nh trÃƒÂ¬nh tham quan ÃƒÂªm dÃ¡Â»â€¹u vÃƒÂ  Ã¡ÂºÂ¥n tÃ†Â°Ã¡Â»Â£ng.",
-                         "filter":  "public",
-                         "themeColor":  "#11261d"
+                         "description":  "Tuyến đường đi bộ với bộ sưu tập thực vật nhiệt đới, tạo hành trình tham quan êm dịu và ấn tượng.",
+                         "filter":  "public"
                      },
                      {
                          "id":  "5",
                          "title":  "Aqua Horizon Resort",
-                         "subtitle":  "CÃ¡ÂºÂ£nh quan nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng ven biÃ¡Â»Æ’n",
-                         "alt":  "Resort ven biÃ¡Â»Æ’n",
+                         "subtitle":  "Cảnh quan nghỉ dưỡng ven biển",
+                         "alt":  "Resort ven biển",
                          "image":  "assets/project_5.png",
                          "gallery":  [
                                          "assets/project_5.png",
@@ -203,15 +198,14 @@
                                          "assets/project_2_1.png",
                                          "assets/project_3_2.png"
                                      ],
-                         "description":  "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan nghÃ¡Â»â€° dÃ†Â°Ã¡Â»Â¡ng kÃ¡ÂºÂ¿t nÃ¡Â»â€˜i tÃ¡ÂºÂ§m nhÃƒÂ¬n chÃƒÂ¢n trÃ¡Â»Âi, kÃ¡ÂºÂ¿t hÃ¡Â»Â£p cÃƒÂ¢y bÃ¡ÂºÂ£n Ã„â€˜Ã¡Â»â€¹a Ã„â€˜Ã¡Â»Æ’ giÃ¡ÂºÂ£m xÃƒÂ³i mÃƒÂ²n bÃ¡Â»Â biÃ¡Â»Æ’n.",
-                         "filter":  "commercial",
-                         "themeColor":  "#102534"
+                         "description":  "Thiết kế cảnh quan nghỉ dưỡng kết nối tầm nhìn chân trời, kết hợp cây bản địa để giảm xói mòn bờ biển.",
+                         "filter":  "commercial"
                      },
                      {
                          "id":  "6",
                          "title":  "The Monolith Courtyard",
-                         "subtitle":  "SÃƒÂ¢n trong campus doanh nghiÃ¡Â»â€¡p",
-                         "alt":  "SÃƒÂ¢n trong cÃƒÂ´ng ty",
+                         "subtitle":  "Sân trong campus doanh nghiệp",
+                         "alt":  "Sân trong công ty",
                          "image":  "assets/project_6.png",
                          "gallery":  [
                                          "assets/project_6.png",
@@ -219,17 +213,16 @@
                                          "assets/project_2_2.png",
                                          "assets/project_5.png"
                                      ],
-                         "description":  "SÃƒÂ¢n trong hÃƒÂ¬nh hÃ¡Â»Âc hiÃ¡Â»â€¡n Ã„â€˜Ã¡ÂºÂ¡i vÃ¡Â»â€ºi nÃ†Â°Ã¡Â»â€ºc, ghÃ¡ÂºÂ¿ Ã„â€˜ÃƒÂ¡ vÃƒÂ  cÃƒÂ¢y xanh cÃƒÂ³ cÃ¡ÂºÂ¥u trÃƒÂºc, hÃ¡Â»â€” trÃ¡Â»Â£ tÃ¡ÂºÂ­p trung vÃƒÂ  hÃ¡Â»â€œi phÃ¡Â»Â¥c nÃ„Æ’ng lÃ†Â°Ã¡Â»Â£ng.",
-                         "filter":  "commercial",
-                         "themeColor":  "#151b22"
+                         "description":  "Sân trong hình học hiện đại với nước, ghế đá và cây xanh có cấu trúc, hỗ trợ tập trung và hồi phục năng lượng.",
+                         "filter":  "commercial"
                      },
                      {
                          "id":  "7",
-                         "title":  "Khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn",
-                         "subtitle":  "Quy hoÃ¡ÂºÂ¡ch cÃ¡ÂºÂ£nh quan khu Ã¡Â»Å¸ cao cÃ¡ÂºÂ¥p",
-                         "category":  "PhÃƒÂ¡t triÃ¡Â»Æ’n khu dÃƒÂ¢n cÃ†Â°",
-                         "location":  "NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn, ViÃ¡Â»â€¡t Nam",
-                         "alt":  "QuÃ¡ÂºÂ£ng trÃ†Â°Ã¡Â»Âng Ã„â€˜ÃƒÂ i phun nÃ†Â°Ã¡Â»â€ºc phong cÃƒÂ¡ch cÃ¡Â»â€¢ Ã„â€˜iÃ¡Â»Æ’n tÃ¡ÂºÂ¡i khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p HÃ†Â°ng YÃƒÂªn",
+                         "title":  "Khu nhà ở Nghĩa Hiệp, Hưng Yên",
+                         "subtitle":  "Quy hoạch cảnh quan khu ở cao cấp",
+                         "category":  "Phát triển khu dân cư",
+                         "location":  "Nghĩa Hiệp, Hưng Yên, Việt Nam",
+                         "alt":  "Quảng trường đài phun nước phong cách cổ điển tại khu nhà ở Nghĩa Hiệp Hưng Yên",
                          "image":  "assets/project_7.png",
                          "gallery":  [
                                          "assets/project_7.png",
@@ -240,135 +233,134 @@
                                          "assets/project_7_5.png",
                                          "assets/project_7_6.png"
                                      ],
-                         "description":  "Ã„ÂÃ¡Â»Â xuÃ¡ÂºÂ¥t thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan cho khu nhÃƒÂ  Ã¡Â»Å¸ NghÃ„Â©a HiÃ¡Â»â€¡p, HÃ†Â°ng YÃƒÂªn vÃ¡Â»â€ºi trung tÃƒÂ¢m lÃƒÂ  quÃ¡ÂºÂ£ng trÃ†Â°Ã¡Â»Âng Ã„â€˜ÃƒÂ i phun nÃ†Â°Ã¡Â»â€ºc theo trÃ¡Â»Â¥c Ã„â€˜Ã¡Â»â€˜i xÃ¡Â»Â©ng. DÃ¡Â»Â± ÃƒÂ¡n kÃ¡ÂºÂ¿t hÃ¡Â»Â£p ngÃƒÂ´n ngÃ¡Â»Â¯ kiÃ¡ÂºÂ¿n trÃƒÂºc cÃ¡Â»â€¢ Ã„â€˜iÃ¡Â»Æ’n, hÃ¡Â»â€¡ cÃƒÂ¢y xanh nhiÃ¡Â»Âu lÃ¡Â»â€ºp vÃƒÂ  chiÃ¡ÂºÂ¿u sÃƒÂ¡ng cÃ¡ÂºÂ£nh quan ban Ã„â€˜ÃƒÂªm, tÃ¡ÂºÂ¡o nÃƒÂªn khÃƒÂ´ng gian sinh hoÃ¡ÂºÂ¡t cÃ¡Â»â„¢ng Ã„â€˜Ã¡Â»â€œng sang trÃ¡Â»Âng, an toÃƒÂ n vÃƒÂ  giÃƒÂ u bÃ¡ÂºÂ£n sÃ¡ÂºÂ¯c.",
-                         "filter":  "residential",
-                         "themeColor":  "#2a2218"
+                         "description":  "Đề xuất thiết kế cảnh quan cho khu nhà ở Nghĩa Hiệp, Hưng Yên với trung tâm là quảng trường đài phun nước theo trục đối xứng. Dự án kết hợp ngôn ngữ kiến trúc cổ điển, hệ cây xanh nhiều lớp và chiếu sáng cảnh quan ban đêm, tạo nên không gian sinh hoạt cộng đồng sang trọng, an toàn và giàu bản sắc.",
+                         "filter":  "residential"
                      }
                  ],
     "handmadeSection":  {
-                            "title":  "Object",
-                            "highlight":  "Design",
-                            "subtitle":  "ÄÃ¨n, Ä‘á»“ váº­t vÃ  cÃ¡c thá»­ nghiá»‡m thá»§ cÃ´ng"
+                            "title":  "Chế tác",
+                            "highlight":  "Thủ công",
+                            "subtitle":  "Các dự án đồ vật cá nhân và khám phá nghệ thuật"
                         },
     "handmadeProjects":  [
                              {
                                  "id":  "hm-1",
-                                 "title":  "ÃƒÂnh SÃƒÂ¡ng TrÃƒÂ­ TuÃ¡Â»â€¡",
-                                 "subtitle":  "Ã„ÂiÃƒÂªu khÃ¡ÂºÂ¯c nhÃ¡Â»Â±a \u0026 LED tÃƒÂ­m",
+                                 "title":  "Ánh Sáng Trí Tuệ",
+                                 "subtitle":  "Điêu khắc nhựa \u0026 LED tím",
                                  "image":  "assets/handmade_lamp_1.jpg",
-                                 "description":  "Ã„ÂÃƒÂ¨n Ã„â€˜Ã¡Â»Æ’ bÃƒÂ n Ã„â€˜iÃƒÂªu khÃ¡ÂºÂ¯c tÃ¡Â»Â« nhÃ¡Â»Â±a Ã¢â‚¬â€ hÃƒÂ¬nh nÃƒÂ£o ngÃ†Â°Ã¡Â»Âi Ã„â€˜Ã¡ÂºÂ·t trÃƒÂªn bÃƒÂ n tay Ã„â€˜ang nÃƒÂ¢ng Ã„â€˜Ã¡Â»Â¡. ÃƒÂnh LED tÃƒÂ­m phÃƒÂ¡t ra tÃ¡Â»Â« bÃƒÂªn trong biÃ¡ÂºÂ¿n tÃƒÂ¡c phÃ¡ÂºÂ©m thÃƒÂ nh vÃ¡ÂºÂ­t thÃ¡Â»Æ’ nghÃ¡Â»â€¡ thuÃ¡ÂºÂ­t Ã„â€˜Ã¡ÂºÂ§y mÃƒÂª hoÃ¡ÂºÂ·c trong Ã„â€˜ÃƒÂªm tÃ¡Â»â€˜i."
+                                 "description":  "Đèn để bàn điêu khắc từ nhựa — hình não người đặt trên bàn tay đang nâng đỡ. Ánh LED tím phát ra từ bên trong biến tác phẩm thành vật thể nghệ thuật đầy mê hoặc trong đêm tối."
                              },
                              {
                                  "id":  "hm-2",
-                                 "title":  "ÃƒÂnh Ã„ÂÃ¡Â»â€¹a HÃƒÂ¬nh",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ in 3D Ã¢â‚¬â€ Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜Ã¡Â»â€œng mÃ¡Â»Â©c",
+                                 "title":  "Ánh Địa Hình",
+                                 "subtitle":  "Đèn trụ in 3D — đường đồng mức",
                                  "image":  "assets/handmade_lamp_2.jpg",
-                                 "description":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ nhÃ¡Â»Â gÃ¡Â»Ân vÃ¡Â»â€ºi cÃƒÂ¡c gÃ¡Â»Â sÃƒÂ³ng in 3D gÃ¡Â»Â£i nhÃ¡Â»â€º Ã„â€˜Ã†Â°Ã¡Â»Âng Ã„â€˜Ã¡Â»â€œng mÃ¡Â»Â©c Ã„â€˜Ã¡Â»â€¹a hÃƒÂ¬nh. LÃ¡Â»â€ºp vÃ¡Â»Â trong mÃ¡Â»Â khuÃ¡ÂºÂ¿ch tÃƒÂ¡n ÃƒÂ¡nh sÃƒÂ¡ng Ã¡ÂºÂ¥m thÃƒÂ nh luÃ¡Â»â€œng sÃƒÂ¡ng mÃ¡Â»Âm mÃ¡ÂºÂ¡i, cÃƒÂ³ hÃƒÂ¬nh khÃ¡Â»â€˜i."
+                                 "description":  "Đèn trụ nhỏ gọn với các gờ sóng in 3D gợi nhớ đường đồng mức địa hình. Lớp vỏ trong mờ khuếch tán ánh sáng ấm thành luồng sáng mềm mại, có hình khối."
                              },
                              {
                                  "id":  "hm-3",
-                                 "title":  "ÃƒÂnh Ã„Âan I",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n vÃ¡ÂºÂ£i dÃ¡Â»â€¡t thÃ¡Â»Â§ cÃƒÂ´ng \u0026 Ã„â€˜Ã¡ÂºÂ¿ gÃ¡Â»â€”",
+                                 "title":  "Ánh Đan I",
+                                 "subtitle":  "Đèn vải dệt thủ công \u0026 đế gỗ",
                                  "image":  "assets/handmade_lamp_3.jpg",
-                                 "description":  "ThÃƒÂ¢n Ã„â€˜ÃƒÂ¨n hÃƒÂ¬nh trÃ¡Â»Â¥ Ã„â€˜Ã†Â°Ã¡Â»Â£c bÃ¡Â»Âc vÃ¡ÂºÂ£i dÃ¡Â»â€¡t thÃƒÂ´ thÃ¡Â»Â§ cÃƒÂ´ng, Ã„â€˜Ã¡ÂºÂ·t trÃƒÂªn Ã„â€˜Ã¡ÂºÂ¿ gÃ¡Â»â€” chÃ¡ÂºÂ¯c chÃ¡ÂºÂ¯n. LÃ†Â°Ã¡Â»â€ºi vÃ¡ÂºÂ£i mÃ¡Â»â€¹n tÃƒÂ¡n ÃƒÂ¡nh sÃƒÂ¡ng Ã„â€˜Ã¡Â»Âu, tÃ¡ÂºÂ¡o ra sÃ¡ÂºÂ¯c hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¡ÂºÂ¥m ÃƒÂ¡p cho mÃ¡Â»Âi gÃƒÂ³c lÃƒÂ m viÃ¡Â»â€¡c."
+                                 "description":  "Thân đèn hình trụ được bọc vải dệt thô thủ công, đặt trên đế gỗ chắc chắn. Lưới vải mịn tán ánh sáng đều, tạo ra sắc hổ phách ấm áp cho mọi góc làm việc."
                              },
                              {
                                  "id":  "hm-4",
-                                 "title":  "QuÃƒÂ½ Ãƒâ€ng BÃƒÂ­ Ã¡ÂºÂ¨n Ã¢â‚¬â€ Ban NgÃƒÂ y",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c hÃƒÂ¬nh bÃƒÂ³ng",
+                                 "title":  "Quý Ông Bí Ẩn — Ban Ngày",
+                                 "subtitle":  "Đèn giấy chạm khắc hình bóng",
                                  "image":  "assets/handmade_lamp_4.jpg",
-                                 "description":  "HÃƒÂ¬nh bÃƒÂ³ng quÃƒÂ½ ÃƒÂ´ng Ã„â€˜Ã¡ÂºÂ§u lÃƒÂ¢u Ã„â€˜Ã¡Â»â„¢i mÃ…Â© chÃƒÂ³p, vÃ¡ÂºÂ½ tay vÃƒÂ  cÃ¡ÂºÂ¯t thÃ¡Â»Â§ cÃƒÂ´ng trÃƒÂªn chao Ã„â€˜ÃƒÂ¨n giÃ¡ÂºÂ¥y. ChÃ¡Â»Â¥p dÃ†Â°Ã¡Â»â€ºi ÃƒÂ¡nh sÃƒÂ¡ng ban mai, tÃ¡Â»Â«ng Ã„â€˜Ã†Â°Ã¡Â»Âng cÃ¡ÂºÂ¯t tÃ¡Â»â€° mÃ¡Â»â€° hiÃ¡Â»â€¡n lÃƒÂªn rÃƒÂµ nÃƒÂ©t trÃƒÂªn nÃ¡Â»Ân giÃ¡ÂºÂ¥y hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¡ÂºÂ¥m ÃƒÂ¡p."
+                                 "description":  "Hình bóng quý ông đầu lâu đội mũ chóp, vẽ tay và cắt thủ công trên chao đèn giấy. Chụp dưới ánh sáng ban mai, từng đường cắt tỉ mỉ hiện lên rõ nét trên nền giấy hổ phách ấm áp."
                              },
                              {
                                  "id":  "hm-5",
-                                 "title":  "Ã„ÂÃƒÂ¨n Hoa CÃƒÂºc",
-                                 "subtitle":  "Chao giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m hoa cÃƒÂºc thÃ¡Â»Â§ cÃƒÂ´ng",
+                                 "title":  "Đèn Hoa Cúc",
+                                 "subtitle":  "Chao giấy chạm hoa cúc thủ công",
                                  "image":  "assets/handmade_lamp_5.jpg",
-                                 "description":  "Chao Ã„â€˜ÃƒÂ¨n Ã„â€˜Ã¡Â»Â©ng lÃƒÂ m tÃ¡Â»Â« giÃ¡ÂºÂ¥y cÃƒÂ³ kÃ¡ÂºÂ¿t cÃ¡ÂºÂ¥u tÃ¡Â»Â± nhiÃƒÂªn, vÃ¡Â»â€ºi hÃƒÂ¬nh hoa cÃƒÂºc Ã„â€˜Ã†Â°Ã¡Â»Â£c cÃ¡ÂºÂ¯t tÃ¡Â»â€° mÃ¡Â»â€° bÃ¡ÂºÂ±ng tay. ÃƒÂnh Ã„â€˜ÃƒÂªm thÃƒÂ nh phÃ¡Â»â€˜ phÃƒÂ­a sau tÃ¡ÂºÂ¡o nÃƒÂªn sÃ¡Â»Â± Ã„â€˜Ã¡Â»â€˜i thoÃ¡ÂºÂ¡i thÃ¡ÂºÂ§m lÃ¡ÂºÂ·ng giÃ¡Â»Â¯a nghÃ¡Â»Â thÃ¡Â»Â§ cÃƒÂ´ng vÃƒÂ  khung cÃ¡ÂºÂ£nh Ã„â€˜ÃƒÂ´ thÃ¡Â»â€¹."
+                                 "description":  "Chao đèn đứng làm từ giấy có kết cấu tự nhiên, với hình hoa cúc được cắt tỉ mỉ bằng tay. Ánh đêm thành phố phía sau tạo nên sự đối thoại thầm lặng giữa nghề thủ công và khung cảnh đô thị."
                              },
                              {
                                  "id":  "hm-6",
-                                 "title":  "QuÃƒÂ½ Ãƒâ€ng BÃƒÂ­ Ã¡ÂºÂ¨n Ã¢â‚¬â€ Ã„ÂÃƒÂªm",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c hÃƒÂ¬nh bÃƒÂ³ng",
+                                 "title":  "Quý Ông Bí Ẩn — Đêm",
+                                 "subtitle":  "Đèn giấy chạm khắc hình bóng",
                                  "image":  "assets/handmade_lamp_6.jpg",
-                                 "description":  "CÃƒÂ¹ng chiÃ¡ÂºÂ¿c Ã„â€˜ÃƒÂ¨n QuÃƒÂ½ Ãƒâ€ng chÃ¡Â»Â¥p trong Ã„â€˜ÃƒÂªm. Ã„ÂÃƒÂ¨n thÃƒÂ nh phÃ¡Â»â€˜ phÃƒÂ­a sau lÃƒÂ m nÃ¡Â»Ân, nhÃƒÂ¢n vÃ¡ÂºÂ­t Ã„â€˜Ã¡ÂºÂ§u lÃƒÂ¢u hiÃ¡Â»â€¡n ra rÃ¡Â»Â±c rÃ¡Â»Â¡ trong sÃ¡ÂºÂ¯c hÃ¡Â»â€¢ phÃƒÂ¡ch Ã¢â‚¬â€ mÃ¡Â»â„¢t hÃƒÂ¬nh bÃƒÂ³ng Ã„â€˜Ã†Â°Ã¡Â»Â£c ÃƒÂ¡nh sÃƒÂ¡ng thÃ¡Â»â€¢i hÃ¡Â»â€œn."
+                                 "description":  "Cùng chiếc đèn Quý Ông chụp trong đêm. Đèn thành phố phía sau làm nền, nhân vật đầu lâu hiện ra rực rỡ trong sắc hổ phách — một hình bóng được ánh sáng thổi hồn."
                              },
                              {
                                  "id":  "hm-7",
-                                 "title":  "ÃƒÂnh Ã„Âan II",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ vÃ¡ÂºÂ£i dÃ¡Â»â€¡t \u0026 cÃ¡ÂºÂ£nh quÃƒÂ¡i vÃ¡ÂºÂ­t",
+                                 "title":  "Ánh Đan II",
+                                 "subtitle":  "Đèn trụ vải dệt \u0026 cảnh quái vật",
                                  "image":  "assets/handmade_lamp_7.jpg",
-                                 "description":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ vÃ¡ÂºÂ£i dÃ¡Â»â€¡t trong khung cÃ¡ÂºÂ£nh vui tÃ†Â°Ã†Â¡i cÃƒÂ¹ng mÃƒÂ´ hÃƒÂ¬nh quÃƒÂ¡i vÃ¡ÂºÂ­t. NhÃ¡ÂºÂ¯c nhÃ¡Â»Å¸ rÃ¡ÂºÂ±ng Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t thÃ¡Â»Â§ cÃƒÂ´ng mang cÃƒÂ¡ tÃƒÂ­nh riÃƒÂªng Ã¢â‚¬â€ chÃƒÂºng trÃ¡Â»Å¸ thÃƒÂ nh mÃ¡Â»â„¢t phÃ¡ÂºÂ§n cÃƒÂ¢u chuyÃ¡Â»â€¡n cÃ¡Â»Â§a khÃƒÂ´ng gian mÃƒÂ  chÃƒÂºng trÃƒÂº ngÃ¡Â»Â¥."
+                                 "description":  "Đèn trụ vải dệt trong khung cảnh vui tươi cùng mô hình quái vật. Nhắc nhở rằng đồ vật thủ công mang cá tính riêng — chúng trở thành một phần câu chuyện của không gian mà chúng trú ngụ."
                              },
                              {
                                  "id":  "hm-8",
-                                 "title":  "Ã„ÂÃƒÂ¨n Hoa Sen",
-                                 "subtitle":  "Chao giÃ¡ÂºÂ¥y chÃ¡ÂºÂ¡m hoa sen thÃ¡Â»Â§ cÃƒÂ´ng",
+                                 "title":  "Đèn Hoa Sen",
+                                 "subtitle":  "Chao giấy chạm hoa sen thủ công",
                                  "image":  "assets/handmade_lamp_8.jpg",
-                                 "description":  "CÃ¡ÂºÂ­n cÃ¡ÂºÂ£nh chao Ã„â€˜ÃƒÂ¨n giÃ¡ÂºÂ¥y vÃ¡Â»â€ºi nhÃ¡Â»Â¯ng bÃƒÂ´ng sen nÃ¡Â»Å¸ rÃ¡Â»â„¢ Ã„â€˜Ã†Â°Ã¡Â»Â£c chÃ¡ÂºÂ¡m khÃ¡ÂºÂ¯c tÃ¡Â»â€° mÃ¡Â»â€° bÃ¡ÂºÂ±ng tay. ÃƒÂnh sÃƒÂ¡ng Ã¡ÂºÂ¥m phÃƒÂ­a sau biÃ¡ÂºÂ¿n tÃ¡Â»Â«ng cÃƒÂ¡nh hoa thÃƒÂ nh mÃ¡Â»â„¢t bÃ¡Â»Â©c tranh phÃƒÂ¡t sÃƒÂ¡ng lung linh trong Ã„â€˜ÃƒÂªm tÃ¡Â»â€˜i."
+                                 "description":  "Cận cảnh chao đèn giấy với những bông sen nở rộ được chạm khắc tỉ mỉ bằng tay. Ánh sáng ấm phía sau biến từng cánh hoa thành một bức tranh phát sáng lung linh trong đêm tối."
                              },
                              {
                                  "id":  "hm-9",
-                                 "title":  "ÃƒÂnh VÃƒÂ²ng",
-                                 "subtitle":  "Ã„ÂÃƒÂ¨n trÃ¡Â»Â¥ xÃ¡ÂºÂ¿p vÃƒÂ²ng tÃ¡ÂºÂ§ng tÃ¡ÂºÂ§ng",
+                                 "title":  "Ánh Vòng",
+                                 "subtitle":  "Đèn trụ xếp vòng tầng tầng",
                                  "image":  "assets/handmade_lamp_9.jpg",
-                                 "description":  "Ã„ÂÃƒÂ¨n Ã„â€˜Ã¡Â»Æ’ bÃƒÂ n tÃ¡Â»â€˜i giÃ¡ÂºÂ£n Ã„â€˜Ã†Â°Ã¡Â»Â£c xÃƒÂ¢y tÃ¡Â»Â« nhÃ¡Â»Â¯ng vÃƒÂ²ng ngang xÃ¡ÂºÂ¿p chÃ¡Â»â€œng lÃƒÂªn nhau, phÃƒÂ¡t ra ÃƒÂ¡nh sÃƒÂ¡ng Ã„â€˜Ã¡Â»Âu vÃƒÂ  trong sÃƒÂ¡ng. Ã„ÂÃ†Â¡n giÃ¡ÂºÂ£n vÃ¡Â»Â hÃƒÂ¬nh dÃ¡ÂºÂ¡ng nhÃ†Â°ng phong phÃƒÂº vÃ¡Â»Â chÃ¡ÂºÂ¥t liÃ¡Â»â€¡u Ã¢â‚¬â€ thÃƒÂ­ch hÃ¡Â»Â£p cho mÃ¡Â»Âi gÃƒÂ³c yÃƒÂªn tÃ„Â©nh."
+                                 "description":  "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh."
                              }
                          ],
     "profile":  {
-                    "name":  "LÃƒÂ¢m SÃ†Â¡n",
-                    "role":  "KiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan \u0026 thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t",
-                    "location":  "HÃƒÂ  NÃ¡Â»â„¢i, ViÃ¡Â»â€¡t Nam",
+                    "name":  "Lâm Sơn",
+                    "role":  "Kiến trúc sư cảnh quan \u0026 thiết kế đồ vật",
+                    "location":  "Hà Nội, Việt Nam",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
                     "avatar":  "assets/hero_cover.jpg",
                     "cover":  "assets/hero_bg.png",
-                    "summary":  "TÃƒÂ´i thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan, sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân, nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t vÃƒÂ  cÃƒÂ¡c Ã„â€˜Ã¡Â»â€œ vÃ¡ÂºÂ­t thÃ¡Â»Â§ cÃƒÂ´ng dÃ¡Â»Â±a trÃƒÂªn vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn, tÃ¡Â»Â· lÃ¡Â»â€¡ rÃƒÂµ rÃƒÂ ng vÃƒÂ  tÃ†Â° duy thi cÃƒÂ´ng thÃ¡Â»Â±c tÃ¡ÂºÂ¿.",
+                    "summary":  "Tôi thiết kế cảnh quan, sân vườn, nội thất và các đồ vật thủ công dựa trên vật liệu tự nhiên, tỷ lệ rõ ràng và tư duy thi công thực tế.",
                     "skills":  [
-                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ cÃ¡ÂºÂ£nh quan",
-                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân",
-                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t",
-                                   "ThiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ chiÃ¡ÂºÂ¿u sÃƒÂ¡ng",
-                                   "PhÃƒÂ¡t triÃ¡Â»Æ’n ÃƒÂ½ tÃ†Â°Ã¡Â»Å¸ng",
-                                   "GiÃƒÂ¡m sÃƒÂ¡t thi cÃƒÂ´ng"
+                                   "Thiết kế cảnh quan",
+                                   "Thiết kế sân vườn",
+                                   "Thiết kế nội thất",
+                                   "Thiết kế chiếu sáng",
+                                   "Phát triển ý tưởng",
+                                   "Giám sát thi công"
                                ],
                     "experience":  [
                                        {
-                                           "period":  "2016 - HiÃ¡Â»â€¡n tÃ¡ÂºÂ¡i",
-                                           "title":  "KiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â° cÃ¡ÂºÂ£nh quan / SÃƒÂ¡ng lÃ¡ÂºÂ­p",
+                                           "period":  "2016 - Hiện tại",
+                                           "title":  "Kiến trúc sư cảnh quan / Sáng lập",
                                            "place":  "LAMON-DIY",
-                                           "description":  "PhÃ¡Â»Â¥ trÃƒÂ¡ch cÃƒÂ¡c dÃ¡Â»Â± ÃƒÂ¡n cÃ¡ÂºÂ£nh quan, sÃƒÂ¢n vÃ†Â°Ã¡Â»Ân, nÃ¡Â»â„¢i thÃ¡ÂºÂ¥t vÃƒÂ  chiÃ¡ÂºÂ¿u sÃƒÂ¡ng tÃ¡Â»Â« Ã„â€˜Ã¡Â»â€¹nh hÃ†Â°Ã¡Â»â€ºng ÃƒÂ½ tÃ†Â°Ã¡Â»Å¸ng Ã„â€˜Ã¡ÂºÂ¿n hÃ¡Â»â€” trÃ¡Â»Â£ triÃ¡Â»Æ’n khai."
+                                           "description":  "Phụ trách các dự án cảnh quan, sân vườn, nội thất và chiếu sáng từ định hướng ý tưởng đến hỗ trợ triển khai."
                                        }
                                    ],
                     "education":  [
                                       {
-                                          "period":  "2011 Ã¢â‚¬â€œ 2016",
-                                          "title":  "CÃ¡Â»Â­ nhÃƒÂ¢n KiÃ¡ÂºÂ¿n trÃƒÂºc",
-                                          "place":  "TrÃ†Â°Ã¡Â»Âng Ã„ÂÃ¡ÂºÂ¡i hÃ¡Â»Âc KiÃ¡ÂºÂ¿n trÃƒÂºc HÃƒÂ  NÃ¡Â»â„¢i (HAU)",
-                                          "description":  "ChuyÃƒÂªn ngÃƒÂ nh kiÃ¡ÂºÂ¿n trÃƒÂºc cÃ¡ÂºÂ£nh quan vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ khÃƒÂ´ng gian, tÃ¡ÂºÂ­p trung vÃƒÂ o mÃƒÂ´i trÃ†Â°Ã¡Â»Âng ngoÃƒÂ i trÃ¡Â»Âi, hÃ¡Â»â€¡ vÃ¡ÂºÂ­t liÃ¡Â»â€¡u tÃ¡Â»Â± nhiÃƒÂªn vÃƒÂ  thiÃ¡ÂºÂ¿t kÃ¡ÂºÂ¿ theo tÃ¡Â»Â· lÃ¡Â»â€¡ con ngÃ†Â°Ã¡Â»Âi."
+                                          "period":  "2011 – 2016",
+                                          "title":  "Cử nhân Kiến trúc",
+                                          "place":  "Trường Đại học Kiến trúc Hà Nội (HAU)",
+                                          "description":  "Chuyên ngành kiến trúc cảnh quan và thiết kế không gian, tập trung vào môi trường ngoài trời, hệ vật liệu tự nhiên và thiết kế theo tỷ lệ con người."
                                       }
                                   ]
                 },
     "contact":  {
-                    "title":  "BÃ¡ÂºÂ¯t Ã„â€˜Ã¡ÂºÂ§u",
-                    "highlight":  "DÃ¡Â»Â± ÃƒÂ¡n",
-                    "subtitle":  "ChÃƒÂºng tÃƒÂ´i hÃ¡Â»Â£p tÃƒÂ¡c vÃ¡Â»â€ºi khÃƒÂ¡ch hÃƒÂ ng cÃƒÂ¡ nhÃƒÂ¢n, kiÃ¡ÂºÂ¿n trÃƒÂºc sÃ†Â°, vÃƒÂ  nhÃƒÂ  phÃƒÂ¡t triÃ¡Â»Æ’n Ã„â€˜Ã¡Â»Æ’ tÃ¡ÂºÂ¡o ra nhÃ¡Â»Â¯ng cÃ¡ÂºÂ£nh quan ÃƒÂ½ nghÃ„Â©a.",
+                    "title":  "Bắt đầu",
+                    "highlight":  "Dự án",
+                    "subtitle":  "Chúng tôi hợp tác với khách hàng cá nhân, kiến trúc sư, và nhà phát triển để tạo ra những cảnh quan ý nghĩa.",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
-                    "location":  "275 NguyÃ¡Â»â€¦n TrÃƒÂ£i - Thanh XuÃƒÂ¢n - HÃƒÂ  NÃ¡Â»â„¢i - ViÃ¡Â»â€¡t Nam",
-                    "cta":  "LiÃƒÂªn hÃ¡Â»â€¡ ngay",
+                    "location":  "275 Nguyễn Trãi - Thanh Xuân - Hà Nội - Việt Nam",
+                    "cta":  "Liên hệ ngay",
                     "form":  {
-                                 "name":  "HÃ¡Â»Â vÃƒÂ  TÃƒÂªn",
-                                 "email":  "Ã„ÂÃ¡Â»â€¹a chÃ¡Â»â€° Email",
-                                 "phone":  "SÃ¡Â»â€˜ Ã„â€˜iÃ¡Â»â€¡n thoÃ¡ÂºÂ¡i",
-                                 "address":  "Ã„ÂÃ¡Â»â€¹a chÃ¡Â»â€° liÃƒÂªn hÃ¡Â»â€¡",
-                                 "message":  "MÃƒÂ´ tÃ¡ÂºÂ£ ngÃ¡ÂºÂ¯n vÃ¡Â»Â dÃ¡Â»Â± ÃƒÂ¡n cÃ¡Â»Â§a bÃ¡ÂºÂ¡n",
-                                 "submit":  "GÃ¡Â»Â­i ThÃƒÂ´ng Tin",
-                                 "success":  "CÃ¡ÂºÂ£m Ã†Â¡n bÃ¡ÂºÂ¡n! ChÃƒÂºng tÃƒÂ´i sÃ¡ÂºÂ½ liÃƒÂªn hÃ¡Â»â€¡ trong thÃ¡Â»Âi gian sÃ¡Â»â€ºm nhÃ¡ÂºÂ¥t."
+                                 "name":  "Họ và Tên",
+                                 "email":  "Địa chỉ Email",
+                                 "phone":  "Số điện thoại",
+                                 "address":  "Địa chỉ liên hệ",
+                                 "message":  "Mô tả ngắn về dự án của bạn",
+                                 "submit":  "Gửi Thông Tin",
+                                 "success":  "Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất."
                              }
                 },
     "footer":  {
-                   "copyright":  "\u0026copy; 2026 KiÃ¡ÂºÂ¿n trÃƒÂºc CÃ¡ÂºÂ£nh quan. BÃ¡ÂºÂ£o lÃ†Â°u mÃ¡Â»Âi quyÃ¡Â»Ân.",
+                   "copyright":  "\u0026copy; 2026 Kiến trúc Cảnh quan. Bảo lưu mọi quyền.",
                    "socials":  [
                                    {
                                        "label":  "Facebook",
