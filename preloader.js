@@ -197,11 +197,47 @@ function cleanupPreloader() {
 // Start immediately
 initPreloader();
 
+let isPortfolioLoaded = false;
+let userClicked = false;
+
 // Listen to script.js telling us that JSON and images are loaded
 window.addEventListener('portfolioLoaded', () => {
-    // Add a slight artificial delay so the user can admire the sphere 
-    // even if the internet is extremely fast.
+    isPortfolioLoaded = true;
+    
+    // Add an instruction text
+    const container = document.getElementById('preloader-3d');
+    const instruction = document.createElement('div');
+    instruction.innerText = "Click to Explore";
+    instruction.style.position = 'absolute';
+    instruction.style.bottom = '10%';
+    instruction.style.color = 'rgba(255,255,255,0.5)';
+    instruction.style.fontFamily = "'Outfit', sans-serif";
+    instruction.style.letterSpacing = '5px';
+    instruction.style.textTransform = 'uppercase';
+    instruction.style.fontSize = '0.9rem';
+    instruction.style.pointerEvents = 'none';
+    instruction.style.opacity = '0';
+    instruction.style.transition = 'opacity 1s ease';
+    instruction.id = 'preloader-instruction';
+    container.appendChild(instruction);
+    
+    // Fade in instruction
     setTimeout(() => {
+        if (!explosionTriggered) instruction.style.opacity = '1';
+    }, 500);
+
+    if (userClicked) {
+        instruction.style.opacity = '0';
         explodeParticles();
-    }, 800);
+    }
+});
+
+document.getElementById('preloader-3d').addEventListener('click', () => {
+    userClicked = true;
+    const instruction = document.getElementById('preloader-instruction');
+    if (instruction) instruction.style.opacity = '0';
+    
+    if (isPortfolioLoaded && !explosionTriggered) {
+        explodeParticles();
+    }
 });
