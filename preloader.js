@@ -249,17 +249,19 @@ function initPreloader() {
                     stateArray[ix+2] += (baseColArray[ix+2] - stateArray[ix+2]) * 0.05;
                 }
                 
-                // Twinkle (rung sáng chậm rãi, mượt mà)
-                const twinkle = 0.6 + Math.sin(time * 0.8 + i * 12.345) * 0.5;
+                // Twinkle (rung sáng hoàn toàn độc lập, ngẫu nhiên cho từng hạt)
+                const hash = Math.sin(i * 12.9898) * 43758.5453;
+                const phase = (hash - Math.floor(hash)) * Math.PI * 2;
+                const twinkle = 0.6 + Math.sin(time * 0.8 + phase) * 0.5;
 
                 colArray[ix] = Math.min(stateArray[ix] * twinkle, 1.0);
                 colArray[ix+1] = Math.min(stateArray[ix+1] * twinkle, 1.0);
                 colArray[ix+2] = Math.min(stateArray[ix+2] * twinkle, 1.0);
                 
                 // Jitter (rung lắc tự động)
-                const jitterX = Math.sin(time * 4.0 + i) * 0.15;
-                const jitterY = Math.cos(time * 3.5 + i * 1.5) * 0.15;
-                const jitterZ = Math.sin(time * 3.0 + i * 2.0) * 0.15;
+                const jitterX = Math.sin(time * 4.0 + phase) * 0.15;
+                const jitterY = Math.cos(time * 3.5 + phase * 1.5) * 0.15;
+                const jitterZ = Math.sin(time * 3.0 + phase * 2.0) * 0.15;
 
                 posArray[ix] += ((bx + jitterX) - posArray[ix]) * 0.05 + forceX;
                 posArray[ix+1] += ((by + jitterY) - posArray[ix+1]) * 0.05 + forceY;
