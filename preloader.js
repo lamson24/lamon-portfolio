@@ -249,8 +249,8 @@ function initPreloader() {
                     stateArray[ix+2] += (baseColArray[ix+2] - stateArray[ix+2]) * 0.05;
                 }
                 
-                // Twinkle (rung sáng như vì sao)
-                const twinkle = 0.4 + Math.pow(Math.sin(time * 5.0 + i * 12.345), 4) * 1.5;
+                // Twinkle (rung sáng chậm rãi, mượt mà)
+                const twinkle = 0.6 + Math.sin(time * 0.8 + i * 12.345) * 0.5;
 
                 colArray[ix] = Math.min(stateArray[ix] * twinkle, 1.0);
                 colArray[ix+1] = Math.min(stateArray[ix+1] * twinkle, 1.0);
