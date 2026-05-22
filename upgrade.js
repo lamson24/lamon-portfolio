@@ -27,7 +27,8 @@ function setupHeroEntrance() {
         opacity: 0,
         duration: 1.5,
         ease: 'power3.out',
-        delay: 0.5 
+        delay: 0.5,
+        clearProps: 'all'
     });
 
     // 2. Hero subtitle, buttons, and credibility text fade up
@@ -37,7 +38,8 @@ function setupHeroEntrance() {
         duration: 1.5,
         stagger: 0.2,
         ease: 'power3.out',
-        delay: 1.2 
+        delay: 1.2,
+        clearProps: 'all'
     });
 
     // 3. Bottom metrics (10+, 40+, 50k+) slide up
@@ -47,7 +49,8 @@ function setupHeroEntrance() {
         duration: 1.2,
         stagger: 0.15,
         ease: 'power3.out',
-        delay: 1.8
+        delay: 1.8,
+        clearProps: 'all'
     });
 
     // 4. Social links (Facebook, Behance, etc) fade in
@@ -57,7 +60,8 @@ function setupHeroEntrance() {
         duration: 1.0,
         stagger: 0.1,
         ease: 'power3.out',
-        delay: 2.2
+        delay: 2.2,
+        clearProps: 'all'
     });
 }
 
