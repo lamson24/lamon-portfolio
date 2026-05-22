@@ -191,62 +191,72 @@ function initPreloader() {
             particles.position.y = Math.sin(time) * 2;
             particles.position.x = Math.cos(time * 0.5) * 1;
             
-            // Mouse interaction
+            const posAttr = particles.geometry.attributes.position;
+            const baseAttr = particles.geometry.attributes.basePosition;
+            const colAttr = particles.geometry.attributes.color;
+            const baseColAttr = particles.geometry.attributes.baseColor;
+            
+            const posArray = posAttr.array;
+            const baseArray = baseAttr.array;
+            const colArray = colAttr.array;
+            const baseColArray = baseColAttr.array;
+            
+            let mouseHit = false;
             if (mouse.x !== -9999) {
                 raycaster.setFromCamera(mouse, preloaderCamera);
                 if (raycaster.ray.intersectPlane(mousePlane, mousePos3D)) {
                     particles.worldToLocal(mousePos3D);
-                    
-                    const posAttr = particles.geometry.attributes.position;
-                    const baseAttr = particles.geometry.attributes.basePosition;
-                    const colAttr = particles.geometry.attributes.color;
-                    const baseColAttr = particles.geometry.attributes.baseColor;
-                    
-                    const posArray = posAttr.array;
-                    const baseArray = baseAttr.array;
-                    const colArray = colAttr.array;
-                    const baseColArray = baseColAttr.array;
-                    
-                    for (let i = 0; i < particleCount; i++) {
-                        const ix = i * 3;
-                        const px = posArray[ix], py = posArray[ix+1], pz = posArray[ix+2];
-                        const bx = baseArray[ix], by = baseArray[ix+1], bz = baseArray[ix+2];
-                        
-                        const dx = mousePos3D.x - px;
-                        const dy = mousePos3D.y - py;
-                        const dz = mousePos3D.z - pz;
-                        const distSq = dx*dx + dy*dy + dz*dz;
-                        
-                        const interactRadius = 15;
-                        const interactRadiusSq = interactRadius * interactRadius;
-                        
-                        if (distSq < interactRadiusSq && distSq > 0) {
-                            const dist = Math.sqrt(distSq);
-                            const force = (interactRadius - dist) / interactRadius;
-                            posArray[ix] -= (dx / dist) * force * 2.0;
-                            posArray[ix+1] -= (dy / dist) * force * 2.0;
-                            posArray[ix+2] -= (dz / dist) * force * 2.0;
-                            
-                            // Energy Transfer: Change color
-                            colArray[ix] += (hoverColor.r - colArray[ix]) * 0.2;
-                            colArray[ix+1] += (hoverColor.g - colArray[ix+1]) * 0.2;
-                            colArray[ix+2] += (hoverColor.b - colArray[ix+2]) * 0.2;
-                        } else {
-                            // Spring back color
-                            colArray[ix] += (baseColArray[ix] - colArray[ix]) * 0.05;
-                            colArray[ix+1] += (baseColArray[ix+1] - colArray[ix+1]) * 0.05;
-                            colArray[ix+2] += (baseColArray[ix+2] - colArray[ix+2]) * 0.05;
-                        }
-                        
-                        // Spring back position
-                        posArray[ix] += (bx - posArray[ix]) * 0.04;
-                        posArray[ix+1] += (by - posArray[ix+1]) * 0.04;
-                        posArray[ix+2] += (bz - posArray[ix+2]) * 0.04;
-                    }
-                    posAttr.needsUpdate = true;
-                    colAttr.needsUpdate = true;
+                    mouseHit = true;
                 }
             }
+
+            for (let i = 0; i < particleCount; i++) {
+                const ix = i * 3;
+                const px = posArray[ix], py = posArray[ix+1], pz = posArray[ix+2];
+                const bx = baseArray[ix], by = baseArray[ix+1], bz = baseArray[ix+2];
+                
+                let forceX = 0, forceY = 0, forceZ = 0;
+                let colorHovered = false;
+
+                if (mouseHit) {
+                    const dx = mousePos3D.x - px;
+                    const dy = mousePos3D.y - py;
+                    const dz = mousePos3D.z - pz;
+                    const distSq = dx*dx + dy*dy + dz*dz;
+                    const interactRadius = 15;
+                    const interactRadiusSq = interactRadius * interactRadius;
+                    
+                    if (distSq < interactRadiusSq && distSq > 0) {
+                        const dist = Math.sqrt(distSq);
+                        const force = (interactRadius - dist) / interactRadius;
+                        forceX = -(dx / dist) * force * 2.0;
+                        forceY = -(dy / dist) * force * 2.0;
+                        forceZ = -(dz / dist) * force * 2.0;
+                        colorHovered = true;
+                    }
+                }
+
+                if (colorHovered) {
+                    colArray[ix] += (hoverColor.r - colArray[ix]) * 0.2;
+                    colArray[ix+1] += (hoverColor.g - colArray[ix+1]) * 0.2;
+                    colArray[ix+2] += (hoverColor.b - colArray[ix+2]) * 0.2;
+                } else {
+                    colArray[ix] += (baseColArray[ix] - colArray[ix]) * 0.05;
+                    colArray[ix+1] += (baseColArray[ix+1] - colArray[ix+1]) * 0.05;
+                    colArray[ix+2] += (baseColArray[ix+2] - colArray[ix+2]) * 0.05;
+                }
+                
+                // Jitter (rung lắc tự động)
+                const jitterX = Math.sin(time * 4.0 + i) * 0.15;
+                const jitterY = Math.cos(time * 3.5 + i * 1.5) * 0.15;
+                const jitterZ = Math.sin(time * 3.0 + i * 2.0) * 0.15;
+
+                posArray[ix] += ((bx + jitterX) - posArray[ix]) * 0.05 + forceX;
+                posArray[ix+1] += ((by + jitterY) - posArray[ix+1]) * 0.05 + forceY;
+                posArray[ix+2] += ((bz + jitterZ) - posArray[ix+2]) * 0.05 + forceZ;
+            }
+            posAttr.needsUpdate = true;
+            colAttr.needsUpdate = true;
         }
 
         preloaderRenderer.render(preloaderScene, preloaderCamera);
