@@ -308,36 +308,55 @@
                              }
                          ],
     "profile":  {
-                    "name":  "Lam Son",
-                    "role":  "Landscape Architect \u0026 Object Designer",
-                    "location":  "Hanoi, Vietnam",
+                    "name":  "NGUYEN LAM SON",
+                    "role":  "LANDSCAPE ARCHITECT",
+                    "location":  "275 Nguyen Trai - Thanh Xuan - Hanoi, Vietnam",
                     "email":  "Lamsonarchp@gmail.com",
                     "phone":  "0333 942 892",
                     "avatar":  "assets/hero_cover.jpg",
                     "cover":  "assets/hero_bg.png",
-                    "summary":  "I design landscapes, gardens, furniture, and handcrafted objects shaped by natural materials, clear proportions, and practical construction thinking.",
+                    "summary":  "Landscape Architect focused on creating meaningful outdoor spaces through sustainable design, spatial experience, and contemporary landscape thinking.",
                     "skills":  [
-                                   "Landscape Architecture",
-                                   "Garden Design",
-                                   "Furniture Design",
-                                   "Lighting Design",
-                                   "Concept Development",
-                                   "Site Supervision"
+                                   "PHOTOSHOP", "INDESIGN", "ILLUSTRATOR", "AI RENDER", "D5 RENDER", "LUMION", "REVIT", "AUTOCAD"
                                ],
                     "experience":  [
                                        {
-                                           "period":  "2016 - Present",
-                                           "title":  "Landscape Architect / Founder",
-                                           "place":  "LAMON-DIY",
-                                           "description":  "Lead landscape, garden, furniture, and lighting projects from concept direction through execution support."
+                                           "period":  "2012 – 2017",
+                                           "title":  "GRADUATED FROM HANOI ARCHITECTURAL UNIVERSITY.",
+                                           "place":  "",
+                                           "description":  ""
+                                       },
+                                       {
+                                           "period":  "2018",
+                                           "title":  "STARTED PROFESSIONAL CAREER AS A CONSTRUCTION SUPERVISOR AT LISA MAY HOME.",
+                                           "place":  "",
+                                           "description":  ""
+                                       },
+                                       {
+                                           "period":  "2019",
+                                           "title":  "LANDSCAPE DESIGN STAFF AT SALVADOR PEREZ ARROYO & PARTNERS DESIGN.",
+                                           "place":  "",
+                                           "description":  ""
+                                       },
+                                       {
+                                           "period":  "2020",
+                                           "title":  "HEAD OF LANDSCAPE DESIGN & CONSTRUCTION AT IVILA GREEN SOLUTIONS DESIGN & CONSTRUCTION.",
+                                           "place":  "",
+                                           "description":  ""
+                                       },
+                                       {
+                                           "period":  "2021 – PRESENT",
+                                           "title":  "LANDSCAPE DESIGNER AT HBH ARCHITECTS & PARTNERS.",
+                                           "place":  "",
+                                           "description":  ""
                                        }
                                    ],
                     "education":  [
                                       {
-                                          "period":  "2011 – 2016",
+                                          "period":  "",
                                           "title":  "Bachelor of Architecture",
                                           "place":  "Hanoi Architectural University (HAU)",
-                                          "description":  "Specialized in landscape architecture and spatial design, with a focus on outdoor environments, natural material systems, and human-scale design."
+                                          "description":  ""
                                       }
                                   ]
                 },
