@@ -10,12 +10,56 @@ window.addEventListener('preloaderComplete', () => {
     setupLenisScroll();
     setupMagneticButtons();
     setupTextReveal();
+    setupHeroEntrance(); // <-- NEW: Choreographed hero entrance
     setupLiquidHover();
     setupDynamicTheme();
 
     setupGSAPParallax();
     setupImageBlurUp();
 });
+
+function setupHeroEntrance() {
+    if (typeof gsap === 'undefined') return;
+
+    // 1. Navbar drops down
+    gsap.from('#navbar', {
+        y: -100,
+        opacity: 0,
+        duration: 1.5,
+        ease: 'power3.out',
+        delay: 0.5 
+    });
+
+    // 2. Hero subtitle, buttons, and credibility text fade up
+    gsap.from('.hero-subtitle, .hero-actions, .hero-credibility', {
+        y: 30,
+        opacity: 0,
+        duration: 1.5,
+        stagger: 0.2,
+        ease: 'power3.out',
+        delay: 1.2 
+    });
+
+    // 3. Bottom metrics (10+, 40+, 50k+) slide up
+    gsap.from('.hero-metric', {
+        y: 30,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.15,
+        ease: 'power3.out',
+        delay: 1.8
+    });
+
+    // 4. Social links (Facebook, Behance, etc) fade in
+    gsap.from('#hero-social-links a', {
+        x: -20,
+        opacity: 0,
+        duration: 1.0,
+        stagger: 0.1,
+        ease: 'power3.out',
+        delay: 2.2
+    });
+}
 
 function setupCustomCursor() {
     // Only show custom cursor on devices that support fine pointers (mouse)
