@@ -380,7 +380,7 @@ function setupLenisScroll() {
 // =========================================
 function setupMagneticButtons() {
     const bindMagnetic = () => {
-        const magneticElements = document.querySelectorAll('.btn-primary, .btn-secondary, .filter-btn');
+        const magneticElements = document.querySelectorAll('.btn-primary, .btn-secondary, .filter-btn, .hero-socials a, .hero-metric, #social-links a');
         
         magneticElements.forEach(el => {
             if (el.dataset.magneticBound) return;
@@ -394,11 +394,22 @@ function setupMagneticButtons() {
                 const v = rect.height / 2;
                 const x = e.clientX - rect.left - h;
                 const y = e.clientY - rect.top - v;
-                el.style.transform = "translate($(x * 0.3)px, $(y * 0.3)px)";
+                
+                let scale = "";
+                if (el.classList.contains('hero-metric') || el.closest('.hero-socials') || el.closest('#social-links')) {
+                    scale = " scale(1.15)";
+                    el.style.textShadow = "0px 0px 15px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.5)";
+                    el.style.color = "#ffffff";
+                }
+                el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)${scale}`;
             });
             
             el.addEventListener('mouseleave', function() {
                 el.style.transform = "translate(0px, 0px)";
+                if (el.classList.contains('hero-metric') || el.closest('.hero-socials') || el.closest('#social-links')) {
+                    el.style.textShadow = "";
+                    el.style.color = "";
+                }
             });
         });
     };
