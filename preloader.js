@@ -187,10 +187,10 @@ function initPreloader() {
         preloaderAnimationId = requestAnimationFrame(animate);
 
         if (!explosionTriggered && particles) {
-            // Subtle breathing and very slow float
+            // Subtle breathing and very slow float (disabled as per request)
             time += 0.02;
-            particles.position.y = Math.sin(time) * 2;
-            particles.position.x = Math.cos(time * 0.5) * 1;
+            // particles.position.y = Math.sin(time) * 2;
+            // particles.position.x = Math.cos(time * 0.5) * 1;
             
             const posAttr = particles.geometry.attributes.position;
             const baseAttr = particles.geometry.attributes.basePosition;
