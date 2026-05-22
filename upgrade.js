@@ -1,8 +1,8 @@
-﻿// =========================================
+// =========================================
 // NEW UX/UI UPGRADES: CURSOR, TRANSITIONS, PARALLAX
 // =========================================
 
-window.addEventListener('portfolioLoaded', () => {
+window.addEventListener('preloaderComplete', () => {
     setupCustomCursor();
     setupPageTransition();
     

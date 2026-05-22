@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,6 +22,10 @@
 </head>
 
 <body>
+    <!-- 3D Particle Preloader -->
+    <div id="preloader-3d">
+        <canvas id="preloader-canvas"></canvas>
+    </div>
     <!-- Page Transition Overlay -->
     <div id="page-transition" class="page-transition"></div>
 
@@ -31,7 +35,7 @@
     <canvas id="ai-canvas"></canvas>
 
     <nav class="navbar" id="navbar">
-        <a href="#home" class="logo" id="site-logo">LÃ¡MON<span class="logo-suffix">-DIY</span></a>
+        <a href="#home" class="logo" id="site-logo">LÃƒÂ¡MON<span class="logo-suffix">-DIY</span></a>
         <ul class="nav-links">
             <li><a id="nav-about" href="#about">Philosophy</a></li>
             <li><a id="nav-projects" href="#projects">Work</a></li>
@@ -214,11 +218,14 @@
     </svg>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="preloader.js"></script>
     <script src="upgrade.js"></script>
     <script src="canvas.js"></script>
     <script src="script.js?v=3.2"></script>
 </body>
 
 </html>
+
 
 

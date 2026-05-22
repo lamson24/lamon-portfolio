@@ -4214,3 +4214,29 @@ body:not(.project-page) .navbar .lang-btn.active {
         margin: 0 !important;
     }
 }
+
+/* ========================================= */
+/* 3D PARTICLE PRELOADER                     */
+/* ========================================= */
+#preloader-3d {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 1;
+}
+
+#preloader-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
