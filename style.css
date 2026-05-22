@@ -1552,7 +1552,8 @@ body.theme-active {
 
 /* Split-Type Text Reveal Setup */
 .line {
-    overflow: hidden; /* For masking text reveal */
+    /* overflow: hidden removed to fix text-shadow clipping on Hero text */
+    display: inline-block;
 }
 
 /* Liquid Distortion Hover */
