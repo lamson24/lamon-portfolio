@@ -127,9 +127,9 @@ function initPreloader() {
 
     for (let i = 0; i < particleCount; i++) {
         // scale pixels and add depth
-        const x = pixels[i].x * 0.2 + (Math.random() - 0.5) * 2;
-        const y = pixels[i].y * 0.2 + (Math.random() - 0.5) * 2;
-        const z = (Math.random() - 0.5) * 30; // depth
+        const x = pixels[i].x * 0.25 + (Math.random() - 0.5) * 0.8;
+        const y = pixels[i].y * 0.25 + (Math.random() - 0.5) * 0.8;
+        const z = (Math.random() - 0.5) * 6; // depth
 
         positions[i * 3] = x;
         positions[i * 3 + 1] = y;
@@ -162,7 +162,7 @@ function initPreloader() {
     geometry.setAttribute('baseColor', new THREE.BufferAttribute(baseColors, 3));
 
     const material = new THREE.PointsMaterial({
-        size: 1.2,
+        size: 0.6,
         vertexColors: true,
         transparent: true,
         opacity: 0.9,
