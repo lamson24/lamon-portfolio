@@ -121,9 +121,9 @@ function initPreloader() {
     const colors = new Float32Array(particleCount * 3);
     const baseColors = new Float32Array(particleCount * 3);
     
-    const color1 = new THREE.Color(0xfff1b3); // Light gold
-    const color2 = new THREE.Color(0xc8a96a); // Warm gold
-    const color3 = new THREE.Color(0x3a4b3f); // Forest green
+    const color1 = new THREE.Color(0xffffff); // Pure white
+    const color2 = new THREE.Color(0xe0e5ec); // Silver metallic
+    const color3 = new THREE.Color(0xaab4c0); // Steel metallic
 
     for (let i = 0; i < particleCount; i++) {
         // scale pixels and add depth
