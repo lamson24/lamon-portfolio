@@ -1,12 +1,11 @@
 ﻿// =========================================
-// 3D PARTICLE PRELOADER EXPLOSION
+// 3D TEXT PARTICLE PRELOADER EXPLOSION
 // =========================================
 
 let preloaderScene, preloaderCamera, preloaderRenderer, particles;
 let preloaderAnimationId;
 let explosionTriggered = false;
 
-// Track mouse
 let mouse = new THREE.Vector2(-9999, -9999);
 window.addEventListener('mousemove', (event) => {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -25,40 +24,112 @@ function createCircleTexture() {
     return new THREE.CanvasTexture(canvas);
 }
 
+function getTextPixels(text) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = Math.min(window.innerWidth, 1200);
+    canvas.height = 400;
+    
+    ctx.fillStyle = '#000000';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    const fontSize = Math.min(canvas.width / 5, 200);
+    ctx.font = `900 ${fontSize}px "Outfit", sans-serif`;
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+    
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+    const pixels = [];
+    
+    const step = 3; 
+    
+    for (let y = 0; y < canvas.height; y += step) {
+        for (let x = 0; x < canvas.width; x += step) {
+            const index = (y * canvas.width + x) * 4;
+            if (imgData[index] > 128) {
+                pixels.push({
+                    x: x - canvas.width / 2,
+                    y: -(y - canvas.height / 2) 
+                });
+            }
+        }
+    }
+    return pixels;
+}
+
 function initPreloader() {
     const canvas = document.getElementById('preloader-canvas');
     const container = document.getElementById('preloader-3d');
     if (!canvas || !container) return;
 
+    // Set canvas z-index
+    canvas.style.position = 'relative';
+    canvas.style.zIndex = '5';
+
+    // Cinematic Loader Progress
+    const progressEl = document.createElement('div');
+    progressEl.id = 'preloader-progress';
+    progressEl.innerText = "00%";
+    progressEl.style.position = 'absolute';
+    progressEl.style.top = '50%';
+    progressEl.style.left = '50%';
+    progressEl.style.transform = 'translate(-50%, -50%)';
+    progressEl.style.color = 'rgba(255, 255, 255, 0.05)';
+    progressEl.style.fontFamily = "'Outfit', sans-serif";
+    progressEl.style.fontSize = 'clamp(6rem, 15vw, 15rem)';
+    progressEl.style.fontWeight = '900';
+    progressEl.style.letterSpacing = '-0.02em';
+    progressEl.style.pointerEvents = 'none';
+    progressEl.style.zIndex = '1'; 
+    container.appendChild(progressEl);
+
+    // Instruction Text
+    const instruction = document.createElement('div');
+    instruction.innerText = "Click to Explore";
+    instruction.style.position = 'absolute';
+    instruction.style.bottom = '10%';
+    instruction.style.left = '50%';
+    instruction.style.transform = 'translateX(-50%)';
+    instruction.style.color = 'rgba(255,255,255,0.7)';
+    instruction.style.fontFamily = "'Outfit', sans-serif";
+    instruction.style.letterSpacing = '5px';
+    instruction.style.textTransform = 'uppercase';
+    instruction.style.fontSize = '0.9rem';
+    instruction.style.pointerEvents = 'none';
+    instruction.style.opacity = '0';
+    instruction.style.transition = 'opacity 1s ease';
+    instruction.style.zIndex = '10';
+    instruction.id = 'preloader-instruction';
+    container.appendChild(instruction);
+
     preloaderScene = new THREE.Scene();
-    preloaderCamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    preloaderCamera.position.z = 150;
+    preloaderCamera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    preloaderCamera.position.z = 100;
 
     preloaderRenderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
     preloaderRenderer.setSize(window.innerWidth, window.innerHeight);
     preloaderRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    const particleCount = 5000;
+    const pixels = getTextPixels("LáMON");
+    const particleCount = pixels.length;
+    
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const basePositions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
+    const baseColors = new Float32Array(particleCount * 3);
     
-    const color1 = new THREE.Color(0xfff1b3); // Light gold/white
+    const color1 = new THREE.Color(0xfff1b3); // Light gold
     const color2 = new THREE.Color(0xc8a96a); // Warm gold
-    const color3 = new THREE.Color(0xd16d3b); // Deep orange/copper
+    const color3 = new THREE.Color(0x3a4b3f); // Forest green
 
     for (let i = 0; i < particleCount; i++) {
-        const u = Math.random();
-        const v = Math.random();
-        const theta = 2 * Math.PI * u;
-        const phi = Math.acos(2 * v - 1);
-        
-        let radius = 40 + (Math.random() * 5); 
-        
-        const x = radius * Math.sin(phi) * Math.cos(theta);
-        const y = radius * Math.sin(phi) * Math.sin(theta);
-        const z = radius * Math.cos(phi);
+        // scale pixels and add depth
+        const x = pixels[i].x * 0.4 + (Math.random() - 0.5) * 2;
+        const y = pixels[i].y * 0.4 + (Math.random() - 0.5) * 2;
+        const z = (Math.random() - 0.5) * 30; // depth
 
         positions[i * 3] = x;
         positions[i * 3 + 1] = y;
@@ -68,28 +139,33 @@ function initPreloader() {
         basePositions[i * 3 + 1] = y;
         basePositions[i * 3 + 2] = z;
 
-        const yRatio = (y + 45) / 90; 
+        const zRatio = (z + 15) / 30; 
         const mixedColor = new THREE.Color();
-        if (yRatio > 0.6) {
-            mixedColor.lerpColors(color2, color1, (yRatio - 0.6) * 2.5);
+        if (zRatio > 0.5) {
+            mixedColor.lerpColors(color2, color1, (zRatio - 0.5) * 2);
         } else {
-            mixedColor.lerpColors(color3, color2, yRatio * 1.6);
+            mixedColor.lerpColors(color3, color2, zRatio * 2);
         }
         
         colors[i * 3] = mixedColor.r;
         colors[i * 3 + 1] = mixedColor.g;
         colors[i * 3 + 2] = mixedColor.b;
+        
+        baseColors[i * 3] = mixedColor.r;
+        baseColors[i * 3 + 1] = mixedColor.g;
+        baseColors[i * 3 + 2] = mixedColor.b;
     }
 
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('basePosition', new THREE.BufferAttribute(basePositions, 3));
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geometry.setAttribute('baseColor', new THREE.BufferAttribute(baseColors, 3));
 
     const material = new THREE.PointsMaterial({
-        size: 1.5,
+        size: 1.2,
         vertexColors: true,
         transparent: true,
-        opacity: 0.8,
+        opacity: 0.9,
         map: createCircleTexture(),
         alphaTest: 0.1,
         blending: THREE.AdditiveBlending,
@@ -101,21 +177,20 @@ function initPreloader() {
 
     let time = 0;
     const raycaster = new THREE.Raycaster();
-    const mousePlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), -40);
+    const mousePlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0); // Text is mostly at z=0
     const mousePos3D = new THREE.Vector3();
+    const hoverColor = new THREE.Color(0x8aff99); // bright energy green
 
     function animate() {
         if (!preloaderScene) return;
         preloaderAnimationId = requestAnimationFrame(animate);
 
         if (!explosionTriggered && particles) {
-            particles.rotation.y += 0.005;
-            particles.rotation.x += 0.002;
+            // Subtle breathing and very slow float
+            time += 0.02;
+            particles.position.y = Math.sin(time) * 2;
+            particles.position.x = Math.cos(time * 0.5) * 1;
             
-            time += 0.05;
-            const scale = 1 + Math.sin(time) * 0.02;
-            particles.scale.set(scale, scale, scale);
-
             // Mouse interaction
             if (mouse.x !== -9999) {
                 raycaster.setFromCamera(mouse, preloaderCamera);
@@ -124,8 +199,13 @@ function initPreloader() {
                     
                     const posAttr = particles.geometry.attributes.position;
                     const baseAttr = particles.geometry.attributes.basePosition;
+                    const colAttr = particles.geometry.attributes.color;
+                    const baseColAttr = particles.geometry.attributes.baseColor;
+                    
                     const posArray = posAttr.array;
                     const baseArray = baseAttr.array;
+                    const colArray = colAttr.array;
+                    const baseColArray = baseColAttr.array;
                     
                     for (let i = 0; i < particleCount; i++) {
                         const ix = i * 3;
@@ -137,23 +217,34 @@ function initPreloader() {
                         const dz = mousePos3D.z - pz;
                         const distSq = dx*dx + dy*dy + dz*dz;
                         
-                        const interactRadius = 25;
+                        const interactRadius = 15;
                         const interactRadiusSq = interactRadius * interactRadius;
                         
                         if (distSq < interactRadiusSq && distSq > 0) {
                             const dist = Math.sqrt(distSq);
                             const force = (interactRadius - dist) / interactRadius;
-                            posArray[ix] -= (dx / dist) * force * 1.5;
-                            posArray[ix+1] -= (dy / dist) * force * 1.5;
-                            posArray[ix+2] -= (dz / dist) * force * 1.5;
+                            posArray[ix] -= (dx / dist) * force * 2.0;
+                            posArray[ix+1] -= (dy / dist) * force * 2.0;
+                            posArray[ix+2] -= (dz / dist) * force * 2.0;
+                            
+                            // Energy Transfer: Change color
+                            colArray[ix] += (hoverColor.r - colArray[ix]) * 0.2;
+                            colArray[ix+1] += (hoverColor.g - colArray[ix+1]) * 0.2;
+                            colArray[ix+2] += (hoverColor.b - colArray[ix+2]) * 0.2;
+                        } else {
+                            // Spring back color
+                            colArray[ix] += (baseColArray[ix] - colArray[ix]) * 0.05;
+                            colArray[ix+1] += (baseColArray[ix+1] - colArray[ix+1]) * 0.05;
+                            colArray[ix+2] += (baseColArray[ix+2] - colArray[ix+2]) * 0.05;
                         }
                         
-                        // Spring back
-                        posArray[ix] += (bx - posArray[ix]) * 0.05;
-                        posArray[ix+1] += (by - posArray[ix+1]) * 0.05;
-                        posArray[ix+2] += (bz - posArray[ix+2]) * 0.05;
+                        // Spring back position
+                        posArray[ix] += (bx - posArray[ix]) * 0.04;
+                        posArray[ix+1] += (by - posArray[ix+1]) * 0.04;
+                        posArray[ix+2] += (bz - posArray[ix+2]) * 0.04;
                     }
                     posAttr.needsUpdate = true;
+                    colAttr.needsUpdate = true;
                 }
             }
         }
@@ -163,6 +254,47 @@ function initPreloader() {
     animate();
 
     window.addEventListener('resize', onWindowResize, false);
+
+    // ===================================
+    // PROGRESS LOADER LOGIC
+    // ===================================
+    const progressObj = { val: 0 };
+    let progressFinished = false;
+    let isPortfolioLoaded = window.portfolioLoadedFlag || false; 
+    let clickReady = false;
+
+    gsap.to(progressObj, {
+        val: 100,
+        duration: 2.5,
+        ease: "power2.inOut",
+        onUpdate: () => {
+            progressEl.innerText = Math.floor(progressObj.val).toString().padStart(2, '0') + "%";
+        },
+        onComplete: () => {
+            progressFinished = true;
+            checkReady();
+        }
+    });
+
+    window.addEventListener('portfolioLoaded', () => {
+        isPortfolioLoaded = true;
+        checkReady();
+    });
+
+    function checkReady() {
+        if (isPortfolioLoaded && progressFinished && !explosionTriggered) {
+            clickReady = true;
+            gsap.to(progressEl, { opacity: 0, duration: 1 });
+            instruction.style.opacity = '1';
+        }
+    }
+
+    container.addEventListener('click', () => {
+        if (clickReady && !explosionTriggered) {
+            instruction.style.opacity = '0';
+            explodeParticles();
+        }
+    });
 }
 
 function onWindowResize() {
@@ -176,36 +308,43 @@ function explodeParticles() {
     if (!particles || explosionTriggered) return;
     explosionTriggered = true;
 
-    const dummy = { progress: 0 };
-    
-    gsap.to(particles.scale, {
-        x: 0.8, y: 0.8, z: 0.8,
-        duration: 0.5,
+    // Dispatch event to start Hero animation slightly earlier than visual clear
+    setTimeout(() => {
+        window.dispatchEvent(new Event('preloaderComplete'));
+    }, 800);
+
+    // Camera Fly-Through
+    gsap.to(preloaderCamera.position, {
+        z: -50,
+        duration: 1.5,
+        ease: "power3.in"
+    });
+
+    // Add warp rotation
+    gsap.to(particles.rotation, {
+        z: Math.PI / 4,
+        x: Math.random() * 0.5,
+        y: Math.random() * 0.5,
+        duration: 1.5,
         ease: "power2.in"
     });
 
-    gsap.to(dummy, {
-        progress: 1,
-        duration: 3.0,
-        ease: "expo.out",
+    // Fade out particles
+    gsap.to(particles.material, {
+        opacity: 0,
+        duration: 1.0,
         delay: 0.5,
-        onUpdate: () => {
-            const p = dummy.progress;
-            particles.scale.set(1 + p*25, 1 + p*25, 1 + p*25);
-            particles.material.opacity = 0.8 * (1 - p);
-        },
+        ease: "power2.inOut"
+    });
+
+    gsap.to('#preloader-3d', {
+        opacity: 0,
+        duration: 1.5,
+        delay: 0.5,
+        ease: "power2.inOut",
         onComplete: () => {
-            window.dispatchEvent(new Event('preloaderComplete'));
-            
-            gsap.to('#preloader-3d', {
-                opacity: 0,
-                duration: 1.2,
-                ease: "power2.inOut",
-                onComplete: () => {
-                    document.getElementById('preloader-3d').style.display = 'none';
-                    setTimeout(cleanupPreloader, 2000);
-                }
-            });
+            document.getElementById('preloader-3d').style.display = 'none';
+            setTimeout(cleanupPreloader, 1000);
         }
     });
 }
@@ -228,46 +367,12 @@ function cleanupPreloader() {
     window.removeEventListener('resize', onWindowResize);
 }
 
-initPreloader();
+// Start when document fonts are likely ready (or immediately)
+if (document.fonts) {
+    document.fonts.ready.then(() => {
+        initPreloader();
+    });
+} else {
+    initPreloader();
+}
 
-let isPortfolioLoaded = false;
-let userClicked = false;
-
-window.addEventListener('portfolioLoaded', () => {
-    isPortfolioLoaded = true;
-    
-    const container = document.getElementById('preloader-3d');
-    const instruction = document.createElement('div');
-    instruction.innerText = "Click to Explore";
-    instruction.style.position = 'absolute';
-    instruction.style.bottom = '10%';
-    instruction.style.color = 'rgba(255,255,255,0.5)';
-    instruction.style.fontFamily = "'Outfit', sans-serif";
-    instruction.style.letterSpacing = '5px';
-    instruction.style.textTransform = 'uppercase';
-    instruction.style.fontSize = '0.9rem';
-    instruction.style.pointerEvents = 'none';
-    instruction.style.opacity = '0';
-    instruction.style.transition = 'opacity 1s ease';
-    instruction.id = 'preloader-instruction';
-    container.appendChild(instruction);
-    
-    setTimeout(() => {
-        if (!explosionTriggered) instruction.style.opacity = '1';
-    }, 500);
-
-    if (userClicked) {
-        instruction.style.opacity = '0';
-        explodeParticles();
-    }
-});
-
-document.getElementById('preloader-3d').addEventListener('click', () => {
-    userClicked = true;
-    const instruction = document.getElementById('preloader-instruction');
-    if (instruction) instruction.style.opacity = '0';
-    
-    if (isPortfolioLoaded && !explosionTriggered) {
-        explodeParticles();
-    }
-});

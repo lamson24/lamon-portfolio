@@ -1,4 +1,4 @@
-﻿const STORAGE_KEYS = {
+const STORAGE_KEYS = {
     language: 'portfolioLanguage',
     overridePrefix: 'portfolioContentOverride_',
     legacyOverride: 'portfolioContentOverride'
@@ -388,6 +388,7 @@ function initializeContent(content, language) {
     renderHandmadeProjects(content.handmadeProjects);
 
     // Trigger event for upgrade.js to start UX scripts AFTER rendering is complete
+    window.portfolioLoadedFlag = true;
     window.dispatchEvent(new Event('portfolioLoaded'));
 
     if (content.handmadeSection) {
