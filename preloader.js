@@ -2,7 +2,7 @@
 // 3D TEXT PARTICLE PRELOADER EXPLOSION
 // =========================================
 
-let preloaderScene, preloaderCamera, preloaderRenderer, particles;
+let preloaderScene, preloaderCamera, preloaderRenderer, particles, backgroundStars;
 let preloaderAnimationId;
 let explosionTriggered = false;
 
@@ -176,6 +176,28 @@ function initPreloader() {
     particles = new THREE.Points(geometry, material);
     preloaderScene.add(particles);
 
+    // Create Background Stars
+    const starGeometry = new THREE.BufferGeometry();
+    const starCount = 600;
+    const starPositions = new Float32Array(starCount * 3);
+    for(let i = 0; i < starCount; i++) {
+        starPositions[i*3] = (Math.random() - 0.5) * 800; 
+        starPositions[i*3+1] = (Math.random() - 0.5) * 800;
+        starPositions[i*3+2] = -150 - Math.random() * 400; // deeply behind the text
+    }
+    starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+    const starMaterial = new THREE.PointsMaterial({
+        color: 0xffffff,
+        size: 1.2,
+        transparent: true,
+        opacity: 0.3,
+        map: createCircleTexture(),
+        depthWrite: false,
+        blending: THREE.AdditiveBlending
+    });
+    backgroundStars = new THREE.Points(starGeometry, starMaterial);
+    preloaderScene.add(backgroundStars);
+
     let time = 0;
     const raycaster = new THREE.Raycaster();
     const mousePlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0); // Text is mostly at z=0
@@ -189,6 +211,12 @@ function initPreloader() {
         if (!explosionTriggered && particles) {
             // Subtle breathing and very slow float (disabled as per request)
             time += 0.02;
+            
+            if (backgroundStars) {
+                backgroundStars.rotation.y += 0.0003;
+                backgroundStars.rotation.z += 0.0001;
+            }
+            
             // particles.position.y = Math.sin(time) * 2;
             // particles.position.x = Math.cos(time * 0.5) * 1;
             
@@ -358,6 +386,15 @@ function explodeParticles() {
         delay: 0.5,
         ease: "power2.inOut"
     });
+    
+    if (backgroundStars) {
+        gsap.to(backgroundStars.material, {
+            opacity: 0,
+            duration: 1.0,
+            delay: 0.5,
+            ease: "power2.inOut"
+        });
+    }
 
     gsap.to('#preloader-3d', {
         opacity: 0,
@@ -378,6 +415,12 @@ function cleanupPreloader() {
         particles.geometry.dispose();
         particles.material.dispose();
         preloaderScene.remove(particles);
+    }
+    if (backgroundStars) {
+        if(backgroundStars.material.map) backgroundStars.material.map.dispose();
+        backgroundStars.geometry.dispose();
+        backgroundStars.material.dispose();
+        preloaderScene.remove(backgroundStars);
     }
     if (preloaderRenderer) {
         preloaderRenderer.dispose();
