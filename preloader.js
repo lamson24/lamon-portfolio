@@ -129,7 +129,7 @@ function initPreloader() {
         // scale pixels and add depth
         const x = pixels[i].x * 0.25 + (Math.random() - 0.5) * 0.8;
         const y = pixels[i].y * 0.25 + (Math.random() - 0.5) * 0.8;
-        const z = (Math.random() - 0.5) * 6; // depth
+        const z = (Math.random() - 0.5) * 15; // increased depth for 3D volume
 
         positions[i * 3] = x;
         positions[i * 3 + 1] = y;
@@ -160,6 +160,7 @@ function initPreloader() {
     geometry.setAttribute('basePosition', new THREE.BufferAttribute(basePositions, 3));
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
     geometry.setAttribute('baseColor', new THREE.BufferAttribute(baseColors, 3));
+    geometry.setAttribute('stateColor', new THREE.BufferAttribute(baseColors.slice(), 3));
 
     const material = new THREE.PointsMaterial({
         size: 0.6,
@@ -195,11 +196,13 @@ function initPreloader() {
             const baseAttr = particles.geometry.attributes.basePosition;
             const colAttr = particles.geometry.attributes.color;
             const baseColAttr = particles.geometry.attributes.baseColor;
+            const stateAttr = particles.geometry.attributes.stateColor;
             
             const posArray = posAttr.array;
             const baseArray = baseAttr.array;
             const colArray = colAttr.array;
             const baseColArray = baseColAttr.array;
+            const stateArray = stateAttr.array;
             
             let mouseHit = false;
             if (mouse.x !== -9999) {
@@ -237,14 +240,21 @@ function initPreloader() {
                 }
 
                 if (colorHovered) {
-                    colArray[ix] += (hoverColor.r - colArray[ix]) * 0.2;
-                    colArray[ix+1] += (hoverColor.g - colArray[ix+1]) * 0.2;
-                    colArray[ix+2] += (hoverColor.b - colArray[ix+2]) * 0.2;
+                    stateArray[ix] += (hoverColor.r - stateArray[ix]) * 0.2;
+                    stateArray[ix+1] += (hoverColor.g - stateArray[ix+1]) * 0.2;
+                    stateArray[ix+2] += (hoverColor.b - stateArray[ix+2]) * 0.2;
                 } else {
-                    colArray[ix] += (baseColArray[ix] - colArray[ix]) * 0.05;
-                    colArray[ix+1] += (baseColArray[ix+1] - colArray[ix+1]) * 0.05;
-                    colArray[ix+2] += (baseColArray[ix+2] - colArray[ix+2]) * 0.05;
+                    stateArray[ix] += (baseColArray[ix] - stateArray[ix]) * 0.05;
+                    stateArray[ix+1] += (baseColArray[ix+1] - stateArray[ix+1]) * 0.05;
+                    stateArray[ix+2] += (baseColArray[ix+2] - stateArray[ix+2]) * 0.05;
                 }
+                
+                // Twinkle (rung sáng như vì sao)
+                const twinkle = 0.4 + Math.pow(Math.sin(time * 5.0 + i * 12.345), 4) * 1.5;
+
+                colArray[ix] = Math.min(stateArray[ix] * twinkle, 1.0);
+                colArray[ix+1] = Math.min(stateArray[ix+1] * twinkle, 1.0);
+                colArray[ix+2] = Math.min(stateArray[ix+2] * twinkle, 1.0);
                 
                 // Jitter (rung lắc tự động)
                 const jitterX = Math.sin(time * 4.0 + i) * 0.15;
