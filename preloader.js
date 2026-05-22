@@ -145,32 +145,29 @@ function explodeParticles() {
 
     gsap.to(dummy, {
         progress: 1,
-        duration: 2.0,
+        duration: 3.0,
         ease: "expo.out",
         delay: 0.5,
         onUpdate: () => {
             const p = dummy.progress;
-            // Interpolate positions
-            for (let i = 0; i < positions.length; i++) {
-                // start position is essentially positions[i] but we need original. 
-                // Since we modify it in place, it's safer to use an array, but for simplicity:
-                // We use standard GSAP array animation or just move vertices
-            }
-            // A more performant way to explode without storing original array:
+            // A more performant way to explode without looping 15000 vertices:
             // Just scale the whole particle system massively while fading out
-            particles.scale.set(1 + p*15, 1 + p*15, 1 + p*15);
+            particles.scale.set(1 + p*25, 1 + p*25, 1 + p*25);
             particles.material.opacity = 0.8 * (1 - p);
         },
         onComplete: () => {
+            // Dispatch event for upgrade.js to start the Hero text animation first
+            window.dispatchEvent(new Event('preloaderComplete'));
+            
             // Fade out the black background
             gsap.to('#preloader-3d', {
                 opacity: 0,
-                duration: 0.8,
+                duration: 1.2,
+                ease: "power2.inOut",
                 onComplete: () => {
                     document.getElementById('preloader-3d').style.display = 'none';
-                    cleanupPreloader();
-                    // Dispatch event for upgrade.js to start the Hero text animation
-                    window.dispatchEvent(new Event('preloaderComplete'));
+                    // Defer WebGL cleanup to avoid CPU lag spike during hero animation
+                    setTimeout(cleanupPreloader, 2000);
                 }
             });
         }

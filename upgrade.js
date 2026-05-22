@@ -384,9 +384,9 @@ function setupTextReveal() {
                 y: "120%",
                 opacity: 0,
                 rotationZ: "5deg",
-                duration: 1,
-                stagger: 0.03,
-                ease: "power4.out",
+                duration: 2.2,
+                stagger: 0.08,
+                ease: "power3.out",
                 scrollTrigger: {
                     trigger: el,
                     start: "top 90%"
