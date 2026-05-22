@@ -73,16 +73,16 @@ function initPreloader() {
     progressEl.id = 'preloader-progress';
     progressEl.innerText = "00%";
     progressEl.style.position = 'absolute';
-    progressEl.style.top = '50%';
+    progressEl.style.bottom = '10%';
     progressEl.style.left = '50%';
-    progressEl.style.transform = 'translate(-50%, -50%)';
-    progressEl.style.color = 'rgba(255, 255, 255, 0.05)';
+    progressEl.style.transform = 'translateX(-50%)';
+    progressEl.style.color = 'rgba(255,255,255,0.7)';
     progressEl.style.fontFamily = "'Outfit', sans-serif";
-    progressEl.style.fontSize = 'clamp(6rem, 15vw, 15rem)';
-    progressEl.style.fontWeight = '900';
-    progressEl.style.letterSpacing = '-0.02em';
+    progressEl.style.fontSize = '0.9rem';
+    progressEl.style.fontWeight = '400';
+    progressEl.style.letterSpacing = '5px';
     progressEl.style.pointerEvents = 'none';
-    progressEl.style.zIndex = '1'; 
+    progressEl.style.zIndex = '10'; 
     container.appendChild(progressEl);
 
     // Instruction Text
