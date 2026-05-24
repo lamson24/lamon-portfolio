@@ -143,6 +143,25 @@
     },
     "projects": [
         {
+            "id": "contemporary-interior-design",
+            "title": "Contemporary Interior Space",
+            "subtitle": "Living Space Design Project",
+            "alt": "Contemporary living space interior design",
+            "image": "assets/elinh-interior-1.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "An interior design project shaping a contemporary, sophisticated, and cozy living space. The design focuses on creating a seamless flow between living areas, emphasizing a minimalist language that remains luxurious through the use of premium natural materials.",
+            "gallery": [
+                "assets/elinh-interior-1.png",
+                "assets/elinh-interior-2.png",
+                "assets/elinh-interior-3.png",
+                "assets/elinh-interior-4.png"
+            ],
+            "challenge": "The main challenge was optimizing the usable area while maintaining a spacious and airy feel. Simultaneously, integrating artificial lighting with natural light needed to be meticulously refined to enhance the beauty of the interior at any time of the day.",
+            "solution": "The proposed solution uses a neutral color palette as the foundation, combined with accents of natural wood and plated metal. Large glass windows are fully utilized to welcome light, alongside a smart recessed LED lighting system that personalizes the spatial experience according to the homeowner's mood and needs."
+        },
+        {
             "id": "nghia-hiep-urban-landscape",
             "title": "Nghia Hiep Urban Area",
             "subtitle": "Yen My, Hung Yen",

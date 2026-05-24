@@ -143,6 +143,25 @@
     },
     "projects": [
         {
+            "id": "contemporary-interior-design",
+            "title": "Không gian Nội thất Đương đại",
+            "subtitle": "Dự án thiết kế không gian sống",
+            "alt": "Thiết kế nội thất không gian sống đương đại",
+            "image": "assets/elinh-interior-1.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "Dự án thiết kế nội thất định hình một không gian sống đương đại, tinh tế và ấm cúng. Thiết kế chú trọng vào việc tạo ra sự liền mạch giữa các khu vực sinh hoạt, đề cao ngôn ngữ tối giản (minimalism) nhưng không kém phần sang trọng qua việc sử dụng vật liệu tự nhiên cao cấp.",
+            "gallery": [
+                "assets/elinh-interior-1.png",
+                "assets/elinh-interior-2.png",
+                "assets/elinh-interior-3.png",
+                "assets/elinh-interior-4.png"
+            ],
+            "challenge": "Thách thức chính là làm thế nào để tối ưu hóa diện tích sử dụng mà vẫn giữ được cảm giác rộng rãi, thoáng đãng. Đồng thời, yêu cầu phối hợp hệ thống ánh sáng nhân tạo với ánh sáng tự nhiên phải thật tinh tế để tôn lên vẻ đẹp của nội thất vào mọi thời điểm trong ngày.",
+            "solution": "Giải pháp đưa ra là sử dụng tông màu trung tính làm chủ đạo, kết hợp với điểm nhấn từ gỗ tự nhiên và kim loại mạ. Các cửa kính lớn được tận dụng tối đa để đón sáng, cùng hệ thống đèn LED âm trần thông minh giúp cá nhân hóa trải nghiệm không gian theo tâm trạng và nhu cầu của gia chủ."
+        },
+        {
             "id": "nghia-hiep-urban-landscape",
             "title": "Khu đô thị Nghĩa Hiệp",
             "subtitle": "Yên Mỹ, Hưng Yên",
