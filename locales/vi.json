@@ -119,10 +119,24 @@
         "title": "Dự án",
         "highlight": "Chọn lọc",
         "filters": {
-            "all": "T?t c?",
-            "residential": "Nh� ?",
-            "public": "C�ng c?ng",
-            "commercial": "Thuong m?i"
+            "top": {
+                "all": "Tất cả",
+                "company": "Công ty",
+                "personal": "Cá nhân",
+                "handmade": "Handmade"
+            },
+            "personal": {
+                "all": "Tất cả Cá nhân",
+                "architecture": "Kiến trúc",
+                "landscape": "Cảnh quan",
+                "interior": "Nội thất"
+            },
+            "handmade": {
+                "all": "Tất cả Handmade",
+                "furniture": "Đồ nội thất",
+                "lighting": "Đèn decor",
+                "model": "Mô hình"
+            }
         }
     },
     "projects": [
@@ -139,7 +153,9 @@
                 "assets/project_4.png"
             ],
             "description": "Công viên đô thị mới tạo kết nối cộng đồng và tăng đa dạng sinh học thông qua cây bản địa và giải pháp quản lý nước thông minh.",
-            "filter": "public"
+            "filter": "public",
+            "type": "company",
+            "subType": "all"
         },
         {
             "id": "2",
@@ -154,7 +170,9 @@
                 "assets/project_3.png"
             ],
             "description": "Không gian nghỉ dưỡng riêng tư với sàn gỗ hiện đại, khu lửa ngoài trời và lớp cây cảnh tạo cảm giác thư giãn.",
-            "filter": "residential"
+            "filter": "residential",
+            "type": "company",
+            "subType": "all"
         },
         {
             "id": "3",
@@ -169,7 +187,9 @@
                 "assets/project_1.png"
             ],
             "description": "Mô hình mái xanh tối ưu vi khí hậu, giảm hiệu ứng đảo nhiệt và tăng trải nghiệm cho người sử dụng.",
-            "filter": "commercial"
+            "filter": "commercial",
+            "type": "company",
+            "subType": "all"
         },
         {
             "id": "4",
@@ -184,7 +204,9 @@
                 "assets/project_1_2.png"
             ],
             "description": "Tuyến đường đi bộ với bộ sưu tập thực vật nhiệt đới, tạo hành trình tham quan êm dịu và ấn tượng.",
-            "filter": "public"
+            "filter": "public",
+            "type": "personal",
+            "subType": "landscape"
         },
         {
             "id": "5",
@@ -199,7 +221,9 @@
                 "assets/project_3_2.png"
             ],
             "description": "Thiết kế cảnh quan nghỉ dưỡng kết nối tầm nhìn chân trời, kết hợp cây bản địa để giảm xói mòn bờ biển.",
-            "filter": "commercial"
+            "filter": "commercial",
+            "type": "personal",
+            "subType": "landscape"
         },
         {
             "id": "6",
@@ -214,7 +238,9 @@
                 "assets/project_5.png"
             ],
             "description": "Sân trong hình học hiện đại với nước, ghế đá và cây xanh có cấu trúc, hỗ trợ tập trung và hồi phục năng lượng.",
-            "filter": "commercial"
+            "filter": "commercial",
+            "type": "personal",
+            "subType": "architecture"
         },
         {
             "id": "7",
@@ -234,77 +260,90 @@
                 "assets/project_7_6.png"
             ],
             "description": "Đề xuất thiết kế cảnh quan cho khu nhà ở Nghĩa Hiệp, Hưng Yên với trung tâm là quảng trường đài phun nước theo trục đối xứng. Dự án kết hợp ngôn ngữ kiến trúc cổ điển, hệ cây xanh nhiều lớp và chiếu sáng cảnh quan ban đêm, tạo nên không gian sinh hoạt cộng đồng sang trọng, an toàn và giàu bản sắc.",
-            "filter": "residential"
-        }
-    ],
-    "handmadeSection": {
-        "title": "Chế tác",
-        "highlight": "Thủ công",
-        "subtitle": "Các dự án đồ vật cá nhân và khám phá nghệ thuật"
-    },
-    "handmadeProjects": [
+            "filter": "residential",
+            "type": "personal",
+            "subType": "architecture"
+        },
         {
             "id": "hm-1",
             "title": "Ánh Sáng Trí Tuệ",
             "subtitle": "Điêu khắc nhựa & LED tím",
             "image": "assets/handmade_lamp_1.jpg",
-            "description": "Đèn để bàn điêu khắc từ nhựa — hình não người đặt trên bàn tay đang nâng đỡ. Ánh LED tím phát ra từ bên trong biến tác phẩm thành vật thể nghệ thuật đầy mê hoặc trong đêm tối."
+            "description": "Đèn để bàn điêu khắc từ nhựa — hình não người đặt trên bàn tay đang nâng đỡ. Ánh LED tím phát ra từ bên trong biến tác phẩm thành vật thể nghệ thuật đầy mê hoặc trong đêm tối.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-2",
             "title": "Ánh Địa Hình",
             "subtitle": "Đèn trụ in 3D — đường đồng mức",
             "image": "assets/handmade_lamp_2.jpg",
-            "description": "Đèn trụ nhỏ gọn với các gờ sóng in 3D gợi nhớ đường đồng mức địa hình. Lớp vỏ trong mờ khuếch tán ánh sáng ấm thành luồng sáng mềm mại, có hình khối."
+            "description": "Đèn trụ nhỏ gọn với các gờ sóng in 3D gợi nhớ đường đồng mức địa hình. Lớp vỏ trong mờ khuếch tán ánh sáng ấm thành luồng sáng mềm mại, có hình khối.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-3",
             "title": "Ánh Đan I",
             "subtitle": "Đèn vải dệt thủ công & đế gỗ",
             "image": "assets/handmade_lamp_3.jpg",
-            "description": "Thân đèn hình trụ được bọc vải dệt thô thủ công, đặt trên đế gỗ chắc chắn. Lưới vải mịn tán ánh sáng đều, tạo ra sắc hổ phách ấm áp cho mọi góc làm việc."
+            "description": "Thân đèn hình trụ được bọc vải dệt thô thủ công, đặt trên đế gỗ chắc chắn. Lưới vải mịn tán ánh sáng đều, tạo ra sắc hổ phách ấm áp cho mọi góc làm việc.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-4",
             "title": "Quý Ông Bí Ẩn — Ban Ngày",
             "subtitle": "Đèn giấy chạm khắc hình bóng",
             "image": "assets/handmade_lamp_4.jpg",
-            "description": "Hình bóng quý ông đầu lâu đội mũ chóp, vẽ tay và cắt thủ công trên chao đèn giấy. Chụp dưới ánh sáng ban mai, từng đường cắt tỉ mỉ hiện lên rõ nét trên nền giấy hổ phách ấm áp."
+            "description": "Hình bóng quý ông đầu lâu đội mũ chóp, vẽ tay và cắt thủ công trên chao đèn giấy. Chụp dưới ánh sáng ban mai, từng đường cắt tỉ mỉ hiện lên rõ nét trên nền giấy hổ phách ấm áp.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-5",
             "title": "Đèn Hoa Cúc",
             "subtitle": "Chao giấy chạm hoa cúc thủ công",
             "image": "assets/handmade_lamp_5.jpg",
-            "description": "Chao đèn đứng làm từ giấy có kết cấu tự nhiên, với hình hoa cúc được cắt tỉ mỉ bằng tay. Ánh đêm thành phố phía sau tạo nên sự đối thoại thầm lặng giữa nghề thủ công và khung cảnh đô thị."
+            "description": "Chao đèn đứng làm từ giấy có kết cấu tự nhiên, với hình hoa cúc được cắt tỉ mỉ bằng tay. Ánh đêm thành phố phía sau tạo nên sự đối thoại thầm lặng giữa nghề thủ công và khung cảnh đô thị.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-6",
             "title": "Quý Ông Bí Ẩn — Đêm",
             "subtitle": "Đèn giấy chạm khắc hình bóng",
             "image": "assets/handmade_lamp_6.jpg",
-            "description": "Cùng chiếc đèn Quý Ông chụp trong đêm. Đèn thành phố phía sau làm nền, nhân vật đầu lâu hiện ra rực rỡ trong sắc hổ phách — một hình bóng được ánh sáng thổi hồn."
+            "description": "Cùng chiếc đèn Quý Ông chụp trong đêm. Đèn thành phố phía sau làm nền, nhân vật đầu lâu hiện ra rực rỡ trong sắc hổ phách — một hình bóng được ánh sáng thổi hồn.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-7",
             "title": "Ánh Đan II",
             "subtitle": "Đèn trụ vải dệt & cảnh quái vật",
             "image": "assets/handmade_lamp_7.jpg",
-            "description": "Đèn trụ vải dệt trong khung cảnh vui tươi cùng mô hình quái vật. Nhắc nhở rằng đồ vật thủ công mang cá tính riêng — chúng trở thành một phần câu chuyện của không gian mà chúng trú ngụ."
+            "description": "Đèn trụ vải dệt trong khung cảnh vui tươi cùng mô hình quái vật. Nhắc nhở rằng đồ vật thủ công mang cá tính riêng — chúng trở thành một phần câu chuyện của không gian mà chúng trú ngụ.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-8",
             "title": "Đèn Hoa Sen",
             "subtitle": "Chao giấy chạm hoa sen thủ công",
             "image": "assets/handmade_lamp_8.jpg",
-            "description": "Cận cảnh chao đèn giấy với những bông sen nở rộ được chạm khắc tỉ mỉ bằng tay. Ánh sáng ấm phía sau biến từng cánh hoa thành một bức tranh phát sáng lung linh trong đêm tối."
+            "description": "Cận cảnh chao đèn giấy với những bông sen nở rộ được chạm khắc tỉ mỉ bằng tay. Ánh sáng ấm phía sau biến từng cánh hoa thành một bức tranh phát sáng lung linh trong đêm tối.",
+            "type": "handmade",
+            "subType": "lighting"
         },
         {
             "id": "hm-9",
             "title": "Ánh Vòng",
             "subtitle": "Đèn trụ xếp vòng tầng tầng",
             "image": "assets/handmade_lamp_9.jpg",
-            "description": "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh."
+            "description": "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh.",
+            "type": "handmade",
+            "subType": "lighting"
         }
     ],
     "profile": {

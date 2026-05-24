@@ -3049,12 +3049,25 @@ body:not(.project-page) .theme-toggle {
 /* =========================================
    Project Filters
    ========================================= */
+.project-filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
 .project-filters {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.sub-level-filters {
+    margin-top: 0.5rem;
 }
 
 .filter-btn {
@@ -3068,11 +3081,28 @@ body:not(.project-page) .theme-toggle {
     transition: all 0.3s ease;
 }
 
+.sub-filter-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    border-style: dashed;
+}
+
 .filter-btn:hover,
 .filter-btn.active {
     background: var(--clr-text-main);
     color: var(--clr-bg-dark);
     border-color: var(--clr-text-main);
+}
+
+.sub-filter-btn:hover,
+.sub-filter-btn.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--clr-text-main);
+    border-style: solid;
+}
+body.light-mode .sub-filter-btn:hover,
+body.light-mode .sub-filter-btn.active {
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .project-link.hidden-by-filter {

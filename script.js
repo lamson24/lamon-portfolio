@@ -385,16 +385,11 @@ function initializeContent(content, language) {
 
     renderProjects(content.projects, language, content.projectsSection);
     renderSignatureProjects(content.projects, language);
-    renderHandmadeProjects(content.handmadeProjects);
 
     // Trigger event for upgrade.js to start UX scripts AFTER rendering is complete
     window.portfolioLoadedFlag = true;
     window.dispatchEvent(new Event('portfolioLoaded'));
 
-    if (content.handmadeSection) {
-        setHTML('handmade-title', `${escapeHtml(content.handmadeSection.title || '')} <span class="highlight-serif">${escapeHtml(content.handmadeSection.highlight || '')}</span>`);
-        setText('handmade-subtitle', content.handmadeSection.subtitle);
-    }
 
     if (content.contact) {
         setHTML('contact-title', `${escapeHtml(content.contact.title || '')} <span class="highlight-serif">${escapeHtml(content.contact.highlight || '')}</span>`);
@@ -495,57 +490,108 @@ function renderProjects(projects, language, projectsSection = {}) {
     const validProjects = projects.filter((project) => project.id !== '7' && project.id !== '5');
 
     // Dynamic Filter Menu Logic
-    const filtersContainer = document.getElementById('project-filters');
-    const allLabel = language === 'vi' ? 'Táº¥t cáº£' : 'All';
+    const topFiltersContainer = document.getElementById('project-filters-top');
+    const subFiltersContainer = document.getElementById('project-filters-sub');
     
-    // We try to use content.projectsSection.filters if available, otherwise fallback
-    let filters = { "all": allLabel };
-    if (projectsSection.filters) {
-        filters = projectsSection.filters;
-    } else {
-        const categoriesSet = new Set();
-        validProjects.forEach(p => {
-            const cat = p.filter || p.category || p.subtitle;
-            if (cat) categoriesSet.add(cat);
-        });
-        Array.from(categoriesSet).forEach(cat => { filters[cat] = cat; });
-    }
-
-    const filterKeys = Object.keys(filters);
-
-    if (filtersContainer && filterKeys.length > 1) {
-        filtersContainer.innerHTML = filterKeys.map(key =>
-            `<button class="filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}">${escapeHtml(filters[key])}</button>`
+    let filters = projectsSection.filters || {};
+    let topFilters = filters.top || { 'all': language === 'vi' ? 'Tất cả' : 'All' };
+    
+    // Render top level
+    if (topFiltersContainer) {
+        topFiltersContainer.innerHTML = Object.keys(topFilters).map(key =>
+            `<button class="filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}">${escapeHtml(topFilters[key])}</button>`
         ).join('');
 
-        const btns = filtersContainer.querySelectorAll('.filter-btn');
-        btns.forEach(btn => {
+        const topBtns = topFiltersContainer.querySelectorAll('.filter-btn');
+        topBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                btns.forEach(b => b.classList.remove('active'));
+                topBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 
-                const filterValue = btn.getAttribute('data-filter');
+                const topFilterValue = btn.getAttribute('data-filter');
                 
-                // Call GSAP animation logic if it exists in upgrade.js
-                if (typeof window.animateProjectFilter === 'function') {
-                    window.animateProjectFilter(filterValue);
-                } else {
-                    // Fallback filtering
-                    const links = gallery.querySelectorAll('.project-link');
-                    links.forEach(link => {
-                        const cardCat = link.getAttribute('data-filter-val');
-                        if (filterValue === 'all' || cardCat === filterValue) {
-                            link.classList.remove('hidden-by-filter');
-                            link.style.display = '';
-                        } else {
-                            link.classList.add('hidden-by-filter');
-                            link.style.display = 'none';
-                        }
+                // Show/hide sub filters based on top filter
+                let subFilters = filters[topFilterValue];
+                if (subFilters) {
+                    subFiltersContainer.innerHTML = Object.keys(subFilters).map(key =>
+                        `<button class="filter-btn sub-filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}" data-parent="${escapeAttribute(topFilterValue)}">${escapeHtml(subFilters[key])}</button>`
+                    ).join('');
+                    
+                    subFiltersContainer.style.display = 'flex';
+                    // Trigger reflow for animation
+                    void subFiltersContainer.offsetWidth;
+                    subFiltersContainer.style.opacity = '1';
+                    subFiltersContainer.style.transform = 'translateY(0)';
+                    
+                    // Attach events to sub filters
+                    const subBtns = subFiltersContainer.querySelectorAll('.filter-btn');
+                    subBtns.forEach(subBtn => {
+                        subBtn.addEventListener('click', () => {
+                            subBtns.forEach(b => b.classList.remove('active'));
+                            subBtn.classList.add('active');
+                            applyFilters(topFilterValue, subBtn.getAttribute('data-filter'));
+                        });
                     });
+                } else {
+                    subFiltersContainer.style.opacity = '0';
+                    subFiltersContainer.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        if(subFiltersContainer.style.opacity === '0') {
+                            subFiltersContainer.style.display = 'none';
+                        }
+                    }, 300);
                 }
+                
+                applyFilters(topFilterValue, 'all');
             });
         });
     }
+
+    function applyFilters(topFilter, subFilter) {
+        const links = gallery.querySelectorAll('.project-link');
+        let visibleCount = 0;
+        
+        links.forEach(link => {
+            const pType = link.getAttribute('data-type');
+            const pSubType = link.getAttribute('data-subtype');
+            
+            let show = false;
+            if (topFilter === 'all') {
+                show = true;
+            } else if (pType === topFilter) {
+                if (subFilter === 'all' || !subFilter) {
+                    show = true;
+                } else if (pSubType === subFilter) {
+                    show = true;
+                }
+            }
+            
+            if (show) {
+                link.classList.remove('hidden-by-filter');
+                link.style.display = '';
+                // Add staggered animation delay to visible items
+                const innerCard = link.querySelector('.project-card');
+                if (innerCard) {
+                    innerCard.style.transitionDelay = `${(visibleCount % 3) * 0.1}s`;
+                    innerCard.classList.remove('revealed');
+                    // Force reflow
+                    void innerCard.offsetWidth;
+                    innerCard.classList.add('revealed');
+                }
+                visibleCount++;
+            } else {
+                link.classList.add('hidden-by-filter');
+                link.style.display = 'none';
+            }
+        });
+        
+        if (typeof window.ScrollTrigger !== 'undefined') {
+            window.ScrollTrigger.refresh();
+        }
+    }
+
+    // Call it initially
+    applyFilters('all', 'all');
 
     gallery.innerHTML = validProjects
         .map((project, index) => {
@@ -557,9 +603,11 @@ function renderProjects(projects, language, projectsSection = {}) {
             const category = project.category || project.subtitle || '';
             const location = project.location || '';
             const yearStr = location ? `${location}` : '';
+            const type = project.type || 'company';
+            const subType = project.subType || 'all';
 
             return `
-                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}" data-filter-val="${escapeAttribute(project.filter || category)}" data-theme="${escapeAttribute(project.themeColor || '')}">
+                <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-category="${escapeAttribute(category)}" data-type="${escapeAttribute(type)}" data-subtype="${escapeAttribute(subType)}" data-theme="${escapeAttribute(project.themeColor || '')}">
                     <div class="project-card reveal"${style} data-project-id="${id}">
                         <div class="project-image-wrapper img-placeholder loading">
                             <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || category)}" loading="lazy" class="project-img blur-up">
@@ -619,23 +667,7 @@ function setupProjectNavigation(language) {
     });
 }
 
-function renderHandmadeProjects(projects) {
-    const gallery = document.getElementById('handmade-gallery');
-    if (!gallery || !Array.isArray(projects)) return;
 
-    gallery.innerHTML = projects.map((project, index) => `
-        <article class="handmade-card reveal" style="transition-delay: ${(index % 3) * 0.12}s;">
-            <div class="handmade-image-wrapper img-placeholder loading">
-                <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.title || '')}" loading="lazy" class="blur-up">
-            </div>
-            <div class="handmade-info">
-                <h3>${escapeHtml(project.title || '')}</h3>
-                <span class="handmade-subtitle">${escapeHtml(project.subtitle || '')}</span>
-                <p>${escapeHtml(project.description || '')}</p>
-            </div>
-        </article>
-    `).join('');
-}
 
 function setupNavbarScroll() {
     // Scroll animation and classes removed as per user request
