@@ -143,6 +143,22 @@
     },
     "projects": [
         {
+            "id": "makeup-store-interior",
+            "title": "Makeup Store Design",
+            "subtitle": "Beauty Space Interior",
+            "alt": "Makeup Store Interior Design",
+            "image": "assets/makeup-store.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "Interior design project for a Makeup Store. The space is designed in a modern, sophisticated style with an elegant color palette, optimizing the lighting system to enhance product beauty and provide a professional customer experience.",
+            "gallery": [
+                "assets/makeup-store.png"
+            ],
+            "challenge": "Arranging the space to maximize the display area for products while creating comfortable, spacious makeup trial zones with strict requirements for color-accurate lighting (high CRI).",
+            "solution": "Utilizing a customized multi-directional LED lighting system combined with large mirrors to create a visual effect that expands the space. The display shelves feature a minimalist design with soft curves, celebrating femininity and luxury."
+        },
+        {
             "id": "dong-bong-lake-park",
             "title": "Dong Bong Lake Park",
             "subtitle": "Dai Mo, Nam Tu Liem, Hanoi",

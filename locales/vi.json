@@ -143,6 +143,22 @@
     },
     "projects": [
         {
+            "id": "makeup-store-interior",
+            "title": "Thiết kế cửa hàng Makeup",
+            "subtitle": "Nội thất không gian làm đẹp",
+            "alt": "Thiết kế nội thất cửa hàng Makeup",
+            "image": "assets/makeup-store.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "Dự án thiết kế nội thất cửa hàng trang điểm (Makeup Store). Không gian được thiết kế theo phong cách hiện đại, tinh tế với tông màu thanh lịch, tối ưu hóa hệ thống chiếu sáng để tôn lên vẻ đẹp của sản phẩm và mang lại trải nghiệm chuyên nghiệp cho khách hàng.",
+            "gallery": [
+                "assets/makeup-store.png"
+            ],
+            "challenge": "Bố trí không gian sao cho vừa tận dụng tối đa diện tích để trưng bày sản phẩm, vừa tạo được những góc trải nghiệm trang điểm thoải mái, rộng rãi với yêu cầu khắt khe về ánh sáng chuẩn màu (color rendering index).",
+            "solution": "Sử dụng hệ thống ánh sáng LED tùy chỉnh đa hướng kết hợp gương kính khổ lớn để tạo hiệu ứng thị giác mở rộng không gian. Các kệ trưng bày được thiết kế tối giản với đường cong mềm mại, tôn vinh nét nữ tính và sự sang trọng."
+        },
+        {
             "id": "dong-bong-lake-park",
             "title": "Công viên Hồ Đồng Bông",
             "subtitle": "Đại Mỗ, Nam Từ Liêm, Hà Nội",
