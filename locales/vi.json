@@ -143,6 +143,30 @@
     },
     "projects": [
         {
+            "id": "westlake-landscape",
+            "title": "Cảnh quan chung cư West Lake",
+            "subtitle": "88 Quảng An, Tây Hồ, Hà Nội",
+            "alt": "Thiết kế cảnh quan chung cư West Lake Quảng An",
+            "image": "assets/westlake-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2021",
+            "description": "Dự án thiết kế cảnh quan khu căn hộ cao cấp West Lake nằm tại vị trí đắc địa 88 đường Quảng An, sát bên hồ Tây thơ mộng. Dự án mang định hướng kiến tạo một không gian sống chuẩn nghỉ dưỡng (resort-living), giao thoa tinh tế giữa kiến trúc hiện đại và thiên nhiên nguyên bản của khu vực Tây Hồ.",
+            "gallery": [
+                "assets/westlake-1.png",
+                "assets/westlake-2.png",
+                "assets/westlake-3.png",
+                "assets/westlake-4.png",
+                "assets/westlake-5.png",
+                "assets/westlake-6.png",
+                "assets/westlake-7.png",
+                "assets/westlake-8.png",
+                "assets/westlake-9.png"
+            ],
+            "challenge": "Khu vực ven hồ Tây có yêu cầu cực kỳ khắt khe về quy hoạch cảnh quan và sinh thái. Bài toán đặt ra là phải tối ưu hóa tầm nhìn (panorama view) hướng hồ cho mọi không gian tiện ích ngoài trời, đồng thời thiết lập hệ thống cây xanh có khả năng chống chịu gió lớn mặt hồ và thích ứng với vi khí hậu đặc trưng.",
+            "solution": "Thiết kế ứng dụng hệ thực vật đa tầng xen kẽ các hồ nước tiểu cảnh tràn viền để tạo cảm giác mặt nước nội khu nối liền với mặt hồ Tây. Các tuyến đường dạo bộ được lát đá tự nhiên nguyên khối, kết hợp cùng các khu vực pavilion nghỉ chân ngắm cảnh có mái che bằng gỗ sinh thái, mang lại trải nghiệm sống đẳng cấp và yên bình tuyệt đối."
+        },
+        {
             "id": "gieng-troi-landscape",
             "title": "Cải tạo Giếng Trời",
             "subtitle": "Cảnh quan vi khí hậu trong nhà",

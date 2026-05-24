@@ -143,6 +143,30 @@
     },
     "projects": [
         {
+            "id": "westlake-landscape",
+            "title": "West Lake Apartment Landscape",
+            "subtitle": "88 Quang An, Tay Ho, Hanoi",
+            "alt": "West Lake Quang An Apartment Landscape Design",
+            "image": "assets/westlake-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2021",
+            "description": "Landscape design project for the high-end West Lake apartment complex located at the prime address of 88 Quang An street, right next to the poetic West Lake. The project aims to create a resort-style living space, a sophisticated intersection between modern architecture and the pristine nature of the Tay Ho area.",
+            "gallery": [
+                "assets/westlake-1.png",
+                "assets/westlake-2.png",
+                "assets/westlake-3.png",
+                "assets/westlake-4.png",
+                "assets/westlake-5.png",
+                "assets/westlake-6.png",
+                "assets/westlake-7.png",
+                "assets/westlake-8.png",
+                "assets/westlake-9.png"
+            ],
+            "challenge": "The West Lake riverside area has extremely strict requirements for landscape and ecological planning. The challenge was to optimize the panoramic lake view for all outdoor utility spaces, while establishing a green system capable of withstanding strong lake winds and adapting to the specific microclimate.",
+            "solution": "The design applies a multi-layered flora system interspersed with infinity miniature lakes to create the illusion of the internal water surface connecting seamlessly with West Lake. The promenades are paved with monolithic natural stones, combined with scenic rest pavilions featuring ecological wooden roofs, providing a luxurious and utterly peaceful living experience."
+        },
+        {
             "id": "gieng-troi-landscape",
             "title": "Skylight Atrium Renovation",
             "subtitle": "Indoor Microclimate Landscape",
