@@ -143,6 +143,29 @@
     },
     "projects": [
         {
+            "id": "apartment-interior-design",
+            "title": "Nội thất Chung cư Hiện đại",
+            "subtitle": "Dự án thiết kế căn hộ cao cấp",
+            "alt": "Thiết kế nội thất chung cư hiện đại",
+            "image": "assets/chungcu-hanh-1.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "Dự án thiết kế nội thất căn hộ chung cư cao cấp với ngôn ngữ thiết kế hiện đại, thanh lịch. Mục tiêu của dự án là tối ưu hóa diện tích sinh hoạt mà vẫn mang lại cảm giác sang trọng, tiện nghi, tạo nên một tổ ấm yên bình giữa nhịp sống đô thị hối hả.",
+            "gallery": [
+                "assets/chungcu-hanh-1.png",
+                "assets/chungcu-hanh-2.png",
+                "assets/chungcu-hanh-3.png",
+                "assets/chungcu-hanh-4.png",
+                "assets/chungcu-hanh-5.png",
+                "assets/chungcu-hanh-6.png",
+                "assets/chungcu-hanh-7.png",
+                "assets/chungcu-hanh-8.png"
+            ],
+            "challenge": "Đặc thù của các căn hộ chung cư là sự giới hạn về diện tích và cấu trúc không gian cố định. Thách thức lớn nhất là phải bố trí công năng đầy đủ (phòng khách, bếp, phòng ngủ) một cách thông minh, không gây cảm giác chật chội, đồng thời đảm bảo luồng ánh sáng và thông gió tự nhiên xuyên suốt căn hộ.",
+            "solution": "Giải pháp đưa ra là sử dụng thiết kế không gian mở (open-plan), phá bỏ các vách ngăn không cần thiết giữa phòng khách và khu vực bếp. Áp dụng hệ thống nội thất thông minh tích hợp đa chức năng, kết hợp cùng bảng màu sáng (trắng, be, pastel) và vật liệu kính, gương để tạo hiệu ứng thị giác mở rộng không gian tối đa."
+        },
+        {
             "id": "contemporary-interior-design",
             "title": "Không gian Nội thất Đương đại",
             "subtitle": "Dự án thiết kế không gian sống",

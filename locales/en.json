@@ -143,6 +143,29 @@
     },
     "projects": [
         {
+            "id": "apartment-interior-design",
+            "title": "Modern Apartment Interior",
+            "subtitle": "High-end Residential Design",
+            "alt": "Modern Apartment Interior Design",
+            "image": "assets/chungcu-hanh-1.png",
+            "type": "personal",
+            "category": "interior",
+            "year": "2026",
+            "description": "An interior design project for a high-end apartment featuring a modern and elegant design language. The goal of the project is to optimize living space while maintaining a luxurious and comfortable feel, creating a peaceful haven amidst the hustle and bustle of urban life.",
+            "gallery": [
+                "assets/chungcu-hanh-1.png",
+                "assets/chungcu-hanh-2.png",
+                "assets/chungcu-hanh-3.png",
+                "assets/chungcu-hanh-4.png",
+                "assets/chungcu-hanh-5.png",
+                "assets/chungcu-hanh-6.png",
+                "assets/chungcu-hanh-7.png",
+                "assets/chungcu-hanh-8.png"
+            ],
+            "challenge": "The inherent characteristic of apartments is limited space and fixed structural layouts. The biggest challenge was intelligently arranging all functional areas (living room, kitchen, bedrooms) without causing a cramped feeling, while ensuring natural light and ventilation flow throughout the apartment.",
+            "solution": "The solution implements an open-plan design, removing unnecessary partitions between the living room and kitchen. We utilized a multi-functional smart furniture system, combined with a light color palette (white, beige, pastel) and glass/mirror materials to create a maximum visual effect of expanding the space."
+        },
+        {
             "id": "contemporary-interior-design",
             "title": "Contemporary Interior Space",
             "subtitle": "Living Space Design Project",
