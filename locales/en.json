@@ -346,6 +346,25 @@
             "description": "A minimalist table lamp built from stacked horizontal rings, emitting a clean, even glow. Simple in form but rich in material texture — it finds its place in any quiet corner.",
             "type": "handmade",
             "subType": "lighting"
+        },
+        {
+            "id": "17",
+            "title": "Traditional Restaurant Design",
+            "subtitle": "Architecture & Interior",
+            "category": "Architecture & Interior",
+            "type": "personal",
+            "subType": "architecture",
+            "location": "Hanoi, Vietnam",
+            "image": "assets/rest_1.png",
+            "gallery": [
+                "assets/rest_1.png",
+                "assets/rest_2.png",
+                "assets/rest_3.png",
+                "assets/rest_4.png",
+                "assets/rest_5.png"
+            ],
+            "alt": "Traditional Restaurant Design",
+            "description": "A restaurant design project blending traditional and rustic styles. The facade impresses with a wooden slatted gate, yin-yang tiled roof, and modern dark grey steel structures. The interior space is cozy, featuring natural live-edge wooden furniture, woven bamboo pendant lights, and a stunning floral relief wall art. Wooden louvred windows open up to lush greenery, creating a relaxing dining experience."
         }
     ],
     "profile": {

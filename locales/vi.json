@@ -346,6 +346,25 @@
             "description": "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh.",
             "type": "handmade",
             "subType": "lighting"
+        },
+        {
+            "id": "17",
+            "title": "Thiết kế Nhà hàng Truyền thống",
+            "subtitle": "Kiến trúc & Nội thất",
+            "category": "Kiến trúc & Nội thất",
+            "type": "personal",
+            "subType": "architecture",
+            "location": "Hà Nội, Việt Nam",
+            "image": "assets/rest_1.png",
+            "gallery": [
+                "assets/rest_1.png",
+                "assets/rest_2.png",
+                "assets/rest_3.png",
+                "assets/rest_4.png",
+                "assets/rest_5.png"
+            ],
+            "alt": "Thiết kế Nhà hàng Truyền thống",
+            "description": "Dự án thiết kế nhà hàng mang đậm phong cách truyền thống kết hợp mộc mạc (rustic). Kiến trúc mặt tiền gây ấn tượng với hệ cổng gỗ lam, mái ngói âm dương và cấu trúc thép xám hiện đại. Không gian nội thất ấm cúng với nội thất gỗ tự nhiên nguyên tấm (live-edge), đèn thả mây tre đan, và điểm nhấn là bức phù điêu hoa mai đắp nổi trên tường. Cửa sổ lá sách gỗ mở ra mảng xanh tươi mát, tạo cảm giác thư thái cho thực khách."
         }
     ],
     "profile": {
