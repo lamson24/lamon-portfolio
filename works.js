@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadData(lang) {
         try {
-            const response = await fetch(`locales/${lang}.json`);
+            const response = await fetch(`locales/${lang}.json?v=${new Date().getTime()}`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const data = await fetchCustomData(await response.json());
             renderContent(data, lang);
@@ -175,11 +175,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }).join('');
             
         // Initial reveal animation (since ScrollTrigger might not be setup exactly like homepage)
-        setTimeout(() => {
-            document.querySelectorAll('.reveal').forEach(el => el.classList.add('revealed'));
-            applyFilters('all');
-        }, 100);
-    }
+          setTimeout(() => {
+              document.querySelectorAll('.reveal').forEach(el => el.classList.add('revealed'));
+              applyFilters('all');
+              
+              // Handle image loading
+              const images = gallery.querySelectorAll('img.blur-up');
+              images.forEach(img => {
+                  if (img.complete) {
+                      img.classList.add('loaded');
+                      const wrapper = img.closest('.img-placeholder');
+                      if (wrapper) wrapper.classList.remove('loading');
+                  } else {
+                      img.addEventListener('load', () => {
+                          img.classList.add('loaded');
+                          const wrapper = img.closest('.img-placeholder');
+                          if (wrapper) wrapper.classList.remove('loading');
+                      });
+                  }
+              });
+          }, 100);
+      }
 
     // Utility functions duplicated from script.js to keep works.js standalone
     function escapeHtml(unsafe) {

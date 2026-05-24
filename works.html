@@ -28,6 +28,12 @@
             margin-bottom: 1rem;
             text-transform: uppercase;
         }
+        .works-subtitle {
+            margin-top: 1rem !important;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 
@@ -75,7 +81,7 @@
 
     <header class="works-header container reveal">
         <h1 class="works-title" id="works-title">Projects</h1>
-        <p class="section-subtitle" id="works-subtitle">A collection of our works.</p>
+        <p class="section-subtitle works-subtitle" id="works-subtitle">A collection of our works.</p>
     </header>
 
     <section class="projects" id="projects" data-page="projects" style="padding-top: 0;">
@@ -97,7 +103,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     
-    <script src="works.js"></script>
+    <script>
+        document.write('<script src="works.js?v=' + new Date().getTime() + '"><\/script>');
+    </script>
 </body>
 
 </html>
