@@ -1437,7 +1437,7 @@ body:not(.project-page) .navbar .lang-switch {
 }
 
 body:not(.project-page) .navbar .lang-btn {
-    display: inline-flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -3777,7 +3777,7 @@ body:not(.project-page) .navbar .nav-links {
 
 body:not(.project-page) .navbar .nav-links a,
 body:not(.project-page) .navbar .lang-btn {
-    display: inline-flex;
+    display: none;
     align-items: center;
     min-height: 30px;
     padding: 0 0.7rem;
@@ -4149,7 +4149,7 @@ body:not(.project-page) .navbar .lang-switch {
 }
 
 body:not(.project-page) .navbar .lang-btn {
-    display: inline-flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;

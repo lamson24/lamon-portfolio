@@ -17,16 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
         loadData(currentLanguage);
     }
 
-    langBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            if (lang !== currentLanguage) {
-                currentLanguage = lang;
-                localStorage.setItem('portfolioLanguage', lang);
-                initLanguage();
-            }
+    const langSwitch = document.getElementById('lang-switch');
+    if (langSwitch) {
+        langSwitch.addEventListener('click', () => {
+            const nextLang = currentLanguage === 'en' ? 'vi' : 'en';
+            localStorage.setItem('portfolioLanguage', nextLang);
+            window.location.reload();
         });
-    });
+    }
 
     async function loadData(lang) {
         try {
