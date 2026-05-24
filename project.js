@@ -181,7 +181,7 @@ function renderProjectPage(content, project, language) {
     const backLink = document.getElementById('project-back');
     if (backLink) {
         backLink.textContent = backLabel;
-        backLink.setAttribute('href', `index.html#projects`);
+        backLink.setAttribute('href', project && project.type ? `works.html?category=${project.type}` : 'index.html');
     }
 
     if (!project) {
