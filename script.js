@@ -490,111 +490,8 @@ function renderProjects(projects, language, projectsSection = {}) {
         return;
     }
 
-    const validProjects = projects.filter((project) => project.id !== '7' && project.id !== '5');
-
-    // Dynamic Filter Menu Logic
-    const topFiltersContainer = document.getElementById('project-filters-top');
-    const subFiltersContainer = document.getElementById('project-filters-sub');
-    
-    let filters = projectsSection.filters || {};
-    let topFilters = filters.top || { 'all': language === 'vi' ? 'Tất cả' : 'All' };
-    
-    // Render top level
-    if (topFiltersContainer) {
-        topFiltersContainer.innerHTML = Object.keys(topFilters).map(key =>
-            `<button class="filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}">${escapeHtml(topFilters[key])}</button>`
-        ).join('');
-
-        const topBtns = topFiltersContainer.querySelectorAll('.filter-btn');
-        topBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                topBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const topFilterValue = btn.getAttribute('data-filter');
-                
-                // Show/hide sub filters based on top filter
-                let subFilters = filters[topFilterValue];
-                if (subFilters) {
-                    subFiltersContainer.innerHTML = Object.keys(subFilters).map(key =>
-                        `<button class="filter-btn sub-filter-btn ${key === 'all' ? 'active' : ''}" data-filter="${escapeAttribute(key)}" data-parent="${escapeAttribute(topFilterValue)}">${escapeHtml(subFilters[key])}</button>`
-                    ).join('');
-                    
-                    subFiltersContainer.style.display = 'flex';
-                    // Trigger reflow for animation
-                    void subFiltersContainer.offsetWidth;
-                    subFiltersContainer.style.opacity = '1';
-                    subFiltersContainer.style.transform = 'translateY(0)';
-                    
-                    // Attach events to sub filters
-                    const subBtns = subFiltersContainer.querySelectorAll('.filter-btn');
-                    subBtns.forEach(subBtn => {
-                        subBtn.addEventListener('click', () => {
-                            subBtns.forEach(b => b.classList.remove('active'));
-                            subBtn.classList.add('active');
-                            applyFilters(topFilterValue, subBtn.getAttribute('data-filter'));
-                        });
-                    });
-                } else {
-                    subFiltersContainer.style.opacity = '0';
-                    subFiltersContainer.style.transform = 'translateY(-10px)';
-                    setTimeout(() => {
-                        if(subFiltersContainer.style.opacity === '0') {
-                            subFiltersContainer.style.display = 'none';
-                        }
-                    }, 300);
-                }
-                
-                applyFilters(topFilterValue, 'all');
-            });
-        });
-    }
-
-    function applyFilters(topFilter, subFilter) {
-        const links = gallery.querySelectorAll('.project-link');
-        let visibleCount = 0;
-        
-        links.forEach(link => {
-            const pType = link.getAttribute('data-type');
-            const pSubType = link.getAttribute('data-subtype');
-            
-            let show = false;
-            if (topFilter === 'all') {
-                show = true;
-            } else if (pType === topFilter) {
-                if (subFilter === 'all' || !subFilter) {
-                    show = true;
-                } else if (pSubType === subFilter) {
-                    show = true;
-                }
-            }
-            
-            if (show) {
-                link.classList.remove('hidden-by-filter');
-                link.style.display = '';
-                // Add staggered animation delay to visible items
-                const innerCard = link.querySelector('.project-card');
-                if (innerCard) {
-                    innerCard.style.transitionDelay = `${(visibleCount % 3) * 0.1}s`;
-                    innerCard.classList.remove('revealed');
-                    // Force reflow
-                    void innerCard.offsetWidth;
-                    innerCard.classList.add('revealed');
-                }
-                visibleCount++;
-            } else {
-                link.classList.add('hidden-by-filter');
-                link.style.display = 'none';
-            }
-        });
-        
-        if (typeof window.ScrollTrigger !== 'undefined') {
-            window.ScrollTrigger.refresh();
-        }
-    }
-
-    // Call it initially
-    applyFilters('all', 'all');
+    // Just show a few featured projects on the homepage
+    const validProjects = projects.filter((project) => project.id !== '7' && project.id !== '5').slice(0, 6);
 
     gallery.innerHTML = validProjects
         .map((project, index) => {
@@ -1095,30 +992,6 @@ function closeVideoModal() {
 
 
 function setupDropdownNav() {
-    const dropdownLinks = document.querySelectorAll('.dropdown-link');
-    dropdownLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Close mobile menu if open
-            const navLinks = document.querySelector('.nav-links');
-            const hamburger = document.querySelector('.hamburger');
-            if (navLinks && navLinks.classList.contains('mobile-open')) {
-                navLinks.classList.remove('mobile-open');
-                if(hamburger) hamburger.classList.remove('active');
-            }
-
-            const targetFilter = link.getAttribute('data-target-filter');
-            if (targetFilter) {
-                // Find and click the top level filter button
-                setTimeout(() => {
-                    const topBtn = document.querySelector(`.top-level-filters .filter-btn[data-filter="${targetFilter}"]`);
-                    if (topBtn) {
-                        topBtn.click();
-                    }
-                }, 100);
-            }
-        });
-    });
-
     // Mobile specific logic for opening dropdown
     const navProjectsBtn = document.getElementById('nav-projects');
     if (navProjectsBtn) {

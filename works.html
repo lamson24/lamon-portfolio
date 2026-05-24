@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA&middot;MON-DIY | Works</title>
+    <meta name="description" content="Explore our diverse portfolio of landscape, architectural, and handmade projects.">
+    <!-- Open Graph / SEO Tags -->
+    <meta property="og:title" content="LA&middot;MON-DIY | Works">
+    <meta property="og:description" content="Explore our diverse portfolio of landscape, architectural, and handmade projects.">
+    <meta property="og:image" content="assets/project_5.png">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <style>
+        .works-header {
+            padding-top: calc(8rem + 5vh);
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+        .works-title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body class="project-page">
+    <!-- Page Transition Overlay -->
+    <div id="page-transition" class="page-transition"></div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo" id="site-logo">LÃ¡MON<span class="logo-suffix">-DIY</span></a>
+        <ul class="nav-links">
+            <li><a id="nav-about" href="index.html#about">Philosophy</a></li>
+            <li class="has-dropdown">
+                <a id="nav-projects" href="index.html#projects">Work</a>
+                <ul class="dropdown-menu">
+                    <li><a href="works.html?category=company" class="dropdown-link" id="nav-company">Company</a></li>
+                    <li><a href="works.html?category=personal" class="dropdown-link" id="nav-personal">Personal</a></li>
+                    <li><a href="works.html?category=handmade" class="dropdown-link" id="nav-handmade">Handmade</a></li>
+                </ul>
+            </li>
+            <li><a id="nav-contact" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="profile.html" class="profile-avatar-link" id="profile-avatar-link" aria-label="Open profile CV">
+                <img src="assets/hero_cover.jpg" alt="Profile avatar" id="profile-avatar-img">
+            </a>
+            <div class="lang-switch" id="lang-switch">
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="vi">VI</button>
+            </div>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button type="button" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="works-header container reveal">
+        <h1 class="works-title" id="works-title">Projects</h1>
+        <p class="section-subtitle" id="works-subtitle">A collection of our works.</p>
+    </header>
+
+    <section class="projects" id="projects" data-page="projects" style="padding-top: 0;">
+        <div class="container">
+            <div class="project-filters-container reveal" id="project-filters-container">
+                <div class="project-filters sub-level-filters" id="project-filters-sub"></div>
+            </div>
+            <div class="project-gallery" id="project-gallery"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> LÃ¡MON-DIY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <script src="works.js"></script>
+</body>
+
+</html>

@@ -37,16 +37,16 @@
     <nav class="navbar" id="navbar">
         <a href="#home" class="logo" id="site-logo">LÃƒÂ¡MON<span class="logo-suffix">-DIY</span></a>
         <ul class="nav-links">
-            <li><a id="nav-about" href="#about">Philosophy</a></li>
+            <li><a id="nav-about" href="index.html#about">Philosophy</a></li>
             <li class="has-dropdown">
-                <a id="nav-projects" href="#projects">Work</a>
+                <a id="nav-projects" href="index.html#projects">Work</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#projects" class="dropdown-link" data-target-filter="company" id="nav-company">Company</a></li>
-                    <li><a href="#projects" class="dropdown-link" data-target-filter="personal" id="nav-personal">Personal</a></li>
-                    <li><a href="#projects" class="dropdown-link" data-target-filter="handmade" id="nav-handmade">Handmade</a></li>
+                    <li><a href="works.html?category=company" class="dropdown-link" id="nav-company">Company</a></li>
+                    <li><a href="works.html?category=personal" class="dropdown-link" id="nav-personal">Personal</a></li>
+                    <li><a href="works.html?category=handmade" class="dropdown-link" id="nav-handmade">Handmade</a></li>
                 </ul>
             </li>
-            <li><a id="nav-contact" href="#contact">Contact</a></li>
+            <li><a id="nav-contact" href="index.html#contact">Contact</a></li>
         </ul>
         <div class="nav-right">
             <a href="profile.html" class="profile-avatar-link" id="profile-avatar-link" aria-label="Open profile CV">
@@ -136,11 +136,10 @@
                 <div id="signature-list"></div>
             </section>
             <h2 class="section-title reveal" id="projects-title">Featured <span class="highlight-serif">Work</span></h2>
-            <div class="project-filters-container reveal" id="project-filters-container">
-                <div class="project-filters top-level-filters" id="project-filters-top"></div>
-                <div class="project-filters sub-level-filters" id="project-filters-sub" style="display: none; opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease; transform: translateY(-10px);"></div>
-            </div>
             <div class="project-gallery" id="project-gallery"></div>
+            <div style="text-align: center; margin-top: 3rem;" class="reveal">
+                <a href="works.html" class="btn-secondary" id="view-all-work-btn" style="display: inline-block;">View All Work</a>
+            </div>
         </div>
     </section>
 
