@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "gieng-troi-landscape",
+            "title": "Skylight Atrium Renovation",
+            "subtitle": "Indoor Microclimate Landscape",
+            "alt": "Skylight Atrium Renovation Landscape Design",
+            "image": "assets/gieng-troi-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "A skylight atrium renovation project transforming a monotonous light-well into a lush green pocket garden inside the house. The design maximizes natural light to sustain a small tropical ecosystem, creating a relaxing green focal point for the living space.",
+            "gallery": [
+                "assets/gieng-troi-1.png",
+                "assets/gieng-troi-2.png"
+            ],
+            "challenge": "Planting in a skylight atrium requires strict control over light penetration, automated irrigation, and underground drainage to ensure the interior floor remains dry, while simultaneously preventing insect breeding in a humid environment.",
+            "solution": "Implementing a vertical green wall system paired with shade-tolerant and drought-resistant tropical plants. A concealed automated drip irrigation system is installed alongside a sophisticated gravel filtration layer and technical drainage trench, ensuring maximum hygiene and aesthetics."
+        },
+        {
             "id": "makeup-store-interior",
             "title": "Makeup Store Design",
             "subtitle": "Beauty Space Interior",

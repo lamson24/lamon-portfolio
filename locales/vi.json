@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "gieng-troi-landscape",
+            "title": "Cải tạo Giếng Trời",
+            "subtitle": "Cảnh quan vi khí hậu trong nhà",
+            "alt": "Dự án thiết kế cảnh quan cải tạo giếng trời",
+            "image": "assets/gieng-troi-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Dự án cải tạo giếng trời, biến không gian lấy sáng đơn điệu thành một tiểu cảnh xanh mát ngay trong lòng ngôi nhà. Thiết kế tận dụng tối đa ánh sáng tự nhiên để duy trì hệ sinh thái nhiệt đới nhỏ, tạo điểm nhấn xanh thư giãn cho không gian sống.",
+            "gallery": [
+                "assets/gieng-troi-1.png",
+                "assets/gieng-troi-2.png"
+            ],
+            "challenge": "Việc trồng cây trong giếng trời đòi hỏi phải kiểm soát chặt chẽ lượng ánh sáng chiếu xuống, hệ thống tưới tiêu và thoát nước ngầm để đảm bảo nền nhà luôn khô ráo, đồng thời ngăn chặn côn trùng phát sinh trong môi trường ẩm ướt.",
+            "solution": "Áp dụng hệ thống mảng tường xanh thẳng đứng (green wall) kết hợp với các loại cây nhiệt đới ưa bóng râm và chịu hạn tốt. Hệ thống tưới nhỏ giọt tự động giấu kín được lắp đặt cùng lớp sỏi lọc và rãnh thoát nước kỹ thuật cao, đảm bảo vệ sinh và thẩm mỹ tối đa."
+        },
+        {
             "id": "makeup-store-interior",
             "title": "Thiết kế cửa hàng Makeup",
             "subtitle": "Nội thất không gian làm đẹp",
