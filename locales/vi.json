@@ -143,6 +143,26 @@
     },
     "projects": [
         {
+            "id": "18",
+            "title": "Khu đô thị mới Thị trấn Mậu A",
+            "subtitle": "Quy hoạch & Thiết kế Cảnh quan Khu đô thị",
+            "alt": "Cảnh quan Khu đô thị Mậu A Yên Bái",
+            "image": "assets/mau_a_1.png",
+            "gallery": [
+                "assets/mau_a_1.png",
+                "assets/mau_a_7.jpeg",
+                "assets/mau_a_2.png",
+                "assets/mau_a_3.png",
+                "assets/mau_a_4.png",
+                "assets/mau_a_5.png",
+                "assets/mau_a_6.png"
+            ],
+            "description": "Khu đô thị mới Thị trấn Mậu A là dự án kiến tạo không gian đô thị hiện đại, đồng bộ tại Huyện Văn Yên, Tỉnh Yên Bái (Tổ dân phố số 2 và số 3). Dự án nổi bật với các phân khu cảnh quan đa dạng: quảng trường trung tâm với tượng đài nhân mã uy nghi phong cách Châu Âu, đài phun nước nghệ thuật, khu vui chơi trẻ em rực rỡ sắc màu, cùng không gian dạo bộ yên bình dưới giàn hoa leo. Quy mô thiết kế cảnh quan vô cùng lớn: CX1 (4357.69 m2), CX2 (2681.95 m2), CX3 - Cổng Biểu Tượng (207.58 m2), CX4 (1287.75 m2), CX1-01 (166.05 m2) và CX1-02 (78.99 m2), tạo nên một hệ sinh thái sống lý tưởng và đẳng cấp.",
+            "filter": "public",
+            "type": "company",
+            "subType": "landscape"
+        },
+        {
             "id": "1",
             "title": "Lumina Urban Park",
             "subtitle": "Tích hợp không gian công cộng",

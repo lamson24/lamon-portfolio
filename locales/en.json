@@ -143,6 +143,26 @@
     },
     "projects": [
         {
+            "id": "18",
+            "title": "Mau A New Urban Area",
+            "subtitle": "Urban Landscape Planning & Design",
+            "alt": "Mau A Yen Bai Urban Landscape",
+            "image": "assets/mau_a_1.png",
+            "gallery": [
+                "assets/mau_a_1.png",
+                "assets/mau_a_7.jpeg",
+                "assets/mau_a_2.png",
+                "assets/mau_a_3.png",
+                "assets/mau_a_4.png",
+                "assets/mau_a_5.png",
+                "assets/mau_a_6.png"
+            ],
+            "description": "Mau A New Urban Area is a project creating a modern and synchronized urban space in Van Yen District, Yen Bai Province. The project features diverse landscape zones including: a central plaza with a majestic European-style centaur statue, an art fountain, a colorful children's playground, and peaceful green walking spaces under vine pergolas. The landscape design scope includes: CX1 (4357.69 m2), CX2 (2681.95 m2), CX3 - Iconic Gate (207.58 m2), CX4 (1287.75 m2), CX1-01 (166.05 m2), and CX1-02 (78.99 m2), creating an ideal and high-class living ecosystem.",
+            "filter": "public",
+            "type": "company",
+            "subType": "landscape"
+        },
+        {
             "id": "1",
             "title": "Lumina Urban Park",
             "subtitle": "Public Space Integration",
