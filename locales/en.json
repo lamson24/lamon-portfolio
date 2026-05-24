@@ -163,74 +163,6 @@
             "subType": "landscape"
         },
         {
-            "id": "1",
-            "title": "Lumina Urban Park",
-            "subtitle": "Public Space Integration",
-            "alt": "Urban Public Park",
-            "image": "assets/project_1.png",
-            "gallery": [
-                "assets/project_1.png",
-                "assets/project_1_1.png",
-                "assets/project_1_2.png",
-                "assets/project_4.png"
-            ],
-            "description": "A transformative urban public park designed to foster community engagement and biodiversity with native planting and smart water strategies.",
-            "filter": "public",
-            "type": "company",
-            "subType": "all"
-        },
-        {
-            "id": "2",
-            "title": "The Obsidian Retreat",
-            "subtitle": "Private Residential Oasis",
-            "alt": "Residential Backyard",
-            "image": "assets/project_2.png",
-            "gallery": [
-                "assets/project_2.png",
-                "assets/project_2_1.png",
-                "assets/project_2_2.png",
-                "assets/project_3.png"
-            ],
-            "description": "An intimate residential sanctuary centered on a modern deck, integrated fire feature, and layered planting for day and night comfort.",
-            "filter": "residential",
-            "type": "company",
-            "subType": "all"
-        },
-        {
-            "id": "3",
-            "title": "Skyline Serenity",
-            "subtitle": "Commercial Green Roof Ecosystem",
-            "alt": "Green Roof",
-            "image": "assets/project_3.png",
-            "gallery": [
-                "assets/project_3.png",
-                "assets/project_3_1.png",
-                "assets/project_3_2.png",
-                "assets/project_1.png"
-            ],
-            "description": "A high-performance green roof with drought-tolerant species and a minimal circulation path that improves thermal comfort and biodiversity.",
-            "filter": "commercial",
-            "type": "company",
-            "subType": "all"
-        },
-        {
-            "id": "4",
-            "title": "Zenith Botanical Walk",
-            "subtitle": "Exotic Flora Immersion",
-            "alt": "Botanical Garden Pathway",
-            "image": "assets/project_4.png",
-            "gallery": [
-                "assets/project_4.png",
-                "assets/project_2_2.png",
-                "assets/project_3_1.png",
-                "assets/project_1_2.png"
-            ],
-            "description": "A curated botanical pathway immersed in layered tropical species, designed for a serene and cinematic visitor journey.",
-            "filter": "public",
-            "type": "personal",
-            "subType": "landscape"
-        },
-        {
             "id": "5",
             "title": "Aqua Horizon Resort",
             "subtitle": "Luxury Coastal Integration",
@@ -246,23 +178,6 @@
             "filter": "commercial",
             "type": "personal",
             "subType": "landscape"
-        },
-        {
-            "id": "6",
-            "title": "The Monolith Courtyard",
-            "subtitle": "Modern Corporate Campus",
-            "alt": "Corporate Courtyard",
-            "image": "assets/project_6.png",
-            "gallery": [
-                "assets/project_6.png",
-                "assets/project_1_1.png",
-                "assets/project_2_2.png",
-                "assets/project_5.png"
-            ],
-            "description": "A geometric corporate courtyard featuring water elements, sculptural seating, and structured planting that supports focus and recovery.",
-            "filter": "commercial",
-            "type": "personal",
-            "subType": "architecture"
         },
         {
             "id": "7",
