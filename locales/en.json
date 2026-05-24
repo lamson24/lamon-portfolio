@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "dong-bong-lake-park",
+            "title": "Dong Bong Lake Park",
+            "subtitle": "Dai Mo, Nam Tu Liem, Hanoi",
+            "alt": "Dong Bong Lake Park Landscape Design",
+            "image": "assets/dai-mo-1.jpeg",
+            "type": "company",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Landscape design project for Dong Bong Lake Park in Dai Mo ward, Nam Tu Liem district, Hanoi. The design is profoundly inspired by the image of a flowing 'Silk Ribbon' and soaring 'Bird Wings', symbolizing the intersection between local traditions and the prosperous development of the new urban area.",
+            "gallery": [
+                "assets/dai-mo-1.jpeg",
+                "assets/dai-mo-2.jpeg"
+            ],
+            "challenge": "The main challenge was to create a large-scale multi-functional green space that not only acts as an ecological regulator for the area but also provides iconic architectural highlights while maintaining harmony with the natural flow of the surrounding landscape.",
+            "solution": "Our solution utilizes meandering lakeside walking paths resembling soft silk ribbons draped across the space, combined with auxiliary structures featuring arched roofs that mimic spreading bird wings. The green areas are ecologically layered from the water surface to the upland, creating a sustainable natural connection."
+        },
+        {
             "id": "parkcity-rooftop",
             "title": "Villa Rooftop Design",
             "subtitle": "ParkCity Urban Area, Hanoi",

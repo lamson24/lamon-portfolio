@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "dong-bong-lake-park",
+            "title": "Công viên Hồ Đồng Bông",
+            "subtitle": "Đại Mỗ, Nam Từ Liêm, Hà Nội",
+            "alt": "Thiết kế cảnh quan công viên Hồ Đồng Bông Đại Mỗ",
+            "image": "assets/dai-mo-1.jpeg",
+            "type": "company",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Dự án thiết kế cảnh quan Công viên Hồ Đồng Bông tại phường Đại Mỗ, quận Nam Từ Liêm, Hà Nội. Thiết kế lấy cảm hứng chủ đạo từ hình ảnh 'Dải lụa' uốn lượn mềm mại và 'Cánh chim' vươn cao, biểu tượng cho sự giao thoa giữa truyền thống và sự phát triển vươn mình của khu vực đô thị mới.",
+            "gallery": [
+                "assets/dai-mo-1.jpeg",
+                "assets/dai-mo-2.jpeg"
+            ],
+            "challenge": "Thách thức của dự án là phải kiến tạo được một không gian xanh đa chức năng trên quy mô lớn, vừa đóng vai trò điều hòa sinh thái khu vực, vừa tạo ra các điểm nhấn kiến trúc mang tính biểu tượng nhưng vẫn hài hòa với dòng chảy tự nhiên của cảnh quan xung quanh.",
+            "solution": "Giải pháp đưa ra là sử dụng các đường dạo bộ uốn lượn ven hồ tựa như những dải lụa mềm vắt ngang không gian, kết hợp cùng các công trình phụ trợ có mái vòm mô phỏng cánh chim đang dang rộng. Các khoảng xanh được phân lớp sinh thái từ mặt nước lên không gian trên bờ tạo sự liên kết tự nhiên bền vững."
+        },
+        {
             "id": "parkcity-rooftop",
             "title": "Thiết kế sân thượng biệt thự",
             "subtitle": "Khu đô thị ParkCity, Hà Nội",
