@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "cho-sat-hai-phong",
+            "title": "Cải tạo cảnh quan Chợ Sắt",
+            "subtitle": "Hải Phòng",
+            "alt": "Cải tạo cảnh quan Chợ Sắt Hải Phòng",
+            "image": "assets/cho-sat-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Dự án thiết kế và cải tạo cảnh quan khu vực Chợ Sắt, Hải Phòng. Dự án nhằm mục đích mang lại diện mạo mới, hiện đại nhưng vẫn giữ được nét đặc trưng văn hóa lịch sử của biểu tượng thương mại lâu đời tại thành phố cảng.",
+            "gallery": [
+                "assets/cho-sat-1.png",
+                "assets/cho-sat-2.png"
+            ],
+            "challenge": "Chợ Sắt là một biểu tượng lịch sử của Hải Phòng. Thách thức lớn nhất là làm thế nào để dung hòa giữa việc bảo tồn các giá trị truyền thống và việc nâng cấp hạ tầng cảnh quan theo hướng hiện đại, xanh và thân thiện với người dân.",
+            "solution": "Đề xuất thiết kế tập trung vào việc tạo ra các không gian mở liền mạch, bổ sung hệ thống cây xanh đô thị, kết hợp cùng các vật liệu địa phương. Thiết kế cũng chú trọng đến không gian sinh hoạt cộng đồng và ánh sáng cảnh quan ban đêm."
+        },
+        {
             "id": "18",
             "title": "Khu đô thị mới Thị trấn Mậu A",
             "subtitle": "Quy hoạch & Thiết kế Cảnh quan Khu đô thị",

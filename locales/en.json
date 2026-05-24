@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "cho-sat-hai-phong",
+            "title": "Cho Sat Landscape Renovation",
+            "subtitle": "Hai Phong City",
+            "alt": "Cho Sat Hai Phong Landscape Renovation",
+            "image": "assets/cho-sat-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Landscape design and renovation project for the Cho Sat area in Hai Phong. The project aims to bring a modern, fresh look while preserving the historical and cultural characteristics of the city's long-standing commercial symbol.",
+            "gallery": [
+                "assets/cho-sat-1.png",
+                "assets/cho-sat-2.png"
+            ],
+            "challenge": "Cho Sat is a historical symbol of Hai Phong. The biggest challenge was reconciling the preservation of traditional values with the modern, green, and citizen-friendly upgrade of the landscape infrastructure.",
+            "solution": "The design proposal focuses on creating seamless open spaces, adding urban greenery, and incorporating local materials. The design also emphasizes community gathering spaces and night landscape lighting."
+        },
+        {
             "id": "18",
             "title": "Mau A New Urban Area",
             "subtitle": "Urban Landscape Planning & Design",
