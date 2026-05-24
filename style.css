@@ -944,6 +944,11 @@ body:not(.light-mode) .theme-toggle .moon-icon {
 .project-gallery .project-link:nth-child(5n+4) .project-image-wrapper { padding-top: 80%; }
 .project-gallery .project-link:nth-child(5n+5) .project-image-wrapper { padding-top: 115%; }
 
+/* Handmade products must have a uniform size, no masonry */
+.project-gallery.category-handmade .project-link .project-image-wrapper {
+    padding-top: 125% !important; /* Uniform aspect ratio for all handmade products (e.g. 4:5 portrait) */
+}
+
 .project-image-wrapper {
     position: relative;
     width: 100%;

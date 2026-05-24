@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderProjects(projects, language, projectsSection) {
         const gallery = document.getElementById('project-gallery');
         if (!gallery || !Array.isArray(projects)) return;
+        
+        gallery.className = 'project-gallery category-' + category;
 
         // Filter projects for the current category
         const categoryProjects = projects.filter(p => p.type === category && p.id !== '7' && p.id !== '5');
