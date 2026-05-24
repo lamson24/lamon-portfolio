@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
         // Initial reveal animation (since ScrollTrigger might not be setup exactly like homepage)
         setTimeout(() => {
-            gallery.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('revealed'));
             applyFilters('all');
         }, 100);
     }
