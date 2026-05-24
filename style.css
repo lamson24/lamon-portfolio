@@ -4375,3 +4375,27 @@ body.light-mode .dropdown-menu a.dropdown-link:hover {
         text-align: center !important;
     }
 }
+
+/* Product Info for Handmade Items */
+.project-gallery.category-handmade .project-overlay {
+    display: none !important;
+}
+
+.product-info {
+    padding: 1.2rem 0.5rem 0.5rem;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--clr-text-main);
+    font-family: var(--font-heading);
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    color: var(--clr-text-muted);
+    font-weight: 300;
+}

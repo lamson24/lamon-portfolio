@@ -165,12 +165,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="project-card reveal"${style} data-project-id="${id}">
                             <div class="project-image-wrapper img-placeholder loading">
                                 <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || catLabel)}" loading="lazy" class="project-img blur-up">
-                                <div class="project-overlay">
+                                                                <div class="project-overlay">
                                     <h3>${escapeHtml(project.title || '')}</h3>
                                     <p>${escapeHtml(catLabel)}</p>
                                     <p class="project-meta">${escapeHtml(yearStr)}</p>
                                 </div>
                             </div>
+                            ${category === 'handmade' ? `
+                            <div class="product-info">
+                                <h4 class="product-title">${escapeHtml(project.title || '')}</h4>
+                                <p class="product-desc">${escapeHtml(project.subtitle || catLabel)}</p>
+                            </div>
+                            ` : ''}
                         </div>
                     </a>
                 `;
