@@ -38,7 +38,14 @@
         <a href="#home" class="logo" id="site-logo">LÃƒÂ¡MON<span class="logo-suffix">-DIY</span></a>
         <ul class="nav-links">
             <li><a id="nav-about" href="#about">Philosophy</a></li>
-            <li><a id="nav-projects" href="#projects">Work</a></li>
+            <li class="has-dropdown">
+                <a id="nav-projects" href="#projects">Work</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#projects" class="dropdown-link" data-target-filter="company" id="nav-company">Company</a></li>
+                    <li><a href="#projects" class="dropdown-link" data-target-filter="personal" id="nav-personal">Personal</a></li>
+                    <li><a href="#projects" class="dropdown-link" data-target-filter="handmade" id="nav-handmade">Handmade</a></li>
+                </ul>
+            </li>
             <li><a id="nav-contact" href="#contact">Contact</a></li>
         </ul>
         <div class="nav-right">

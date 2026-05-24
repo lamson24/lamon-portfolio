@@ -9,8 +9,10 @@
     "nav": {
         "about": "Triết lý",
         "projects": "Dự án",
-        "handmade": "Thủ công",
-        "contact": "Liên hệ"
+        "handmade": "Handmade",
+        "contact": "Liên hệ",
+        "company": "Công ty",
+        "personal": "Cá nhân"
     },
     "hero": {
         "title": "Kiến tạo",

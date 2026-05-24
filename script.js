@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupLanguageSwitcher(availableLanguages, currentLanguage);
     setupThemeToggle();
     setupLogoHomeLink();
+    setupDropdownNav();
 
     // New UX/UI upgrades
     setupCustomCursor();
@@ -262,6 +263,8 @@ function initializeContent(content, language) {
     if (content.nav) {
         setText('nav-about', content.nav.about);
         setText('nav-projects', content.nav.projects);
+        setText('nav-company', content.nav.company);
+        setText('nav-personal', content.nav.personal);
         setText('nav-handmade', content.nav.handmade);
         setText('nav-contact', content.nav.contact);
     }
@@ -1090,3 +1093,43 @@ function closeVideoModal() {
 }
 
 
+
+function setupDropdownNav() {
+    const dropdownLinks = document.querySelectorAll('.dropdown-link');
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Close mobile menu if open
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            if (navLinks && navLinks.classList.contains('mobile-open')) {
+                navLinks.classList.remove('mobile-open');
+                if(hamburger) hamburger.classList.remove('active');
+            }
+
+            const targetFilter = link.getAttribute('data-target-filter');
+            if (targetFilter) {
+                // Find and click the top level filter button
+                setTimeout(() => {
+                    const topBtn = document.querySelector(`.top-level-filters .filter-btn[data-filter="${targetFilter}"]`);
+                    if (topBtn) {
+                        topBtn.click();
+                    }
+                }, 100);
+            }
+        });
+    });
+
+    // Mobile specific logic for opening dropdown
+    const navProjectsBtn = document.getElementById('nav-projects');
+    if (navProjectsBtn) {
+        navProjectsBtn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // Prevent scrolling if just opening dropdown
+                const parent = navProjectsBtn.closest('.has-dropdown');
+                if (parent) {
+                    parent.classList.toggle('mobile-expanded');
+                }
+            }
+        });
+    }
+}

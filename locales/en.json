@@ -10,7 +10,9 @@
         "about": "Philosophy",
         "projects": "Work",
         "handmade": "Handmade",
-        "contact": "Contact"
+        "contact": "Contact",
+        "company": "Company",
+        "personal": "Personal"
     },
     "hero": {
         "title": "Shaping",
