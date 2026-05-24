@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "parkcity-rooftop",
+            "title": "Thiết kế sân thượng biệt thự",
+            "subtitle": "Khu đô thị ParkCity, Hà Nội",
+            "alt": "Sân thượng biệt thự ParkCity Hà Đông",
+            "image": "assets/parkcity-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Dự án thiết kế cảnh quan sân thượng cho một căn biệt thự cao cấp tại khu đô thị ParkCity, Hà Đông, Hà Nội. Không gian được tối ưu hóa để trở thành nơi thư giãn lý tưởng, hòa mình với thiên nhiên ngay giữa lòng thủ đô.",
+            "gallery": [
+                "assets/parkcity-1.png",
+                "assets/parkcity-2.png"
+            ],
+            "challenge": "Thách thức lớn nhất là thiết kế một khu vườn trên cao phải đáp ứng yêu cầu khắt khe về kỹ thuật chống thấm, chịu tải của công trình, đồng thời đảm bảo tính thẩm mỹ, sang trọng phù hợp với phong cách kiến trúc tổng thể của khu biệt thự ParkCity.",
+            "solution": "Chúng tôi áp dụng các công nghệ vườn trên mái tiên tiến nhất, sử dụng hệ thống cây xanh phù hợp với điều kiện vi khí hậu khắc nghiệt trên sân thượng. Kết hợp hệ thống chiếu sáng nghệ thuật và vật liệu tự nhiên để tạo ra một không gian nghỉ dưỡng tĩnh lặng, riêng tư và đẳng cấp."
+        },
+        {
             "id": "cho-sat-hai-phong",
             "title": "Cải tạo cảnh quan Chợ Sắt",
             "subtitle": "Hải Phòng",

@@ -143,6 +143,23 @@
     },
     "projects": [
         {
+            "id": "parkcity-rooftop",
+            "title": "Villa Rooftop Design",
+            "subtitle": "ParkCity Urban Area, Hanoi",
+            "alt": "ParkCity Ha Dong Villa Rooftop",
+            "image": "assets/parkcity-1.png",
+            "type": "personal",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Rooftop landscape design project for a high-end villa in the ParkCity urban area, Ha Dong, Hanoi. The space is optimized to become an ideal relaxing retreat, blending with nature right in the heart of the capital.",
+            "gallery": [
+                "assets/parkcity-1.png",
+                "assets/parkcity-2.png"
+            ],
+            "challenge": "The biggest challenge was designing an elevated garden that meets strict technical requirements for waterproofing and load-bearing capacity, while ensuring aesthetics and luxury that fit the overall architectural style of the ParkCity villa area.",
+            "solution": "We applied the most advanced green roof technologies, selecting plant systems suitable for the harsh microclimate conditions on the rooftop. This was combined with artistic lighting and natural materials to create a tranquil, private, and premium resort-like space."
+        },
+        {
             "id": "cho-sat-hai-phong",
             "title": "Cho Sat Landscape Renovation",
             "subtitle": "Hai Phong City",
