@@ -143,6 +143,28 @@
     },
     "projects": [
         {
+            "id": "nghia-hiep-urban-landscape",
+            "title": "Khu đô thị Nghĩa Hiệp",
+            "subtitle": "Yên Mỹ, Hưng Yên",
+            "alt": "Thiết kế cảnh quan Khu đô thị Nghĩa Hiệp Hưng Yên",
+            "image": "assets/nghia-hiep-0.png",
+            "type": "company",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Dự án quy hoạch và thiết kế cảnh quan tổng thể cho Khu đô thị Nghĩa Hiệp, nằm tại trung tâm huyện Yên Mỹ, tỉnh Hưng Yên. Dự án hướng đến việc xây dựng một khu đô thị sinh thái hiện đại, đáng sống với mật độ cây xanh cao, tiện ích nội khu đa dạng, gắn kết cộng đồng và phát triển bền vững.",
+            "gallery": [
+                "assets/nghia-hiep-0.png",
+                "assets/nghia-hiep-1.png",
+                "assets/nghia-hiep-2.png",
+                "assets/nghia-hiep-3.png",
+                "assets/nghia-hiep-4.png",
+                "assets/nghia-hiep-5.png",
+                "assets/nghia-hiep-6.png"
+            ],
+            "challenge": "Khu đất có quy mô lớn đòi hỏi phải giải quyết bài toán quy hoạch giao thông nội khu mạch lạc, kết nối hài hòa giữa các khu chức năng (khu ở, thương mại, giải trí) mà vẫn phải duy trì được tỷ lệ không gian xanh tiêu chuẩn, cũng như xử lý hệ thống thoát nước bề mặt tối ưu cho toàn khu đô thị.",
+            "solution": "Thiết kế cấu trúc cảnh quan theo mô hình 'Lá phổi xanh đô thị', lấy một công viên trung tâm làm hạt nhân, từ đó tỏa ra các trục đường dạo bộ rợp bóng mát kết nối đến từng tiểu khu. Hệ thống cây xanh được lựa chọn kỹ lưỡng, phù hợp với thổ nhưỡng Hưng Yên, kết hợp hồ điều hòa giúp cải thiện vi khí hậu toàn diện."
+        },
+        {
             "id": "westlake-landscape",
             "title": "Cảnh quan chung cư West Lake",
             "subtitle": "88 Quảng An, Tây Hồ, Hà Nội",

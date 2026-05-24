@@ -143,6 +143,28 @@
     },
     "projects": [
         {
+            "id": "nghia-hiep-urban-landscape",
+            "title": "Nghia Hiep Urban Area",
+            "subtitle": "Yen My, Hung Yen",
+            "alt": "Nghia Hiep Hung Yen Urban Area Landscape Design",
+            "image": "assets/nghia-hiep-0.png",
+            "type": "company",
+            "category": "landscape",
+            "year": "2026",
+            "description": "Master planning and landscape design project for Nghia Hiep Urban Area, located in the center of Yen My district, Hung Yen province. The project aims to build a modern, livable eco-urban area with high green density, diverse internal amenities, community cohesion, and sustainable development.",
+            "gallery": [
+                "assets/nghia-hiep-0.png",
+                "assets/nghia-hiep-1.png",
+                "assets/nghia-hiep-2.png",
+                "assets/nghia-hiep-3.png",
+                "assets/nghia-hiep-4.png",
+                "assets/nghia-hiep-5.png",
+                "assets/nghia-hiep-6.png"
+            ],
+            "challenge": "The large-scale site requires solving the problem of coherent internal traffic planning, harmoniously connecting functional areas (residential, commercial, entertainment) while maintaining the standard ratio of green space, as well as handling an optimal surface drainage system for the entire urban area.",
+            "solution": "Designing the landscape structure based on the 'Urban Green Lung' model, taking a central park as the core, from which shaded walking paths radiate to connect to each sub-area. The greenery system is carefully selected, suitable for Hung Yen's soil, combined with a regulating lake to comprehensively improve the microclimate."
+        },
+        {
             "id": "westlake-landscape",
             "title": "West Lake Apartment Landscape",
             "subtitle": "88 Quang An, Tay Ho, Hanoi",
