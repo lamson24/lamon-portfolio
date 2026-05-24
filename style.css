@@ -1437,7 +1437,7 @@ body:not(.project-page) .navbar .lang-switch {
 }
 
 body:not(.project-page) .navbar .lang-btn {
-    display: none;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -4149,7 +4149,7 @@ body:not(.project-page) .navbar .lang-switch {
 }
 
 body:not(.project-page) .navbar .lang-btn {
-    display: none;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
