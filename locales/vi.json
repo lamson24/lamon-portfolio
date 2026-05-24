@@ -30,7 +30,7 @@
             "Chúng tôi làm việc trên mọi quy mô cảnh quan — từ cảnh quan ban công nhỏ bé cho đến những công viên đô thị rộng lớn. Mỗi dự án đều bắt đầu bằng một câu hỏi: không gian này nên đem lại cảm giác gì?",
             "Thực hành của chúng tôi không dừng lại ở mặt đất. Chúng tôi còn thiết kế nội thất, chiếu sáng và các đồ vật được sinh ra từ cùng một triết lý — vật liệu tự nhiên, tỷ lệ tinh tế, và niềm tin rằng những gì đẹp sẽ trường tồn theo thời gian."
         ],
-        "image": "assets/project_5.png",
+        "image": "assets/project_5.webp",
         "imageAlt": "Triết lý thiết kế cảnh quan"
     },
     "impact": [
@@ -147,20 +147,20 @@
             "title": "Nội thất Chung cư Hiện đại",
             "subtitle": "Dự án thiết kế căn hộ cao cấp",
             "alt": "Thiết kế nội thất chung cư hiện đại",
-            "image": "assets/chungcu-hanh-1.png",
+            "image": "assets/chungcu-hanh-1.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "Dự án thiết kế nội thất căn hộ chung cư cao cấp với ngôn ngữ thiết kế hiện đại, thanh lịch. Mục tiêu của dự án là tối ưu hóa diện tích sinh hoạt mà vẫn mang lại cảm giác sang trọng, tiện nghi, tạo nên một tổ ấm yên bình giữa nhịp sống đô thị hối hả.",
             "gallery": [
-                "assets/chungcu-hanh-1.png",
-                "assets/chungcu-hanh-2.png",
-                "assets/chungcu-hanh-3.png",
-                "assets/chungcu-hanh-4.png",
-                "assets/chungcu-hanh-5.png",
-                "assets/chungcu-hanh-6.png",
-                "assets/chungcu-hanh-7.png",
-                "assets/chungcu-hanh-8.png"
+                "assets/chungcu-hanh-1.webp",
+                "assets/chungcu-hanh-2.webp",
+                "assets/chungcu-hanh-3.webp",
+                "assets/chungcu-hanh-4.webp",
+                "assets/chungcu-hanh-5.webp",
+                "assets/chungcu-hanh-6.webp",
+                "assets/chungcu-hanh-7.webp",
+                "assets/chungcu-hanh-8.webp"
             ],
             "challenge": "Đặc thù của các căn hộ chung cư là sự giới hạn về diện tích và cấu trúc không gian cố định. Thách thức lớn nhất là phải bố trí công năng đầy đủ (phòng khách, bếp, phòng ngủ) một cách thông minh, không gây cảm giác chật chội, đồng thời đảm bảo luồng ánh sáng và thông gió tự nhiên xuyên suốt căn hộ.",
             "solution": "Giải pháp đưa ra là sử dụng thiết kế không gian mở (open-plan), phá bỏ các vách ngăn không cần thiết giữa phòng khách và khu vực bếp. Áp dụng hệ thống nội thất thông minh tích hợp đa chức năng, kết hợp cùng bảng màu sáng (trắng, be, pastel) và vật liệu kính, gương để tạo hiệu ứng thị giác mở rộng không gian tối đa."
@@ -170,16 +170,16 @@
             "title": "Không gian Nội thất Đương đại",
             "subtitle": "Dự án thiết kế không gian sống",
             "alt": "Thiết kế nội thất không gian sống đương đại",
-            "image": "assets/elinh-interior-1.png",
+            "image": "assets/elinh-interior-1.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "Dự án thiết kế nội thất định hình một không gian sống đương đại, tinh tế và ấm cúng. Thiết kế chú trọng vào việc tạo ra sự liền mạch giữa các khu vực sinh hoạt, đề cao ngôn ngữ tối giản (minimalism) nhưng không kém phần sang trọng qua việc sử dụng vật liệu tự nhiên cao cấp.",
             "gallery": [
-                "assets/elinh-interior-1.png",
-                "assets/elinh-interior-2.png",
-                "assets/elinh-interior-3.png",
-                "assets/elinh-interior-4.png"
+                "assets/elinh-interior-1.webp",
+                "assets/elinh-interior-2.webp",
+                "assets/elinh-interior-3.webp",
+                "assets/elinh-interior-4.webp"
             ],
             "challenge": "Thách thức chính là làm thế nào để tối ưu hóa diện tích sử dụng mà vẫn giữ được cảm giác rộng rãi, thoáng đãng. Đồng thời, yêu cầu phối hợp hệ thống ánh sáng nhân tạo với ánh sáng tự nhiên phải thật tinh tế để tôn lên vẻ đẹp của nội thất vào mọi thời điểm trong ngày.",
             "solution": "Giải pháp đưa ra là sử dụng tông màu trung tính làm chủ đạo, kết hợp với điểm nhấn từ gỗ tự nhiên và kim loại mạ. Các cửa kính lớn được tận dụng tối đa để đón sáng, cùng hệ thống đèn LED âm trần thông minh giúp cá nhân hóa trải nghiệm không gian theo tâm trạng và nhu cầu của gia chủ."
@@ -189,19 +189,19 @@
             "title": "Khu đô thị Nghĩa Hiệp",
             "subtitle": "Yên Mỹ, Hưng Yên",
             "alt": "Thiết kế cảnh quan Khu đô thị Nghĩa Hiệp Hưng Yên",
-            "image": "assets/nghia-hiep-0.png",
+            "image": "assets/nghia-hiep-0.webp",
             "type": "company",
             "category": "landscape",
             "year": "2026",
             "description": "Dự án quy hoạch và thiết kế cảnh quan tổng thể cho Khu đô thị Nghĩa Hiệp, nằm tại trung tâm huyện Yên Mỹ, tỉnh Hưng Yên. Dự án hướng đến việc xây dựng một khu đô thị sinh thái hiện đại, đáng sống với mật độ cây xanh cao, tiện ích nội khu đa dạng, gắn kết cộng đồng và phát triển bền vững.",
             "gallery": [
-                "assets/nghia-hiep-0.png",
-                "assets/nghia-hiep-1.png",
-                "assets/nghia-hiep-2.png",
-                "assets/nghia-hiep-3.png",
-                "assets/nghia-hiep-4.png",
-                "assets/nghia-hiep-5.png",
-                "assets/nghia-hiep-6.png"
+                "assets/nghia-hiep-0.webp",
+                "assets/nghia-hiep-1.webp",
+                "assets/nghia-hiep-2.webp",
+                "assets/nghia-hiep-3.webp",
+                "assets/nghia-hiep-4.webp",
+                "assets/nghia-hiep-5.webp",
+                "assets/nghia-hiep-6.webp"
             ],
             "challenge": "Khu đất có quy mô lớn đòi hỏi phải giải quyết bài toán quy hoạch giao thông nội khu mạch lạc, kết nối hài hòa giữa các khu chức năng (khu ở, thương mại, giải trí) mà vẫn phải duy trì được tỷ lệ không gian xanh tiêu chuẩn, cũng như xử lý hệ thống thoát nước bề mặt tối ưu cho toàn khu đô thị.",
             "solution": "Thiết kế cấu trúc cảnh quan theo mô hình 'Lá phổi xanh đô thị', lấy một công viên trung tâm làm hạt nhân, từ đó tỏa ra các trục đường dạo bộ rợp bóng mát kết nối đến từng tiểu khu. Hệ thống cây xanh được lựa chọn kỹ lưỡng, phù hợp với thổ nhưỡng Hưng Yên, kết hợp hồ điều hòa giúp cải thiện vi khí hậu toàn diện."
@@ -211,21 +211,21 @@
             "title": "Cảnh quan chung cư West Lake",
             "subtitle": "88 Quảng An, Tây Hồ, Hà Nội",
             "alt": "Thiết kế cảnh quan chung cư West Lake Quảng An",
-            "image": "assets/westlake-1.png",
+            "image": "assets/westlake-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2021",
             "description": "Dự án thiết kế cảnh quan khu căn hộ cao cấp West Lake nằm tại vị trí đắc địa 88 đường Quảng An, sát bên hồ Tây thơ mộng. Dự án mang định hướng kiến tạo một không gian sống chuẩn nghỉ dưỡng (resort-living), giao thoa tinh tế giữa kiến trúc hiện đại và thiên nhiên nguyên bản của khu vực Tây Hồ.",
             "gallery": [
-                "assets/westlake-1.png",
-                "assets/westlake-2.png",
-                "assets/westlake-3.png",
-                "assets/westlake-4.png",
-                "assets/westlake-5.png",
-                "assets/westlake-6.png",
-                "assets/westlake-7.png",
-                "assets/westlake-8.png",
-                "assets/westlake-9.png"
+                "assets/westlake-1.webp",
+                "assets/westlake-2.webp",
+                "assets/westlake-3.webp",
+                "assets/westlake-4.webp",
+                "assets/westlake-5.webp",
+                "assets/westlake-6.webp",
+                "assets/westlake-7.webp",
+                "assets/westlake-8.webp",
+                "assets/westlake-9.webp"
             ],
             "challenge": "Khu vực ven hồ Tây có yêu cầu cực kỳ khắt khe về quy hoạch cảnh quan và sinh thái. Bài toán đặt ra là phải tối ưu hóa tầm nhìn (panorama view) hướng hồ cho mọi không gian tiện ích ngoài trời, đồng thời thiết lập hệ thống cây xanh có khả năng chống chịu gió lớn mặt hồ và thích ứng với vi khí hậu đặc trưng.",
             "solution": "Thiết kế ứng dụng hệ thực vật đa tầng xen kẽ các hồ nước tiểu cảnh tràn viền để tạo cảm giác mặt nước nội khu nối liền với mặt hồ Tây. Các tuyến đường dạo bộ được lát đá tự nhiên nguyên khối, kết hợp cùng các khu vực pavilion nghỉ chân ngắm cảnh có mái che bằng gỗ sinh thái, mang lại trải nghiệm sống đẳng cấp và yên bình tuyệt đối."
@@ -235,14 +235,14 @@
             "title": "Cải tạo Giếng Trời",
             "subtitle": "Cảnh quan vi khí hậu trong nhà",
             "alt": "Dự án thiết kế cảnh quan cải tạo giếng trời",
-            "image": "assets/gieng-troi-1.png",
+            "image": "assets/gieng-troi-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "Dự án cải tạo giếng trời, biến không gian lấy sáng đơn điệu thành một tiểu cảnh xanh mát ngay trong lòng ngôi nhà. Thiết kế tận dụng tối đa ánh sáng tự nhiên để duy trì hệ sinh thái nhiệt đới nhỏ, tạo điểm nhấn xanh thư giãn cho không gian sống.",
             "gallery": [
-                "assets/gieng-troi-1.png",
-                "assets/gieng-troi-2.png"
+                "assets/gieng-troi-1.webp",
+                "assets/gieng-troi-2.webp"
             ],
             "challenge": "Việc trồng cây trong giếng trời đòi hỏi phải kiểm soát chặt chẽ lượng ánh sáng chiếu xuống, hệ thống tưới tiêu và thoát nước ngầm để đảm bảo nền nhà luôn khô ráo, đồng thời ngăn chặn côn trùng phát sinh trong môi trường ẩm ướt.",
             "solution": "Áp dụng hệ thống mảng tường xanh thẳng đứng (green wall) kết hợp với các loại cây nhiệt đới ưa bóng râm và chịu hạn tốt. Hệ thống tưới nhỏ giọt tự động giấu kín được lắp đặt cùng lớp sỏi lọc và rãnh thoát nước kỹ thuật cao, đảm bảo vệ sinh và thẩm mỹ tối đa."
@@ -252,13 +252,13 @@
             "title": "Thiết kế cửa hàng Makeup",
             "subtitle": "Nội thất không gian làm đẹp",
             "alt": "Thiết kế nội thất cửa hàng Makeup",
-            "image": "assets/makeup-store.png",
+            "image": "assets/makeup-store.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "Dự án thiết kế nội thất cửa hàng trang điểm (Makeup Store). Không gian được thiết kế theo phong cách hiện đại, tinh tế với tông màu thanh lịch, tối ưu hóa hệ thống chiếu sáng để tôn lên vẻ đẹp của sản phẩm và mang lại trải nghiệm chuyên nghiệp cho khách hàng.",
             "gallery": [
-                "assets/makeup-store.png"
+                "assets/makeup-store.webp"
             ],
             "challenge": "Bố trí không gian sao cho vừa tận dụng tối đa diện tích để trưng bày sản phẩm, vừa tạo được những góc trải nghiệm trang điểm thoải mái, rộng rãi với yêu cầu khắt khe về ánh sáng chuẩn màu (color rendering index).",
             "solution": "Sử dụng hệ thống ánh sáng LED tùy chỉnh đa hướng kết hợp gương kính khổ lớn để tạo hiệu ứng thị giác mở rộng không gian. Các kệ trưng bày được thiết kế tối giản với đường cong mềm mại, tôn vinh nét nữ tính và sự sang trọng."
@@ -268,14 +268,14 @@
             "title": "Công viên Hồ Đồng Bông",
             "subtitle": "Đại Mỗ, Nam Từ Liêm, Hà Nội",
             "alt": "Thiết kế cảnh quan công viên Hồ Đồng Bông Đại Mỗ",
-            "image": "assets/dai-mo-1.jpeg",
+            "image": "assets/dai-mo-1.webp",
             "type": "company",
             "category": "landscape",
             "year": "2026",
             "description": "Dự án thiết kế cảnh quan Công viên Hồ Đồng Bông tại phường Đại Mỗ, quận Nam Từ Liêm, Hà Nội. Thiết kế lấy cảm hứng chủ đạo từ hình ảnh 'Dải lụa' uốn lượn mềm mại và 'Cánh chim' vươn cao, biểu tượng cho sự giao thoa giữa truyền thống và sự phát triển vươn mình của khu vực đô thị mới.",
             "gallery": [
-                "assets/dai-mo-1.jpeg",
-                "assets/dai-mo-2.jpeg"
+                "assets/dai-mo-1.webp",
+                "assets/dai-mo-2.webp"
             ],
             "challenge": "Thách thức của dự án là phải kiến tạo được một không gian xanh đa chức năng trên quy mô lớn, vừa đóng vai trò điều hòa sinh thái khu vực, vừa tạo ra các điểm nhấn kiến trúc mang tính biểu tượng nhưng vẫn hài hòa với dòng chảy tự nhiên của cảnh quan xung quanh.",
             "solution": "Giải pháp đưa ra là sử dụng các đường dạo bộ uốn lượn ven hồ tựa như những dải lụa mềm vắt ngang không gian, kết hợp cùng các công trình phụ trợ có mái vòm mô phỏng cánh chim đang dang rộng. Các khoảng xanh được phân lớp sinh thái từ mặt nước lên không gian trên bờ tạo sự liên kết tự nhiên bền vững."
@@ -285,14 +285,14 @@
             "title": "Thiết kế sân thượng biệt thự",
             "subtitle": "Khu đô thị ParkCity, Hà Nội",
             "alt": "Sân thượng biệt thự ParkCity Hà Đông",
-            "image": "assets/parkcity-1.png",
+            "image": "assets/parkcity-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "Dự án thiết kế cảnh quan sân thượng cho một căn biệt thự cao cấp tại khu đô thị ParkCity, Hà Đông, Hà Nội. Không gian được tối ưu hóa để trở thành nơi thư giãn lý tưởng, hòa mình với thiên nhiên ngay giữa lòng thủ đô.",
             "gallery": [
-                "assets/parkcity-1.png",
-                "assets/parkcity-2.png"
+                "assets/parkcity-1.webp",
+                "assets/parkcity-2.webp"
             ],
             "challenge": "Thách thức lớn nhất là thiết kế một khu vườn trên cao phải đáp ứng yêu cầu khắt khe về kỹ thuật chống thấm, chịu tải của công trình, đồng thời đảm bảo tính thẩm mỹ, sang trọng phù hợp với phong cách kiến trúc tổng thể của khu biệt thự ParkCity.",
             "solution": "Chúng tôi áp dụng các công nghệ vườn trên mái tiên tiến nhất, sử dụng hệ thống cây xanh phù hợp với điều kiện vi khí hậu khắc nghiệt trên sân thượng. Kết hợp hệ thống chiếu sáng nghệ thuật và vật liệu tự nhiên để tạo ra một không gian nghỉ dưỡng tĩnh lặng, riêng tư và đẳng cấp."
@@ -302,16 +302,16 @@
             "title": "Cải tạo cảnh quan Chợ Sắt",
             "subtitle": "Hải Phòng",
             "alt": "Cải tạo cảnh quan Chợ Sắt Hải Phòng",
-            "image": "assets/cho-sat-1.png",
+            "image": "assets/cho-sat-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "Dự án thiết kế và cải tạo cảnh quan khu vực Chợ Sắt, Hải Phòng. Dự án nhằm mục đích mang lại diện mạo mới, hiện đại nhưng vẫn giữ được nét đặc trưng văn hóa lịch sử của biểu tượng thương mại lâu đời tại thành phố cảng.",
             "gallery": [
-                "assets/cho-sat-1.png",
-                "assets/cho-sat-2.png",
-                "assets/cho-sat-3.png",
-                "assets/cho-sat-4.png"
+                "assets/cho-sat-1.webp",
+                "assets/cho-sat-2.webp",
+                "assets/cho-sat-3.webp",
+                "assets/cho-sat-4.webp"
             ],
             "challenge": "Chợ Sắt là một biểu tượng lịch sử của Hải Phòng. Thách thức lớn nhất là làm thế nào để dung hòa giữa việc bảo tồn các giá trị truyền thống và việc nâng cấp hạ tầng cảnh quan theo hướng hiện đại, xanh và thân thiện với người dân.",
             "solution": "Đề xuất thiết kế tập trung vào việc tạo ra các không gian mở liền mạch, bổ sung hệ thống cây xanh đô thị, kết hợp cùng các vật liệu địa phương. Thiết kế cũng chú trọng đến không gian sinh hoạt cộng đồng và ánh sáng cảnh quan ban đêm."
@@ -321,15 +321,15 @@
             "title": "Khu đô thị mới Thị trấn Mậu A",
             "subtitle": "Quy hoạch & Thiết kế Cảnh quan Khu đô thị",
             "alt": "Cảnh quan Khu đô thị Mậu A Yên Bái",
-            "image": "assets/mau_a_1.png",
+            "image": "assets/mau_a_1.webp",
             "gallery": [
-                "assets/mau_a_1.png",
-                "assets/mau_a_7.jpeg",
-                "assets/mau_a_2.png",
-                "assets/mau_a_3.png",
-                "assets/mau_a_4.png",
-                "assets/mau_a_5.png",
-                "assets/mau_a_6.png"
+                "assets/mau_a_1.webp",
+                "assets/mau_a_7.webp",
+                "assets/mau_a_2.webp",
+                "assets/mau_a_3.webp",
+                "assets/mau_a_4.webp",
+                "assets/mau_a_5.webp",
+                "assets/mau_a_6.webp"
             ],
             "description": "Khu đô thị mới Thị trấn Mậu A là dự án kiến tạo không gian đô thị hiện đại, đồng bộ tại Huyện Văn Yên, Tỉnh Yên Bái (Tổ dân phố số 2 và số 3). Dự án nổi bật với các phân khu cảnh quan đa dạng: quảng trường trung tâm với tượng đài nhân mã uy nghi phong cách Châu Âu, đài phun nước nghệ thuật, khu vui chơi trẻ em rực rỡ sắc màu, cùng không gian dạo bộ yên bình dưới giàn hoa leo. Quy mô thiết kế cảnh quan vô cùng lớn: CX1 (4357.69 m2), CX2 (2681.95 m2), CX3 - Cổng Biểu Tượng (207.58 m2), CX4 (1287.75 m2), CX1-01 (166.05 m2) và CX1-02 (78.99 m2), tạo nên một hệ sinh thái sống lý tưởng và đẳng cấp.",
             "filter": "public",
@@ -341,12 +341,12 @@
             "title": "Aqua Horizon Resort",
             "subtitle": "Cảnh quan nghỉ dưỡng ven biển",
             "alt": "Resort ven biển",
-            "image": "assets/project_5.png",
+            "image": "assets/project_5.webp",
             "gallery": [
-                "assets/project_5.png",
-                "assets/project_1_1.png",
-                "assets/project_2_1.png",
-                "assets/project_3_2.png"
+                "assets/project_5.webp",
+                "assets/project_1_1.webp",
+                "assets/project_2_1.webp",
+                "assets/project_3_2.webp"
             ],
             "description": "Thiết kế cảnh quan nghỉ dưỡng kết nối tầm nhìn chân trời, kết hợp cây bản địa để giảm xói mòn bờ biển.",
             "filter": "commercial",
@@ -360,15 +360,15 @@
             "category": "Phát triển khu dân cư",
             "location": "Nghĩa Hiệp, Hưng Yên, Việt Nam",
             "alt": "Quảng trường đài phun nước phong cách cổ điển tại khu nhà ở Nghĩa Hiệp Hưng Yên",
-            "image": "assets/project_7.png",
+            "image": "assets/project_7.webp",
             "gallery": [
-                "assets/project_7.png",
-                "assets/project_7_1.png",
-                "assets/project_7_2.png",
-                "assets/project_7_3.png",
-                "assets/project_7_4.png",
-                "assets/project_7_5.png",
-                "assets/project_7_6.png"
+                "assets/project_7.webp",
+                "assets/project_7_1.webp",
+                "assets/project_7_2.webp",
+                "assets/project_7_3.webp",
+                "assets/project_7_4.webp",
+                "assets/project_7_5.webp",
+                "assets/project_7_6.webp"
             ],
             "description": "Đề xuất thiết kế cảnh quan cho khu nhà ở Nghĩa Hiệp, Hưng Yên với trung tâm là quảng trường đài phun nước theo trục đối xứng. Dự án kết hợp ngôn ngữ kiến trúc cổ điển, hệ cây xanh nhiều lớp và chiếu sáng cảnh quan ban đêm, tạo nên không gian sinh hoạt cộng đồng sang trọng, an toàn và giàu bản sắc.",
             "filter": "residential",
@@ -379,7 +379,7 @@
             "id": "hm-1",
             "title": "Ánh Sáng Trí Tuệ",
             "subtitle": "Điêu khắc nhựa & LED tím",
-            "image": "assets/handmade_lamp_1.jpg",
+            "image": "assets/handmade_lamp_1.webp",
             "description": "Đèn để bàn điêu khắc từ nhựa — hình não người đặt trên bàn tay đang nâng đỡ. Ánh LED tím phát ra từ bên trong biến tác phẩm thành vật thể nghệ thuật đầy mê hoặc trong đêm tối.",
             "type": "handmade",
             "subType": "lighting"
@@ -388,7 +388,7 @@
             "id": "hm-2",
             "title": "Ánh Địa Hình",
             "subtitle": "Đèn trụ in 3D — đường đồng mức",
-            "image": "assets/handmade_lamp_2.jpg",
+            "image": "assets/handmade_lamp_2.webp",
             "description": "Đèn trụ nhỏ gọn với các gờ sóng in 3D gợi nhớ đường đồng mức địa hình. Lớp vỏ trong mờ khuếch tán ánh sáng ấm thành luồng sáng mềm mại, có hình khối.",
             "type": "handmade",
             "subType": "lighting"
@@ -397,7 +397,7 @@
             "id": "hm-3",
             "title": "Ánh Đan I",
             "subtitle": "Đèn vải dệt thủ công & đế gỗ",
-            "image": "assets/handmade_lamp_3.jpg",
+            "image": "assets/handmade_lamp_3.webp",
             "description": "Thân đèn hình trụ được bọc vải dệt thô thủ công, đặt trên đế gỗ chắc chắn. Lưới vải mịn tán ánh sáng đều, tạo ra sắc hổ phách ấm áp cho mọi góc làm việc.",
             "type": "handmade",
             "subType": "lighting"
@@ -406,7 +406,7 @@
             "id": "hm-4",
             "title": "Quý Ông Bí Ẩn — Ban Ngày",
             "subtitle": "Đèn giấy chạm khắc hình bóng",
-            "image": "assets/handmade_lamp_4.jpg",
+            "image": "assets/handmade_lamp_4.webp",
             "description": "Hình bóng quý ông đầu lâu đội mũ chóp, vẽ tay và cắt thủ công trên chao đèn giấy. Chụp dưới ánh sáng ban mai, từng đường cắt tỉ mỉ hiện lên rõ nét trên nền giấy hổ phách ấm áp.",
             "type": "handmade",
             "subType": "lighting"
@@ -415,7 +415,7 @@
             "id": "hm-5",
             "title": "Đèn Hoa Cúc",
             "subtitle": "Chao giấy chạm hoa cúc thủ công",
-            "image": "assets/handmade_lamp_5.jpg",
+            "image": "assets/handmade_lamp_5.webp",
             "description": "Chao đèn đứng làm từ giấy có kết cấu tự nhiên, với hình hoa cúc được cắt tỉ mỉ bằng tay. Ánh đêm thành phố phía sau tạo nên sự đối thoại thầm lặng giữa nghề thủ công và khung cảnh đô thị.",
             "type": "handmade",
             "subType": "lighting"
@@ -424,7 +424,7 @@
             "id": "hm-6",
             "title": "Quý Ông Bí Ẩn — Đêm",
             "subtitle": "Đèn giấy chạm khắc hình bóng",
-            "image": "assets/handmade_lamp_6.jpg",
+            "image": "assets/handmade_lamp_6.webp",
             "description": "Cùng chiếc đèn Quý Ông chụp trong đêm. Đèn thành phố phía sau làm nền, nhân vật đầu lâu hiện ra rực rỡ trong sắc hổ phách — một hình bóng được ánh sáng thổi hồn.",
             "type": "handmade",
             "subType": "lighting"
@@ -433,7 +433,7 @@
             "id": "hm-7",
             "title": "Ánh Đan II",
             "subtitle": "Đèn trụ vải dệt & cảnh quái vật",
-            "image": "assets/handmade_lamp_7.jpg",
+            "image": "assets/handmade_lamp_7.webp",
             "description": "Đèn trụ vải dệt trong khung cảnh vui tươi cùng mô hình quái vật. Nhắc nhở rằng đồ vật thủ công mang cá tính riêng — chúng trở thành một phần câu chuyện của không gian mà chúng trú ngụ.",
             "type": "handmade",
             "subType": "lighting"
@@ -442,7 +442,7 @@
             "id": "hm-8",
             "title": "Đèn Hoa Sen",
             "subtitle": "Chao giấy chạm hoa sen thủ công",
-            "image": "assets/handmade_lamp_8.jpg",
+            "image": "assets/handmade_lamp_8.webp",
             "description": "Cận cảnh chao đèn giấy với những bông sen nở rộ được chạm khắc tỉ mỉ bằng tay. Ánh sáng ấm phía sau biến từng cánh hoa thành một bức tranh phát sáng lung linh trong đêm tối.",
             "type": "handmade",
             "subType": "lighting"
@@ -451,7 +451,7 @@
             "id": "hm-9",
             "title": "Ánh Vòng",
             "subtitle": "Đèn trụ xếp vòng tầng tầng",
-            "image": "assets/handmade_lamp_9.jpg",
+            "image": "assets/handmade_lamp_9.webp",
             "description": "Đèn để bàn tối giản được xây từ những vòng ngang xếp chồng lên nhau, phát ra ánh sáng đều và trong sáng. Đơn giản về hình dạng nhưng phong phú về chất liệu — thích hợp cho mọi góc yên tĩnh.",
             "type": "handmade",
             "subType": "lighting"
@@ -464,13 +464,13 @@
             "type": "personal",
             "subType": "architecture",
             "location": "Hà Nội, Việt Nam",
-            "image": "assets/rest_1.png",
+            "image": "assets/rest_1.webp",
             "gallery": [
-                "assets/rest_1.png",
-                "assets/rest_2.png",
-                "assets/rest_3.png",
-                "assets/rest_4.png",
-                "assets/rest_5.png"
+                "assets/rest_1.webp",
+                "assets/rest_2.webp",
+                "assets/rest_3.webp",
+                "assets/rest_4.webp",
+                "assets/rest_5.webp"
             ],
             "alt": "Thiết kế Nhà hàng Truyền thống",
             "description": "Dự án thiết kế nhà hàng mang đậm phong cách truyền thống kết hợp mộc mạc (rustic). Kiến trúc mặt tiền gây ấn tượng với hệ cổng gỗ lam, mái ngói âm dương và cấu trúc thép xám hiện đại. Không gian nội thất ấm cúng với nội thất gỗ tự nhiên nguyên tấm (live-edge), đèn thả mây tre đan, và điểm nhấn là bức phù điêu hoa mai đắp nổi trên tường. Cửa sổ lá sách gỗ mở ra mảng xanh tươi mát, tạo cảm giác thư thái cho thực khách."
@@ -482,8 +482,8 @@
         "location": "275 Nguyễn Trãi - Thanh Xuân - Hà Nội, Việt Nam",
         "email": "Lamsonarchp@gmail.com",
         "phone": "0333 942 892",
-        "avatar": "assets/hero_cover.jpg",
-        "cover": "assets/hero_bg.png",
+        "avatar": "assets/hero_cover.webp",
+        "cover": "assets/hero_bg.webp",
         "summary": "Kiến trúc sư cảnh quan tập trung vào việc tạo ra những không gian ngoài trời ý nghĩa thông qua thiết kế bền vững, trải nghiệm không gian và tư duy cảnh quan đương đại.",
         "skills": [
             "PHOTOSHOP",

@@ -7,6 +7,11 @@ function setupTopographicCanvas() {
     const canvas = document.getElementById('ai-canvas');
     if (!canvas) return;
 
+    if (window.innerWidth < 768 || window.matchMedia('(pointer: coarse)').matches) {
+        canvas.style.display = 'none';
+        return;
+    }
+
     const ctx = canvas.getContext('2d');
     let width, height;
     

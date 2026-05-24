@@ -432,11 +432,11 @@ function cleanupPreloader() {
     window.removeEventListener('resize', onWindowResize);
 }
 
-// Check if preloader has run in this session or if it's a page reload
 const navEntries = performance.getEntriesByType("navigation");
 const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
+const isMobile = window.innerWidth < 768 || window.matchMedia('(pointer: coarse)').matches;
 
-if (!sessionStorage.getItem('hasSeenPreloader') || isReload) {
+if ((!sessionStorage.getItem('hasSeenPreloader') || isReload) && !isMobile) {
     sessionStorage.setItem('hasSeenPreloader', 'true');
     // Start when document fonts are likely ready (or immediately)
     if (document.fonts) {
@@ -447,7 +447,7 @@ if (!sessionStorage.getItem('hasSeenPreloader') || isReload) {
         initPreloader();
     }
 } else {
-    // Already seen, just hide it immediately and trigger complete event
+    // Already seen or is mobile device, just hide it immediately and trigger complete event
     const preloaderEl = document.getElementById('preloader-3d');
     if (preloaderEl) preloaderEl.style.display = 'none';
     setTimeout(() => {

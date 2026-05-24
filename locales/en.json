@@ -30,7 +30,7 @@
             "We work across every scale of the landscape — from the quiet intimacy of a balcony garden to the ambitious sweep of a public park. Each project begins with the same question: how should this space make you feel?",
             "Our practice extends beyond the ground plane. We design furniture, lighting, and objects born from the same principles that shape our landscapes — natural materials, thoughtful proportions, and the conviction that beautiful things should age gracefully."
         ],
-        "image": "assets/project_5.png",
+        "image": "assets/project_5.webp",
         "imageAlt": "Landscape Design Philosophy"
     },
     "impact": [
@@ -147,20 +147,20 @@
             "title": "Modern Apartment Interior",
             "subtitle": "High-end Residential Design",
             "alt": "Modern Apartment Interior Design",
-            "image": "assets/chungcu-hanh-1.png",
+            "image": "assets/chungcu-hanh-1.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "An interior design project for a high-end apartment featuring a modern and elegant design language. The goal of the project is to optimize living space while maintaining a luxurious and comfortable feel, creating a peaceful haven amidst the hustle and bustle of urban life.",
             "gallery": [
-                "assets/chungcu-hanh-1.png",
-                "assets/chungcu-hanh-2.png",
-                "assets/chungcu-hanh-3.png",
-                "assets/chungcu-hanh-4.png",
-                "assets/chungcu-hanh-5.png",
-                "assets/chungcu-hanh-6.png",
-                "assets/chungcu-hanh-7.png",
-                "assets/chungcu-hanh-8.png"
+                "assets/chungcu-hanh-1.webp",
+                "assets/chungcu-hanh-2.webp",
+                "assets/chungcu-hanh-3.webp",
+                "assets/chungcu-hanh-4.webp",
+                "assets/chungcu-hanh-5.webp",
+                "assets/chungcu-hanh-6.webp",
+                "assets/chungcu-hanh-7.webp",
+                "assets/chungcu-hanh-8.webp"
             ],
             "challenge": "The inherent characteristic of apartments is limited space and fixed structural layouts. The biggest challenge was intelligently arranging all functional areas (living room, kitchen, bedrooms) without causing a cramped feeling, while ensuring natural light and ventilation flow throughout the apartment.",
             "solution": "The solution implements an open-plan design, removing unnecessary partitions between the living room and kitchen. We utilized a multi-functional smart furniture system, combined with a light color palette (white, beige, pastel) and glass/mirror materials to create a maximum visual effect of expanding the space."
@@ -170,16 +170,16 @@
             "title": "Contemporary Interior Space",
             "subtitle": "Living Space Design Project",
             "alt": "Contemporary living space interior design",
-            "image": "assets/elinh-interior-1.png",
+            "image": "assets/elinh-interior-1.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "An interior design project shaping a contemporary, sophisticated, and cozy living space. The design focuses on creating a seamless flow between living areas, emphasizing a minimalist language that remains luxurious through the use of premium natural materials.",
             "gallery": [
-                "assets/elinh-interior-1.png",
-                "assets/elinh-interior-2.png",
-                "assets/elinh-interior-3.png",
-                "assets/elinh-interior-4.png"
+                "assets/elinh-interior-1.webp",
+                "assets/elinh-interior-2.webp",
+                "assets/elinh-interior-3.webp",
+                "assets/elinh-interior-4.webp"
             ],
             "challenge": "The main challenge was optimizing the usable area while maintaining a spacious and airy feel. Simultaneously, integrating artificial lighting with natural light needed to be meticulously refined to enhance the beauty of the interior at any time of the day.",
             "solution": "The proposed solution uses a neutral color palette as the foundation, combined with accents of natural wood and plated metal. Large glass windows are fully utilized to welcome light, alongside a smart recessed LED lighting system that personalizes the spatial experience according to the homeowner's mood and needs."
@@ -189,19 +189,19 @@
             "title": "Nghia Hiep Urban Area",
             "subtitle": "Yen My, Hung Yen",
             "alt": "Nghia Hiep Hung Yen Urban Area Landscape Design",
-            "image": "assets/nghia-hiep-0.png",
+            "image": "assets/nghia-hiep-0.webp",
             "type": "company",
             "category": "landscape",
             "year": "2026",
             "description": "Master planning and landscape design project for Nghia Hiep Urban Area, located in the center of Yen My district, Hung Yen province. The project aims to build a modern, livable eco-urban area with high green density, diverse internal amenities, community cohesion, and sustainable development.",
             "gallery": [
-                "assets/nghia-hiep-0.png",
-                "assets/nghia-hiep-1.png",
-                "assets/nghia-hiep-2.png",
-                "assets/nghia-hiep-3.png",
-                "assets/nghia-hiep-4.png",
-                "assets/nghia-hiep-5.png",
-                "assets/nghia-hiep-6.png"
+                "assets/nghia-hiep-0.webp",
+                "assets/nghia-hiep-1.webp",
+                "assets/nghia-hiep-2.webp",
+                "assets/nghia-hiep-3.webp",
+                "assets/nghia-hiep-4.webp",
+                "assets/nghia-hiep-5.webp",
+                "assets/nghia-hiep-6.webp"
             ],
             "challenge": "The large-scale site requires solving the problem of coherent internal traffic planning, harmoniously connecting functional areas (residential, commercial, entertainment) while maintaining the standard ratio of green space, as well as handling an optimal surface drainage system for the entire urban area.",
             "solution": "Designing the landscape structure based on the 'Urban Green Lung' model, taking a central park as the core, from which shaded walking paths radiate to connect to each sub-area. The greenery system is carefully selected, suitable for Hung Yen's soil, combined with a regulating lake to comprehensively improve the microclimate."
@@ -211,21 +211,21 @@
             "title": "West Lake Apartment Landscape",
             "subtitle": "88 Quang An, Tay Ho, Hanoi",
             "alt": "West Lake Quang An Apartment Landscape Design",
-            "image": "assets/westlake-1.png",
+            "image": "assets/westlake-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2021",
             "description": "Landscape design project for the high-end West Lake apartment complex located at the prime address of 88 Quang An street, right next to the poetic West Lake. The project aims to create a resort-style living space, a sophisticated intersection between modern architecture and the pristine nature of the Tay Ho area.",
             "gallery": [
-                "assets/westlake-1.png",
-                "assets/westlake-2.png",
-                "assets/westlake-3.png",
-                "assets/westlake-4.png",
-                "assets/westlake-5.png",
-                "assets/westlake-6.png",
-                "assets/westlake-7.png",
-                "assets/westlake-8.png",
-                "assets/westlake-9.png"
+                "assets/westlake-1.webp",
+                "assets/westlake-2.webp",
+                "assets/westlake-3.webp",
+                "assets/westlake-4.webp",
+                "assets/westlake-5.webp",
+                "assets/westlake-6.webp",
+                "assets/westlake-7.webp",
+                "assets/westlake-8.webp",
+                "assets/westlake-9.webp"
             ],
             "challenge": "The West Lake riverside area has extremely strict requirements for landscape and ecological planning. The challenge was to optimize the panoramic lake view for all outdoor utility spaces, while establishing a green system capable of withstanding strong lake winds and adapting to the specific microclimate.",
             "solution": "The design applies a multi-layered flora system interspersed with infinity miniature lakes to create the illusion of the internal water surface connecting seamlessly with West Lake. The promenades are paved with monolithic natural stones, combined with scenic rest pavilions featuring ecological wooden roofs, providing a luxurious and utterly peaceful living experience."
@@ -235,14 +235,14 @@
             "title": "Skylight Atrium Renovation",
             "subtitle": "Indoor Microclimate Landscape",
             "alt": "Skylight Atrium Renovation Landscape Design",
-            "image": "assets/gieng-troi-1.png",
+            "image": "assets/gieng-troi-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "A skylight atrium renovation project transforming a monotonous light-well into a lush green pocket garden inside the house. The design maximizes natural light to sustain a small tropical ecosystem, creating a relaxing green focal point for the living space.",
             "gallery": [
-                "assets/gieng-troi-1.png",
-                "assets/gieng-troi-2.png"
+                "assets/gieng-troi-1.webp",
+                "assets/gieng-troi-2.webp"
             ],
             "challenge": "Planting in a skylight atrium requires strict control over light penetration, automated irrigation, and underground drainage to ensure the interior floor remains dry, while simultaneously preventing insect breeding in a humid environment.",
             "solution": "Implementing a vertical green wall system paired with shade-tolerant and drought-resistant tropical plants. A concealed automated drip irrigation system is installed alongside a sophisticated gravel filtration layer and technical drainage trench, ensuring maximum hygiene and aesthetics."
@@ -252,13 +252,13 @@
             "title": "Makeup Store Design",
             "subtitle": "Beauty Space Interior",
             "alt": "Makeup Store Interior Design",
-            "image": "assets/makeup-store.png",
+            "image": "assets/makeup-store.webp",
             "type": "personal",
             "category": "interior",
             "year": "2026",
             "description": "Interior design project for a Makeup Store. The space is designed in a modern, sophisticated style with an elegant color palette, optimizing the lighting system to enhance product beauty and provide a professional customer experience.",
             "gallery": [
-                "assets/makeup-store.png"
+                "assets/makeup-store.webp"
             ],
             "challenge": "Arranging the space to maximize the display area for products while creating comfortable, spacious makeup trial zones with strict requirements for color-accurate lighting (high CRI).",
             "solution": "Utilizing a customized multi-directional LED lighting system combined with large mirrors to create a visual effect that expands the space. The display shelves feature a minimalist design with soft curves, celebrating femininity and luxury."
@@ -268,14 +268,14 @@
             "title": "Dong Bong Lake Park",
             "subtitle": "Dai Mo, Nam Tu Liem, Hanoi",
             "alt": "Dong Bong Lake Park Landscape Design",
-            "image": "assets/dai-mo-1.jpeg",
+            "image": "assets/dai-mo-1.webp",
             "type": "company",
             "category": "landscape",
             "year": "2026",
             "description": "Landscape design project for Dong Bong Lake Park in Dai Mo ward, Nam Tu Liem district, Hanoi. The design is profoundly inspired by the image of a flowing 'Silk Ribbon' and soaring 'Bird Wings', symbolizing the intersection between local traditions and the prosperous development of the new urban area.",
             "gallery": [
-                "assets/dai-mo-1.jpeg",
-                "assets/dai-mo-2.jpeg"
+                "assets/dai-mo-1.webp",
+                "assets/dai-mo-2.webp"
             ],
             "challenge": "The main challenge was to create a large-scale multi-functional green space that not only acts as an ecological regulator for the area but also provides iconic architectural highlights while maintaining harmony with the natural flow of the surrounding landscape.",
             "solution": "Our solution utilizes meandering lakeside walking paths resembling soft silk ribbons draped across the space, combined with auxiliary structures featuring arched roofs that mimic spreading bird wings. The green areas are ecologically layered from the water surface to the upland, creating a sustainable natural connection."
@@ -285,14 +285,14 @@
             "title": "Villa Rooftop Design",
             "subtitle": "ParkCity Urban Area, Hanoi",
             "alt": "ParkCity Ha Dong Villa Rooftop",
-            "image": "assets/parkcity-1.png",
+            "image": "assets/parkcity-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "Rooftop landscape design project for a high-end villa in the ParkCity urban area, Ha Dong, Hanoi. The space is optimized to become an ideal relaxing retreat, blending with nature right in the heart of the capital.",
             "gallery": [
-                "assets/parkcity-1.png",
-                "assets/parkcity-2.png"
+                "assets/parkcity-1.webp",
+                "assets/parkcity-2.webp"
             ],
             "challenge": "The biggest challenge was designing an elevated garden that meets strict technical requirements for waterproofing and load-bearing capacity, while ensuring aesthetics and luxury that fit the overall architectural style of the ParkCity villa area.",
             "solution": "We applied the most advanced green roof technologies, selecting plant systems suitable for the harsh microclimate conditions on the rooftop. This was combined with artistic lighting and natural materials to create a tranquil, private, and premium resort-like space."
@@ -302,16 +302,16 @@
             "title": "Cho Sat Landscape Renovation",
             "subtitle": "Hai Phong City",
             "alt": "Cho Sat Hai Phong Landscape Renovation",
-            "image": "assets/cho-sat-1.png",
+            "image": "assets/cho-sat-1.webp",
             "type": "personal",
             "category": "landscape",
             "year": "2026",
             "description": "Landscape design and renovation project for the Cho Sat area in Hai Phong. The project aims to bring a modern, fresh look while preserving the historical and cultural characteristics of the city's long-standing commercial symbol.",
             "gallery": [
-                "assets/cho-sat-1.png",
-                "assets/cho-sat-2.png",
-                "assets/cho-sat-3.png",
-                "assets/cho-sat-4.png"
+                "assets/cho-sat-1.webp",
+                "assets/cho-sat-2.webp",
+                "assets/cho-sat-3.webp",
+                "assets/cho-sat-4.webp"
             ],
             "challenge": "Cho Sat is a historical symbol of Hai Phong. The biggest challenge was reconciling the preservation of traditional values with the modern, green, and citizen-friendly upgrade of the landscape infrastructure.",
             "solution": "The design proposal focuses on creating seamless open spaces, adding urban greenery, and incorporating local materials. The design also emphasizes community gathering spaces and night landscape lighting."
@@ -321,15 +321,15 @@
             "title": "Mau A New Urban Area",
             "subtitle": "Urban Landscape Planning & Design",
             "alt": "Mau A Yen Bai Urban Landscape",
-            "image": "assets/mau_a_1.png",
+            "image": "assets/mau_a_1.webp",
             "gallery": [
-                "assets/mau_a_1.png",
-                "assets/mau_a_7.jpeg",
-                "assets/mau_a_2.png",
-                "assets/mau_a_3.png",
-                "assets/mau_a_4.png",
-                "assets/mau_a_5.png",
-                "assets/mau_a_6.png"
+                "assets/mau_a_1.webp",
+                "assets/mau_a_7.webp",
+                "assets/mau_a_2.webp",
+                "assets/mau_a_3.webp",
+                "assets/mau_a_4.webp",
+                "assets/mau_a_5.webp",
+                "assets/mau_a_6.webp"
             ],
             "description": "Mau A New Urban Area is a project creating a modern and synchronized urban space in Van Yen District, Yen Bai Province. The project features diverse landscape zones including: a central plaza with a majestic European-style centaur statue, an art fountain, a colorful children's playground, and peaceful green walking spaces under vine pergolas. The landscape design scope includes: CX1 (4357.69 m2), CX2 (2681.95 m2), CX3 - Iconic Gate (207.58 m2), CX4 (1287.75 m2), CX1-01 (166.05 m2), and CX1-02 (78.99 m2), creating an ideal and high-class living ecosystem.",
             "filter": "public",
@@ -341,12 +341,12 @@
             "title": "Aqua Horizon Resort",
             "subtitle": "Luxury Coastal Integration",
             "alt": "Coastal Resort",
-            "image": "assets/project_5.png",
+            "image": "assets/project_5.webp",
             "gallery": [
-                "assets/project_5.png",
-                "assets/project_1_1.png",
-                "assets/project_2_1.png",
-                "assets/project_3_2.png"
+                "assets/project_5.webp",
+                "assets/project_1_1.webp",
+                "assets/project_2_1.webp",
+                "assets/project_3_2.webp"
             ],
             "description": "A coastal resort landscape where pool, terrace, and planting are composed to align with horizon views and reduce erosion impacts.",
             "filter": "commercial",
@@ -360,15 +360,15 @@
             "category": "Residential Community Development",
             "location": "Nghia Hiep, Hung Yen, Vietnam",
             "alt": "Classical fountain plaza in Nghia Hiep Hung Yen residential area",
-            "image": "assets/project_7.png",
+            "image": "assets/project_7.webp",
             "gallery": [
-                "assets/project_7.png",
-                "assets/project_7_1.png",
-                "assets/project_7_2.png",
-                "assets/project_7_3.png",
-                "assets/project_7_4.png",
-                "assets/project_7_5.png",
-                "assets/project_7_6.png"
+                "assets/project_7.webp",
+                "assets/project_7_1.webp",
+                "assets/project_7_2.webp",
+                "assets/project_7_3.webp",
+                "assets/project_7_4.webp",
+                "assets/project_7_5.webp",
+                "assets/project_7_6.webp"
             ],
             "description": "A premium residential landscape concept for Nghia Hiep, Hung Yen, centered on a classical fountain plaza, axial walkways, and layered planting. The design combines ceremonial architecture, warm night lighting, and human-scale seating to create an elegant neighborhood destination for gathering, strolling, and relaxation.",
             "filter": "residential",
@@ -379,7 +379,7 @@
             "id": "hm-1",
             "title": "Luminous Mind",
             "subtitle": "Resin Sculpture & Purple LED",
-            "image": "assets/handmade_lamp_1.jpg",
+            "image": "assets/handmade_lamp_1.webp",
             "description": "A sculptural table lamp cast from resin — a glowing brain cradled in an outstretched hand. Lit with a deep purple LED, it dissolves the line between art object and functional light.",
             "type": "handmade",
             "subType": "lighting"
@@ -388,7 +388,7 @@
             "id": "hm-2",
             "title": "Contour Glow",
             "subtitle": "3D-printed Wave Cylinder",
-            "image": "assets/handmade_lamp_2.jpg",
+            "image": "assets/handmade_lamp_2.webp",
             "description": "A compact cylinder lamp with undulating 3D-printed ridges that ripple like terrain contours. The translucent shell diffuses warm light into a soft, sculptural glow.",
             "type": "handmade",
             "subType": "lighting"
@@ -397,7 +397,7 @@
             "id": "hm-3",
             "title": "Woven Glow I",
             "subtitle": "Textile Weave & Wood Base",
-            "image": "assets/handmade_lamp_3.jpg",
+            "image": "assets/handmade_lamp_3.webp",
             "description": "A cylindrical lamp body wrapped in hand-woven textile, set on a solid wood base. The fine mesh weave scatters light evenly, creating a calm amber warmth for any workspace.",
             "type": "handmade",
             "subType": "lighting"
@@ -406,7 +406,7 @@
             "id": "hm-4",
             "title": "The Gentleman — Day",
             "subtitle": "Paper-cut Silhouette Lamp",
-            "image": "assets/handmade_lamp_4.jpg",
+            "image": "assets/handmade_lamp_4.webp",
             "description": "A skull gentleman in a top hat, hand-drawn and hand-cut into a paper lampshade. Photographed in morning light, the silhouette shows the precision of every cut line against a warm amber ground.",
             "type": "handmade",
             "subType": "lighting"
@@ -415,7 +415,7 @@
             "id": "hm-5",
             "title": "Bloom Lantern",
             "subtitle": "Hand-cut Daisy Paper Shade",
-            "image": "assets/handmade_lamp_5.jpg",
+            "image": "assets/handmade_lamp_5.webp",
             "description": "A floor lamp shade crafted from natural textured paper with a hand-cut daisy silhouette. At night, city bokeh frames the warm amber glow — a quiet dialogue between craft and the urban landscape.",
             "type": "handmade",
             "subType": "lighting"
@@ -424,7 +424,7 @@
             "id": "hm-6",
             "title": "The Gentleman — Night",
             "subtitle": "Paper-cut Silhouette Lamp",
-            "image": "assets/handmade_lamp_6.jpg",
+            "image": "assets/handmade_lamp_6.webp",
             "description": "The same skull gentleman lamp photographed at night. Backlit against the city skyline, the hand-cut figure emerges in dramatic fiery amber — a character brought alive by light.",
             "type": "handmade",
             "subType": "lighting"
@@ -433,7 +433,7 @@
             "id": "hm-7",
             "title": "Woven Glow II",
             "subtitle": "Textile Cylinder & Monster Scene",
-            "image": "assets/handmade_lamp_7.jpg",
+            "image": "assets/handmade_lamp_7.webp",
             "description": "The woven cylinder lamp captured in a playful scene alongside miniature monsters. A reminder that handmade objects carry personality — they become part of the stories in the spaces they inhabit.",
             "type": "handmade",
             "subType": "lighting"
@@ -442,7 +442,7 @@
             "id": "hm-8",
             "title": "Lotus Lantern",
             "subtitle": "Hand-cut Lotus Paper Shade",
-            "image": "assets/handmade_lamp_8.jpg",
+            "image": "assets/handmade_lamp_8.webp",
             "description": "A close-up of a paper lampshade intricately hand-cut with full lotus blossoms in bloom. The warm backlight transforms each petal into a luminous painting against the dark night.",
             "type": "handmade",
             "subType": "lighting"
@@ -451,7 +451,7 @@
             "id": "hm-9",
             "title": "Ringed Glow",
             "subtitle": "Layered Ring Cylinder Lamp",
-            "image": "assets/handmade_lamp_9.jpg",
+            "image": "assets/handmade_lamp_9.webp",
             "description": "A minimalist table lamp built from stacked horizontal rings, emitting a clean, even glow. Simple in form but rich in material texture — it finds its place in any quiet corner.",
             "type": "handmade",
             "subType": "lighting"
@@ -464,13 +464,13 @@
             "type": "personal",
             "subType": "architecture",
             "location": "Hanoi, Vietnam",
-            "image": "assets/rest_1.png",
+            "image": "assets/rest_1.webp",
             "gallery": [
-                "assets/rest_1.png",
-                "assets/rest_2.png",
-                "assets/rest_3.png",
-                "assets/rest_4.png",
-                "assets/rest_5.png"
+                "assets/rest_1.webp",
+                "assets/rest_2.webp",
+                "assets/rest_3.webp",
+                "assets/rest_4.webp",
+                "assets/rest_5.webp"
             ],
             "alt": "Traditional Restaurant Design",
             "description": "A restaurant design project blending traditional and rustic styles. The facade impresses with a wooden slatted gate, yin-yang tiled roof, and modern dark grey steel structures. The interior space is cozy, featuring natural live-edge wooden furniture, woven bamboo pendant lights, and a stunning floral relief wall art. Wooden louvred windows open up to lush greenery, creating a relaxing dining experience."
@@ -482,8 +482,8 @@
         "location": "275 Nguyen Trai - Thanh Xuan - Hanoi, Vietnam",
         "email": "Lamsonarchp@gmail.com",
         "phone": "0333 942 892",
-        "avatar": "assets/hero_cover.jpg",
-        "cover": "assets/hero_bg.png",
+        "avatar": "assets/hero_cover.webp",
+        "cover": "assets/hero_bg.webp",
         "summary": "Landscape Architect focused on creating meaningful outdoor spaces through sustainable design, spatial experience, and contemporary landscape thinking.",
         "skills": [
             "PHOTOSHOP",
