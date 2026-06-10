@@ -339,19 +339,22 @@ function getProjectLabels(language) {
     if (language === 'vi') {
         return {
             caseStudy: 'Case Study',
-            caseTitle: 'Cach du an duoc hinh thanh',
-            context: 'Boi canh',
-            idea: 'Y tuong thiet ke',
-            material: 'Vat lieu & cay xanh',
-            role: 'Vai tro',
-            contextText: 'Du an bat dau tu viec doc hien trang, nhu cau su dung va cam xuc ma khong gian can tao ra.',
-            materialText: 'Bang vat lieu, anh sang va lop cay xanh duoc chon de can bang tham my, bao tri va trai nghiem hang ngay.',
-            roleText: 'Phu trach dinh huong y tuong, bo cuc khong gian, ngon ngu vat lieu va ho tro trien khai.',
-            conceptPrefix: 'Y tuong tap trung vao',
-            transformation: 'Chuyen doi khong gian',
-            beforeAfter: 'Before / After',
-            before: 'Before',
-            after: 'After'
+            caseTitle: 'Cách dự án được hình thành',
+            context: 'Bối cảnh',
+            idea: 'Ý tưởng thiết kế',
+            material: 'Vật liệu & cây xanh',
+            role: 'Vai trò',
+            contextText: 'Dự án bắt đầu từ việc đọc hiện trạng, nhu cầu sử dụng và cảm xúc mà không gian cần tạo ra.',
+            materialText: 'Bảng vật liệu, ánh sáng và lớp cây xanh được chọn để cân bằng thẩm mỹ, bảo trì và trải nghiệm hằng ngày.',
+            roleText: 'Phụ trách định hướng ý tưởng, bố cục không gian, ngôn ngữ vật liệu và hỗ trợ triển khai.',
+            conceptPrefix: 'Ý tưởng tập trung vào',
+            conceptSuffix: 'sử dụng tỷ lệ, luồng di chuyển và bầu không khí để dự án vừa đáng nhớ vừa thực tế.',
+            conceptFallback: 'một trải nghiệm không gian rõ ràng',
+            locale: 'vi-VN',
+            transformation: 'Chuyển đổi không gian',
+            beforeAfter: 'Trước / Sau',
+            before: 'Trước',
+            after: 'Sau'
         };
     }
 
@@ -366,6 +369,9 @@ function getProjectLabels(language) {
         materialText: 'Materials, lighting, and planting layers are selected to balance atmosphere, maintenance, and everyday use.',
         roleText: 'Responsible for concept direction, spatial composition, material language, and design development support.',
         conceptPrefix: 'The concept focuses on',
+        conceptSuffix: 'using proportion, circulation, and atmosphere to make the project memorable and practical.',
+        conceptFallback: 'a clear spatial experience',
+        locale: 'en',
         transformation: 'Spatial transformation',
         beforeAfter: 'Before / After',
         before: 'Before',
@@ -374,8 +380,9 @@ function getProjectLabels(language) {
 }
 
 function buildConceptText(project, labels) {
-    const topic = project.category || project.subtitle || project.title || 'a clear spatial experience';
-    return `${labels.conceptPrefix} ${topic.toLowerCase()}, using proportion, circulation, and atmosphere to make the project memorable and practical.`;
+    const topic = project.category || project.subtitle || project.title || labels.conceptFallback;
+    const normalizedTopic = String(topic).toLocaleLowerCase(labels.locale || undefined);
+    return `${labels.conceptPrefix} ${normalizedTopic}, ${labels.conceptSuffix}`;
 }
 
 function setText(id, value) {
