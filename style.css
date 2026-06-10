@@ -2732,7 +2732,7 @@ body:not(.project-page) .theme-toggle {
 
 .project-page {
     min-height: 100vh;
-    background: #151d28;
+    background: var(--clr-bg-dark);
 }
 
 .project-main {
@@ -2751,13 +2751,13 @@ body:not(.project-page) .theme-toggle {
     text-transform: uppercase;
     font-size: 0.82rem;
     line-height: 1.5;
-    color: #89b9ff;
+    color: var(--clr-accent);
     font-weight: 700;
     margin-bottom: 0.55rem;
 }
 
 .project-title-detail {
-    color: #f7f9fc;
+    color: var(--clr-text-main);
     font-family: var(--font-sans);
     font-size: clamp(1.45rem, 2.4vw, 2.1rem);
     font-weight: 700;
@@ -2766,7 +2766,7 @@ body:not(.project-page) .theme-toggle {
 }
 
 .project-subtitle-detail {
-    color: rgba(247, 249, 252, 0.76);
+    color: var(--clr-text-muted);
     font-size: 1rem;
     margin-bottom: 1.25rem;
 }
@@ -2844,7 +2844,7 @@ body:not(.project-page) .theme-toggle {
     grid-template-columns: 1.4rem minmax(0, 1fr);
     gap: 0.7rem;
     align-items: start;
-    color: rgba(247, 249, 252, 0.92);
+    color: var(--clr-text-muted);
 }
 
 .project-meta-row p {
@@ -2854,7 +2854,7 @@ body:not(.project-page) .theme-toggle {
 }
 
 .project-meta-row strong {
-    color: #fff;
+    color: var(--clr-text-main);
     font-weight: 700;
 }
 
@@ -2862,7 +2862,7 @@ body:not(.project-page) .theme-toggle {
     width: 1.1rem;
     height: 1.1rem;
     margin-top: 0.15rem;
-    color: rgba(247, 249, 252, 0.88);
+    color: var(--clr-text-main);
 }
 
 .project-meta-icon svg {
