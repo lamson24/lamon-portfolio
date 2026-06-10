@@ -145,38 +145,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        const zaloHref = getZaloHref(projectsSection);
+
         gallery.innerHTML = categoryProjects
             .map((project, index) => {
                 const transitionDelay = (index % 3) * 0.1;
                 const style = transitionDelay ? ` style="transition-delay: ${transitionDelay}s;"` : '';
                 const id = escapeAttribute(String(project.id || index + 1));
                 const href = `project.html?id=${encodeURIComponent(id)}&lang=${encodeURIComponent(language)}`;
+                const absoluteHref = new URL(href, window.location.href).href;
 
                 const catLabel = project.category || project.subtitle || '';
                 const location = project.location || '';
                 const yearStr = location ? `${location}` : '';
-                const type = project.type || 'company';
                 const subType = project.subType || 'all';
+                const isHandmade = category === 'handmade';
+                const orderMessage = buildOrderMessage(project, language, absoluteHref);
+                const orderHref = `${zaloHref}${zaloHref.includes('?') ? '&' : '?'}text=${encodeURIComponent(orderMessage)}`;
+                const orderLabel = language === 'vi'
+                    ? `Đặt mua ${project.title || 'sản phẩm'} qua Zalo`
+                    : `Order ${project.title || 'product'} via Zalo`;
 
                 return `
-                    <a class="project-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}" data-subtype="${escapeAttribute(subType)}">
-                        <div class="project-card reveal"${style} data-project-id="${id}">
-                            <div class="project-image-wrapper img-placeholder loading">
-                                <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || catLabel)}" loading="lazy" class="project-img blur-up">
-                                                                <div class="project-overlay">
-                                    <h3>${escapeHtml(project.title || '')}</h3>
-                                    <p>${escapeHtml(catLabel)}</p>
-                                    <p class="project-meta">${escapeHtml(yearStr)}</p>
+                    <div class="project-link" data-subtype="${escapeAttribute(subType)}">
+                        ${isHandmade ? `
+                            <a class="handmade-cart-link" href="${escapeAttribute(orderHref)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttribute(orderLabel)}" title="${escapeAttribute(orderLabel)}">
+                                ${getCartIcon()}
+                            </a>
+                        ` : ''}
+                        <a class="project-card-link" href="${href}" aria-label="Open ${escapeAttribute(project.title || 'Project')}">
+                            <div class="project-card reveal"${style} data-project-id="${id}">
+                                <div class="project-image-wrapper img-placeholder loading">
+                                    <img src="${escapeAttribute(project.image || '')}" alt="${escapeAttribute(project.alt || catLabel)}" loading="lazy" class="project-img blur-up">
+                                    <div class="project-overlay">
+                                        <h3>${escapeHtml(project.title || '')}</h3>
+                                        <p>${escapeHtml(catLabel)}</p>
+                                        <p class="project-meta">${escapeHtml(yearStr)}</p>
+                                    </div>
                                 </div>
+                                ${isHandmade ? `
+                                <div class="product-info">
+                                    <h4 class="product-title">${escapeHtml(project.title || '')}</h4>
+                                    <p class="product-desc">${escapeHtml(project.subtitle || catLabel)}</p>
+                                </div>
+                                ` : ''}
                             </div>
-                            ${category === 'handmade' ? `
-                            <div class="product-info">
-                                <h4 class="product-title">${escapeHtml(project.title || '')}</h4>
-                                <p class="product-desc">${escapeHtml(project.subtitle || catLabel)}</p>
-                            </div>
-                            ` : ''}
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 `;
             }).join('');
             
@@ -217,6 +232,35 @@ document.addEventListener('DOMContentLoaded', () => {
     function escapeAttribute(unsafe) {
         if (!unsafe) return '';
         return unsafe.toString().replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+
+    function getZaloHref(projectsSection) {
+        const configured = projectsSection.zaloOrderHref || projectsSection.zaloHref;
+        return configured || 'https://zalo.me/0333942892';
+    }
+
+    function buildOrderMessage(project, language, productUrl) {
+        const lines = language === 'vi'
+            ? [
+                'Xin chào LAMON-DIY, tôi muốn đặt mua sản phẩm handmade:',
+                `Tên sản phẩm: ${project.title || ''}`,
+                `Mô tả: ${project.subtitle || project.category || ''}`,
+                `Mã sản phẩm: ${project.id || ''}`,
+                `Link sản phẩm: ${productUrl}`
+            ]
+            : [
+                'Hello LAMON-DIY, I would like to order this handmade product:',
+                `Product: ${project.title || ''}`,
+                `Description: ${project.subtitle || project.category || ''}`,
+                `Product ID: ${project.id || ''}`,
+                `Product link: ${productUrl}`
+            ];
+
+        return lines.filter(Boolean).join('\n');
+    }
+
+    function getCartIcon() {
+        return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h15l-2 8H8L6 7z"/><path d="M6 7 5.3 4H3"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M10 11h7"/></svg>';
     }
 
     // Set year in footer
