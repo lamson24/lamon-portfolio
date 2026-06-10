@@ -174,7 +174,7 @@ function setupLanguageSwitcher(availableLanguages, currentLanguage, projectId) {
 function renderProjectPage(content, project, language) {
     document.documentElement.lang = language === 'vi' ? 'vi' : 'en';
 
-    const fallbackTitle = language === 'vi' ? 'Chi tiet du an' : 'Project Detail';
+    const fallbackTitle = language === 'vi' ? 'Chi tiết dự án' : 'Project Detail';
     const backLabel = '←';
     const overviewLabel = language === 'vi' ? 'Tổng quan dự án' : 'Project Overview';
 
@@ -222,10 +222,9 @@ function renderProjectPage(content, project, language) {
         metaTag.content = tagData.content;
     });
 
-    const projectCategory = project.category || project.subtitle || '';
     const projectLocation = project.location || '';
 
-    setText('project-category', projectCategory);
+    setText('project-category', buildProjectHeader(project));
     setText('project-title', project.title || '');
     setText('project-subtitle', project.subtitle || '');
     setText('project-location', projectLocation);
@@ -237,17 +236,101 @@ function renderProjectPage(content, project, language) {
         ? project.gallery
         : [project.image].filter(Boolean);
 
-    galleryEl.innerHTML = images
-        .map((src, index) => {
-            const alt = project.alt || project.title || 'Project image';
-            const mainClass = index === 0 ? 'project-gallery-item main' : 'project-gallery-item';
-            return `<figure class="${mainClass}"><img src="${escapeAttribute(src)}" alt="${escapeAttribute(alt)}" loading="lazy" data-index="${index}"></figure>`;
-        })
-        .join('');
+    renderProjectGallery(galleryEl, project, images);
+    renderProjectMeta(project, language);
 
     renderCaseStudy(project, language, images);
     renderBeforeAfter(project, language, images);
     setupLightbox(images);
+}
+
+function renderProjectGallery(target, project, images) {
+    if (!target) return;
+
+    const alt = project.alt || project.title || 'Project image';
+    if (!images.length) {
+        target.innerHTML = '';
+        return;
+    }
+
+    const maxThumbs = 5;
+    const hasMore = images.length > maxThumbs;
+    const visibleThumbIndexes = hasMore
+        ? [...Array(maxThumbs - 1).keys()].concat(maxThumbs - 1)
+        : images.map((_, index) => index);
+    const hiddenCount = hasMore ? images.length - (maxThumbs - 1) : 0;
+
+    target.innerHTML = `
+        <figure class="project-gallery-item project-gallery-main" data-index="0">
+            <img src="${escapeAttribute(images[0])}" alt="${escapeAttribute(alt)}" loading="eager" data-index="0">
+        </figure>
+        <div class="project-thumb-strip" aria-label="Project gallery thumbnails">
+            ${visibleThumbIndexes.map((imageIndex, thumbIndex) => {
+                const isMoreTile = hasMore && thumbIndex === visibleThumbIndexes.length - 1;
+                return `
+                    <figure class="project-gallery-item project-gallery-thumb${isMoreTile ? ' has-more' : ''}" data-index="${imageIndex}">
+                        <img src="${escapeAttribute(images[imageIndex])}" alt="${escapeAttribute(alt)}" loading="lazy" data-index="${imageIndex}">
+                        ${isMoreTile ? `<span class="project-thumb-more">+ ${hiddenCount}</span>` : ''}
+                    </figure>
+                `;
+            }).join('')}
+        </div>
+    `;
+}
+
+function renderProjectMeta(project, language) {
+    const target = document.getElementById('project-meta');
+    if (!target) return;
+
+    const labels = getProjectLabels(language);
+    const items = [
+        {
+            icon: 'designer',
+            label: labels.metaDesigner,
+            value: project.architects || project.designer || project.author || 'LAMON-DIY'
+        },
+        {
+            icon: 'location',
+            label: labels.metaLocation,
+            value: project.location || project.subtitle || ''
+        },
+        {
+            icon: 'calendar',
+            label: labels.metaYear,
+            value: project.year || ''
+        },
+        {
+            icon: 'category',
+            label: labels.metaCategory,
+            value: project.category || project.subType || project.type || ''
+        },
+        {
+            icon: 'area',
+            label: labels.metaArea,
+            value: project.area || ''
+        },
+        {
+            icon: 'materials',
+            label: labels.metaMaterials,
+            value: project.manufacturers || project.materials || ''
+        }
+    ].filter((item) => item.value);
+
+    target.innerHTML = items.map((item) => `
+        <div class="project-meta-row">
+            <span class="project-meta-icon" aria-hidden="true">${getMetaIcon(item.icon)}</span>
+            <p><strong>${escapeAttribute(item.label)}:</strong> ${escapeAttribute(item.value)}</p>
+        </div>
+    `).join('');
+}
+
+function buildProjectHeader(project) {
+    const headerParts = [
+        project.category || project.subType || project.type || '',
+        project.location || project.subtitle || ''
+    ].filter(Boolean);
+
+    return headerParts.join(' \u2022 ');
 }
 
 function renderCaseStudy(project, language, images) {
@@ -351,6 +434,12 @@ function getProjectLabels(language) {
             conceptSuffix: 'sử dụng tỷ lệ, luồng di chuyển và bầu không khí để dự án vừa đáng nhớ vừa thực tế.',
             conceptFallback: 'một trải nghiệm không gian rõ ràng',
             locale: 'vi-VN',
+            metaDesigner: 'Thiết kế',
+            metaLocation: 'Địa điểm',
+            metaYear: 'Năm',
+            metaCategory: 'Hạng mục',
+            metaArea: 'Diện tích',
+            metaMaterials: 'Vật liệu',
             transformation: 'Chuyển đổi không gian',
             beforeAfter: 'Trước / Sau',
             before: 'Trước',
@@ -372,6 +461,12 @@ function getProjectLabels(language) {
         conceptSuffix: 'using proportion, circulation, and atmosphere to make the project memorable and practical.',
         conceptFallback: 'a clear spatial experience',
         locale: 'en',
+        metaDesigner: 'Architects',
+        metaLocation: 'Location',
+        metaYear: 'Year',
+        metaCategory: 'Category',
+        metaArea: 'Area',
+        metaMaterials: 'Materials',
         transformation: 'Spatial transformation',
         beforeAfter: 'Before / After',
         before: 'Before',
@@ -383,6 +478,19 @@ function buildConceptText(project, labels) {
     const topic = project.category || project.subtitle || project.title || labels.conceptFallback;
     const normalizedTopic = String(topic).toLocaleLowerCase(labels.locale || undefined);
     return `${labels.conceptPrefix} ${normalizedTopic}, ${labels.conceptSuffix}`;
+}
+
+function getMetaIcon(type) {
+    const icons = {
+        designer: '<svg viewBox="0 0 24 24"><path d="M4 20v-2a4 4 0 0 1 4-4h1"/><circle cx="9" cy="7" r="3"/><path d="M14 20l6-6"/><path d="M15 13l2 2"/><path d="M18 10l2 2"/></svg>',
+        location: '<svg viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+        calendar: '<svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></svg>',
+        category: '<svg viewBox="0 0 24 24"><path d="M12 3l8 4.5-8 4.5-8-4.5L12 3z"/><path d="M4 12l8 4.5 8-4.5"/><path d="M4 16.5l8 4.5 8-4.5"/></svg>',
+        area: '<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 4v16"/><path d="M16 4v16"/><path d="M4 8h16"/><path d="M4 16h16"/></svg>',
+        materials: '<svg viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7l8-4z"/><path d="M12 12l8-5"/><path d="M12 12v9"/><path d="M12 12L4 7"/></svg>'
+    };
+
+    return icons[type] || icons.category;
 }
 
 function setText(id, value) {
@@ -440,10 +548,10 @@ function setupLightbox(images) {
         lightboxImg.src = images[currentIndex];
     }
 
-    const gridImages = document.querySelectorAll('.project-gallery-item img');
-    gridImages.forEach(img => {
-        img.addEventListener('click', (e) => {
-            const idx = parseInt(e.target.getAttribute('data-index'), 10);
+    const galleryItems = document.querySelectorAll('.project-gallery-item');
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const idx = parseInt(item.getAttribute('data-index'), 10);
             if (!isNaN(idx)) openLightbox(idx);
         });
     });

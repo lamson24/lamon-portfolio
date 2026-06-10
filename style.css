@@ -2732,57 +2732,66 @@ body:not(.project-page) .theme-toggle {
 
 .project-page {
     min-height: 100vh;
+    background: #151d28;
 }
 
 .project-main {
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    width: min(1180px, calc(100% - 2rem));
+    padding-top: 5.5rem;
+    padding-bottom: 4.5rem;
 }
 
 .project-hero {
-    margin-bottom: 2.5rem;
+    margin: 1.2rem 0 2.25rem;
+    max-width: 840px;
 }
 
 .project-kicker {
-    letter-spacing: 1px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    color: var(--clr-accent);
-    margin-bottom: 0.6rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #89b9ff;
+    font-weight: 700;
+    margin-bottom: 0.55rem;
 }
 
 .project-title-detail {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    margin-bottom: 0.8rem;
+    color: #f7f9fc;
+    font-family: var(--font-sans);
+    font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 0.45rem;
 }
 
 .project-subtitle-detail {
-    font-size: 1.1rem;
-    color: var(--clr-text-main);
-    margin-bottom: 0.3rem;
+    color: rgba(247, 249, 252, 0.76);
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .project-location {
-    font-size: 0.95rem;
+    display: none;
 }
 
 .project-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
+    display: block;
+    margin-bottom: 0;
 }
 
 .project-gallery-item {
-    grid-column: span 6;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    background: var(--clr-bg-card);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.04);
+    cursor: zoom-in;
 }
 
-.project-gallery-item.main {
-    grid-column: span 12;
+.project-gallery-main {
+    aspect-ratio: 16 / 10;
+    min-height: 360px;
+    max-height: 72vh;
 }
 
 .project-gallery-item img {
@@ -2790,7 +2799,81 @@ body:not(.project-page) .theme-toggle {
     height: 100%;
     display: block;
     object-fit: cover;
-    max-height: 72vh;
+    transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.project-gallery-item:hover img {
+    transform: scale(1.035);
+}
+
+.project-thumb-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.project-gallery-thumb {
+    aspect-ratio: 1.18 / 1;
+}
+
+.project-gallery-thumb.has-more img {
+    filter: brightness(0.48);
+}
+
+.project-thumb-more {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 0;
+    background: rgba(10, 18, 31, 0.18);
+}
+
+.project-meta-list {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.project-meta-row {
+    display: grid;
+    grid-template-columns: 1.4rem minmax(0, 1fr);
+    gap: 0.7rem;
+    align-items: start;
+    color: rgba(247, 249, 252, 0.92);
+}
+
+.project-meta-row p {
+    margin: 0;
+    line-height: 1.55;
+    font-size: 0.93rem;
+}
+
+.project-meta-row strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.project-meta-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: 0.15rem;
+    color: rgba(247, 249, 252, 0.88);
+}
+
+.project-meta-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .project-description-card {
@@ -2912,6 +2995,27 @@ body:not(.project-page) .theme-toggle {
     .project-case-grid,
     .before-after-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-main {
+        width: min(100% - 1rem, 1180px);
+        padding-top: 4.75rem;
+    }
+
+    .project-gallery-main {
+        aspect-ratio: 4 / 3;
+        min-height: 260px;
+    }
+
+    .project-thumb-strip {
+        grid-template-columns: repeat(5, minmax(72px, 1fr));
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+    }
+
+    .project-gallery-thumb {
+        min-width: 72px;
     }
 }
 
